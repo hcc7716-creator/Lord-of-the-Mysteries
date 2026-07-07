@@ -9,6 +9,7 @@ This folder contains gameplay-ready data extracted and adapted from the current 
 | `pathways.json` | One record per pathway. Currently contains all 22 pathways. |
 | `sequences.json` | One record per sequence. Currently contains 220 records across all 22 pathways from Sequence 9 to Sequence 0. |
 | `materials.json` | Potion materials, auxiliary materials, special requirements, and unknown placeholders related to the implemented pathways. |
+| `items.json` | Unified game item table generated from materials, sealed artifacts, and manual MVP seed items. Use this for inventory, shops, equipment, quests, potion crafting, and containment UI. |
 | `abilities.json` | Gameplay ability data for investigation, combat, escape, identity, summon, miracle, and authority systems. |
 | `rituals.json` | Advancement rituals for sequences that have explicit ritual requirements. Low sequences without rituals use `advancement_ritual: null` in `sequences.json`. |
 | `characteristics.json` | Beyonder characteristic records for each implemented pathway sequence. |
@@ -23,6 +24,7 @@ All IDs use lowercase English plus underscores. Do not use spaces, Chinese chara
 | Pathway | `{pathway}` | `fool`, `error`, `door` |
 | Sequence | `{pathway}_{sequence_number}_{sequence_en}` | `fool_09_seer`, `fool_08_clown` |
 | Material | `mat_{material_en}` | `mat_lavos_squid_blood` |
+| Item | Reuse source ID for converted records, `item_{short_name}` for manual seed records | `mat_lavos_squid_blood`, `artifact_2_049_antigonus_family_puppet`, `item_broken_pocket_watch` |
 | Ability | `skill_{sequence_or_pathway}_{ability_en}` | `skill_seer_spiritual_vision` |
 | Ritual | `ritual_{pathway}_{sequence_number}_{short_name}` | `ritual_fool_05_marionettist` |
 | Characteristic | `char_{pathway}_{sequence_number}_{sequence_en}` | `char_fool_09_seer` |
