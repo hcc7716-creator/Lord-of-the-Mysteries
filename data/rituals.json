@@ -1,0 +1,3555 @@
+[
+  {
+    "ritual_id": "ritual_fool_05_marionettist",
+    "pathway_id": "fool",
+    "sequence_number": 5,
+    "ritual_name": "美人鱼之歌",
+    "ritual_description": "在美人鱼歌声中服食秘偶大师魔药。",
+    "required_items": [],
+    "required_location": [
+      "五海区域",
+      "可安全听见美人鱼歌声的海域"
+    ],
+    "required_npc_or_condition": [
+      "能听见美人鱼歌声",
+      "完成海上前置调查",
+      "安全处理歌声带来的精神风险"
+    ],
+    "success_condition": "玩家在歌声影响下保持稳定并完成魔药服食。",
+    "failure_result": "晋升失败，进入精神污染事件或失控风险大幅上升。",
+    "loss_control_risk_change": "成功时降低秘偶大师晋升失控概率；失败时增加精神污染和海上异常追踪风险。",
+    "quest_design_note": "可设计为五海区域前置大任务，要求玩家寻找安全听见美人鱼歌声的方法。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_fool_04_bizarro_sorcerer",
+    "pathway_id": "fool",
+    "sequence_number": 4,
+    "ritual_name": "盛大表演",
+    "ritual_description": "依靠自身力量和策略，在众多观众前组织盛大表演，杀死半神层次非凡生物，并在表演结束时服食魔药。",
+    "required_items": [
+      "mat_self_made_rubber_mask"
+    ],
+    "required_location": [
+      "五海后段区域",
+      "高阶都市副本",
+      "可布置观众和舞台的区域"
+    ],
+    "required_npc_or_condition": [
+      "有足够观众",
+      "目标为半神层次非凡生物",
+      "完成舞台布置"
+    ],
+    "success_condition": "表演被观众见证，半神目标被击杀，并在表演收束时服食魔药。",
+    "failure_result": "仪式中断、观众不足或击杀失败会导致晋升失败并触发高危污染。",
+    "loss_control_risk_change": "舞台、观众和策略越完整，失控风险越低；表演逻辑崩溃会显著提高失控风险。",
+    "quest_design_note": "应设计为区域终局副本，玩家先安排观众、诱饵、逃生点和秘偶，再完成半神击杀。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_fool_03_scholar_of_yore",
+    "pathway_id": "fool",
+    "sequence_number": 3,
+    "ritual_name": "成为历史",
+    "ritual_description": "与现实隔绝至少三百年，成为不属于当前时代的历史后服食魔药。",
+    "required_items": [
+      "mat_real_ancient_historical_records"
+    ],
+    "required_location": [
+      "神弃之地",
+      "历史迷雾",
+      "灰雾或时间封印相关副本"
+    ],
+    "required_npc_or_condition": [
+      "完成等价隔绝",
+      "收集真实古代历史记录",
+      "建立稳定历史锚点"
+    ],
+    "success_condition": "玩家完成与现实隔绝的等价仪式，并以历史身份服食魔药。",
+    "failure_result": "时间错位、历史残影污染或角色无法回到当前时代。",
+    "loss_control_risk_change": "隔绝越完整、历史锚点越稳定，失控风险越低。",
+    "quest_design_note": "不能真的让玩家等待三百年，可用神弃之地、灰雾、时间封印或特殊副本完成等价隔绝。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_fool_02_miracle_invoker",
+    "pathway_id": "fool",
+    "sequence_number": 2,
+    "ritual_name": "被遗弃历史的回归",
+    "ritual_description": "将一段被遗弃的历史带回当前时代。",
+    "required_items": [],
+    "required_location": [
+      "神弃之地",
+      "历史迷雾",
+      "被封印或遗忘的区域"
+    ],
+    "required_npc_or_condition": [
+      "找到被遗弃的历史",
+      "建立历史回归坐标",
+      "拥有足够愿望或奇迹权重"
+    ],
+    "success_condition": "被遗弃的历史以可感知形式回到当前时代，并完成魔药服食。",
+    "failure_result": "错误历史污染现实，区域出现错位或伪历史事件。",
+    "loss_control_risk_change": "历史回归越稳定，失控风险越低；错误历史会大幅提高污染。",
+    "quest_design_note": "可绑定白银城、神弃之地或被封印区域的主线回归任务。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_fool_01_attendant_of_mysteries",
+    "pathway_id": "fool",
+    "sequence_number": 1,
+    "ritual_name": "秘偶之城",
+    "ritual_description": "建立一座只由秘偶组成的城镇，为每个秘偶设计命运轨迹，使其互动形成足够真实的生活图景，并在灵界产生对应区域。",
+    "required_items": [
+      "mat_nine_spirit_world_specialties"
+    ],
+    "required_location": [
+      "灵界",
+      "可形成对应区域的秘偶城镇"
+    ],
+    "required_npc_or_condition": [
+      "拥有足够秘偶",
+      "为每个秘偶设计自洽命运",
+      "维持城镇真实感和灵界映射"
+    ],
+    "success_condition": "秘偶城镇形成足够真实的生活图景，并在灵界产生稳定对应区域。",
+    "failure_result": "秘偶城镇崩塌，未设计居民或命运反噬进入现实。",
+    "loss_control_risk_change": "城镇规模、命运细节和真实感越高，仪式效果越好；自洽性不足会提高失控风险。",
+    "quest_design_note": "适合做成终局前大型经营/仪式任务，要求检查每个秘偶命运是否自洽。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_fool_00_fool",
+    "pathway_id": "fool",
+    "sequence_number": 0,
+    "ritual_name": "愚弄时间、历史或命运",
+    "ritual_description": "愚弄时间、历史或命运一次，完成序列 0 晋升。",
+    "required_items": [
+      "mat_fool_uniqueness",
+      "mat_three_attendant_of_mysteries_characteristics",
+      "mat_fog_of_history_control_quarter"
+    ],
+    "required_location": [
+      "灰雾之上",
+      "历史迷雾",
+      "终局仪式空间"
+    ],
+    "required_npc_or_condition": [
+      "拥有足够人性锚点",
+      "管理塔罗会支援",
+      "抵抗旧日意志侵蚀"
+    ],
+    "success_condition": "在终局仪式中完成一次对时间、历史或命运的愚弄，并保持自我不被吞没。",
+    "failure_result": "旧日意志复苏、人性锚点崩溃或进入沉眠/失败结局。",
+    "loss_control_risk_change": "人性锚点、历史迷雾控制和支援网络越稳定，失控风险越低。",
+    "quest_design_note": "不应做成普通 Boss 战，应同时管理历史迷雾、塔罗会支援、锚点、人性和旧日意志侵蚀。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "ritual_id": "ritual_error_05_dream_stealer",
+    "pathway_id": "error",
+    "sequence_number": 5,
+    "ritual_name": "窃梦家晋升仪式",
+    "ritual_description": "Become a key antagonist or supporting figure in the unconscious dreams of at least 30 people. It doesn't matter how long these dreams last, what matters is that they are happening when the potion is consumed.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-地下黑市",
+      "贝克兰德"
+    ],
+    "required_npc_or_condition": [
+      "Become a key antagonist or supporting figure in the unconscious dreams of at least 30 people. It doesn't matter how long these dreams last, what matters is that they are happening when the potion is consumed."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_error_04_parasite",
+    "pathway_id": "error",
+    "sequence_number": 4,
+    "ritual_name": "寄生者晋升仪式",
+    "ritual_description": "Convince nine targets to willingly offer all they possess to sustain you.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-地下黑市",
+      "贝克兰德"
+    ],
+    "required_npc_or_condition": [
+      "Convince nine targets to willingly offer all they possess to sustain you."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_error_03_mentor_of_deceit",
+    "pathway_id": "error",
+    "sequence_number": 3,
+    "ritual_name": "欺瞒导师晋升仪式",
+    "ritual_description": "Without violence, find and exploit loopholes in rules to temporarily collapse order in a region. The area must be no smaller than a village, the smallest entity that can form a projection in the Spirit World.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-地下黑市",
+      "贝克兰德"
+    ],
+    "required_npc_or_condition": [
+      "Without violence, find and exploit loopholes in rules to temporarily collapse order in a region. The area must be no smaller than a village, the smallest entity that can form a projection in the Spirit World."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_error_02_trojan_horse_of_destiny",
+    "pathway_id": "error",
+    "sequence_number": 2,
+    "ritual_name": "命运木马晋升仪式",
+    "ritual_description": "Assume another's identity through disguise, deception, and other methods that don't involve Beyonder powers, then earn their social circle's trust until the identity dies naturally. Exceptions: Replacing someone on the verge of death, or someone who will die within three years；Higher‑tier targets shorten the ritual duration (With a minimum of six months; does not need to be maintained until the identity dies naturally).",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-地下黑市",
+      "贝克兰德"
+    ],
+    "required_npc_or_condition": [
+      "Assume another's identity through disguise, deception, and other methods that don't involve Beyonder powers, then earn their social circle's trust until the identity dies naturally. Exceptions: Replacing someone on the verge of death, or someone who will die within three years；Higher‑tier targets shorten the ritual duration (With a minimum of six months; does not need to be maintained until the identity dies naturally)."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_error_01_worm_of_time",
+    "pathway_id": "error",
+    "sequence_number": 1,
+    "ritual_name": "时之虫晋升仪式",
+    "ritual_description": "Plunge a city into temporal chaos for at least seven days.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-地下黑市",
+      "贝克兰德"
+    ],
+    "required_npc_or_condition": [
+      "Plunge a city into temporal chaos for at least seven days."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_error_00_error",
+    "pathway_id": "error",
+    "sequence_number": 0,
+    "ritual_name": "错误晋升仪式",
+    "ritual_description": "Replace someone during \"Their\" Sequence 0 apotheosis ritual. Similarly to Thunder God, this doesn't necessarly mean during the moment the target drink the Sequence 0 potion, but during their ritual itself, thus it is not obligatory to become a Dual God of the Error pathway and the pathway of the target.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-地下黑市",
+      "贝克兰德"
+    ],
+    "required_npc_or_condition": [
+      "Replace someone during \"Their\" Sequence 0 apotheosis ritual. Similarly to Thunder God, this doesn't necessarly mean during the moment the target drink the Sequence 0 potion, but during their ritual itself, thus it is not obligatory to become a Dual God of the Error pathway and the pathway of the target."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_door_05_traveler",
+    "pathway_id": "door",
+    "sequence_number": 5,
+    "ritual_name": "旅行家晋升仪式",
+    "ritual_description": "Set up special coordinates in four completely different spots deep in the Spirit World which are all set up extremely far away from each other.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贝克兰德",
+      "五海区域"
+    ],
+    "required_npc_or_condition": [
+      "Set up special coordinates in four completely different spots deep in the Spirit World which are all set up extremely far away from each other."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "频繁穿越边界会让玩家暴露在星空和未知存在的注视中。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_door_04_secrets_sorcerer",
+    "pathway_id": "door",
+    "sequence_number": 4,
+    "ritual_name": "秘法师晋升仪式",
+    "ritual_description": "Seal a creature of demigod level, the creature must be hostile toward you, lesser outside help used, better will the ritual's result.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贝克兰德",
+      "五海区域"
+    ],
+    "required_npc_or_condition": [
+      "Seal a creature of demigod level, the creature must be hostile toward you, lesser outside help used, better will the ritual's result."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "频繁穿越边界会让玩家暴露在星空和未知存在的注视中。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_door_03_wanderer",
+    "pathway_id": "door",
+    "sequence_number": 3,
+    "ritual_name": "漫游者晋升仪式",
+    "ritual_description": "Find three piece of Astral World information projected into the Spirit World, enter the dangerous scenarios derived from them, and record everything down in full detail and do not forget them.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贝克兰德",
+      "五海区域"
+    ],
+    "required_npc_or_condition": [
+      "Find three piece of Astral World information projected into the Spirit World, enter the dangerous scenarios derived from them, and record everything down in full detail and do not forget them."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "频繁穿越边界会让玩家暴露在星空和未知存在的注视中。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_door_02_planeswalker",
+    "pathway_id": "door",
+    "sequence_number": 2,
+    "ritual_name": "旅法师晋升仪式",
+    "ritual_description": "Leave legends about yourself at 9 different locations outside of this planet.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贝克兰德",
+      "五海区域"
+    ],
+    "required_npc_or_condition": [
+      "Leave legends about yourself at 9 different locations outside of this planet."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "频繁穿越边界会让玩家暴露在星空和未知存在的注视中。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_door_01_key_of_stars",
+    "pathway_id": "door",
+    "sequence_number": 1,
+    "ritual_name": "星之匙晋升仪式",
+    "ritual_description": "Find a continuously rotating, signal-emitting heavy planet, approach it, land on it, and then find a way to establish sufficient mystical connections with it.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贝克兰德",
+      "五海区域"
+    ],
+    "required_npc_or_condition": [
+      "Find a continuously rotating, signal-emitting heavy planet, approach it, land on it, and then find a way to establish sufficient mystical connections with it."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "频繁穿越边界会让玩家暴露在星空和未知存在的注视中。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_door_00_door",
+    "pathway_id": "door",
+    "sequence_number": 0,
+    "ritual_name": "门晋升仪式",
+    "ritual_description": "Break out of the seal or banishment of a True God.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贝克兰德",
+      "五海区域"
+    ],
+    "required_npc_or_condition": [
+      "Break out of the seal or banishment of a True God."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "频繁穿越边界会让玩家暴露在星空和未知存在的注视中。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_visionary_05_dreamwalker",
+    "pathway_id": "visionary",
+    "sequence_number": 5,
+    "ritual_name": "梦境行者晋升仪式",
+    "ritual_description": "Seek out a harpy in the Spirit World and sign a contract with it. Then, holding one tail feather, consume the potion amidst intense feelings of either joy or anger.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贵族社交圈",
+      "贝克兰德-心理案件",
+      "梦境副本"
+    ],
+    "required_npc_or_condition": [
+      "Seek out a harpy in the Spirit World and sign a contract with it. Then, holding one tail feather, consume the potion amidst intense feelings of either joy or anger."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越擅长影响他人，越容易把自我也当成可被编写的故事。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_visionary_04_manipulator",
+    "pathway_id": "visionary",
+    "sequence_number": 4,
+    "ritual_name": "操纵师晋升仪式",
+    "ritual_description": "In the middle of a grand event with at least 10,000 people, resonate with their emotions, then take the potion.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贵族社交圈",
+      "贝克兰德-心理案件",
+      "梦境副本"
+    ],
+    "required_npc_or_condition": [
+      "In the middle of a grand event with at least 10,000 people, resonate with their emotions, then take the potion."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越擅长影响他人，越容易把自我也当成可被编写的故事。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_visionary_03_dream_weaver",
+    "pathway_id": "visionary",
+    "sequence_number": 3,
+    "ritual_name": "织梦人晋升仪式",
+    "ritual_description": "Cause at least 100,000 people to have the same dream on the same night.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贵族社交圈",
+      "贝克兰德-心理案件",
+      "梦境副本"
+    ],
+    "required_npc_or_condition": [
+      "Cause at least 100,000 people to have the same dream on the same night."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越擅长影响他人，越容易把自我也当成可被编写的故事。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_visionary_02_discerner",
+    "pathway_id": "visionary",
+    "sequence_number": 2,
+    "ritual_name": "洞察者晋升仪式",
+    "ritual_description": "Delve into the subconscious of at least ten thousand humans, uncover their deepest fears, most primal desires, and the root of all their psychological issues, then leave a mark of oneself.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贵族社交圈",
+      "贝克兰德-心理案件",
+      "梦境副本"
+    ],
+    "required_npc_or_condition": [
+      "Delve into the subconscious of at least ten thousand humans, uncover their deepest fears, most primal desires, and the root of all their psychological issues, then leave a mark of oneself."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越擅长影响他人，越容易把自我也当成可被编写的故事。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_visionary_01_author",
+    "pathway_id": "visionary",
+    "sequence_number": 1,
+    "ritual_name": "作家晋升仪式",
+    "ritual_description": "Using real people as characters, write a medium- to long-length novel, and let the actual fates of those real people follow the story's plot to its conclusion, leaving corresponding imprints in both the Spirit World and the River of Fate.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贵族社交圈",
+      "贝克兰德-心理案件",
+      "梦境副本"
+    ],
+    "required_npc_or_condition": [
+      "Using real people as characters, write a medium- to long-length novel, and let the actual fates of those real people follow the story's plot to its conclusion, leaving corresponding imprints in both the Spirit World and the River of Fate."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越擅长影响他人，越容易把自我也当成可被编写的故事。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_visionary_00_visionary",
+    "pathway_id": "visionary",
+    "sequence_number": 0,
+    "ritual_name": "空想家晋升仪式",
+    "ritual_description": "Make the development of the times align with one's expectations. Then, consume the potion for advancement when it's at a certain time node in that trend.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-贵族社交圈",
+      "贝克兰德-心理案件",
+      "梦境副本"
+    ],
+    "required_npc_or_condition": [
+      "Make the development of the times align with one's expectations. Then, consume the potion for advancement when it's at a certain time node in that trend."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越擅长影响他人，越容易把自我也当成可被编写的故事。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_sun_05_priest_of_light",
+    "pathway_id": "sun",
+    "sequence_number": 5,
+    "ritual_name": "光之祭司晋升仪式",
+    "ritual_description": "In pure darkness, bury your entire body in ice that usually doesn't melt, before consuming the potion.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-教会区",
+      "神弃之地"
+    ],
+    "required_npc_or_condition": [
+      "In pure darkness, bury your entire body in ice that usually doesn't melt, before consuming the potion."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越接近纯粹光明，越容易把自己变成容不下灰色地带的审判工具。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_sun_04_unshadowed",
+    "pathway_id": "sun",
+    "sequence_number": 4,
+    "ritual_name": "无暗者晋升仪式",
+    "ritual_description": "Extract the strongest emotions that one is most unwilling to abandon before consuming the potion. Inject these emotions back again during this process.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-教会区",
+      "神弃之地"
+    ],
+    "required_npc_or_condition": [
+      "Extract the strongest emotions that one is most unwilling to abandon before consuming the potion. Inject these emotions back again during this process."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越接近纯粹光明，越容易把自己变成容不下灰色地带的审判工具。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_sun_03_justice_mentor",
+    "pathway_id": "sun",
+    "sequence_number": 3,
+    "ritual_name": "正义导师晋升仪式",
+    "ritual_description": "Clearly define what your justice is and uphold it for three years without the slightest violation or doing anything in conflict with that justice.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-教会区",
+      "神弃之地"
+    ],
+    "required_npc_or_condition": [
+      "Clearly define what your justice is and uphold it for three years without the slightest violation or doing anything in conflict with that justice."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越接近纯粹光明，越容易把自己变成容不下灰色地带的审判工具。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_sun_02_lightseeker",
+    "pathway_id": "sun",
+    "sequence_number": 2,
+    "ritual_name": "逐光者晋升仪式",
+    "ritual_description": "Find an item with at least an Angel-rank authority and a deep connection to the Sun in mysticism. Bind your most important memory—closely tied to your core justice—to this item, and place it before yourself.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-教会区",
+      "神弃之地"
+    ],
+    "required_npc_or_condition": [
+      "Find an item with at least an Angel-rank authority and a deep connection to the Sun in mysticism. Bind your most important memory—closely tied to your core justice—to this item, and place it before yourself."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越接近纯粹光明，越容易把自己变成容不下灰色地带的审判工具。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_sun_01_white_angel",
+    "pathway_id": "sun",
+    "sequence_number": 1,
+    "ritual_name": "纯白天使晋升仪式",
+    "ritual_description": "Receive sincere and exclusive praise and worship from 1,000,000 humans, including oneself — The higher the status, the fewer believers are needed, but oneself must be included and one must not lose their sense of self in the process.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-教会区",
+      "神弃之地"
+    ],
+    "required_npc_or_condition": [
+      "Receive sincere and exclusive praise and worship from 1,000,000 humans, including oneself — The higher the status, the fewer believers are needed, but oneself must be included and one must not lose their sense of self in the process."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越接近纯粹光明，越容易把自己变成容不下灰色地带的审判工具。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_sun_00_sun",
+    "pathway_id": "sun",
+    "sequence_number": 0,
+    "ritual_name": "太阳晋升仪式",
+    "ritual_description": "Consume the potion in either the darkness that's the destination of all things or in the all-encompassing color of the Chaos Sea. '''Note 1:''' The Ancient Sun God emerged by fulfilling the latter condition. Aucuses leveraged the power of the Evernight Goddess during the divine war of that time.；'''Note 2:''' Falling into the darkness that's the destination of all things is extremely dangerous and may result in immediate death—even if the one unleashing that power is your ally.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-教会区",
+      "神弃之地"
+    ],
+    "required_npc_or_condition": [
+      "Consume the potion in either the darkness that's the destination of all things or in the all-encompassing color of the Chaos Sea. '''Note 1:''' The Ancient Sun God emerged by fulfilling the latter condition. Aucuses leveraged the power of the Evernight Goddess during the divine war of that time.；'''Note 2:''' Falling into the darkness that's the destination of all things is extremely dangerous and may result in immediate death—even if the one unleashing that power is your ally."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越接近纯粹光明，越容易把自己变成容不下灰色地带的审判工具。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_tyrant_05_ocean_songster",
+    "pathway_id": "tyrant",
+    "sequence_number": 5,
+    "ritual_name": "海洋歌者晋升仪式",
+    "ritual_description": "Take the potion in the belly of an Obninsk.",
+    "required_items": [],
+    "required_location": [
+      "五海区域",
+      "风暴教会港口"
+    ],
+    "required_npc_or_condition": [
+      "Take the potion in the belly of an Obninsk."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "愤怒、支配欲和灾难权柄会使使用者越来越像不可质疑的暴君。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_tyrant_04_cataclysmic_interrer",
+    "pathway_id": "tyrant",
+    "sequence_number": 4,
+    "ritual_name": "灾难主祭晋升仪式",
+    "ritual_description": "Cause an earthquake and tsunami, drink the potion amidst this environment until the ascension is over.",
+    "required_items": [],
+    "required_location": [
+      "五海区域",
+      "风暴教会港口"
+    ],
+    "required_npc_or_condition": [
+      "Cause an earthquake and tsunami, drink the potion amidst this environment until the ascension is over."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "愤怒、支配欲和灾难权柄会使使用者越来越像不可质疑的暴君。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_tyrant_03_sea_king",
+    "pathway_id": "tyrant",
+    "sequence_number": 3,
+    "ritual_name": "海王晋升仪式",
+    "ritual_description": "Select a sea region, build with your own power a stone tower on the seafloor reaching the surface, then subdue all powerful creatures within a 300-nautical-mile radius.",
+    "required_items": [],
+    "required_location": [
+      "五海区域",
+      "风暴教会港口"
+    ],
+    "required_npc_or_condition": [
+      "Select a sea region, build with your own power a stone tower on the seafloor reaching the surface, then subdue all powerful creatures within a 300-nautical-mile radius."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "愤怒、支配欲和灾难权柄会使使用者越来越像不可质疑的暴君。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_tyrant_02_calamity",
+    "pathway_id": "tyrant",
+    "sequence_number": 2,
+    "ritual_name": "天灾晋升仪式",
+    "ritual_description": "With only your own strength, trigger a natural disaster affecting at least one million people. At the peak of their fear and despair, reveal yourself and halt the disaster—this stage must also rely solely on your own power.",
+    "required_items": [],
+    "required_location": [
+      "五海区域",
+      "风暴教会港口"
+    ],
+    "required_npc_or_condition": [
+      "With only your own strength, trigger a natural disaster affecting at least one million people. At the peak of their fear and despair, reveal yourself and halt the disaster—this stage must also rely solely on your own power."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "愤怒、支配欲和灾难权柄会使使用者越来越像不可质疑的暴君。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_tyrant_01_thunder_god",
+    "pathway_id": "tyrant",
+    "sequence_number": 1,
+    "ritual_name": "雷神晋升仪式",
+    "ritual_description": "Find and harness lightning to disrupt at least three Sequence 2 Angels' advancement rituals to Sequence 1 (optimal if the angels belong to the Hanged Man,White Tower, Visionary, Sun, or Tyrant Pathways). Interrupting a ritual to Sequence 0 will count as completing it in one go.；Interrupting a ritual isn't limited to drinking the potion but any part of the ritual, such as blowing up the marionette town of a Miracle Invoker that want to advance to Attendant of Mysteries.",
+    "required_items": [],
+    "required_location": [
+      "五海区域",
+      "风暴教会港口"
+    ],
+    "required_npc_or_condition": [
+      "Find and harness lightning to disrupt at least three Sequence 2 Angels' advancement rituals to Sequence 1 (optimal if the angels belong to the Hanged Man,White Tower, Visionary, Sun, or Tyrant Pathways). Interrupting a ritual to Sequence 0 will count as completing it in one go.；Interrupting a ritual isn't limited to drinking the potion but any part of the ritual, such as blowing up the marionette town of a Miracle Invoker that want to advance to Attendant of Mysteries."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "愤怒、支配欲和灾难权柄会使使用者越来越像不可质疑的暴君。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_tyrant_00_tyrant",
+    "pathway_id": "tyrant",
+    "sequence_number": 0,
+    "ritual_name": "暴君晋升仪式",
+    "ritual_description": "Gather over 100,000 followers. They must submit and believe in the person out of fear.；Challenge a Sequence 0 True God and survive.；After surviving the challenge, drink the potion under the watch of the fearful followers.",
+    "required_items": [],
+    "required_location": [
+      "五海区域",
+      "风暴教会港口"
+    ],
+    "required_npc_or_condition": [
+      "Gather over 100,000 followers. They must submit and believe in the person out of fear.；Challenge a Sequence 0 True God and survive.；After surviving the challenge, drink the potion under the watch of the fearful followers."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "愤怒、支配欲和灾难权柄会使使用者越来越像不可质疑的暴君。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_white_tower_05_mysticism_magister",
+    "pathway_id": "white_tower",
+    "sequence_number": 5,
+    "ritual_name": "秘术导师晋升仪式",
+    "ritual_description": "Train at least 50 Erudites or；5 Mid Sequence Beyonders who have independently comprehended the Acting Method.；The former is the all-rounder polymath direction. The latter is about which pathways of knowledge one is more proficient in depending on which pathways the Beyonders you taught are from.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-大学档案",
+      "贝克兰德-图书馆",
+      "知识与智慧教会"
+    ],
+    "required_npc_or_condition": [
+      "Train at least 50 Erudites or；5 Mid Sequence Beyonders who have independently comprehended the Acting Method.；The former is the all-rounder polymath direction. The latter is about which pathways of knowledge one is more proficient in depending on which pathways the Beyonders you taught are from."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "过量知识会让使用者被信息洪流和未经消化的神秘学规则压垮。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_white_tower_04_prophet",
+    "pathway_id": "white_tower",
+    "sequence_number": 4,
+    "ritual_name": "预言家晋升仪式",
+    "ritual_description": "Find fragments of information about one's own future in the chaotic, overlapping spacetime of the Spirit World and make them a reality.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-大学档案",
+      "贝克兰德-图书馆",
+      "知识与智慧教会"
+    ],
+    "required_npc_or_condition": [
+      "Find fragments of information about one's own future in the chaotic, overlapping spacetime of the Spirit World and make them a reality."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "过量知识会让使用者被信息洪流和未经消化的神秘学规则压垮。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_white_tower_03_cognizer",
+    "pathway_id": "white_tower",
+    "sequence_number": 3,
+    "ritual_name": "洞悉者晋升仪式",
+    "ritual_description": "Analyze either the Flesh and Blood or the Beyonder Characteristics of an Angel from the Hermit Pathway or the Paragon Pathway and grasp at least one-third of the knowledge they contain. Or obtain the blessing of one of them.；Can be substituted by a corresponding Sealed Artifact",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-大学档案",
+      "贝克兰德-图书馆",
+      "知识与智慧教会"
+    ],
+    "required_npc_or_condition": [
+      "Analyze either the Flesh and Blood or the Beyonder Characteristics of an Angel from the Hermit Pathway or the Paragon Pathway and grasp at least one-third of the knowledge they contain. Or obtain the blessing of one of them.；Can be substituted by a corresponding Sealed Artifact"
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "过量知识会让使用者被信息洪流和未经消化的神秘学规则压垮。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_white_tower_02_wisdom_angel",
+    "pathway_id": "white_tower",
+    "sequence_number": 2,
+    "ritual_name": "智天使晋升仪式",
+    "ritual_description": "Use intellect rather than strength to bring down an angel.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-大学档案",
+      "贝克兰德-图书馆",
+      "知识与智慧教会"
+    ],
+    "required_npc_or_condition": [
+      "Use intellect rather than strength to bring down an angel."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "过量知识会让使用者被信息洪流和未经消化的神秘学规则压垮。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_white_tower_01_omniscient_eye",
+    "pathway_id": "white_tower",
+    "sequence_number": 1,
+    "ritual_name": "全知之眼晋升仪式",
+    "ritual_description": "Briefly enter a semi-chaotic state, but retain basic consciousness and rationality, and take the potion in that state. The methods include, but are not limited to, the Chaos influence from Demoness, the corruption of the Chaos Sea, and so on.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-大学档案",
+      "贝克兰德-图书馆",
+      "知识与智慧教会"
+    ],
+    "required_npc_or_condition": [
+      "Briefly enter a semi-chaotic state, but retain basic consciousness and rationality, and take the potion in that state. The methods include, but are not limited to, the Chaos influence from Demoness, the corruption of the Chaos Sea, and so on."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "过量知识会让使用者被信息洪流和未经消化的神秘学规则压垮。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_white_tower_00_white_tower",
+    "pathway_id": "white_tower",
+    "sequence_number": 0,
+    "ritual_name": "白塔晋升仪式",
+    "ritual_description": "Participate in a calamity brought by an existence beyond Sequence 0 and survive (the conditions are also met by a Sefirah if the ritual performer has the knowledge of the corresponding Sefirah's Great Old One). The principle behind the ritual is the symbolism of \"Knowledge leading to Calamity\".",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-大学档案",
+      "贝克兰德-图书馆",
+      "知识与智慧教会"
+    ],
+    "required_npc_or_condition": [
+      "Participate in a calamity brought by an existence beyond Sequence 0 and survive (the conditions are also met by a Sefirah if the ritual performer has the knowledge of the corresponding Sefirah's Great Old One). The principle behind the ritual is the symbolism of \"Knowledge leading to Calamity\"."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "过量知识会让使用者被信息洪流和未经消化的神秘学规则压垮。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hanged_man_05_shepherd",
+    "pathway_id": "hanged_man",
+    "sequence_number": 5,
+    "ritual_name": "牧羊人晋升仪式",
+    "ritual_description": "Extract one's soul from the body.；Influence the soulless body to consume the potion.；Reintegrate the soul to complete the ascension.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-邪教案件",
+      "极光会据点",
+      "地下污染副本"
+    ],
+    "required_npc_or_condition": [
+      "Extract one's soul from the body.；Influence the soulless body to consume the potion.；Reintegrate the soul to complete the ascension."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "倾听越深，越容易被堕落低语、血肉异化和真实造物主污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hanged_man_04_black_knight",
+    "pathway_id": "hanged_man",
+    "sequence_number": 4,
+    "ritual_name": "黑骑士晋升仪式",
+    "ritual_description": "Induce the complete degeneration of over 10,000 individuals without using violence.；The higher the sequence of the degenerate individuals, the better the ritual effect.；The more concentrated the transformation from normalcy to degeneracy in time, the more effective the ritual becomes.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-邪教案件",
+      "极光会据点",
+      "地下污染副本"
+    ],
+    "required_npc_or_condition": [
+      "Induce the complete degeneration of over 10,000 individuals without using violence.；The higher the sequence of the degenerate individuals, the better the ritual effect.；The more concentrated the transformation from normalcy to degeneracy in time, the more effective the ritual becomes."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "倾听越深，越容易被堕落低语、血肉异化和真实造物主污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hanged_man_03_trinity_templar",
+    "pathway_id": "hanged_man",
+    "sequence_number": 3,
+    "ritual_name": "三首圣堂晋升仪式",
+    "ritual_description": "Use various methods to induce a controlled personality split without losing control.；'''Note''': If the personality split already exists from previous Sequences, ascending will result in immediate loss of control.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-邪教案件",
+      "极光会据点",
+      "地下污染副本"
+    ],
+    "required_npc_or_condition": [
+      "Use various methods to induce a controlled personality split without losing control.；'''Note''': If the personality split already exists from previous Sequences, ascending will result in immediate loss of control."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "倾听越深，越容易被堕落低语、血肉异化和真实造物主污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hanged_man_02_profane_presbyter",
+    "pathway_id": "hanged_man",
+    "sequence_number": 2,
+    "ritual_name": "秽语长老晋升仪式",
+    "ritual_description": "Separate, defeat, and fully control one's own shadow.；Enter the Shadow World, confront dangers, and establish a personal \"domain\" within it.；The Shadow World is an alternate dimension intersecting with the Mirror World.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-邪教案件",
+      "极光会据点",
+      "地下污染副本"
+    ],
+    "required_npc_or_condition": [
+      "Separate, defeat, and fully control one's own shadow.；Enter the Shadow World, confront dangers, and establish a personal \"domain\" within it.；The Shadow World is an alternate dimension intersecting with the Mirror World."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "倾听越深，越容易被堕落低语、血肉异化和真实造物主污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hanged_man_01_dark_angel",
+    "pathway_id": "hanged_man",
+    "sequence_number": 1,
+    "ritual_name": "暗天使晋升仪式",
+    "ritual_description": "Fly toward the mystically conceptualized Sun.；Endure for 15 minutes to merge with the shadow of light.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-邪教案件",
+      "极光会据点",
+      "地下污染副本"
+    ],
+    "required_npc_or_condition": [
+      "Fly toward the mystically conceptualized Sun.；Endure for 15 minutes to merge with the shadow of light."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "倾听越深，越容易被堕落低语、血肉异化和真实造物主污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hanged_man_00_hanged_man",
+    "pathway_id": "hanged_man",
+    "sequence_number": 0,
+    "ritual_name": "倒吊人晋升仪式",
+    "ritual_description": "Walk upon the Chaos Sea, dissolve one's shadow into it while ensuring:；The body does not sink；The mind does not fall；Meeting the requirement entails the body not fully sinking and the spirit not fully descending into degeneracy.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-邪教案件",
+      "极光会据点",
+      "地下污染副本"
+    ],
+    "required_npc_or_condition": [
+      "Walk upon the Chaos Sea, dissolve one's shadow into it while ensuring:；The body does not sink；The mind does not fall；Meeting the requirement entails the body not fully sinking and the spirit not fully descending into degeneracy."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "倾听越深，越容易被堕落低语、血肉异化和真实造物主污染吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_darkness_05_spirit_warlock",
+    "pathway_id": "darkness",
+    "sequence_number": 5,
+    "ritual_name": "灵巫晋升仪式",
+    "ritual_description": "Enter the Spirit World with your physical body instead of your soul.；Find and merge with the key information reflecting your true self within the Spirit World.；Consume the potion.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-黑夜教会",
+      "灵界边缘"
+    ],
+    "required_npc_or_condition": [
+      "Enter the Spirit World with your physical body instead of your soul.；Find and merge with the key information reflecting your true self within the Spirit World.；Consume the potion."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "长期接触梦境、灵界和隐秘力量会使自我被夜色、安眠和厄运慢慢覆盖。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_darkness_04_nightwatcher",
+    "pathway_id": "darkness",
+    "sequence_number": 4,
+    "ritual_name": "守夜人晋升仪式",
+    "ritual_description": "Collect bloodline characteristics of True Deities' descendants and use them to draw a soul-soothing magic circle. '''Note 1''': Different Deity bloodlines will grant distinct Nightwatcher abilities.；'''Note 2''': Pathway-switchers must use bloodlines from one of the 3 corresponding Deities of the Eternal Darkness group.；'''Note 3''': Both descendants born after becoming a god and before becoming a god work. Even the bloodline from before becoming a god will have special properties.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-黑夜教会",
+      "灵界边缘"
+    ],
+    "required_npc_or_condition": [
+      "Collect bloodline characteristics of True Deities' descendants and use them to draw a soul-soothing magic circle. '''Note 1''': Different Deity bloodlines will grant distinct Nightwatcher abilities.；'''Note 2''': Pathway-switchers must use bloodlines from one of the 3 corresponding Deities of the Eternal Darkness group.；'''Note 3''': Both descendants born after becoming a god and before becoming a god work. Even the bloodline from before becoming a god will have special properties."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "长期接触梦境、灵界和隐秘力量会使自我被夜色、安眠和厄运慢慢覆盖。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_darkness_03_horror_bishop",
+    "pathway_id": "darkness",
+    "sequence_number": 3,
+    "ritual_name": "恐惧主教晋升仪式",
+    "ritual_description": "Face a situation that genuinely brings death, confronting the deepest biological fears.；Survival isn't mandatory—what matters is overcoming or accepting the fear.；Failure results in true death even after potion consumption.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-黑夜教会",
+      "灵界边缘"
+    ],
+    "required_npc_or_condition": [
+      "Face a situation that genuinely brings death, confronting the deepest biological fears.；Survival isn't mandatory—what matters is overcoming or accepting the fear.；Failure results in true death even after potion consumption."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "长期接触梦境、灵界和隐秘力量会使自我被夜色、安眠和厄运慢慢覆盖。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_darkness_02_servant_of_concealment",
+    "pathway_id": "darkness",
+    "sequence_number": 2,
+    "ritual_name": "隐秘之仆晋升仪式",
+    "ritual_description": "Sever all social ties and external influences.；Avoid influencing others or being influenced by others.；Live isolated in darkness and silence for 3 years without going mad.；'''Note 1''': Worms of Time can normally use a Bug whenever there are time limits, however, the passage of time cannot be directly accelerated to reduce the real time required because this invalidates the second point of the ritual.；'''Note 2''': Ritual assistance would need to come from the Fool Pathway or the Wheel of Fortune Pathway.；'''Note 3''': Slumber doesn't count. So, transmigrators like Klein or the Evernight Goddess didn't meet the condition since there is a restriction: living alone.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-黑夜教会",
+      "灵界边缘"
+    ],
+    "required_npc_or_condition": [
+      "Sever all social ties and external influences.；Avoid influencing others or being influenced by others.；Live isolated in darkness and silence for 3 years without going mad.；'''Note 1''': Worms of Time can normally use a Bug whenever there are time limits, however, the passage of time cannot be directly accelerated to reduce the real time required because this invalidates the second point of the ritual.；'''Note 2''': Ritual assistance would need to come from the Fool Pathway or the Wheel of Fortune Pathway.；'''Note 3''': Slumber doesn't count. So, transmigrators like Klein or the Evernight Goddess didn't meet the condition since there is a restriction: living alone."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "长期接触梦境、灵界和隐秘力量会使自我被夜色、安眠和厄运慢慢覆盖。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_darkness_01_knight_of_misfortune",
+    "pathway_id": "darkness",
+    "sequence_number": 1,
+    "ritual_name": "厄难骑士晋升仪式",
+    "ritual_description": "Bring Misfortune to either:；An Archangel；A civilization；A continent；A planet；Note: In short, it is equivalent to \"Your misfortune is me.\"",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-黑夜教会",
+      "灵界边缘"
+    ],
+    "required_npc_or_condition": [
+      "Bring Misfortune to either:；An Archangel；A civilization；A continent；A planet；Note: In short, it is equivalent to \"Your misfortune is me.\""
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "长期接触梦境、灵界和隐秘力量会使自我被夜色、安眠和厄运慢慢覆盖。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_darkness_00_darkness",
+    "pathway_id": "darkness",
+    "sequence_number": 0,
+    "ritual_name": "黑暗晋升仪式",
+    "ritual_description": "Induce eternal slumber upon either:；A Uniqueness；A Divine Kingdom；A True Deity；The higher the difficulty of the ritual, the better the effects.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-黑夜教会",
+      "灵界边缘"
+    ],
+    "required_npc_or_condition": [
+      "Induce eternal slumber upon either:；A Uniqueness；A Divine Kingdom；A True Deity；The higher the difficulty of the ritual, the better the effects."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "长期接触梦境、灵界和隐秘力量会使自我被夜色、安眠和厄运慢慢覆盖。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_death_05_gatekeeper",
+    "pathway_id": "death",
+    "sequence_number": 5,
+    "ritual_name": "看门人晋升仪式",
+    "ritual_description": "Find a place where the aura of the Underworld leaks through, make contact, and survive.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-墓园",
+      "南大陆-拜朗遗迹",
+      "五海区域-幽灵船海域"
+    ],
+    "required_npc_or_condition": [
+      "Find a place where the aura of the Underworld leaks through, make contact, and survive."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越频繁接触死者世界，越容易被亡者记忆、冥界气息和死亡秩序同化。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_death_04_undying",
+    "pathway_id": "death",
+    "sequence_number": 4,
+    "ritual_name": "不死者晋升仪式",
+    "ritual_description": "Locate an underground river tainted by death. Hold a genuine funeral by its banks, then bury yourself and the potion there for sixty days. If you fail to survive or retain sufficient sanity after sixty days, the ritual fails. '''Note 1:''' Failure invariably results in the birth of a dangerous Corpse King.；'''Note 2:''' Many Western Continent cultivators misunderstand this ritual's true purpose. Lacking Beyonder characteristics, they instead focus on the \"failure\" outcome, believing it to be the true success—a chance to refine terrifying Jiangshi.；'''Note 3:''' Some cultivators have modified this ritual, creating Xian Ascension Techniques akin to '''Supreme Yin Body Refinement'''. The \"Supreme Yin\" essence represents the moon's purity, the water's brilliance, the far north's intent, winter's zenith, and the duality of yin and yang. The flaws and root causes of this method's issues… well, I don't need to elaborate further, do I?",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-墓园",
+      "南大陆-拜朗遗迹",
+      "五海区域-幽灵船海域"
+    ],
+    "required_npc_or_condition": [
+      "Locate an underground river tainted by death. Hold a genuine funeral by its banks, then bury yourself and the potion there for sixty days. If you fail to survive or retain sufficient sanity after sixty days, the ritual fails. '''Note 1:''' Failure invariably results in the birth of a dangerous Corpse King.；'''Note 2:''' Many Western Continent cultivators misunderstand this ritual's true purpose. Lacking Beyonder characteristics, they instead focus on the \"failure\" outcome, believing it to be the true success—a chance to refine terrifying Jiangshi.；'''Note 3:''' Some cultivators have modified this ritual, creating Xian Ascension Techniques akin to '''Supreme Yin Body Refinement'''. The \"Supreme Yin\" essence represents the moon's purity, the water's brilliance, the far north's intent, winter's zenith, and the duality of yin and yang. The flaws and root causes of this method's issues… well, I don't need to elaborate further, do I?"
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越频繁接触死者世界，越容易被亡者记忆、冥界气息和死亡秩序同化。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_death_03_ferryman",
+    "pathway_id": "death",
+    "sequence_number": 3,
+    "ritual_name": "摆渡人晋升仪式",
+    "ritual_description": "Step through a self-summoned Underworld Gate, ingest the potion, and die within. '''Note 1:''' From then on, the '''Ferryman''' becomes part of the Underworld and death itself.；'''Note 2:''' Before the Phoenix Ancestor established the Underworld and before the First Blasphemy Slate appeared, this ritual didn't exist.；'''Note 3:''' In the Western Continent, whether it's the Haoli Land, the Yellow Springs, or the Netherworld, each serves the same effect as the Underworld.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-墓园",
+      "南大陆-拜朗遗迹",
+      "五海区域-幽灵船海域"
+    ],
+    "required_npc_or_condition": [
+      "Step through a self-summoned Underworld Gate, ingest the potion, and die within. '''Note 1:''' From then on, the '''Ferryman''' becomes part of the Underworld and death itself.；'''Note 2:''' Before the Phoenix Ancestor established the Underworld and before the First Blasphemy Slate appeared, this ritual didn't exist.；'''Note 3:''' In the Western Continent, whether it's the Haoli Land, the Yellow Springs, or the Netherworld, each serves the same effect as the Underworld."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越频繁接触死者世界，越容易被亡者记忆、冥界气息和死亡秩序同化。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_death_02_death_consul",
+    "pathway_id": "death",
+    "sequence_number": 2,
+    "ritual_name": "死亡执政官晋升仪式",
+    "ritual_description": "Become the ruler of one layer of the Underworld or transform an entire nation into a land of the dead, then anchor the Underworld Gate within it. '''Note 1:''' For descendants acknowledged by the God of Death, the first method is straightforward.；'''Note 2:''' '''Death Consuls''' hold authority to judge the dead. In the Western Continent, figures like the '''Ten Yama Kings''' and '''Five Ghost Emperors''' share similar duties.；'''Note 3:''' The Western Continent's Netherworld also holds authority over reincarnation.；'''Note 4:''' Before the Underworld was created by the Phoenix Ancestor, one can only advance to Sequence 2 by luck.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-墓园",
+      "南大陆-拜朗遗迹",
+      "五海区域-幽灵船海域"
+    ],
+    "required_npc_or_condition": [
+      "Become the ruler of one layer of the Underworld or transform an entire nation into a land of the dead, then anchor the Underworld Gate within it. '''Note 1:''' For descendants acknowledged by the God of Death, the first method is straightforward.；'''Note 2:''' '''Death Consuls''' hold authority to judge the dead. In the Western Continent, figures like the '''Ten Yama Kings''' and '''Five Ghost Emperors''' share similar duties.；'''Note 3:''' The Western Continent's Netherworld also holds authority over reincarnation.；'''Note 4:''' Before the Underworld was created by the Phoenix Ancestor, one can only advance to Sequence 2 by luck."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越频繁接触死者世界，越容易被亡者记忆、冥界气息和死亡秩序同化。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_death_01_pale_emperor",
+    "pathway_id": "death",
+    "sequence_number": 1,
+    "ritual_name": "死亡执政官晋升仪式",
+    "ritual_description": "Ensure your name becomes synonymous with death and the afterlife, remembered and recited by most sentient beings in your domain. '''Note 1:''' Due to the Barrier, the Northern and Southern Continents are isolated from the outside world, and are therefore treated as a separate domain in mysticism—otherwise, completing this ritual would be far harder.；Without the Barrier, the range required for this ritual is a Star System. '''Note 2:''' The same applies to the Western Continent.；'''Note 3:''' The same applies to the Forsaken Land of the Gods.；'''Note 4:''' In the Western Continent, figures like the '''Great Emperor of Fengdu''' and the Buddhist '''Ksitigarbha''' possess comparable authority and status.；'''Note 5:''' Since the God of Death is still widely regarded as the embodiment of death in the Northern and Southern Continents, \"His\" descendants can borrow \"His\" name to shape themselves and complete the ritual. The drawback? They grow increasingly similar to the God of Death—until they become \"Him\".",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-墓园",
+      "南大陆-拜朗遗迹",
+      "五海区域-幽灵船海域"
+    ],
+    "required_npc_or_condition": [
+      "Ensure your name becomes synonymous with death and the afterlife, remembered and recited by most sentient beings in your domain. '''Note 1:''' Due to the Barrier, the Northern and Southern Continents are isolated from the outside world, and are therefore treated as a separate domain in mysticism—otherwise, completing this ritual would be far harder.；Without the Barrier, the range required for this ritual is a Star System. '''Note 2:''' The same applies to the Western Continent.；'''Note 3:''' The same applies to the Forsaken Land of the Gods.；'''Note 4:''' In the Western Continent, figures like the '''Great Emperor of Fengdu''' and the Buddhist '''Ksitigarbha''' possess comparable authority and status.；'''Note 5:''' Since the God of Death is still widely regarded as the embodiment of death in the Northern and Southern Continents, \"His\" descendants can borrow \"His\" name to shape themselves and complete the ritual. The drawback? They grow increasingly similar to the God of Death—until they become \"Him\"."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越频繁接触死者世界，越容易被亡者记忆、冥界气息和死亡秩序同化。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_death_00_death",
+    "pathway_id": "death",
+    "sequence_number": 0,
+    "ritual_name": "死神晋升仪式",
+    "ritual_description": "Create or merge with a true final destination for the dead, ensuring all deaths in the domain lead there.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-墓园",
+      "南大陆-拜朗遗迹",
+      "五海区域-幽灵船海域"
+    ],
+    "required_npc_or_condition": [
+      "Create or merge with a true final destination for the dead, ensuring all deaths in the domain lead there."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "越频繁接触死者世界，越容易被亡者记忆、冥界气息和死亡秩序同化。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_twilight_giant_05_guardian",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 5,
+    "ritual_name": "守护者晋升仪式",
+    "ritual_description": "Find a Person or Group you want to protect and dedicate yourself to, protecting them for at least a year.",
+    "required_items": [],
+    "required_location": [
+      "弗萨克帝国-北境",
+      "神弃之地-巨人王庭",
+      "鲁恩王国-战场支线"
+    ],
+    "required_npc_or_condition": [
+      "Find a Person or Group you want to protect and dedicate yourself to, protecting them for at least a year."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "身体巨大化、笨重化和黄昏衰败污染会使使用者逐渐变成一座仍在战斗的巨人遗迹。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_twilight_giant_04_demon_hunter",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 4,
+    "ritual_name": "猎魔者晋升仪式",
+    "ritual_description": "Resolve a problem or disaster caused by a powerful Demon or Evil Creature. Note: Powerful is defined as possessing godhood.",
+    "required_items": [],
+    "required_location": [
+      "弗萨克帝国-北境",
+      "神弃之地-巨人王庭",
+      "鲁恩王国-战场支线"
+    ],
+    "required_npc_or_condition": [
+      "Resolve a problem or disaster caused by a powerful Demon or Evil Creature. Note: Powerful is defined as possessing godhood."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "身体巨大化、笨重化和黄昏衰败污染会使使用者逐渐变成一座仍在战斗的巨人遗迹。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_twilight_giant_03_silver_knight",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 3,
+    "ritual_name": "银骑士晋升仪式",
+    "ritual_description": "Arrange a complex altar and place the remains of six powerful creatures that were hunted by oneself in the correct order and receive the blessing of a God (Angel-level at minimum). The six creatures shouldn't necessarily be monsters, six Demigod-level Beyonders would also suffice.",
+    "required_items": [],
+    "required_location": [
+      "弗萨克帝国-北境",
+      "神弃之地-巨人王庭",
+      "鲁恩王国-战场支线"
+    ],
+    "required_npc_or_condition": [
+      "Arrange a complex altar and place the remains of six powerful creatures that were hunted by oneself in the correct order and receive the blessing of a God (Angel-level at minimum). The six creatures shouldn't necessarily be monsters, six Demigod-level Beyonders would also suffice."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "身体巨大化、笨重化和黄昏衰败污染会使使用者逐渐变成一座仍在战斗的巨人遗迹。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_twilight_giant_02_glory",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 2,
+    "ritual_name": "荣耀者晋升仪式",
+    "ritual_description": "Fight an Angel or a Creature of equal power on your own (using beyonder items is allowed). Or kill enough Enemies or Blasphemers on behalf of the God who blessed you.",
+    "required_items": [],
+    "required_location": [
+      "弗萨克帝国-北境",
+      "神弃之地-巨人王庭",
+      "鲁恩王国-战场支线"
+    ],
+    "required_npc_or_condition": [
+      "Fight an Angel or a Creature of equal power on your own (using beyonder items is allowed). Or kill enough Enemies or Blasphemers on behalf of the God who blessed you."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "身体巨大化、笨重化和黄昏衰败污染会使使用者逐渐变成一座仍在战斗的巨人遗迹。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_twilight_giant_01_hand_of_god",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 1,
+    "ritual_name": "神明之手晋升仪式",
+    "ritual_description": "Swear allegiance to a certain god or become a Servant of the River Styx . Any tributary of the River of Eternal Darkness suffices to become a Servant.",
+    "required_items": [],
+    "required_location": [
+      "弗萨克帝国-北境",
+      "神弃之地-巨人王庭",
+      "鲁恩王国-战场支线"
+    ],
+    "required_npc_or_condition": [
+      "Swear allegiance to a certain god or become a Servant of the River Styx . Any tributary of the River of Eternal Darkness suffices to become a Servant."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "身体巨大化、笨重化和黄昏衰败污染会使使用者逐渐变成一座仍在战斗的巨人遗迹。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_twilight_giant_00_twilight_giant",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 0,
+    "ritual_name": "黄昏巨人晋升仪式",
+    "ritual_description": "Witness and participate in the entire process of a race or continent from its rise to its decline and eventual extinction.",
+    "required_items": [],
+    "required_location": [
+      "弗萨克帝国-北境",
+      "神弃之地-巨人王庭",
+      "鲁恩王国-战场支线"
+    ],
+    "required_npc_or_condition": [
+      "Witness and participate in the entire process of a race or continent from its rise to its decline and eventual extinction."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "身体巨大化、笨重化和黄昏衰败污染会使使用者逐渐变成一座仍在战斗的巨人遗迹。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_demoness_05_affliction",
+    "pathway_id": "demoness",
+    "sequence_number": 5,
+    "ritual_name": "痛苦晋升仪式",
+    "ritual_description": "Without substitutes, be burned at the stake for fifteen minutes and survive without going mad.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-魔女教派",
+      "因蒂斯共和国-政治阴谋",
+      "镜中空间"
+    ],
+    "required_npc_or_condition": [
+      "Without substitutes, be burned at the stake for fifteen minutes and survive without going mad."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "魅惑、疾病和灾祸将使用者与苦难绑定，越是传播灾难，越难保持自我边界。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_demoness_04_despair",
+    "pathway_id": "demoness",
+    "sequence_number": 4,
+    "ritual_name": "绝望晋升仪式",
+    "ritual_description": "Involve over thirty thousand people in a severe plague. The more that die, the stronger the despair and suffering, the better the ritual effect.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-魔女教派",
+      "因蒂斯共和国-政治阴谋",
+      "镜中空间"
+    ],
+    "required_npc_or_condition": [
+      "Involve over thirty thousand people in a severe plague. The more that die, the stronger the despair and suffering, the better the ritual effect."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "魅惑、疾病和灾祸将使用者与苦难绑定，越是传播灾难，越难保持自我边界。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_demoness_03_unaging",
+    "pathway_id": "demoness",
+    "sequence_number": 3,
+    "ritual_name": "不老晋升仪式",
+    "ritual_description": "Find your mirror self, enslave them solely with your own power, or make them truly infatuated with you, or reconcile with them.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-魔女教派",
+      "因蒂斯共和国-政治阴谋",
+      "镜中空间"
+    ],
+    "required_npc_or_condition": [
+      "Find your mirror self, enslave them solely with your own power, or make them truly infatuated with you, or reconcile with them."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "魅惑、疾病和灾祸将使用者与苦难绑定，越是传播灾难，越难保持自我边界。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_demoness_02_catastrophe",
+    "pathway_id": "demoness",
+    "sequence_number": 2,
+    "ritual_name": "灾难晋升仪式",
+    "ritual_description": "As a participant, cause a disaster affecting the entire continent, and advance during the disaster.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-魔女教派",
+      "因蒂斯共和国-政治阴谋",
+      "镜中空间"
+    ],
+    "required_npc_or_condition": [
+      "As a participant, cause a disaster affecting the entire continent, and advance during the disaster."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "魅惑、疾病和灾祸将使用者与苦难绑定，越是传播灾难，越难保持自我边界。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_demoness_01_apocalypse",
+    "pathway_id": "demoness",
+    "sequence_number": 1,
+    "ritual_name": "末日晋升仪式",
+    "ritual_description": "Any one of the three rituals is effective: Advance at the universally acknowledged end of an epoch or the beginning of the next.；Advance during the signs and process of the apocalypse's arrival.；Advance when one's own involvement leads to the fall of a deity.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-魔女教派",
+      "因蒂斯共和国-政治阴谋",
+      "镜中空间"
+    ],
+    "required_npc_or_condition": [
+      "Any one of the three rituals is effective: Advance at the universally acknowledged end of an epoch or the beginning of the next.；Advance during the signs and process of the apocalypse's arrival.；Advance when one's own involvement leads to the fall of a deity."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "魅惑、疾病和灾祸将使用者与苦难绑定，越是传播灾难，越难保持自我边界。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_demoness_00_demoness",
+    "pathway_id": "demoness",
+    "sequence_number": 0,
+    "ritual_name": "魔女晋升仪式",
+    "ritual_description": "'''Altered Ritual:''' Descend into the depths of the earth, find the Chaos Sea, endure a degree of its corruption while maintaining oneself—neither falling nor transforming.；This ritual shown in the Second Blasphemy Slate was influenced by the Primordial God Almighty to be beneficial to \"Him\" as a resurrection plan.；'''Alternative Ritual:''' Find a way to borrow the special traits from the Sequence 1s of five Pathways related to the Chaos Sea, combine them into a power close to the Chaos Sea, and control it. This ritual was not stated in the Second Blasphemy Slate.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-魔女教派",
+      "因蒂斯共和国-政治阴谋",
+      "镜中空间"
+    ],
+    "required_npc_or_condition": [
+      "'''Altered Ritual:''' Descend into the depths of the earth, find the Chaos Sea, endure a degree of its corruption while maintaining oneself—neither falling nor transforming.；This ritual shown in the Second Blasphemy Slate was influenced by the Primordial God Almighty to be beneficial to \"Him\" as a resurrection plan.；'''Alternative Ritual:''' Find a way to borrow the special traits from the Sequence 1s of five Pathways related to the Chaos Sea, combine them into a power close to the Chaos Sea, and control it. This ritual was not stated in the Second Blasphemy Slate."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "魅惑、疾病和灾祸将使用者与苦难绑定，越是传播灾难，越难保持自我边界。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_red_priest_05_reaper",
+    "pathway_id": "red_priest",
+    "sequence_number": 5,
+    "ritual_name": "收割者晋升仪式",
+    "ritual_description": "Plan and execute a successful capture of a target with a Sequence higher than your own. Flaunt the completed conspiracy before them, and consume the potion as they witness your victory, filled with fear and despair.；'''Note:''' The increased number and higher Sequence of the captured targets and the greater their fear, regret, and anger, the more potent the ritual's effect.",
+    "required_items": [],
+    "required_location": [
+      "因蒂斯共和国-阴谋支线",
+      "弗萨克战场",
+      "鲁恩王国-军方任务"
+    ],
+    "required_npc_or_condition": [
+      "Plan and execute a successful capture of a target with a Sequence higher than your own. Flaunt the completed conspiracy before them, and consume the potion as they witness your victory, filled with fear and despair.；'''Note:''' The increased number and higher Sequence of the captured targets and the greater their fear, regret, and anger, the more potent the ritual's effect."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "战争和挑衅会不断把使用者推向冲突，最终只能通过灾难来证明自己。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_red_priest_04_iron_blooded_knight",
+    "pathway_id": "red_priest",
+    "sequence_number": 4,
+    "ritual_name": "铁血骑士晋升仪式",
+    "ritual_description": "Form a team of at least thirty people, cultivate a deep friendship with them, make them strong one after another. The higher the strength and tacit understanding of the team, the better the effect of the ritual.",
+    "required_items": [],
+    "required_location": [
+      "因蒂斯共和国-阴谋支线",
+      "弗萨克战场",
+      "鲁恩王国-军方任务"
+    ],
+    "required_npc_or_condition": [
+      "Form a team of at least thirty people, cultivate a deep friendship with them, make them strong one after another. The higher the strength and tacit understanding of the team, the better the effect of the ritual."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "战争和挑衅会不断把使用者推向冲突，最终只能通过灾难来证明自己。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_red_priest_03_war_bishop",
+    "pathway_id": "red_priest",
+    "sequence_number": 3,
+    "ritual_name": "战争主教晋升仪式",
+    "ritual_description": "Lead your own team to defeat a powerful enemy force in a war. '''Note 1''': The imminent atmosphere of war will attract comets symbolizing war through the spirit world. They will streak across the night sky bringing revelations, but among such comets, those with corporeal substance that can enter the real world are limited in number.；'''Note 2''': In the advancement ritual, the stronger the enemy force, the better the ritual's effect.",
+    "required_items": [],
+    "required_location": [
+      "因蒂斯共和国-阴谋支线",
+      "弗萨克战场",
+      "鲁恩王国-军方任务"
+    ],
+    "required_npc_or_condition": [
+      "Lead your own team to defeat a powerful enemy force in a war. '''Note 1''': The imminent atmosphere of war will attract comets symbolizing war through the spirit world. They will streak across the night sky bringing revelations, but among such comets, those with corporeal substance that can enter the real world are limited in number.；'''Note 2''': In the advancement ritual, the stronger the enemy force, the better the ritual's effect."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "战争和挑衅会不断把使用者推向冲突，最终只能通过灾难来证明自己。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_red_priest_02_weather_warlock",
+    "pathway_id": "red_priest",
+    "sequence_number": 2,
+    "ritual_name": "天气术士晋升仪式",
+    "ritual_description": "Forcefully change the weather of a region without external aid in a very short time.",
+    "required_items": [],
+    "required_location": [
+      "因蒂斯共和国-阴谋支线",
+      "弗萨克战场",
+      "鲁恩王国-军方任务"
+    ],
+    "required_npc_or_condition": [
+      "Forcefully change the weather of a region without external aid in a very short time."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "战争和挑衅会不断把使用者推向冲突，最终只能通过灾难来证明自己。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_red_priest_01_conqueror",
+    "pathway_id": "red_priest",
+    "sequence_number": 1,
+    "ritual_name": "征服者晋升仪式",
+    "ritual_description": "Conquer a nation with a population of more than 30 million inhabitants, making all beings there fear, obey, and revere you.",
+    "required_items": [],
+    "required_location": [
+      "因蒂斯共和国-阴谋支线",
+      "弗萨克战场",
+      "鲁恩王国-军方任务"
+    ],
+    "required_npc_or_condition": [
+      "Conquer a nation with a population of more than 30 million inhabitants, making all beings there fear, obey, and revere you."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "战争和挑衅会不断把使用者推向冲突，最终只能通过灾难来证明自己。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_red_priest_00_red_priest",
+    "pathway_id": "red_priest",
+    "sequence_number": 0,
+    "ritual_name": "红祭司晋升仪式",
+    "ritual_description": "Wage a war that sweeps an entire continent and gain sufficient victories.",
+    "required_items": [],
+    "required_location": [
+      "因蒂斯共和国-阴谋支线",
+      "弗萨克战场",
+      "鲁恩王国-军方任务"
+    ],
+    "required_npc_or_condition": [
+      "Wage a war that sweeps an entire continent and gain sufficient victories."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "战争和挑衅会不断把使用者推向冲突，最终只能通过灾难来证明自己。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hermit_05_constellations_master",
+    "pathway_id": "hermit",
+    "sequence_number": 5,
+    "ritual_name": "星象师晋升仪式",
+    "ritual_description": "To select, observe, and draw a complete picture of a star constellation, recreating its true appearance, and mastering all the corresponding mysticism knowledge.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-神秘学聚会",
+      "海上-星之上将来号",
+      "隐秘组织据点"
+    ],
+    "required_npc_or_condition": [
+      "To select, observe, and draw a complete picture of a star constellation, recreating its true appearance, and mastering all the corresponding mysticism knowledge."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "窥探未被消化的神秘知识会引发认知污染、星空注视和知识活化风险。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hermit_04_mysticologist",
+    "pathway_id": "hermit",
+    "sequence_number": 4,
+    "ritual_name": "神秘学家晋升仪式",
+    "ritual_description": "Completely analyze a drop of blood from a Mythical Creature and obtain complicated and massive amounts of knowledge. Note 1: Due to the differing types of Mythical Creature blood employed, should they succeed, their specialisation within the 'Mysticologist' stage will also exhibit certain variations.；Note 2: Although the advancement ritual of a Mysticologist doesn't have any requirements on the Mythical Creature's pathway, the best choice is still the Wheel of Fortune Pathway.；Note 3: The blood of an Angel-level creature that is one of the main materials for a Sequence 2 angel would work, but the effect is not as good as a complete one.；Note 4: The blood of a Boon-recceiving Angel would also work, as long as \"Their\" physical state has changed.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-神秘学聚会",
+      "海上-星之上将来号",
+      "隐秘组织据点"
+    ],
+    "required_npc_or_condition": [
+      "Completely analyze a drop of blood from a Mythical Creature and obtain complicated and massive amounts of knowledge. Note 1: Due to the differing types of Mythical Creature blood employed, should they succeed, their specialisation within the 'Mysticologist' stage will also exhibit certain variations.；Note 2: Although the advancement ritual of a Mysticologist doesn't have any requirements on the Mythical Creature's pathway, the best choice is still the Wheel of Fortune Pathway.；Note 3: The blood of an Angel-level creature that is one of the main materials for a Sequence 2 angel would work, but the effect is not as good as a complete one.；Note 4: The blood of a Boon-recceiving Angel would also work, as long as \"Their\" physical state has changed."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "窥探未被消化的神秘知识会引发认知污染、星空注视和知识活化风险。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hermit_03_clairvoyant",
+    "pathway_id": "hermit",
+    "sequence_number": 3,
+    "ritual_name": "预言大师晋升仪式",
+    "ritual_description": "It involves gathering a vast amount of information, analyzing, deducing, and divining to 'Prophesy' a certain event that will occur three years later.(It must involve demigods.) Ultimately the performer has to witness its fulfillment. Throughout the process, they cannot rely on external forces or directly drive the event to happen; the ritual performer can only guide it indirectly.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-神秘学聚会",
+      "海上-星之上将来号",
+      "隐秘组织据点"
+    ],
+    "required_npc_or_condition": [
+      "It involves gathering a vast amount of information, analyzing, deducing, and divining to 'Prophesy' a certain event that will occur three years later.(It must involve demigods.) Ultimately the performer has to witness its fulfillment. Throughout the process, they cannot rely on external forces or directly drive the event to happen; the ritual performer can only guide it indirectly."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "窥探未被消化的神秘知识会引发认知污染、星空注视和知识活化风险。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hermit_02_sage",
+    "pathway_id": "hermit",
+    "sequence_number": 2,
+    "ritual_name": "贤者晋升仪式",
+    "ritual_description": "Prevent a disaster that involves a higher level of power.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-神秘学聚会",
+      "海上-星之上将来号",
+      "隐秘组织据点"
+    ],
+    "required_npc_or_condition": [
+      "Prevent a disaster that involves a higher level of power."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "窥探未被消化的神秘知识会引发认知污染、星空注视和知识活化风险。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hermit_01_knowledge_emperor",
+    "pathway_id": "hermit",
+    "sequence_number": 1,
+    "ritual_name": "知识皇帝晋升仪式",
+    "ritual_description": "Analyze oneself and master all knowledge related to oneself, then understand and find the most core, key part (in the Western Continent, this process is called \"Illuminating the Mind and Perceiving the True Nature\") and use it as a link to find a way to integrate the remaining parts and other knowledge they have to initially form a whole. The whole form is known as a Primordial Spirit/Nascent Soul.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-神秘学聚会",
+      "海上-星之上将来号",
+      "隐秘组织据点"
+    ],
+    "required_npc_or_condition": [
+      "Analyze oneself and master all knowledge related to oneself, then understand and find the most core, key part (in the Western Continent, this process is called \"Illuminating the Mind and Perceiving the True Nature\") and use it as a link to find a way to integrate the remaining parts and other knowledge they have to initially form a whole. The whole form is known as a Primordial Spirit/Nascent Soul."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "窥探未被消化的神秘知识会引发认知污染、星空注视和知识活化风险。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_hermit_00_hermit",
+    "pathway_id": "hermit",
+    "sequence_number": 0,
+    "ritual_name": "隐者晋升仪式",
+    "ritual_description": "Gather all the information one has left in the world. Then, find a suitable place and way to completely hide them, leaving no traces behind.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-神秘学聚会",
+      "海上-星之上将来号",
+      "隐秘组织据点"
+    ],
+    "required_npc_or_condition": [
+      "Gather all the information one has left in the world. Then, find a suitable place and way to completely hide them, leaving no traces behind."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "窥探未被消化的神秘知识会引发认知污染、星空注视和知识活化风险。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_paragon_05_astronomer",
+    "pathway_id": "paragon",
+    "sequence_number": 5,
+    "ritual_name": "天文学家晋升仪式",
+    "ritual_description": "Discover and name an astronomical phenomenon or a celestial body.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-机械与蒸汽教会",
+      "因蒂斯共和国-罗塞尔遗产",
+      "蒸汽都市工坊"
+    ],
+    "required_npc_or_condition": [
+      "Discover and name an astronomical phenomenon or a celestial body."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "追求完美会使使用者把生命、神秘和社会都当成可被改造的机械系统。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_paragon_04_alchemist",
+    "pathway_id": "paragon",
+    "sequence_number": 4,
+    "ritual_name": "炼金术士晋升仪式",
+    "ritual_description": "Extract all life force within a designated area; causing the soil to desertify, and the lakes to dry up.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-机械与蒸汽教会",
+      "因蒂斯共和国-罗塞尔遗产",
+      "蒸汽都市工坊"
+    ],
+    "required_npc_or_condition": [
+      "Extract all life force within a designated area; causing the soil to desertify, and the lakes to dry up."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "追求完美会使使用者把生命、神秘和社会都当成可被改造的机械系统。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_paragon_03_arcane_scholar",
+    "pathway_id": "paragon",
+    "sequence_number": 3,
+    "ritual_name": "奥秘学者晋升仪式",
+    "ritual_description": "Select a certain special Spirit World knowledge and find a way to establish a close connection with it, achieving integration at the spiritual level. '''Note''': \"Certain special Spirit World knowledge\" refers to knowledge that can contaminate you, lock onto you, or knowledge that has come to life.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-机械与蒸汽教会",
+      "因蒂斯共和国-罗塞尔遗产",
+      "蒸汽都市工坊"
+    ],
+    "required_npc_or_condition": [
+      "Select a certain special Spirit World knowledge and find a way to establish a close connection with it, achieving integration at the spiritual level. '''Note''': \"Certain special Spirit World knowledge\" refers to knowledge that can contaminate you, lock onto you, or knowledge that has come to life."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "追求完美会使使用者把生命、神秘和社会都当成可被改造的机械系统。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_paragon_02_knowledge_magister",
+    "pathway_id": "paragon",
+    "sequence_number": 2,
+    "ritual_name": "知识导师晋升仪式",
+    "ritual_description": "Make a groundbreaking and systematically outstanding contribution in any existing field.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-机械与蒸汽教会",
+      "因蒂斯共和国-罗塞尔遗产",
+      "蒸汽都市工坊"
+    ],
+    "required_npc_or_condition": [
+      "Make a groundbreaking and systematically outstanding contribution in any existing field."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "追求完美会使使用者把生命、神秘和社会都当成可被改造的机械系统。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_paragon_01_illuminator",
+    "pathway_id": "paragon",
+    "sequence_number": 1,
+    "ritual_name": "启蒙者晋升仪式",
+    "ritual_description": "Popularize new knowledge to promote the civilizational renewal of at least one country.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-机械与蒸汽教会",
+      "因蒂斯共和国-罗塞尔遗产",
+      "蒸汽都市工坊"
+    ],
+    "required_npc_or_condition": [
+      "Popularize new knowledge to promote the civilizational renewal of at least one country."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "追求完美会使使用者把生命、神秘和社会都当成可被改造的机械系统。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_paragon_00_paragon",
+    "pathway_id": "paragon",
+    "sequence_number": 0,
+    "ritual_name": "完美者晋升仪式",
+    "ritual_description": "Nurture a Civilization, witnessing and recording its entire process from enlightenment, development and prosperity to decline, demise or replacement. '''Note''': A regional civilization is sufficient. The main point is the long duration, and it cannot be interrupted.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-机械与蒸汽教会",
+      "因蒂斯共和国-罗塞尔遗产",
+      "蒸汽都市工坊"
+    ],
+    "required_npc_or_condition": [
+      "Nurture a Civilization, witnessing and recording its entire process from enlightenment, development and prosperity to decline, demise or replacement. '''Note''': A regional civilization is sufficient. The main point is the long duration, and it cannot be interrupted."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "追求完美会使使用者把生命、神秘和社会都当成可被改造的机械系统。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_wheel_of_fortune_05_winner",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 5,
+    "ritual_name": "赢家晋升仪式",
+    "ritual_description": "For a full month, remain in an unlucky state—absolutely no instances of good fortune.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-命运支线",
+      "灵界-概率裂隙",
+      "马戏团与赌局场景"
+    ],
+    "required_npc_or_condition": [
+      "For a full month, remain in an unlucky state—absolutely no instances of good fortune."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "命运偏移会把使用者卷入更大的概率代价，幸运与厄运总会在某处平衡。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_wheel_of_fortune_04_misfortune_mage",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 4,
+    "ritual_name": "厄运法师晋升仪式",
+    "ritual_description": "Without prior preparation, and without seeking a way to negate or alleviate the effects, directly face a major calamity while at the lowest ebb of your luck—and survive.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-命运支线",
+      "灵界-概率裂隙",
+      "马戏团与赌局场景"
+    ],
+    "required_npc_or_condition": [
+      "Without prior preparation, and without seeking a way to negate or alleviate the effects, directly face a major calamity while at the lowest ebb of your luck—and survive."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "命运偏移会把使用者卷入更大的概率代价，幸运与厄运总会在某处平衡。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_wheel_of_fortune_03_chaoswalker",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 3,
+    "ritual_name": "混乱行者晋升仪式",
+    "ritual_description": "Fix a node, or \"beacon\", that your destiny must inevitably reach within the next ten years. This node can be fixed in any way but it must be absolute, inevitable to reach",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-命运支线",
+      "灵界-概率裂隙",
+      "马戏团与赌局场景"
+    ],
+    "required_npc_or_condition": [
+      "Fix a node, or \"beacon\", that your destiny must inevitably reach within the next ten years. This node can be fixed in any way but it must be absolute, inevitable to reach"
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "命运偏移会把使用者卷入更大的概率代价，幸运与厄运总会在某处平衡。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_wheel_of_fortune_02_soothsayer",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 2,
+    "ritual_name": "先知晋升仪式",
+    "ritual_description": "Peer into the River of Fate, uncover an important revelation concerning at least one nation, and ensure that this revelation ultimately manifests exactly as you \"saw\" it.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-命运支线",
+      "灵界-概率裂隙",
+      "马戏团与赌局场景"
+    ],
+    "required_npc_or_condition": [
+      "Peer into the River of Fate, uncover an important revelation concerning at least one nation, and ensure that this revelation ultimately manifests exactly as you \"saw\" it."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "命运偏移会把使用者卷入更大的概率代价，幸运与厄运总会在某处平衡。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_wheel_of_fortune_01_snake_of_mercury",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 1,
+    "ritual_name": "水银之蛇晋升仪式",
+    "ritual_description": "Find a way to extract all of your memories, then, after consuming the potion, infuse them back into yourself.；Alternatively, with the aid of a '''Visionary''' during the ritual, regress to the state of a fetus, stripped of all memory, and awaken the full breadth of cognition buried deep within your soul and mind.；'''Note 1:''' Specific term from the Western Continent: Unveiling the Enigma of the Womb.；'''Note 2:''' Here memory mean ALL memory, conscious and unconscious",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-命运支线",
+      "灵界-概率裂隙",
+      "马戏团与赌局场景"
+    ],
+    "required_npc_or_condition": [
+      "Find a way to extract all of your memories, then, after consuming the potion, infuse them back into yourself.；Alternatively, with the aid of a '''Visionary''' during the ritual, regress to the state of a fetus, stripped of all memory, and awaken the full breadth of cognition buried deep within your soul and mind.；'''Note 1:''' Specific term from the Western Continent: Unveiling the Enigma of the Womb.；'''Note 2:''' Here memory mean ALL memory, conscious and unconscious"
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "命运偏移会把使用者卷入更大的概率代价，幸运与厄运总会在某处平衡。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_wheel_of_fortune_00_wheel_of_fortune",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 0,
+    "ritual_name": "命运之轮晋升仪式",
+    "ritual_description": "One must find the right opportunity in the flow of destiny, then take the potion.；The right opportunity cannot be divined and cannot be predicted. It can't be locked in any way. One can only rule out certain obstacles and must patiently look for it.",
+    "required_items": [],
+    "required_location": [
+      "贝克兰德-命运支线",
+      "灵界-概率裂隙",
+      "马戏团与赌局场景"
+    ],
+    "required_npc_or_condition": [
+      "One must find the right opportunity in the flow of destiny, then take the potion.；The right opportunity cannot be divined and cannot be predicted. It can't be locked in any way. One can only rule out certain obstacles and must patiently look for it."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "命运偏移会把使用者卷入更大的概率代价，幸运与厄运总会在某处平衡。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_mother_05_druid",
+    "pathway_id": "mother",
+    "sequence_number": 5,
+    "ritual_name": "德鲁伊晋升仪式",
+    "ritual_description": "\"Being aware of the behavior and physical structure of various ordinary animals and three kinds of extraordinary creatures. It may involve writing down this knowledge.\"",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-丰饶平原",
+      "古老森林",
+      "大地母神教会"
+    ],
+    "required_npc_or_condition": [
+      "\"Being aware of the behavior and physical structure of various ordinary animals and three kinds of extraordinary creatures. It may involve writing down this knowledge.\""
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "生命与丰饶过剩会转化为失控生长、肉体扩张和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_mother_04_ancient_alchemist",
+    "pathway_id": "mother",
+    "sequence_number": 4,
+    "ritual_name": "古代炼金师晋升仪式",
+    "ritual_description": "Personally refine the Stone of Life. This ritual is a tribute to the Philosopher's Stone.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-丰饶平原",
+      "古老森林",
+      "大地母神教会"
+    ],
+    "required_npc_or_condition": [
+      "Personally refine the Stone of Life. This ritual is a tribute to the Philosopher's Stone."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "生命与丰饶过剩会转化为失控生长、肉体扩张和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_mother_03_pallbearer",
+    "pathway_id": "mother",
+    "sequence_number": 3,
+    "ritual_name": "抬棺人晋升仪式",
+    "ritual_description": "Personally bury a Sequence 3 of the Darkness, Death, or Twilight Giant pathways, witnessing their entire journey from birth to death and return to the earth.；Or, bury a Mythical Creature of one of these three pathways, thus not needing to witness their Birth and Death.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-丰饶平原",
+      "古老森林",
+      "大地母神教会"
+    ],
+    "required_npc_or_condition": [
+      "Personally bury a Sequence 3 of the Darkness, Death, or Twilight Giant pathways, witnessing their entire journey from birth to death and return to the earth.；Or, bury a Mythical Creature of one of these three pathways, thus not needing to witness their Birth and Death."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "生命与丰饶过剩会转化为失控生长、肉体扩张和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_mother_02_desolate_matriarch",
+    "pathway_id": "mother",
+    "sequence_number": 2,
+    "ritual_name": "荒芜主母晋升仪式",
+    "ritual_description": "Conceive, reproduce, and nurture an entire race.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-丰饶平原",
+      "古老森林",
+      "大地母神教会"
+    ],
+    "required_npc_or_condition": [
+      "Conceive, reproduce, and nurture an entire race."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "生命与丰饶过剩会转化为失控生长、肉体扩张和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_mother_01_naturewalker",
+    "pathway_id": "mother",
+    "sequence_number": 1,
+    "ritual_name": "自然行者晋升仪式",
+    "ritual_description": "Find a way to create a world that exists only as a concept, without nature or elements, and completely encompass it, then use it to enter the Astral World and consume the potion.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-丰饶平原",
+      "古老森林",
+      "大地母神教会"
+    ],
+    "required_npc_or_condition": [
+      "Find a way to create a world that exists only as a concept, without nature or elements, and completely encompass it, then use it to enter the Astral World and consume the potion."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "生命与丰饶过剩会转化为失控生长、肉体扩张和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_mother_00_mother",
+    "pathway_id": "mother",
+    "sequence_number": 0,
+    "ritual_name": "母亲晋升仪式",
+    "ritual_description": "Give actual birth to a Deity, or in mysticism the equivalent to the birth of a Deity. '''Note 1''': After switching to Omebella's identity, Lilith did not immediately advance to Sequence 0 until Badheil lived up to \"Her\" expectations and became the God of Combat.；'''Note 2''': Giving birth to an activated Uniqueness barely counts as giving birth to a Deity.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-丰饶平原",
+      "古老森林",
+      "大地母神教会"
+    ],
+    "required_npc_or_condition": [
+      "Give actual birth to a Deity, or in mysticism the equivalent to the birth of a Deity. '''Note 1''': After switching to Omebella's identity, Lilith did not immediately advance to Sequence 0 until Badheil lived up to \"Her\" expectations and became the God of Combat.；'''Note 2''': Giving birth to an activated Uniqueness barely counts as giving birth to a Deity."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "生命与丰饶过剩会转化为失控生长、肉体扩张和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_moon_05_scarlet_scholar",
+    "pathway_id": "moon",
+    "sequence_number": 5,
+    "ritual_name": "深红学者晋升仪式",
+    "ritual_description": "Gather different gems, metals and Beyonder Creature blood that represent different moon phases.；Drink the potion under the illumination of full moon.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-药剂市场",
+      "血族社群",
+      "满月仪式场景"
+    ],
+    "required_npc_or_condition": [
+      "Gather different gems, metals and Beyonder Creature blood that represent different moon phases.；Drink the potion under the illumination of full moon."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "满月、血液和药性变异可能引发血族失控、再生失衡和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_moon_04_shaman_king",
+    "pathway_id": "moon",
+    "sequence_number": 4,
+    "ritual_name": "巫王晋升仪式",
+    "ritual_description": "Truly gain the recognition of the \"Moon\". Note: Some \"Moons\" are always dangerous, some \"Moons\" are dangerous at certain moments, and some \"Moons\" are in your own heart.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-药剂市场",
+      "血族社群",
+      "满月仪式场景"
+    ],
+    "required_npc_or_condition": [
+      "Truly gain the recognition of the \"Moon\". Note: Some \"Moons\" are always dangerous, some \"Moons\" are dangerous at certain moments, and some \"Moons\" are in your own heart."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "满月、血液和药性变异可能引发血族失控、再生失衡和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_moon_03_high_summoner",
+    "pathway_id": "moon",
+    "sequence_number": 3,
+    "ritual_name": "召唤大师晋升仪式",
+    "ritual_description": "Find a special piece of information in the depths of the Spirit World that is closely related to one's past, present, and future, which is deeply intertwined with the \"Moon\". Then hold a ceremony to define it as one's \"True Name\" for various mystical purposes. Note: if you choose the wrong one, or find an incorrect one, you will become a slave of the \"Moon\".",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-药剂市场",
+      "血族社群",
+      "满月仪式场景"
+    ],
+    "required_npc_or_condition": [
+      "Find a special piece of information in the depths of the Spirit World that is closely related to one's past, present, and future, which is deeply intertwined with the \"Moon\". Then hold a ceremony to define it as one's \"True Name\" for various mystical purposes. Note: if you choose the wrong one, or find an incorrect one, you will become a slave of the \"Moon\"."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "满月、血液和药性变异可能引发血族失控、再生失衡和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_moon_02_life_giver",
+    "pathway_id": "moon",
+    "sequence_number": 2,
+    "ritual_name": "创生者晋升仪式",
+    "ritual_description": "Divide oneself into five parts, destroy and seal oneself in different places, then before completely dying, have the part of the body containing the heart take the potion. Note: There are two main difficulties in this ritual. One is how to ensure that one does not die immediately in that state, and the other is how to take the potion in a sealed state.；Theoretically, cutting fingers is considered as dividing the body, but considering that one of the ritual's purposes is to lower one's life force and enter a near-death, sealed state to restrain the growth, the reproduction urge, and the spread of madness, doing this essentially nullifies the ritual's effect.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-药剂市场",
+      "血族社群",
+      "满月仪式场景"
+    ],
+    "required_npc_or_condition": [
+      "Divide oneself into five parts, destroy and seal oneself in different places, then before completely dying, have the part of the body containing the heart take the potion. Note: There are two main difficulties in this ritual. One is how to ensure that one does not die immediately in that state, and the other is how to take the potion in a sealed state.；Theoretically, cutting fingers is considered as dividing the body, but considering that one of the ritual's purposes is to lower one's life force and enter a near-death, sealed state to restrain the growth, the reproduction urge, and the spread of madness, doing this essentially nullifies the ritual's effect."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "满月、血液和药性变异可能引发血族失控、再生失衡和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_moon_01_beauty_goddess",
+    "pathway_id": "moon",
+    "sequence_number": 1,
+    "ritual_name": "美神晋升仪式",
+    "ritual_description": "Use the \"Moon Paper Substitute\" to make a substitute, allowing it to act for a long time without being exposed, and be remembered by a large number of creatures, the more the better. The person themselves will lie in a coffin, buried deep underground for at least three hundred years, and finally the original body will take the potion.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-药剂市场",
+      "血族社群",
+      "满月仪式场景"
+    ],
+    "required_npc_or_condition": [
+      "Use the \"Moon Paper Substitute\" to make a substitute, allowing it to act for a long time without being exposed, and be remembered by a large number of creatures, the more the better. The person themselves will lie in a coffin, buried deep underground for at least three hundred years, and finally the original body will take the potion."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "满月、血液和药性变异可能引发血族失控、再生失衡和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_moon_00_moon",
+    "pathway_id": "moon",
+    "sequence_number": 0,
+    "ritual_name": "月亮晋升仪式",
+    "ritual_description": "Find a way to enter the Astral World, occupy the concept representing the \"Moon\" or engrave your true name within this concept. Note 1: The concept of the \"moon\" is not unique to the barrier. Note 2: Since the concept of the \"Moon\" in the Astral World was jointly occupied by the Mother Goddess of Depravity and the Brood Hive, it was impossible to complete the ritual for Sequence 0 of the Moon pathway. Therefore, there has been no true Sequence 0 god on the Moon pathway ever appearing in history.",
+    "required_items": [],
+    "required_location": [
+      "费内波特王国-药剂市场",
+      "血族社群",
+      "满月仪式场景"
+    ],
+    "required_npc_or_condition": [
+      "Find a way to enter the Astral World, occupy the concept representing the \"Moon\" or engrave your true name within this concept. Note 1: The concept of the \"moon\" is not unique to the barrier. Note 2: Since the concept of the \"Moon\" in the Astral World was jointly occupied by the Mother Goddess of Depravity and the Brood Hive, it was impossible to complete the ritual for Sequence 0 of the Moon pathway. Therefore, there has been no true Sequence 0 god on the Moon pathway ever appearing in history."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "满月、血液和药性变异可能引发血族失控、再生失衡和母神污染。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_abyss_05_desire_apostle",
+    "pathway_id": "abyss",
+    "sequence_number": 5,
+    "ritual_name": "欲望使徒晋升仪式",
+    "ritual_description": "Serial killings targeting those who have fallen from grace; the minimum is 13 people, the maximum is 49, the more complete the ritual, the greater the chance of advancement.；There must be at least a three-day interval between two killings, otherwise it's easy to lose control, the interval also cannot exceed nine days, otherwise the ritual will reset.；After each killing, after each part of the ritual, the Devil must devour the victim's internal organs.；From this point on, they will remain in a state of violent bloodlust, wanting to harm others, until that desire is satisfied again.",
+    "required_items": [],
+    "required_location": [
+      "南大陆-高危黑市",
+      "鲁恩王国-连环杀人案",
+      "地下恶魔仪式场"
+    ],
+    "required_npc_or_condition": [
+      "Serial killings targeting those who have fallen from grace; the minimum is 13 people, the maximum is 49, the more complete the ritual, the greater the chance of advancement.；There must be at least a three-day interval between two killings, otherwise it's easy to lose control, the interval also cannot exceed nine days, otherwise the ritual will reset.；After each killing, after each part of the ritual, the Devil must devour the victim's internal organs.；From this point on, they will remain in a state of violent bloodlust, wanting to harm others, until that desire is satisfied again."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "罪恶、欲望和杀戮会逐步改写使用者的人性，将其推向深渊化的恶魔本能。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_abyss_04_demon",
+    "pathway_id": "abyss",
+    "sequence_number": 4,
+    "ritual_name": "魔鬼晋升仪式",
+    "ritual_description": "Induce at least 10.000 intelligent beings to voluntarily sell their souls to the performer.；The performer must successfully acquire the corresponding souls.；The higher the target's rank, the fewer souls are required.",
+    "required_items": [],
+    "required_location": [
+      "南大陆-高危黑市",
+      "鲁恩王国-连环杀人案",
+      "地下恶魔仪式场"
+    ],
+    "required_npc_or_condition": [
+      "Induce at least 10.000 intelligent beings to voluntarily sell their souls to the performer.；The performer must successfully acquire the corresponding souls.；The higher the target's rank, the fewer souls are required."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "罪恶、欲望和杀戮会逐步改写使用者的人性，将其推向深渊化的恶魔本能。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_abyss_03_blatherer",
+    "pathway_id": "abyss",
+    "sequence_number": 3,
+    "ritual_name": "呓语者晋升仪式",
+    "ritual_description": "Finding a way to sign a time-limited or permanent \"shared life and death\" contract with a Demigod of a pathway that has purifying properties, such as Sun or Twilight Giant, or a Demigod of the path that represents life, such as Mother.；Take the potion during the contract's effective period.",
+    "required_items": [],
+    "required_location": [
+      "南大陆-高危黑市",
+      "鲁恩王国-连环杀人案",
+      "地下恶魔仪式场"
+    ],
+    "required_npc_or_condition": [
+      "Finding a way to sign a time-limited or permanent \"shared life and death\" contract with a Demigod of a pathway that has purifying properties, such as Sun or Twilight Giant, or a Demigod of the path that represents life, such as Mother.；Take the potion during the contract's effective period."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "罪恶、欲望和杀戮会逐步改写使用者的人性，将其推向深渊化的恶魔本能。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_abyss_02_bloody_archduke",
+    "pathway_id": "abyss",
+    "sequence_number": 2,
+    "ritual_name": "鲜血大公晋升仪式",
+    "ritual_description": "The ritual involves sacrificing 13 settlements, each containing at least 10.000 intelligent beings, to the Abyss.；Each sacrifice must be made within three months of each other.；Furthermore, the sacrifice must be performed using a \"Blood Ritual,\" which involves killing each creature in the settlement one by one, then using their gushing blood to cleanse the altar and repaint the corresponding symbols and patterns.",
+    "required_items": [],
+    "required_location": [
+      "南大陆-高危黑市",
+      "鲁恩王国-连环杀人案",
+      "地下恶魔仪式场"
+    ],
+    "required_npc_or_condition": [
+      "The ritual involves sacrificing 13 settlements, each containing at least 10.000 intelligent beings, to the Abyss.；Each sacrifice must be made within three months of each other.；Furthermore, the sacrifice must be performed using a \"Blood Ritual,\" which involves killing each creature in the settlement one by one, then using their gushing blood to cleanse the altar and repaint the corresponding symbols and patterns."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "罪恶、欲望和杀戮会逐步改写使用者的人性，将其推向深渊化的恶魔本能。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_abyss_01_filthy_monarch",
+    "pathway_id": "abyss",
+    "sequence_number": 1,
+    "ritual_name": "污秽君王晋升仪式",
+    "ritual_description": "Corrupt a nation with at least 10 million inhabitants.；The Upper Class shall be controlled by desires, everyone of them becoming a Devil.；The Lower Class becoming destitute and without any hope of escaping their predicament, ultimately even their own children and organs become the property of others.；The Middle Class becoming like climbing a series of collapsing cliffs, watching as their own layer collapses and falls into the Abyss below, desperately trying to climb upwards in fear.；Just as they are going to find stability and catch their breath, the cliff collapses again, while above them the Upper Class watches with theatrical laughter.",
+    "required_items": [],
+    "required_location": [
+      "南大陆-高危黑市",
+      "鲁恩王国-连环杀人案",
+      "地下恶魔仪式场"
+    ],
+    "required_npc_or_condition": [
+      "Corrupt a nation with at least 10 million inhabitants.；The Upper Class shall be controlled by desires, everyone of them becoming a Devil.；The Lower Class becoming destitute and without any hope of escaping their predicament, ultimately even their own children and organs become the property of others.；The Middle Class becoming like climbing a series of collapsing cliffs, watching as their own layer collapses and falls into the Abyss below, desperately trying to climb upwards in fear.；Just as they are going to find stability and catch their breath, the cliff collapses again, while above them the Upper Class watches with theatrical laughter."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "罪恶、欲望和杀戮会逐步改写使用者的人性，将其推向深渊化的恶魔本能。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_abyss_00_abyss",
+    "pathway_id": "abyss",
+    "sequence_number": 0,
+    "ritual_name": "深渊晋升仪式",
+    "ritual_description": "Transform a Continent into an Abyss.",
+    "required_items": [],
+    "required_location": [
+      "南大陆-高危黑市",
+      "鲁恩王国-连环杀人案",
+      "地下恶魔仪式场"
+    ],
+    "required_npc_or_condition": [
+      "Transform a Continent into an Abyss."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "罪恶、欲望和杀戮会逐步改写使用者的人性，将其推向深渊化的恶魔本能。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_chained_05_wraith",
+    "pathway_id": "chained",
+    "sequence_number": 5,
+    "ritual_name": "怨魂晋升仪式",
+    "ritual_description": "Find a way to enter the Spirit World, locate a part of information that corresponds to you, seal or imprison said information for at least 3 minutes and take the Potion before the seal is lifted.",
+    "required_items": [],
+    "required_location": [
+      "玫瑰学派支线",
+      "地下监牢",
+      "怨灵污染区"
+    ],
+    "required_npc_or_condition": [
+      "Find a way to enter the Spirit World, locate a part of information that corresponds to you, seal or imprison said information for at least 3 minutes and take the Potion before the seal is lifted."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "压抑与放纵之间的摆动会让使用者被身体异变、怨灵化和诅咒异化吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_chained_04_puppet",
+    "pathway_id": "chained",
+    "sequence_number": 4,
+    "ritual_name": "木偶晋升仪式",
+    "ritual_description": "Prepare a Mummy that has undergone a special ritual, possesses divinity, and originally belonged to the Chained. Then, possess the Mummy and consume the Potion.；Note: True Mummies are the remains of Chained demigods who have undergone internal organ purification, curse inscription, bandaging, mausoleum construction, and burial for over a year.",
+    "required_items": [],
+    "required_location": [
+      "玫瑰学派支线",
+      "地下监牢",
+      "怨灵污染区"
+    ],
+    "required_npc_or_condition": [
+      "Prepare a Mummy that has undergone a special ritual, possesses divinity, and originally belonged to the Chained. Then, possess the Mummy and consume the Potion.；Note: True Mummies are the remains of Chained demigods who have undergone internal organ purification, curse inscription, bandaging, mausoleum construction, and burial for over a year."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "压抑与放纵之间的摆动会让使用者被身体异变、怨灵化和诅咒异化吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_chained_03_disciple_of_silence",
+    "pathway_id": "chained",
+    "sequence_number": 3,
+    "ritual_name": "沉默门徒晋升仪式",
+    "ritual_description": "Establish a cult, cultivate at least a thousand followers, so that they can understand your gaze, comprehend your thoughts, implement your ideals, most appropriately act on your will, and speak the words you want to say. The higher the level of the followers, the fewer the number required, it is not necessary to reach a thousand.",
+    "required_items": [],
+    "required_location": [
+      "玫瑰学派支线",
+      "地下监牢",
+      "怨灵污染区"
+    ],
+    "required_npc_or_condition": [
+      "Establish a cult, cultivate at least a thousand followers, so that they can understand your gaze, comprehend your thoughts, implement your ideals, most appropriately act on your will, and speak the words you want to say. The higher the level of the followers, the fewer the number required, it is not necessary to reach a thousand."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "压抑与放纵之间的摆动会让使用者被身体异变、怨灵化和诅咒异化吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_chained_02_ancient_bane",
+    "pathway_id": "chained",
+    "sequence_number": 2,
+    "ritual_name": "古代邪物晋升仪式",
+    "ritual_description": "Find an ancient, evil item capable of bearing angelic power. This item will become the core of the final Mythical Creature form.",
+    "required_items": [],
+    "required_location": [
+      "玫瑰学派支线",
+      "地下监牢",
+      "怨灵污染区"
+    ],
+    "required_npc_or_condition": [
+      "Find an ancient, evil item capable of bearing angelic power. This item will become the core of the final Mythical Creature form."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "压抑与放纵之间的摆动会让使用者被身体异变、怨灵化和诅咒异化吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_chained_01_abomination",
+    "pathway_id": "chained",
+    "sequence_number": 1,
+    "ritual_name": "神孽晋升仪式",
+    "ritual_description": "Receive the blessing of a True God (at least the blessing of an Activated Uniqueness or a King of Angels who had Accommodated the Uniqueness). '''Note''': This is not a simple, verbal blessing; it means that the Deity who gives the blessing will suffer a Mad Curse during the ritual, originated from the Source of Curses symbol, which is quite dangerous.",
+    "required_items": [],
+    "required_location": [
+      "玫瑰学派支线",
+      "地下监牢",
+      "怨灵污染区"
+    ],
+    "required_npc_or_condition": [
+      "Receive the blessing of a True God (at least the blessing of an Activated Uniqueness or a King of Angels who had Accommodated the Uniqueness). '''Note''': This is not a simple, verbal blessing; it means that the Deity who gives the blessing will suffer a Mad Curse during the ritual, originated from the Source of Curses symbol, which is quite dangerous."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "压抑与放纵之间的摆动会让使用者被身体异变、怨灵化和诅咒异化吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_chained_00_chained",
+    "pathway_id": "chained",
+    "sequence_number": 0,
+    "ritual_name": "被缚者晋升仪式",
+    "ritual_description": "Mummify oneself while still alive, then fill one's body with the potion as internal organs, imprisoning it within.；Finally, one kills themselves, sealing oneself in a true mummy state within a coffin and mausoleum for at least a hundred years, ensuring that the remaining Spirit and Will do not perish.；Note: The body is a prison of the Mind and the Potion, the Coffin and the Mausoleum are the prison of the body.",
+    "required_items": [],
+    "required_location": [
+      "玫瑰学派支线",
+      "地下监牢",
+      "怨灵污染区"
+    ],
+    "required_npc_or_condition": [
+      "Mummify oneself while still alive, then fill one's body with the potion as internal organs, imprisoning it within.；Finally, one kills themselves, sealing oneself in a true mummy state within a coffin and mausoleum for at least a hundred years, ensuring that the remaining Spirit and Will do not perish.；Note: The body is a prison of the Mind and the Potion, the Coffin and the Mausoleum are the prison of the body."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "压抑与放纵之间的摆动会让使用者被身体异变、怨灵化和诅咒异化吞没。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_black_emperor_05_mentor_of_disorder",
+    "pathway_id": "black_emperor",
+    "sequence_number": 5,
+    "ritual_name": "混乱导师晋升仪式",
+    "ritual_description": "Become the dominant force in a city's underground order, causing the city's crime rate to increase more than tenfold; this state must last for at least three months.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-王室与贵族",
+      "贝克兰德-法庭区",
+      "政治腐败支线"
+    ],
+    "required_npc_or_condition": [
+      "Become the dominant force in a city's underground order, causing the city's crime rate to increase more than tenfold; this state must last for at least three months."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "扭曲规则的人最终会被扭曲后的秩序反噬，将一切关系都视为可腐化的契约。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_black_emperor_04_earl_of_the_fallen",
+    "pathway_id": "black_emperor",
+    "sequence_number": 4,
+    "ritual_name": "堕落伯爵晋升仪式",
+    "ritual_description": "Become a mid-to-high-level official in a country, win over and corrupt seven individuals at the same level, forming a community of interests with them, and promote the implementation of a national policy that benefits the ritual performer but is detrimental to the people.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-王室与贵族",
+      "贝克兰德-法庭区",
+      "政治腐败支线"
+    ],
+    "required_npc_or_condition": [
+      "Become a mid-to-high-level official in a country, win over and corrupt seven individuals at the same level, forming a community of interests with them, and promote the implementation of a national policy that benefits the ritual performer but is detrimental to the people."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "扭曲规则的人最终会被扭曲后的秩序反噬，将一切关系都视为可腐化的契约。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_black_emperor_03_frenzied_mage",
+    "pathway_id": "black_emperor",
+    "sequence_number": 3,
+    "ritual_name": "狂乱法师晋升仪式",
+    "ritual_description": "Select three rituals that involve at least angel-level powers, modify the key descriptions of them in a way that is beyond the ritual performer's own knowledge and purely by intuition, and then perform them one by one, ultimately surviving.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-王室与贵族",
+      "贝克兰德-法庭区",
+      "政治腐败支线"
+    ],
+    "required_npc_or_condition": [
+      "Select three rituals that involve at least angel-level powers, modify the key descriptions of them in a way that is beyond the ritual performer's own knowledge and purely by intuition, and then perform them one by one, ultimately surviving."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "扭曲规则的人最终会被扭曲后的秩序反噬，将一切关系都视为可腐化的契约。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_black_emperor_02_duke_of_entropy",
+    "pathway_id": "black_emperor",
+    "sequence_number": 2,
+    "ritual_name": "熵之公爵晋升仪式",
+    "ritual_description": "Drive a nation of at least 10 million people to gradually collapse from within without direct external intervention. The more powerful the beyonder inhabitants are, the fewer people are needed.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-王室与贵族",
+      "贝克兰德-法庭区",
+      "政治腐败支线"
+    ],
+    "required_npc_or_condition": [
+      "Drive a nation of at least 10 million people to gradually collapse from within without direct external intervention. The more powerful the beyonder inhabitants are, the fewer people are needed."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "扭曲规则的人最终会被扭曲后的秩序反噬，将一切关系都视为可腐化的契约。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_black_emperor_01_prince_of_abolition",
+    "pathway_id": "black_emperor",
+    "sequence_number": 1,
+    "ritual_name": "弑序亲王晋升仪式",
+    "ritual_description": "While not being the strongest within an empire, replace a portion of the original order with a new hidden order and maintain it for three years.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-王室与贵族",
+      "贝克兰德-法庭区",
+      "政治腐败支线"
+    ],
+    "required_npc_or_condition": [
+      "While not being the strongest within an empire, replace a portion of the original order with a new hidden order and maintain it for three years."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "扭曲规则的人最终会被扭曲后的秩序反噬，将一切关系都视为可腐化的契约。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_black_emperor_00_black_emperor",
+    "pathway_id": "black_emperor",
+    "sequence_number": 0,
+    "ritual_name": "黑皇帝晋升仪式",
+    "ritual_description": "Possess your own country, linking your name to the title of Emperor and making it common knowledge among the populace.；Establish a set of strict and complicated rules that defy normality, including architectural styles.；Spur your citizens to secretly establish nine mausoleums in the style of pyramids.；Enter one of the mausoleums.；Drink the Sequence 0 potion while a large majority of the citizens are scattered across different cities in the corresponding sacrificial rituals involved.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-王室与贵族",
+      "贝克兰德-法庭区",
+      "政治腐败支线"
+    ],
+    "required_npc_or_condition": [
+      "Possess your own country, linking your name to the title of Emperor and making it common knowledge among the populace.；Establish a set of strict and complicated rules that defy normality, including architectural styles.；Spur your citizens to secretly establish nine mausoleums in the style of pyramids.；Enter one of the mausoleums.；Drink the Sequence 0 potion while a large majority of the citizens are scattered across different cities in the corresponding sacrificial rituals involved."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "扭曲规则的人最终会被扭曲后的秩序反噬，将一切关系都视为可腐化的契约。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_justiciar_05_disciplinary_paladin",
+    "pathway_id": "justiciar",
+    "sequence_number": 5,
+    "ritual_name": "惩戒骑士晋升仪式",
+    "ritual_description": "Select a wanted criminal of at least Sequence 5, determine their crimes, then track them down alone, lock them down and execute them.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-官方执法组织",
+      "军情九处",
+      "封锁区与审判仪式"
+    ],
+    "required_npc_or_condition": [
+      "Select a wanted criminal of at least Sequence 5, determine their crimes, then track them down alone, lock them down and execute them."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "秩序越绝对，越容易把使用者变成只会执行条文的裁决机器。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_justiciar_04_imperative_mage",
+    "pathway_id": "justiciar",
+    "sequence_number": 4,
+    "ritual_name": "律令法师晋升仪式",
+    "ritual_description": "Create a law that differs from, but does not exclude, existing laws, and have it promulgated and implemented through the current national legislative process；Once ten thousand people have violated this law and have been punished accordingly, consume the potion.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-官方执法组织",
+      "军情九处",
+      "封锁区与审判仪式"
+    ],
+    "required_npc_or_condition": [
+      "Create a law that differs from, but does not exclude, existing laws, and have it promulgated and implemented through the current national legislative process；Once ten thousand people have violated this law and have been punished accordingly, consume the potion."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "秩序越绝对，越容易把使用者变成只会执行条文的裁决机器。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_justiciar_03_chaos_hunter",
+    "pathway_id": "justiciar",
+    "sequence_number": 3,
+    "ritual_name": "混乱猎手晋升仪式",
+    "ritual_description": "Handling a mysticism event involving at least Angel level powers on their own, restoring normal order to the affected area.；The less people and property is lost in the area, the better the ritual.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-官方执法组织",
+      "军情九处",
+      "封锁区与审判仪式"
+    ],
+    "required_npc_or_condition": [
+      "Handling a mysticism event involving at least Angel level powers on their own, restoring normal order to the affected area.；The less people and property is lost in the area, the better the ritual."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "秩序越绝对，越容易把使用者变成只会执行条文的裁决机器。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_justiciar_02_balancer",
+    "pathway_id": "justiciar",
+    "sequence_number": 2,
+    "ritual_name": "平衡者晋升仪式",
+    "ritual_description": "End the chaos on a continent and bring about a balance among the various forces which can be maintained for at least a hundred years.；The ritual does not require for one to be in a dominant position, but they must play a crucial role.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-官方执法组织",
+      "军情九处",
+      "封锁区与审判仪式"
+    ],
+    "required_npc_or_condition": [
+      "End the chaos on a continent and bring about a balance among the various forces which can be maintained for at least a hundred years.；The ritual does not require for one to be in a dominant position, but they must play a crucial role."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "秩序越绝对，越容易把使用者变成只会执行条文的裁决机器。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_justiciar_01_hand_of_order",
+    "pathway_id": "justiciar",
+    "sequence_number": 1,
+    "ritual_name": "秩序之手晋升仪式",
+    "ritual_description": "Equivalent Rituals: Establish a nation with a population of at least 10 million, making one's will the order and a strict system of rules within that nation. or；Control a nation with a population of at least 50 million, making one's will the order and a strict system of rules within that nation.；In both rituals, the more Beyonders and the higher their level among the citizens, the fewer people are required, but the minimum population cannot be less than 1 million.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-官方执法组织",
+      "军情九处",
+      "封锁区与审判仪式"
+    ],
+    "required_npc_or_condition": [
+      "Equivalent Rituals: Establish a nation with a population of at least 10 million, making one's will the order and a strict system of rules within that nation. or；Control a nation with a population of at least 50 million, making one's will the order and a strict system of rules within that nation.；In both rituals, the more Beyonders and the higher their level among the citizens, the fewer people are required, but the minimum population cannot be less than 1 million."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "秩序越绝对，越容易把使用者变成只会执行条文的裁决机器。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "ritual_id": "ritual_justiciar_00_justiciar",
+    "pathway_id": "justiciar",
+    "sequence_number": 0,
+    "ritual_name": "审判者晋升仪式",
+    "ritual_description": "Hold a sufficiently just trial concerning a serious matter involving a True God, in accordance with the rules one has previously established and ensure that the judgment is truly carried out, then take the potion.",
+    "required_items": [],
+    "required_location": [
+      "鲁恩王国-官方执法组织",
+      "军情九处",
+      "封锁区与审判仪式"
+    ],
+    "required_npc_or_condition": [
+      "Hold a sufficiently just trial concerning a serious matter involving a True God, in accordance with the rules one has previously established and ensure that the judgment is truly carried out, then take the potion."
+    ],
+    "success_condition": "在满足仪式条件后稳定服食魔药。",
+    "failure_result": "晋升失败，失控风险上升，并触发相关剧情事件。",
+    "loss_control_risk_change": "秩序越绝对，越容易把使用者变成只会执行条文的裁决机器。",
+    "quest_design_note": "将原始仪式拆成地点、道具、见证者和失败后果四类任务条件。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  }
+]

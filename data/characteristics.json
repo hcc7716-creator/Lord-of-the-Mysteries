@@ -1,0 +1,4849 @@
+[
+  {
+    "characteristic_id": "char_fool_09_seer",
+    "pathway_id": "fool",
+    "sequence_number": 9,
+    "appearance_cn": "蓝色血液、虚幻气泡、柔软结晶和星空般光点。",
+    "appearance_en": "Blood as blue as the sky, illusory bubbles, and a soft crystal with starlike lights.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任占卜家的象征、幻听或错误预感。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触。",
+    "possible_artifact_result": [
+      "低阶占卜道具",
+      "灵视增强饰品"
+    ],
+    "gameplay_effect": "可作为占卜家魔药主材料替代，也可用于低阶神秘学装备制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_fool_08_clown",
+    "pathway_id": "fool",
+    "sequence_number": 8,
+    "appearance_cn": "带蓝意的拇指大小球形血团，可违反常理地悬浮。",
+    "appearance_en": "A thumb-sized spherical blob of blood with a tint of blue, silently floating in midair.",
+    "risk_level": "low",
+    "mental_imprint": "诱导角色以玩笑或表演掩盖真实情绪，严重时出现情感割裂。",
+    "can_replace_material": true,
+    "storage_requirement": "低温密封，避免在强烈情绪场景中长时间暴露。",
+    "possible_artifact_result": [
+      "小丑面具",
+      "危险预感饰品"
+    ],
+    "gameplay_effect": "可作为小丑魔药主材料替代，或制作闪避/预感类低阶物品。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_fool_07_magician",
+    "pathway_id": "fool",
+    "sequence_number": 7,
+    "appearance_cn": "灰白色拳头大小物体，表面布满沟壑，柔韧似脑组织，触碰后会化为黏稠液体。",
+    "appearance_en": "A fist-sized grayish-white item with gullies, soft and ductile like extracted brain tissue, becoming sticky liquid when touched.",
+    "risk_level": "medium",
+    "mental_imprint": "可能造成替身与本体认知混淆，诱导过度依赖误导和逃生。",
+    "can_replace_material": true,
+    "storage_requirement": "需使用防渗容器保存，避免直接触碰。",
+    "possible_artifact_result": [
+      "替身纸人核心",
+      "短距位移道具"
+    ],
+    "gameplay_effect": "可作为魔术师魔药主材料替代，或用于制作替身和逃生类神奇物品。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_fool_06_faceless",
+    "pathway_id": "fool",
+    "sequence_number": 6,
+    "appearance_cn": "半透明暗绿色胶状物，内部不时浮现不同面孔。",
+    "appearance_en": "A jelly-like translucent dark-green object with different faces emerging inside.",
+    "risk_level": "medium",
+    "mental_imprint": "身份流动感增强，可能导致自我认同下降和面孔幻觉。",
+    "can_replace_material": true,
+    "storage_requirement": "需避光密封，容器外标注当前身份风险。",
+    "possible_artifact_result": [
+      "变脸面具",
+      "身份伪装饰品"
+    ],
+    "gameplay_effect": "可作为无面人魔药主材料替代，或用于身份伪装类道具。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_fool_05_marionettist",
+    "pathway_id": "fool",
+    "sequence_number": 5,
+    "appearance_cn": "黑色无瞳眼睛。",
+    "appearance_en": "A black, pupil-less eye.",
+    "risk_level": "high",
+    "mental_imprint": "强化控制欲和工具化他人的倾向，可能让秘偶模仿玩家动作。",
+    "can_replace_material": true,
+    "storage_requirement": "独立封存，避免与活体长时间对视或近距离接触。",
+    "possible_artifact_result": [
+      "灵体之线感知物",
+      "秘偶控制媒介"
+    ],
+    "gameplay_effect": "可作为秘偶大师魔药主材料替代，或用于秘偶控制系统相关物品。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_fool_04_bizarro_sorcerer",
+    "pathway_id": "fool",
+    "sequence_number": 4,
+    "appearance_cn": "幽蓝单眼；或掌心大小人形物，内部有透明液体、气泡、黑光和蛆虫意象。",
+    "appearance_en": "A ghostly blue single eye, or a palm-sized human-shaped object filled with transparent liquid, bubbles, black glow, and maggot-like imagery.",
+    "risk_level": "high",
+    "mental_imprint": "将战斗和生活都视作表演，出现观众、舞台和秘偶人格回声。",
+    "can_replace_material": true,
+    "storage_requirement": "高危封存，需隔绝观测者和秘偶网络。",
+    "possible_artifact_result": [
+      "舞台布置核心",
+      "秘偶网络中枢"
+    ],
+    "gameplay_effect": "可作为诡法师魔药主材料替代，或作为半神级舞台战斗道具核心。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_fool_03_scholar_of_yore",
+    "pathway_id": "fool",
+    "sequence_number": 3,
+    "appearance_cn": "暗红燃烧眼球；由白雾丝线组成的奇异心脏。",
+    "appearance_en": "Dark-red burning eyeballs and a peculiar heart composed of wisps of white mist.",
+    "risk_level": "extreme",
+    "mental_imprint": "强化历史错位感，可能让持有者分不清当前时间和历史片段。",
+    "can_replace_material": true,
+    "storage_requirement": "需放置在稳定历史锚点附近，避免与真实古代记录混放。",
+    "possible_artifact_result": [
+      "历史投影媒介",
+      "古代记录解析物"
+    ],
+    "gameplay_effect": "可作为古代学者魔药主材料替代，或用于历史迷雾和投影系统。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_fool_02_miracle_invoker",
+    "pathway_id": "fool",
+    "sequence_number": 2,
+    "appearance_cn": "类似透明水晶心脏，不时冒出含有幻象的气泡。",
+    "appearance_en": "A transparent crystal-like heart with tiny bubbles, each seeming to contain an illusion.",
+    "risk_level": "extreme",
+    "mental_imprint": "愿望可能被扭曲实现，持有者会逐渐相信自己可以随意改写一切。",
+    "can_replace_material": true,
+    "storage_requirement": "需与愿望、奇迹和历史锚点隔离保存。",
+    "possible_artifact_result": [
+      "愿望媒介",
+      "奇迹触发核心"
+    ],
+    "gameplay_effect": "可作为奇迹师魔药主材料替代，或用于愿望和奇迹系统。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_fool_01_attendant_of_mysteries",
+    "pathway_id": "fool",
+    "sequence_number": 1,
+    "appearance_cn": "半透明黑色天鹅绒幕布，疯狂吸收周围光线，逐渐透明虚幻。",
+    "appearance_en": "A translucent black velvet curtain that absorbs surrounding light and becomes increasingly transparent and illusory.",
+    "risk_level": "extreme",
+    "mental_imprint": "诱导持有者将他人命运视作可编排剧本，并把现实转化为秘偶舞台。",
+    "can_replace_material": true,
+    "storage_requirement": "需在高阶封印或灰雾相关空间中隔离保存。",
+    "possible_artifact_result": [
+      "秘偶城镇核心",
+      "大范围隐秘幕布"
+    ],
+    "gameplay_effect": "可作为诡秘侍者晋升核心要求，也可服务终局秘偶城镇系统。",
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_fool_00_fool",
+    "pathway_id": "fool",
+    "sequence_number": 0,
+    "appearance_cn": "待补充/未公开；游戏中以唯一性、高序列特性和历史迷雾控制权组合表现。",
+    "appearance_en": "Unknown; represented in game as a combination of uniqueness, high-sequence characteristics, and Fog of History control.",
+    "risk_level": "extreme",
+    "mental_imprint": "旧日意志侵蚀、人性锚点崩溃和命运/历史层面的自我丧失。",
+    "can_replace_material": false,
+    "storage_requirement": "不作为普通可存储道具处理。",
+    "possible_artifact_result": [],
+    "gameplay_effect": "作为最终晋升和终局仪式状态存在，不进入普通背包材料流程。",
+    "source_note": [
+      "原资料未公开",
+      "当前 Markdown 文档 10.1",
+      "项目占位",
+      "游戏化改编"
+    ],
+    "canon_status": "original_placeholder"
+  },
+  {
+    "characteristic_id": "char_error_09_marauder",
+    "pathway_id": "error",
+    "sequence_number": 9,
+    "appearance_cn": "A translucent black severed finger.",
+    "appearance_en": "A translucent black severed finger.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "偷盗者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_error_08_swindler",
+    "pathway_id": "error",
+    "sequence_number": 8,
+    "appearance_cn": "A red, transparent lip‑shaped crystal.",
+    "appearance_en": "A red, transparent lip‑shaped crystal.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "诈骗师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_error_07_cryptologist",
+    "pathway_id": "error",
+    "sequence_number": 7,
+    "appearance_cn": "A colorless crystal emitting mist.",
+    "appearance_en": "A colorless crystal emitting mist.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "解密学者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_error_06_prometheus",
+    "pathway_id": "error",
+    "sequence_number": 6,
+    "appearance_cn": "A miniature unlit crystal torch.",
+    "appearance_en": "A miniature unlit crystal torch.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "盗火人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_error_05_dream_stealer",
+    "pathway_id": "error",
+    "sequence_number": 5,
+    "appearance_cn": "A baby's palm with five thin stretched-out fingers as it kept changing colors due to the environment.；A small, pale, shadow‑tinted infant's hand.",
+    "appearance_en": "A baby's palm with five thin stretched-out fingers as it kept changing colors due to the environment.；A small, pale, shadow‑tinted infant's hand.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "窃梦家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_error_04_parasite",
+    "pathway_id": "error",
+    "sequence_number": 4,
+    "appearance_cn": "A diamond with translucent worms wriggling inside.",
+    "appearance_en": "A diamond with translucent worms wriggling inside.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "寄生者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_error_03_mentor_of_deceit",
+    "pathway_id": "error",
+    "sequence_number": 3,
+    "appearance_cn": "A colorless fungal drape, like a curtain.",
+    "appearance_en": "A colorless fungal drape, like a curtain.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "欺瞒导师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_error_02_trojan_horse_of_destiny",
+    "pathway_id": "error",
+    "sequence_number": 2,
+    "appearance_cn": "A crystal with multiple mirror-like facets, reflecting different identities.",
+    "appearance_en": "A crystal with multiple mirror-like facets, reflecting different identities.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "命运木马途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_error_01_worm_of_time",
+    "pathway_id": "error",
+    "sequence_number": 1,
+    "appearance_cn": "A crystalline pillar of light and shadow, housing swiftly swimming 12‑segmented Worms of Time. Everything nearby seems frozen.",
+    "appearance_en": "A crystalline pillar of light and shadow, housing swiftly swimming 12‑segmented Worms of Time. Everything nearby seems frozen.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "时之虫途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_error_00_error",
+    "pathway_id": "error",
+    "sequence_number": 0,
+    "appearance_cn": "Formerly a crystalline monocle; now a black glove.",
+    "appearance_en": "Formerly a crystalline monocle; now a black glove.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "错误途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_09_apprentice",
+    "pathway_id": "door",
+    "sequence_number": 9,
+    "appearance_cn": "A yellow-and-black stone shaped like a key.",
+    "appearance_en": "A yellow-and-black stone shaped like a key.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "学徒途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_08_trickmaster",
+    "pathway_id": "door",
+    "sequence_number": 8,
+    "appearance_cn": "A transparent crystal that refracts rainbow-colored light.",
+    "appearance_en": "A transparent crystal that refracts rainbow-colored light.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "戏法大师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_07_astrologer",
+    "pathway_id": "door",
+    "sequence_number": 7,
+    "appearance_cn": "A \"diamond\" the size of an eye. External light was constantly refracted by the \"diamond\", forming a scene as beautiful as the radiance of the stars.",
+    "appearance_en": "A \"diamond\" the size of an eye. External light was constantly refracted by the \"diamond\", forming a scene as beautiful as the radiance of the stars.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "占星人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_06_scribe",
+    "pathway_id": "door",
+    "sequence_number": 6,
+    "appearance_cn": "A surreal, shimmering eye embedded with intricate gray-white patterns and flecks of starlight..",
+    "appearance_en": "A surreal, shimmering eye embedded with intricate gray-white patterns and flecks of starlight..",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "记录官途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_05_traveler",
+    "pathway_id": "door",
+    "sequence_number": 5,
+    "appearance_cn": "A crystal so transparent it appears almost illusory.",
+    "appearance_en": "A crystal so transparent it appears almost illusory.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "旅行家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_04_secrets_sorcerer",
+    "pathway_id": "door",
+    "sequence_number": 4,
+    "appearance_cn": "It looked like a crystal with countless rays of light refracted within it, forming illusory and resplendent doors. A magnificent and dreamy crystal-like appearance. It is a crystal ball formed from insects.",
+    "appearance_en": "It looked like a crystal with countless rays of light refracted within it, forming illusory and resplendent doors. A magnificent and dreamy crystal-like appearance. It is a crystal ball formed from insects.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "秘法师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_03_wanderer",
+    "pathway_id": "door",
+    "sequence_number": 3,
+    "appearance_cn": "A miniature door of starlight.",
+    "appearance_en": "A miniature door of starlight.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "漫游者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_02_planeswalker",
+    "pathway_id": "door",
+    "sequence_number": 2,
+    "appearance_cn": "A resplendent torch that burned slightly.",
+    "appearance_en": "A resplendent torch that burned slightly.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "旅法师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_01_key_of_stars",
+    "pathway_id": "door",
+    "sequence_number": 1,
+    "appearance_cn": "A simple and unadorned key that seemed to be forged from pure starlight. A translucent, strange-looking key.",
+    "appearance_en": "A simple and unadorned key that seemed to be forged from pure starlight. A translucent, strange-looking key.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "星之匙途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_door_00_door",
+    "pathway_id": "door",
+    "sequence_number": 0,
+    "appearance_cn": "Formerly a pair of starlight eyeballs; now a cane inlaid with star speckles.",
+    "appearance_en": "Formerly a pair of starlight eyeballs; now a cane inlaid with star speckles.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "门途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_09_spectator",
+    "pathway_id": "visionary",
+    "sequence_number": 9,
+    "appearance_cn": "A silver-white vertical eye.",
+    "appearance_en": "A silver-white vertical eye.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "观众途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_08_telepathist",
+    "pathway_id": "visionary",
+    "sequence_number": 8,
+    "appearance_cn": "Transparent, dreamlike eyes.",
+    "appearance_en": "Transparent, dreamlike eyes.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "读心者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_07_psychiatrist",
+    "pathway_id": "visionary",
+    "sequence_number": 7,
+    "appearance_cn": "A huge golden iris that could expose the thoughts of everyone's hearts.",
+    "appearance_en": "A huge golden iris that could expose the thoughts of everyone's hearts.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "心理医生途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_06_hypnotist",
+    "pathway_id": "visionary",
+    "sequence_number": 6,
+    "appearance_cn": "The transparent, colorless mucus had lost its binding substance, leaving it only able to condense independently, eventually forming a sticky grayish-white colloid. From a distance, this colloid resembled an unfixed mirror, capable of reflecting everything around it. Minuscule transparent bubbles deep within the colloid. They caught and refracted sunlight from various angles, displaying an array of colors. The colorless colloid with numerous bubbles.",
+    "appearance_en": "The transparent, colorless mucus had lost its binding substance, leaving it only able to condense independently, eventually forming a sticky grayish-white colloid. From a distance, this colloid resembled an unfixed mirror, capable of reflecting everything around it. Minuscule transparent bubbles deep within the colloid. They caught and refracted sunlight from various angles, displaying an array of colors. The colorless colloid with numerous bubbles.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "催眠师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_05_dreamwalker",
+    "pathway_id": "visionary",
+    "sequence_number": 5,
+    "appearance_cn": "A large amount of grayish-white matter that had been purged. It flowed freely, forming a heart-shaped object the size of a child's fist. Not only were there wrinkles on it, but there were also cracks that resembled eyes. As for the complicated, three-dimensional, illusory patterns, labels, and symbols that extended into the void, they were nearly identical to the Manipulator's Beyonder Characteristics that had seen from before.",
+    "appearance_en": "A large amount of grayish-white matter that had been purged. It flowed freely, forming a heart-shaped object the size of a child's fist. Not only were there wrinkles on it, but there were also cracks that resembled eyes. As for the complicated, three-dimensional, illusory patterns, labels, and symbols that extended into the void, they were nearly identical to the Manipulator's Beyonder Characteristics that had seen from before.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "梦境行者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_04_manipulator",
+    "pathway_id": "visionary",
+    "sequence_number": 4,
+    "appearance_cn": "The fist-sized object resembled a heart and brain, adorned with grayish-white wrinkles and intricate symbols. It connected to an unseen realm, embodying a child-sized, grayish-white, wrinkled 'heart.'",
+    "appearance_en": "The fist-sized object resembled a heart and brain, adorned with grayish-white wrinkles and intricate symbols. It connected to an unseen realm, embodying a child-sized, grayish-white, wrinkled 'heart.'",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "操纵师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_03_dream_weaver",
+    "pathway_id": "visionary",
+    "sequence_number": 3,
+    "appearance_cn": "It was formed from thin mist, seemingly an ,unreal, grayish-white brain from a dream.",
+    "appearance_en": "It was formed from thin mist, seemingly an ,unreal, grayish-white brain from a dream.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "织梦人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_02_discerner",
+    "pathway_id": "visionary",
+    "sequence_number": 2,
+    "appearance_cn": "A pale heart riddled with holes, inlaid with numerous vertical eyes.",
+    "appearance_en": "A pale heart riddled with holes, inlaid with numerous vertical eyes.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "洞察者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_01_author",
+    "pathway_id": "visionary",
+    "sequence_number": 1,
+    "appearance_cn": "A crystal-clear finger bone resembling a pen.",
+    "appearance_en": "A crystal-clear finger bone resembling a pen.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "作家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_visionary_00_visionary",
+    "pathway_id": "visionary",
+    "sequence_number": 0,
+    "appearance_cn": "待补充/未公开",
+    "appearance_en": "待补充/未公开",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "空想家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_09_bard",
+    "pathway_id": "sun",
+    "sequence_number": 9,
+    "appearance_cn": "A crimson crystal that sings.",
+    "appearance_en": "A crimson crystal that sings.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "歌颂者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_08_light_suppliant",
+    "pathway_id": "sun",
+    "sequence_number": 8,
+    "appearance_cn": "Semi-solidified magma radiating a blazing white light.",
+    "appearance_en": "Semi-solidified magma radiating a blazing white light.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "祈光人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_07_solar_high_priest",
+    "pathway_id": "sun",
+    "sequence_number": 7,
+    "appearance_cn": "A golden sphere with faint red streaks.",
+    "appearance_en": "A golden sphere with faint red streaks.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "太阳神官途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_06_notary",
+    "pathway_id": "sun",
+    "sequence_number": 6,
+    "appearance_cn": "A dark golden object resembling a book page.",
+    "appearance_en": "A dark golden object resembling a book page.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "公证人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_05_priest_of_light",
+    "pathway_id": "sun",
+    "sequence_number": 5,
+    "appearance_cn": "The glowing crystal, a pure and bright manifestation of holiness, emanated pure light from its translucent form.",
+    "appearance_en": "The glowing crystal, a pure and bright manifestation of holiness, emanated pure light from its translucent form.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "光之祭司途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_04_unshadowed",
+    "pathway_id": "sun",
+    "sequence_number": 4,
+    "appearance_cn": "A drop of golden blood that emitted light and heat from the '''Sun''', \"His\" divine blood.",
+    "appearance_en": "A drop of golden blood that emitted light and heat from the '''Sun''', \"His\" divine blood.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "无暗者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_03_justice_mentor",
+    "pathway_id": "sun",
+    "sequence_number": 3,
+    "appearance_cn": "A heart or brain condensed from pure radiance.",
+    "appearance_en": "A heart or brain condensed from pure radiance.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "正义导师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_02_lightseeker",
+    "pathway_id": "sun",
+    "sequence_number": 2,
+    "appearance_cn": "A cluster of darkness whose core contains light that cannot escape.",
+    "appearance_en": "A cluster of darkness whose core contains light that cannot escape.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "逐光者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_01_white_angel",
+    "pathway_id": "sun",
+    "sequence_number": 1,
+    "appearance_cn": "A pure white human silhouette or a holy rib.",
+    "appearance_en": "A pure white human silhouette or a holy rib.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "纯白天使途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_sun_00_sun",
+    "pathway_id": "sun",
+    "sequence_number": 0,
+    "appearance_cn": "A miniature Sun.",
+    "appearance_en": "A miniature Sun.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "太阳途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_09_sailor",
+    "pathway_id": "tyrant",
+    "sequence_number": 9,
+    "appearance_cn": "A twisted, black-green, semi-transparent sac-like object.",
+    "appearance_en": "A twisted, black-green, semi-transparent sac-like object.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "水手途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_08_folk_of_rage",
+    "pathway_id": "tyrant",
+    "sequence_number": 8,
+    "appearance_cn": "Enormous gelatinous bubbles covered in blood-red hues",
+    "appearance_en": "Enormous gelatinous bubbles covered in blood-red hues",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "暴怒之民途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_07_seafarer",
+    "pathway_id": "tyrant",
+    "sequence_number": 7,
+    "appearance_cn": "A fist-sized, icy-blue object covered in strange lines and black dots.",
+    "appearance_en": "A fist-sized, icy-blue object covered in strange lines and black dots.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "航海家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_06_wind_blessed",
+    "pathway_id": "tyrant",
+    "sequence_number": 6,
+    "appearance_cn": "A huge feather formed from pale blue/cyan wind, bearing patterns resembling eyes on its surface.",
+    "appearance_en": "A huge feather formed from pale blue/cyan wind, bearing patterns resembling eyes on its surface.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "风眷者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_05_ocean_songster",
+    "pathway_id": "tyrant",
+    "sequence_number": 5,
+    "appearance_cn": "The translucent jellyfish contained azure-blue seawater, with occasional swirling vortices and flashes of silver lightning. It emitted a faint, ethereal song, as if carrying the distant voice of the elf predecessor within its mesmerizing depths.",
+    "appearance_en": "The translucent jellyfish contained azure-blue seawater, with occasional swirling vortices and flashes of silver lightning. It emitted a faint, ethereal song, as if carrying the distant voice of the elf predecessor within its mesmerizing depths.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "海洋歌者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_04_cataclysmic_interrer",
+    "pathway_id": "tyrant",
+    "sequence_number": 4,
+    "appearance_cn": "A dark blue crystalline coral. On the coral branches, silver bolts of lightning flashed, illuminating the surroundings.",
+    "appearance_en": "A dark blue crystalline coral. On the coral branches, silver bolts of lightning flashed, illuminating the surroundings.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "灾难主祭途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_03_sea_king",
+    "pathway_id": "tyrant",
+    "sequence_number": 3,
+    "appearance_cn": "A sea-blue crystal pillar with countless reflections.",
+    "appearance_en": "A sea-blue crystal pillar with countless reflections.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "海王途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_02_calamity",
+    "pathway_id": "tyrant",
+    "sequence_number": 2,
+    "appearance_cn": "A dark, dangerous cloud mass brewing with terror.",
+    "appearance_en": "A dark, dangerous cloud mass brewing with terror.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "天灾途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_01_thunder_god",
+    "pathway_id": "tyrant",
+    "sequence_number": 1,
+    "appearance_cn": "A \"scepter\" woven of lightning.",
+    "appearance_en": "A \"scepter\" woven of lightning.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "雷神途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_tyrant_00_tyrant",
+    "pathway_id": "tyrant",
+    "sequence_number": 0,
+    "appearance_cn": "A raging storm wreathed in lightning./>",
+    "appearance_en": "A raging storm wreathed in lightning./>",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "暴君途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_09_reader",
+    "pathway_id": "white_tower",
+    "sequence_number": 9,
+    "appearance_cn": "A short white rope that resembles tree roots.",
+    "appearance_en": "A short white rope that resembles tree roots.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "阅读者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_08_student_of_ratiocination",
+    "pathway_id": "white_tower",
+    "sequence_number": 8,
+    "appearance_cn": "A pale white skeleton covered in brass folds.",
+    "appearance_en": "A pale white skeleton covered in brass folds.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "推理学员途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_07_detective",
+    "pathway_id": "white_tower",
+    "sequence_number": 7,
+    "appearance_cn": "Palm-sized thick \"paper\" like material with copper-colored vein-like patterns.",
+    "appearance_en": "Palm-sized thick \"paper\" like material with copper-colored vein-like patterns.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "侦探途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_06_polymath",
+    "pathway_id": "white_tower",
+    "sequence_number": 6,
+    "appearance_cn": "A pouch made of blood-red leather, covered in slime.",
+    "appearance_en": "A pouch made of blood-red leather, covered in slime.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "博学者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_05_mysticism_magister",
+    "pathway_id": "white_tower",
+    "sequence_number": 5,
+    "appearance_cn": "A translucent, curved \"blood sausage\".",
+    "appearance_en": "A translucent, curved \"blood sausage\".",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "秘术导师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_04_prophet",
+    "pathway_id": "white_tower",
+    "sequence_number": 4,
+    "appearance_cn": "Cold and detached eyes gazing out between brass-colored scales.",
+    "appearance_en": "Cold and detached eyes gazing out between brass-colored scales.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "预言家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_03_cognizer",
+    "pathway_id": "white_tower",
+    "sequence_number": 3,
+    "appearance_cn": "A miniature tree formed by clusters of white, pointed bones, with blood-red brains hanging from its branches and numerous brass-colored eyes opening on its trunk.",
+    "appearance_en": "A miniature tree formed by clusters of white, pointed bones, with blood-red brains hanging from its branches and numerous brass-colored eyes opening on its trunk.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "洞悉者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_02_wisdom_angel",
+    "pathway_id": "white_tower",
+    "sequence_number": 2,
+    "appearance_cn": "A grayish-white brain with densely packed brass-colored eyes and a blood-red tinge.",
+    "appearance_en": "A grayish-white brain with densely packed brass-colored eyes and a blood-red tinge.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "智天使途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_01_omniscient_eye",
+    "pathway_id": "white_tower",
+    "sequence_number": 1,
+    "appearance_cn": "A giant brass eye reflecting the illusory White Tower, which seemed to be built from countless books.",
+    "appearance_en": "A giant brass eye reflecting the illusory White Tower, which seemed to be built from countless books.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "全知之眼途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_white_tower_00_white_tower",
+    "pathway_id": "white_tower",
+    "sequence_number": 0,
+    "appearance_cn": "A white tower made of illusory books.",
+    "appearance_en": "A white tower made of illusory books.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "白塔途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_09_secrets_suppliant",
+    "pathway_id": "hanged_man",
+    "sequence_number": 9,
+    "appearance_cn": "A semi-illusory black lip that seems to emit whispers.",
+    "appearance_en": "A semi-illusory black lip that seems to emit whispers.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "秘祈人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_08_listener",
+    "pathway_id": "hanged_man",
+    "sequence_number": 8,
+    "appearance_cn": "A darkened, sinister ear.",
+    "appearance_en": "A darkened, sinister ear.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "倾听者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_07_shadow_ascetic",
+    "pathway_id": "hanged_man",
+    "sequence_number": 7,
+    "appearance_cn": "A cluster of gray-black shadows.",
+    "appearance_en": "A cluster of gray-black shadows.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "隐修士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_06_rose_bishop",
+    "pathway_id": "hanged_man",
+    "sequence_number": 6,
+    "appearance_cn": "A putrid mass of bloody flesh with visible tendons and blood vessels.",
+    "appearance_en": "A putrid mass of bloody flesh with visible tendons and blood vessels.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "蔷薇主教途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_05_shepherd",
+    "pathway_id": "hanged_man",
+    "sequence_number": 5,
+    "appearance_cn": "A translucent gray-white hand.",
+    "appearance_en": "A translucent gray-white hand.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "牧羊人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_04_black_knight",
+    "pathway_id": "hanged_man",
+    "sequence_number": 4,
+    "appearance_cn": "A segment of translucent black hand bone.",
+    "appearance_en": "A segment of translucent black hand bone.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "黑骑士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_03_trinity_templar",
+    "pathway_id": "hanged_man",
+    "sequence_number": 3,
+    "appearance_cn": "A blood-tinted skull adorned with multiple pairs of eyes.",
+    "appearance_en": "A blood-tinted skull adorned with multiple pairs of eyes.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "三首圣堂途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_02_profane_presbyter",
+    "pathway_id": "hanged_man",
+    "sequence_number": 2,
+    "appearance_cn": "A paper-thin, semi-illusory shadow suffused with foulness.",
+    "appearance_en": "A paper-thin, semi-illusory shadow suffused with foulness.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "秽语长老途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_01_dark_angel",
+    "pathway_id": "hanged_man",
+    "sequence_number": 1,
+    "appearance_cn": "A crimson flesh sphere sprouting black feathers.",
+    "appearance_en": "A crimson flesh sphere sprouting black feathers.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "暗天使途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hanged_man_00_hanged_man",
+    "pathway_id": "hanged_man",
+    "sequence_number": 0,
+    "appearance_cn": "A dense, concentrated shadow.",
+    "appearance_en": "A dense, concentrated shadow.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "倒吊人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_09_sleepless",
+    "pathway_id": "darkness",
+    "sequence_number": 9,
+    "appearance_cn": "Eyes stained with starlight.",
+    "appearance_en": "Eyes stained with starlight.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "不眠者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_08_midnight_poet",
+    "pathway_id": "darkness",
+    "sequence_number": 8,
+    "appearance_cn": "A translucent crystal-carved eerie flower.",
+    "appearance_en": "A translucent crystal-carved eerie flower.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "午夜诗人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_07_nightmare",
+    "pathway_id": "darkness",
+    "sequence_number": 7,
+    "appearance_cn": "The gem-like object possessed an aura of deep blackness, exuding an enigmatic and profound presence. A dark, gem-like gelatinous substance of profound depth.",
+    "appearance_en": "The gem-like object possessed an aura of deep blackness, exuding an enigmatic and profound presence. A dark, gem-like gelatinous substance of profound depth.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "梦魇途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_06_soul_assurer",
+    "pathway_id": "darkness",
+    "sequence_number": 6,
+    "appearance_cn": "A deep black object with a core of shimmering light, reminiscent of a starry night sky.",
+    "appearance_en": "A deep black object with a core of shimmering light, reminiscent of a starry night sky.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "安魂师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_05_spirit_warlock",
+    "pathway_id": "darkness",
+    "sequence_number": 5,
+    "appearance_cn": "Ethereal, porous black honeycomb.",
+    "appearance_en": "Ethereal, porous black honeycomb.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "灵巫途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_04_nightwatcher",
+    "pathway_id": "darkness",
+    "sequence_number": 4,
+    "appearance_cn": "Black \"candle\" with brain-like folds and numerous vascular structures.",
+    "appearance_en": "Black \"candle\" with brain-like folds and numerous vascular structures.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "守夜人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_03_horror_bishop",
+    "pathway_id": "darkness",
+    "sequence_number": 3,
+    "appearance_cn": "Rotting skull enveloped in black gas, displaying observer's face.",
+    "appearance_en": "Rotting skull enveloped in black gas, displaying observer's face.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "恐惧主教途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_02_servant_of_concealment",
+    "pathway_id": "darkness",
+    "sequence_number": 2,
+    "appearance_cn": "Completely invisible but tangible viscous substance.",
+    "appearance_en": "Completely invisible but tangible viscous substance.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "隐秘之仆途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_01_knight_of_misfortune",
+    "pathway_id": "darkness",
+    "sequence_number": 1,
+    "appearance_cn": "Black, sinister crystal cluster.",
+    "appearance_en": "Black, sinister crystal cluster.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "厄难骑士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_darkness_00_darkness",
+    "pathway_id": "darkness",
+    "sequence_number": 0,
+    "appearance_cn": "Pitch black, scythe-shaped.",
+    "appearance_en": "Pitch black, scythe-shaped.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "黑暗途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_09_corpse_collector",
+    "pathway_id": "death",
+    "sequence_number": 9,
+    "appearance_cn": "Pale leather covered in rotting black spots.",
+    "appearance_en": "Pale leather covered in rotting black spots.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "收尸人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_08_gravedigger",
+    "pathway_id": "death",
+    "sequence_number": 8,
+    "appearance_cn": "A blood-stained eye.",
+    "appearance_en": "A blood-stained eye.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "掘墓人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_07_spirit_medium",
+    "pathway_id": "death",
+    "sequence_number": 7,
+    "appearance_cn": "Semi-real semi-illusory mirror surface concealing indescribable entities.",
+    "appearance_en": "Semi-real semi-illusory mirror surface concealing indescribable entities.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "通灵者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_06_spirit_guide",
+    "pathway_id": "death",
+    "sequence_number": 6,
+    "appearance_cn": "Pale stone encircled by numerous shadows.；A pale-white right eye veiled in darkness.",
+    "appearance_en": "Pale stone encircled by numerous shadows.；A pale-white right eye veiled in darkness.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "死灵导师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_05_gatekeeper",
+    "pathway_id": "death",
+    "sequence_number": 5,
+    "appearance_cn": "A shattered skull, housing a dangerously illusory gate.",
+    "appearance_en": "A shattered skull, housing a dangerously illusory gate.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "看门人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_04_undying",
+    "pathway_id": "death",
+    "sequence_number": 4,
+    "appearance_cn": "Hollow, blackened, and greenish serpent skin.",
+    "appearance_en": "Hollow, blackened, and greenish serpent skin.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "不死者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_03_ferryman",
+    "pathway_id": "death",
+    "sequence_number": 3,
+    "appearance_cn": "A core-like object stained with pale yellow grease, containing a dim, pus-like essence.",
+    "appearance_en": "A core-like object stained with pale yellow grease, containing a dim, pus-like essence.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "摆渡人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_02_death_consul",
+    "pathway_id": "death",
+    "sequence_number": 2,
+    "appearance_cn": "A crown made of black bones.",
+    "appearance_en": "A crown made of black bones.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "死亡执政官途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_01_pale_emperor",
+    "pathway_id": "death",
+    "sequence_number": 1,
+    "appearance_cn": "A throne formed from pale bones.",
+    "appearance_en": "A throne formed from pale bones.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "死亡执政官途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_death_00_death",
+    "pathway_id": "death",
+    "sequence_number": 0,
+    "appearance_cn": "An illusory book formed from coiled Feathered Serpents.",
+    "appearance_en": "An illusory book formed from coiled Feathered Serpents.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "死神途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_09_warrior",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 9,
+    "appearance_cn": "A tangled mass of flesh that slowly writhes.",
+    "appearance_en": "A tangled mass of flesh that slowly writhes.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "战士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_08_pugilist",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 8,
+    "appearance_cn": "A pure spherical light, comparable in size to a baby's fist, radiated its brilliance. It resembled a golden-red ball akin to the hues of morning clouds and sunset, adorned with a faint flickering light that danced gracefully within. A fist-sized sphere resembling the morning clouds and the evening sun.",
+    "appearance_en": "A pure spherical light, comparable in size to a baby's fist, radiated its brilliance. It resembled a golden-red ball akin to the hues of morning clouds and sunset, adorned with a faint flickering light that danced gracefully within. A fist-sized sphere resembling the morning clouds and the evening sun.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "格斗家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_07_weapon_master",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 7,
+    "appearance_cn": "A cold, blood-stained spine resembling a Longsword.",
+    "appearance_en": "A cold, blood-stained spine resembling a Longsword.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "武器大师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_06_dawn_paladin",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 6,
+    "appearance_cn": "Crystals formed by the convergence of specks of Morning Light and Flowing Water.",
+    "appearance_en": "Crystals formed by the convergence of specks of Morning Light and Flowing Water.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "黎明骑士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_05_guardian",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 5,
+    "appearance_cn": "The size of a fist resembling a Heart; it is covered with holes as it shimmers with a Light of Dawn.",
+    "appearance_en": "The size of a fist resembling a Heart; it is covered with holes as it shimmers with a Light of Dawn.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "守护者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_04_demon_hunter",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 4,
+    "appearance_cn": "A vertical eye-shaped item interwoven with dark green symbols.",
+    "appearance_en": "A vertical eye-shaped item interwoven with dark green symbols.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "猎魔者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_03_silver_knight",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 3,
+    "appearance_cn": "A mass of silvery-white luster that resembled a heart-like miniature sun.",
+    "appearance_en": "A mass of silvery-white luster that resembled a heart-like miniature sun.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "银骑士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_02_glory",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 2,
+    "appearance_cn": "A pure square stone that radiates divine light.",
+    "appearance_en": "A pure square stone that radiates divine light.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "荣耀者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_01_hand_of_god",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 1,
+    "appearance_cn": "A translucent bluish-black giant hand with various divine patterns.",
+    "appearance_en": "A translucent bluish-black giant hand with various divine patterns.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "神明之手途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_twilight_giant_00_twilight_giant",
+    "pathway_id": "twilight_giant",
+    "sequence_number": 0,
+    "appearance_cn": "The Uniqueness manifests as a sword symbolizing Twilight, appearing as a huge Longsword with an orange-red glow on its surface.",
+    "appearance_en": "The Uniqueness manifests as a sword symbolizing Twilight, appearing as a huge Longsword with an orange-red glow on its surface.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "黄昏巨人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_09_assassin",
+    "pathway_id": "demoness",
+    "sequence_number": 9,
+    "appearance_cn": "A shadowy mass seemingly covered in sharp spikes.",
+    "appearance_en": "A shadowy mass seemingly covered in sharp spikes.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "刺客途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_08_instigator",
+    "pathway_id": "demoness",
+    "sequence_number": 8,
+    "appearance_cn": "A sculpture of delicate, moist pink lips in two perfect halves.",
+    "appearance_en": "A sculpture of delicate, moist pink lips in two perfect halves.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "教唆者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_07_witch",
+    "pathway_id": "demoness",
+    "sequence_number": 7,
+    "appearance_cn": "A ghostly-blue gem that resembled a vertical eye on the table. The gem's exterior had thread-like patterns. The gem made the things around it appear mild, and it accentuated their beauty.",
+    "appearance_en": "A ghostly-blue gem that resembled a vertical eye on the table. The gem's exterior had thread-like patterns. The gem made the things around it appear mild, and it accentuated their beauty.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "女巫途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_06_pleasure",
+    "pathway_id": "demoness",
+    "sequence_number": 6,
+    "appearance_cn": "A pink gem with countless entangled threads inside.",
+    "appearance_en": "A pink gem with countless entangled threads inside.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "欢愉途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_05_affliction",
+    "pathway_id": "demoness",
+    "sequence_number": 5,
+    "appearance_cn": "A beautiful eye.",
+    "appearance_en": "A beautiful eye.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "痛苦途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_04_despair",
+    "pathway_id": "demoness",
+    "sequence_number": 4,
+    "appearance_cn": "A shrunken, withered, blackened, translucent heart.；In The Fool's Dream, a (symbolic) blackish-blue hue or black eyeball.",
+    "appearance_en": "A shrunken, withered, blackened, translucent heart.；In The Fool's Dream, a (symbolic) blackish-blue hue or black eyeball.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "绝望途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_03_unaging",
+    "pathway_id": "demoness",
+    "sequence_number": 3,
+    "appearance_cn": "An exquisite, beautiful human skin.；A fist-sized spring-like crystal.",
+    "appearance_en": "An exquisite, beautiful human skin.；A fist-sized spring-like crystal.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "不老途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_02_catastrophe",
+    "pathway_id": "demoness",
+    "sequence_number": 2,
+    "appearance_cn": "Transparent crystal ball composed of various disaster scenes.",
+    "appearance_en": "Transparent crystal ball composed of various disaster scenes.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "灾难途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_01_apocalypse",
+    "pathway_id": "demoness",
+    "sequence_number": 1,
+    "appearance_cn": "A dark orb.",
+    "appearance_en": "A dark orb.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "末日途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_demoness_00_demoness",
+    "pathway_id": "demoness",
+    "sequence_number": 0,
+    "appearance_cn": "Formerly a woman's statue seemingly carved from white bones; Currently unknown.",
+    "appearance_en": "Formerly a woman's statue seemingly carved from white bones; Currently unknown.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "魔女途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_09_hunter",
+    "pathway_id": "red_priest",
+    "sequence_number": 9,
+    "appearance_cn": "The crimson object resembled a jelly-like substance. Its surface was incredibly slippery, lightweight, and possessed a unique texture and elasticity, smooth like glass. However, holding it evoked feelings of irritability and hostility in the holder.",
+    "appearance_en": "The crimson object resembled a jelly-like substance. Its surface was incredibly slippery, lightweight, and possessed a unique texture and elasticity, smooth like glass. However, holding it evoked feelings of irritability and hostility in the holder.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "猎人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_08_provoker",
+    "pathway_id": "red_priest",
+    "sequence_number": 8,
+    "appearance_cn": "The black stone, about half the size of a fist, had a liquid-like surface and emitted a potent odor. It was a repulsive \"stone\" with its dark, flowing liquid surface.",
+    "appearance_en": "The black stone, about half the size of a fist, had a liquid-like surface and emitted a potent odor. It was a repulsive \"stone\" with its dark, flowing liquid surface.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "挑衅者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_07_pyromaniac",
+    "pathway_id": "red_priest",
+    "sequence_number": 7,
+    "appearance_cn": "A scarlet object resembling a heart. The \"heart\" pulsed, its surface pocked with countless tiny holes, from which indistinct flames seeped.",
+    "appearance_en": "A scarlet object resembling a heart. The \"heart\" pulsed, its surface pocked with countless tiny holes, from which indistinct flames seeped.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "纵火家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_06_conspirer",
+    "pathway_id": "red_priest",
+    "sequence_number": 6,
+    "appearance_cn": "A filthy, brain-like object, covered in rust and eyes.",
+    "appearance_en": "A filthy, brain-like object, covered in rust and eyes.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "阴谋家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_05_reaper",
+    "pathway_id": "red_priest",
+    "sequence_number": 5,
+    "appearance_cn": "A finger, creating an unusually sharp, bone-blade emitting an icy glint. The holder needed to be cautious to avoid accidental injury. The bone-blade-shaped Beyonder characteristic.",
+    "appearance_en": "A finger, creating an unusually sharp, bone-blade emitting an icy glint. The holder needed to be cautious to avoid accidental injury. The bone-blade-shaped Beyonder characteristic.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "收割者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_04_iron_blooded_knight",
+    "pathway_id": "red_priest",
+    "sequence_number": 4,
+    "appearance_cn": "Usually fuses with an arm bone, forming an iron-black sword-shaped object, heavy, solid, and burning in its own flames.",
+    "appearance_en": "Usually fuses with an arm bone, forming an iron-black sword-shaped object, heavy, solid, and burning in its own flames.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "铁血骑士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_03_war_bishop",
+    "pathway_id": "red_priest",
+    "sequence_number": 3,
+    "appearance_cn": "A phantom core intertwined with red flames and black metal.",
+    "appearance_en": "A phantom core intertwined with red flames and black metal.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "战争主教途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_02_weather_warlock",
+    "pathway_id": "red_priest",
+    "sequence_number": 2,
+    "appearance_cn": "A palm-sized, crystalline and porous pillar. The various holes in the pillar contained mists, hall, rainwater, lightning, and other meteorological phenomena, sometimes diffusing outwards. sometimes receding back inside.",
+    "appearance_en": "A palm-sized, crystalline and porous pillar. The various holes in the pillar contained mists, hall, rainwater, lightning, and other meteorological phenomena, sometimes diffusing outwards. sometimes receding back inside.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "天气术士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_01_conqueror",
+    "pathway_id": "red_priest",
+    "sequence_number": 1,
+    "appearance_cn": "A strange crown covered in rust and blood. A blood-stained iron crown, formed by the broken skull in hand.",
+    "appearance_en": "A strange crown covered in rust and blood. A blood-stained iron crown, formed by the broken skull in hand.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "征服者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_red_priest_00_red_priest",
+    "pathway_id": "red_priest",
+    "sequence_number": 0,
+    "appearance_cn": "A bloodstained, iron-black flagpole with a flag attached.",
+    "appearance_en": "A bloodstained, iron-black flagpole with a flag attached.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "红祭司途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_09_mystery_pryer",
+    "pathway_id": "hermit",
+    "sequence_number": 9,
+    "appearance_cn": "Blood-stained, starkly contrasting black-and-white, sinister eyeballs.",
+    "appearance_en": "Blood-stained, starkly contrasting black-and-white, sinister eyeballs.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "窥秘人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_08_melee_scholar",
+    "pathway_id": "hermit",
+    "sequence_number": 8,
+    "appearance_cn": "A piece of bone with a dark gray color. It feels cold to the touch",
+    "appearance_en": "A piece of bone with a dark gray color. It feels cold to the touch",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "格斗学者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_07_warlock",
+    "pathway_id": "hermit",
+    "sequence_number": 7,
+    "appearance_cn": "A dull, gray crystal with a matte finish.；A light-purple transparent left eye.",
+    "appearance_en": "A dull, gray crystal with a matte finish.；A light-purple transparent left eye.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "巫师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_06_scrolls_professor",
+    "pathway_id": "hermit",
+    "sequence_number": 6,
+    "appearance_cn": "Pale purple leather covered in mysterious patterns.",
+    "appearance_en": "Pale purple leather covered in mysterious patterns.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "卷轴教授途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_05_constellations_master",
+    "pathway_id": "hermit",
+    "sequence_number": 5,
+    "appearance_cn": "Dotted numerous dazzling, almost ethereal, spherical crystals.；Luminous, rather illusory-looking crystal sphere.",
+    "appearance_en": "Dotted numerous dazzling, almost ethereal, spherical crystals.；Luminous, rather illusory-looking crystal sphere.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "星象师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_04_mysticologist",
+    "pathway_id": "hermit",
+    "sequence_number": 4,
+    "appearance_cn": "A vague, gem-like orb emanating a gloomy aura, as if a gaze peered out from within to scrutinize everything.；An illusory gemstone shaped like an eyeball.；Its radiance subdues and exudes a murky aura, as though a gaze emanates from within to scrutinise all things.",
+    "appearance_en": "A vague, gem-like orb emanating a gloomy aura, as if a gaze peered out from within to scrutinize everything.；An illusory gemstone shaped like an eyeball.；Its radiance subdues and exudes a murky aura, as though a gaze emanates from within to scrutinise all things.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "神秘学家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_03_clairvoyant",
+    "pathway_id": "hermit",
+    "sequence_number": 3,
+    "appearance_cn": "A vertically shaped item with a mercury sheen.",
+    "appearance_en": "A vertically shaped item with a mercury sheen.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "预言大师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_02_sage",
+    "pathway_id": "hermit",
+    "sequence_number": 2,
+    "appearance_cn": "\"Crystals\" formed from seemingly transparent information.；A fist-sized diamond shimmering with sacred and wise radiance, each facet seeming to reflect indifferent, merciless eyes.",
+    "appearance_en": "\"Crystals\" formed from seemingly transparent information.；A fist-sized diamond shimmering with sacred and wise radiance, each facet seeming to reflect indifferent, merciless eyes.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "贤者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_01_knowledge_emperor",
+    "pathway_id": "hermit",
+    "sequence_number": 1,
+    "appearance_cn": "A transparent, illusory crown formed from the convergence of diverse information.",
+    "appearance_en": "A transparent, illusory crown formed from the convergence of diverse information.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "知识皇帝途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_hermit_00_hermit",
+    "pathway_id": "hermit",
+    "sequence_number": 0,
+    "appearance_cn": "A blank, indifferent, and illusory Eye without eyelashes.",
+    "appearance_en": "A blank, indifferent, and illusory Eye without eyelashes.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "隐者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_09_savant",
+    "pathway_id": "paragon",
+    "sequence_number": 9,
+    "appearance_cn": "An icy blue, transparent, brain shaped object.",
+    "appearance_en": "An icy blue, transparent, brain shaped object.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "通识者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_08_archaeologist",
+    "pathway_id": "paragon",
+    "sequence_number": 8,
+    "appearance_cn": "A transparent crystal that emits a musty, old aura.",
+    "appearance_en": "A transparent crystal that emits a musty, old aura.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "考古学家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_07_appraiser",
+    "pathway_id": "paragon",
+    "sequence_number": 7,
+    "appearance_cn": "A pair of black and white eyes, bearing numerous strange symbols.",
+    "appearance_en": "A pair of black and white eyes, bearing numerous strange symbols.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "鉴定师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_06_artisan",
+    "pathway_id": "paragon",
+    "sequence_number": 6,
+    "appearance_cn": "A fist sized, wrinkled, oval shaped object ablaze with crimson flames.",
+    "appearance_en": "A fist sized, wrinkled, oval shaped object ablaze with crimson flames.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "工匠途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_05_astronomer",
+    "pathway_id": "paragon",
+    "sequence_number": 5,
+    "appearance_cn": "A thin piece of crystal, covered with mysterious cracks and brilliant specks of starlight.",
+    "appearance_en": "A thin piece of crystal, covered with mysterious cracks and brilliant specks of starlight.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "天文学家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_04_alchemist",
+    "pathway_id": "paragon",
+    "sequence_number": 4,
+    "appearance_cn": "An iron-black \"mechanism\" formed by the interlocking of various unique configurations.",
+    "appearance_en": "An iron-black \"mechanism\" formed by the interlocking of various unique configurations.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "炼金术士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_03_arcane_scholar",
+    "pathway_id": "paragon",
+    "sequence_number": 3,
+    "appearance_cn": "An illusory, flame-shaped flower containing boundless knowledge.",
+    "appearance_en": "An illusory, flame-shaped flower containing boundless knowledge.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "奥秘学者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_02_knowledge_magister",
+    "pathway_id": "paragon",
+    "sequence_number": 2,
+    "appearance_cn": "A semi-illusory, semi-real book composed of a diversity of knowledge.",
+    "appearance_en": "A semi-illusory, semi-real book composed of a diversity of knowledge.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "知识导师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_01_illuminator",
+    "pathway_id": "paragon",
+    "sequence_number": 1,
+    "appearance_cn": "A weighty yet ethereal picture scroll of a civilization.",
+    "appearance_en": "A weighty yet ethereal picture scroll of a civilization.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "启蒙者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_paragon_00_paragon",
+    "pathway_id": "paragon",
+    "sequence_number": 0,
+    "appearance_cn": "A hazy, perfectly formed glow composed of massive amounts of information.",
+    "appearance_en": "A hazy, perfectly formed glow composed of massive amounts of information.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "完美者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_09_monster",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 9,
+    "appearance_cn": "A silver, petal-shaped object covered in scales.",
+    "appearance_en": "A silver, petal-shaped object covered in scales.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "怪物途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_08_robot",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 8,
+    "appearance_cn": "A crystal-clear, cold gray stone.",
+    "appearance_en": "A crystal-clear, cold gray stone.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "机器途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_07_lucky_one",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 7,
+    "appearance_cn": "A mercury-colored eyeball, swiveling left and right as if it were alive. Once released from the boxing glove, its was stored as a mercury eyeball in a glass jar.",
+    "appearance_en": "A mercury-colored eyeball, swiveling left and right as if it were alive. Once released from the boxing glove, its was stored as a mercury eyeball in a glass jar.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "幸运者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_06_calamity_priest",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 6,
+    "appearance_cn": "A fist-sized heart covered in mercury-colored scales.",
+    "appearance_en": "A fist-sized heart covered in mercury-colored scales.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "灾祸教士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_05_winner",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 5,
+    "appearance_cn": "A \"golden\" stone emitting red fiery light.",
+    "appearance_en": "A \"golden\" stone emitting red fiery light.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "赢家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_04_misfortune_mage",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 4,
+    "appearance_cn": "Sharp, deep black horn-like object with countless grey-white wrinkles.",
+    "appearance_en": "Sharp, deep black horn-like object with countless grey-white wrinkles.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "厄运法师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_03_chaoswalker",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 3,
+    "appearance_cn": "A silver-grey patterned gelatinous substance that causes mental confusion and seems to interfere with fate itself.",
+    "appearance_en": "A silver-grey patterned gelatinous substance that causes mental confusion and seems to interfere with fate itself.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "混乱行者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_02_soothsayer",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 2,
+    "appearance_cn": "Either a scale-covered horn, a wood-grained heart, or a cracked turtle shell, all in a mercury silver color.",
+    "appearance_en": "Either a scale-covered horn, a wood-grained heart, or a cracked turtle shell, all in a mercury silver color.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "先知途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_01_snake_of_mercury",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 1,
+    "appearance_cn": "A mercury ring with countless cyclic symbols.",
+    "appearance_en": "A mercury ring with countless cyclic symbols.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "水银之蛇途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_wheel_of_fortune_00_wheel_of_fortune",
+    "pathway_id": "wheel_of_fortune",
+    "sequence_number": 0,
+    "appearance_cn": "An ordinary six-sided white die with red pips on each of its faces.",
+    "appearance_en": "An ordinary six-sided white die with red pips on each of its faces.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "命运之轮途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_09_planter",
+    "pathway_id": "mother",
+    "sequence_number": 9,
+    "appearance_cn": "A green gem filled with an aura of vitality.",
+    "appearance_en": "A green gem filled with an aura of vitality.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "耕种者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_08_doctor",
+    "pathway_id": "mother",
+    "sequence_number": 8,
+    "appearance_cn": "A branch-like object with a bluish-green hue and glistening water droplets.",
+    "appearance_en": "A branch-like object with a bluish-green hue and glistening water droplets.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "医师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_07_harvest_priest",
+    "pathway_id": "mother",
+    "sequence_number": 7,
+    "appearance_cn": "Golden liquid with abundant white foam, strongly resembling beer.",
+    "appearance_en": "Golden liquid with abundant white foam, strongly resembling beer.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "丰收祭司途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_06_biologist",
+    "pathway_id": "mother",
+    "sequence_number": 6,
+    "appearance_cn": "A tan leather covered with wrinkles and unusual patterns.",
+    "appearance_en": "A tan leather covered with wrinkles and unusual patterns.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "生物学家途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_05_druid",
+    "pathway_id": "mother",
+    "sequence_number": 5,
+    "appearance_cn": "Brown soil-like Beyonder characteristic.",
+    "appearance_en": "Brown soil-like Beyonder characteristic.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "德鲁伊途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_04_ancient_alchemist",
+    "pathway_id": "mother",
+    "sequence_number": 4,
+    "appearance_cn": "A bright red crystal that shimmers with the luster of life.",
+    "appearance_en": "A bright red crystal that shimmers with the luster of life.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "古代炼金师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_03_pallbearer",
+    "pathway_id": "mother",
+    "sequence_number": 3,
+    "appearance_cn": "A shadowy, unusually indistinct figure that appears like it is weightless",
+    "appearance_en": "A shadowy, unusually indistinct figure that appears like it is weightless",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "抬棺人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_02_desolate_matriarch",
+    "pathway_id": "mother",
+    "sequence_number": 2,
+    "appearance_cn": "A clump of brown soil covered with grass, grains, and vines.",
+    "appearance_en": "A clump of brown soil covered with grass, grains, and vines.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "荒芜主母途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_01_naturewalker",
+    "pathway_id": "mother",
+    "sequence_number": 1,
+    "appearance_cn": "Crystal clusters composed of five colors: red, green, gold, black, and brown.",
+    "appearance_en": "Crystal clusters composed of five colors: red, green, gold, black, and brown.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "自然行者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_mother_00_mother",
+    "pathway_id": "mother",
+    "sequence_number": 0,
+    "appearance_cn": "A mass of brown soil sprouting grass, grains, trees, mushrooms, and numerous reproductive organs.",
+    "appearance_en": "A mass of brown soil sprouting grass, grains, trees, mushrooms, and numerous reproductive organs.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "母亲途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_09_apothecary",
+    "pathway_id": "moon",
+    "sequence_number": 9,
+    "appearance_cn": "A transparent horn-like object radiating a shimmering rainbow of light.",
+    "appearance_en": "A transparent horn-like object radiating a shimmering rainbow of light.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "药师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_08_beast_tamer",
+    "pathway_id": "moon",
+    "sequence_number": 8,
+    "appearance_cn": "A bamboo-like object emitting a dangerous red color.",
+    "appearance_en": "A bamboo-like object emitting a dangerous red color.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "驯兽师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_07_vampire",
+    "pathway_id": "moon",
+    "sequence_number": 7,
+    "appearance_cn": "An item the size of a fist. It was completely red in color and resembled a heart. It was expanding and contracting slightly, and its surface was translucent. The holder could vaguely see a liquid flowing inside it.；Primordial Moon Believer's MUTATED: Its surface was nearly black in color and had indistinct human-faced patterns. Two transparent objects which resembled hearts—one red with vitality, and the other nearly black.",
+    "appearance_en": "An item the size of a fist. It was completely red in color and resembled a heart. It was expanding and contracting slightly, and its surface was translucent. The holder could vaguely see a liquid flowing inside it.；Primordial Moon Believer's MUTATED: Its surface was nearly black in color and had indistinct human-faced patterns. Two transparent objects which resembled hearts—one red with vitality, and the other nearly black.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "吸血鬼途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_06_potions_professor",
+    "pathway_id": "moon",
+    "sequence_number": 6,
+    "appearance_cn": "A blood-red gem that emitted a light that resembled the moonlight.",
+    "appearance_en": "A blood-red gem that emitted a light that resembled the moonlight.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "魔药教授途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_05_scarlet_scholar",
+    "pathway_id": "moon",
+    "sequence_number": 5,
+    "appearance_cn": "A simple crown woven from crimson feathers.",
+    "appearance_en": "A simple crown woven from crimson feathers.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "深红学者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_04_shaman_king",
+    "pathway_id": "moon",
+    "sequence_number": 4,
+    "appearance_cn": "A fist-sized gem condensed from thick blood. It emitted a crimson glow, like a miniature crimson moon. After purification, the miniature crimson moon was more translucent and pure.",
+    "appearance_en": "A fist-sized gem condensed from thick blood. It emitted a crimson glow, like a miniature crimson moon. After purification, the miniature crimson moon was more translucent and pure.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "巫王途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_03_high_summoner",
+    "pathway_id": "moon",
+    "sequence_number": 3,
+    "appearance_cn": "A dark red columnar crystal that seems unreal and illusory.",
+    "appearance_en": "A dark red columnar crystal that seems unreal and illusory.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "召唤大师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_02_life_giver",
+    "pathway_id": "moon",
+    "sequence_number": 2,
+    "appearance_cn": "Resembling a womb, covered with a blood-stained translucent membrane and filled with red bubbles, each of which seems to contain a life.",
+    "appearance_en": "Resembling a womb, covered with a blood-stained translucent membrane and filled with red bubbles, each of which seems to contain a life.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "创生者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_01_beauty_goddess",
+    "pathway_id": "moon",
+    "sequence_number": 1,
+    "appearance_cn": "A crimson sphere seemingly composed of the concept of beauty, filled with countless shadows of people.",
+    "appearance_en": "A crimson sphere seemingly composed of the concept of beauty, filled with countless shadows of people.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "美神途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_moon_00_moon",
+    "pathway_id": "moon",
+    "sequence_number": 0,
+    "appearance_cn": "A Crimson Moon.",
+    "appearance_en": "A Crimson Moon.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "月亮途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_09_criminal",
+    "pathway_id": "abyss",
+    "sequence_number": 9,
+    "appearance_cn": "It resembles a red quartz stone dotted with black spots.",
+    "appearance_en": "It resembles a red quartz stone dotted with black spots.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "罪犯途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_08_unwinged_angel",
+    "pathway_id": "abyss",
+    "sequence_number": 8,
+    "appearance_cn": "A dark heart with flowing ice-blue blood.",
+    "appearance_en": "A dark heart with flowing ice-blue blood.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "折翼天使途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_07_serial_killer",
+    "pathway_id": "abyss",
+    "sequence_number": 7,
+    "appearance_cn": "A sharp-edged, prismatic ice cube, enveloping faint wisps of thin black gas.",
+    "appearance_en": "A sharp-edged, prismatic ice cube, enveloping faint wisps of thin black gas.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "连环杀手途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_06_devil",
+    "pathway_id": "abyss",
+    "sequence_number": 6,
+    "appearance_cn": "A soft, black horn-like object covered in eerie patterns.",
+    "appearance_en": "A soft, black horn-like object covered in eerie patterns.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "恶魔途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_05_desire_apostle",
+    "pathway_id": "abyss",
+    "sequence_number": 5,
+    "appearance_cn": "A black-fog-like characteristic.；Corrupted by a '''Wraith''' boon: A whimsical and flamboyant cluster of black crystals. Various crystals extended in all directions, sharp and crooked. Multiple illusory, translucent faces emerged from each black crystal, their expressions alternating between malevolence, pain, madness, and confusion.",
+    "appearance_en": "A black-fog-like characteristic.；Corrupted by a '''Wraith''' boon: A whimsical and flamboyant cluster of black crystals. Various crystals extended in all directions, sharp and crooked. Multiple illusory, translucent faces emerged from each black crystal, their expressions alternating between malevolence, pain, madness, and confusion.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "欲望使徒途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_04_demon",
+    "pathway_id": "abyss",
+    "sequence_number": 4,
+    "appearance_cn": "A blood-red, alluring, half-open flower-like item.",
+    "appearance_en": "A blood-red, alluring, half-open flower-like item.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "魔鬼途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_03_blatherer",
+    "pathway_id": "abyss",
+    "sequence_number": 3,
+    "appearance_cn": "Condensed, wrinkled black mist.",
+    "appearance_en": "Condensed, wrinkled black mist.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "呓语者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_02_bloody_archduke",
+    "pathway_id": "abyss",
+    "sequence_number": 2,
+    "appearance_cn": "A deformed, enormous, black heart that exudes a strong bloody smell and drips blood constantly.",
+    "appearance_en": "A deformed, enormous, black heart that exudes a strong bloody smell and drips blood constantly.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "鲜血大公途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_01_filthy_monarch",
+    "pathway_id": "abyss",
+    "sequence_number": 1,
+    "appearance_cn": "A corrosive yet strangely ethereal flaky like black sheet.",
+    "appearance_en": "A corrosive yet strangely ethereal flaky like black sheet.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "污秽君王途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_abyss_00_abyss",
+    "pathway_id": "abyss",
+    "sequence_number": 0,
+    "appearance_cn": "A dense black abyss that seems to have countless layers and no bottom.",
+    "appearance_en": "A dense black abyss that seems to have countless layers and no bottom.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "深渊途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_09_prisoner",
+    "pathway_id": "chained",
+    "sequence_number": 9,
+    "appearance_cn": "A slowly writhing mass of dark blood.",
+    "appearance_en": "A slowly writhing mass of dark blood.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "囚犯途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_08_lunatic",
+    "pathway_id": "chained",
+    "sequence_number": 8,
+    "appearance_cn": "A blob of grayish-white light that resembled a shrunken brain.",
+    "appearance_en": "A blob of grayish-white light that resembled a shrunken brain.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "疯子途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_07_werewolf",
+    "pathway_id": "chained",
+    "sequence_number": 7,
+    "appearance_cn": "A dark-green fang. Or a blackish-green fang.",
+    "appearance_en": "A dark-green fang. Or a blackish-green fang.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "狼人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_06_zombie",
+    "pathway_id": "chained",
+    "sequence_number": 6,
+    "appearance_cn": "A gray-white heart with hints of ice blue.",
+    "appearance_en": "A gray-white heart with hints of ice blue.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "活尸途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_05_wraith",
+    "pathway_id": "chained",
+    "sequence_number": 5,
+    "appearance_cn": "A transparent stone with a distorted face protruding from it.",
+    "appearance_en": "A transparent stone with a distorted face protruding from it.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "怨魂途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_04_puppet",
+    "pathway_id": "chained",
+    "sequence_number": 4,
+    "appearance_cn": "A pair of deep black eyes that reflect the surrounding figures.",
+    "appearance_en": "A pair of deep black eyes that reflect the surrounding figures.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "木偶途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_03_disciple_of_silence",
+    "pathway_id": "chained",
+    "sequence_number": 3,
+    "appearance_cn": "A pale, throat-like object dripping with black liquid and tinged with a hint of blood.",
+    "appearance_en": "A pale, throat-like object dripping with black liquid and tinged with a hint of blood.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "沉默门徒途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_02_ancient_bane",
+    "pathway_id": "chained",
+    "sequence_number": 2,
+    "appearance_cn": "A pervasive, pale mist stained with blood and black spots, about the size of a head.",
+    "appearance_en": "A pervasive, pale mist stained with blood and black spots, about the size of a head.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "古代邪物途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_01_abomination",
+    "pathway_id": "chained",
+    "sequence_number": 1,
+    "appearance_cn": "A strange, tree-like humanoid object coated in black slime.",
+    "appearance_en": "A strange, tree-like humanoid object coated in black slime.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "神孽途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_chained_00_chained",
+    "pathway_id": "chained",
+    "sequence_number": 0,
+    "appearance_cn": "A little phantom figure wrapped in layers of bandages, thorns, and roses.",
+    "appearance_en": "A little phantom figure wrapped in layers of bandages, thorns, and roses.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "被缚者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_09_lawyer",
+    "pathway_id": "black_emperor",
+    "sequence_number": 9,
+    "appearance_cn": "A black, fruit-shaped object with three strange tongues.",
+    "appearance_en": "A black, fruit-shaped object with three strange tongues.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "律师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_08_barbarian",
+    "pathway_id": "black_emperor",
+    "sequence_number": 8,
+    "appearance_cn": "Crystalline horn-like structures covered with short black hairs.",
+    "appearance_en": "Crystalline horn-like structures covered with short black hairs.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "野蛮人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_07_briber",
+    "pathway_id": "black_emperor",
+    "sequence_number": 7,
+    "appearance_cn": "Black floral patterns that highlight a ghastly white face.",
+    "appearance_en": "Black floral patterns that highlight a ghastly white face.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "贿赂者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_06_baron_of_corruption",
+    "pathway_id": "black_emperor",
+    "sequence_number": 6,
+    "appearance_cn": "Black, swollen human surface organs that emit a rotten smell (often fused with the nose).",
+    "appearance_en": "Black, swollen human surface organs that emit a rotten smell (often fused with the nose).",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "腐化男爵途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_05_mentor_of_disorder",
+    "pathway_id": "black_emperor",
+    "sequence_number": 5,
+    "appearance_cn": "A translucent, pitch-black fist that was tightly clenched. The fist produced a feeling of strength and sinisterness. The palm's lines, luster, and fingernails seemed to follow ordinary principles, but they were filled with an abnormal charm. It seemed to hide large amounts of madness and chaos.",
+    "appearance_en": "A translucent, pitch-black fist that was tightly clenched. The fist produced a feeling of strength and sinisterness. The palm's lines, luster, and fingernails seemed to follow ordinary principles, but they were filled with an abnormal charm. It seemed to hide large amounts of madness and chaos.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "混乱导师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_04_earl_of_the_fallen",
+    "pathway_id": "black_emperor",
+    "sequence_number": 4,
+    "appearance_cn": "A fist-sized, unusually viscous black figure with eyes, a mouth, and a tongue.",
+    "appearance_en": "A fist-sized, unusually viscous black figure with eyes, a mouth, and a tongue.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "堕落伯爵途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_03_frenzied_mage",
+    "pathway_id": "black_emperor",
+    "sequence_number": 3,
+    "appearance_cn": "A dark heart with cracks appearing to reveal boiling magma like blood deep within.",
+    "appearance_en": "A dark heart with cracks appearing to reveal boiling magma like blood deep within.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "狂乱法师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_02_duke_of_entropy",
+    "pathway_id": "black_emperor",
+    "sequence_number": 2,
+    "appearance_cn": "Strange emblems formed from intertwined black fur hair with a metallic sheen.",
+    "appearance_en": "Strange emblems formed from intertwined black fur hair with a metallic sheen.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "熵之公爵途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_01_prince_of_abolition",
+    "pathway_id": "black_emperor",
+    "sequence_number": 1,
+    "appearance_cn": "A translucent black scepter divided into nine sections.",
+    "appearance_en": "A translucent black scepter divided into nine sections.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "弑序亲王途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_black_emperor_00_black_emperor",
+    "pathway_id": "black_emperor",
+    "sequence_number": 0,
+    "appearance_cn": "A crown inlaid with many dark gems.",
+    "appearance_en": "A crown inlaid with many dark gems.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "黑皇帝途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_09_arbiter",
+    "pathway_id": "justiciar",
+    "sequence_number": 9,
+    "appearance_cn": "A brownish-yellow slate covered with black lines.",
+    "appearance_en": "A brownish-yellow slate covered with black lines.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "仲裁人途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_08_sheriff",
+    "pathway_id": "justiciar",
+    "sequence_number": 8,
+    "appearance_cn": "The ball-shaped object, resembling a child's fist, exhibited a captivating blend of three colors—iron-black, dark red, and silver. Its beautiful spiritual radiance emanated from the intertwining hues of black iron, dark red, and a prominent swath of silver.",
+    "appearance_en": "The ball-shaped object, resembling a child's fist, exhibited a captivating blend of three colors—iron-black, dark red, and silver. Its beautiful spiritual radiance emanated from the intertwining hues of black iron, dark red, and a prominent swath of silver.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "治安官途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_07_interrogator",
+    "pathway_id": "justiciar",
+    "sequence_number": 7,
+    "appearance_cn": "A light blue, translucent hexagonal prism with rays of light flickering inside, as if lightning is coming from the depths of consciousness.",
+    "appearance_en": "A light blue, translucent hexagonal prism with rays of light flickering inside, as if lightning is coming from the depths of consciousness.",
+    "risk_level": "low",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "审讯者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_06_judge",
+    "pathway_id": "justiciar",
+    "sequence_number": 6,
+    "appearance_cn": "A crystal with heavy-feeling particles.；A transparent \"tree branch\" that alternates between black and copper.",
+    "appearance_en": "A crystal with heavy-feeling particles.；A transparent \"tree branch\" that alternates between black and copper.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "法官途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_05_disciplinary_paladin",
+    "pathway_id": "justiciar",
+    "sequence_number": 5,
+    "appearance_cn": "A black, heart-shaped stone covered in spikes.",
+    "appearance_en": "A black, heart-shaped stone covered in spikes.",
+    "risk_level": "medium",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "惩戒骑士途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_04_imperative_mage",
+    "pathway_id": "justiciar",
+    "sequence_number": 4,
+    "appearance_cn": "A copper-colored prismatic crystal with blurred grayish-white patches.",
+    "appearance_en": "A copper-colored prismatic crystal with blurred grayish-white patches.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "律令法师途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_03_chaos_hunter",
+    "pathway_id": "justiciar",
+    "sequence_number": 3,
+    "appearance_cn": "A fist sized spar brass cube with numerous mysterious characters written on it.",
+    "appearance_en": "A fist sized spar brass cube with numerous mysterious characters written on it.",
+    "risk_level": "high",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "混乱猎手途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_02_balancer",
+    "pathway_id": "justiciar",
+    "sequence_number": 2,
+    "appearance_cn": "A black and yellow 'turtle shell' with strange cracks.",
+    "appearance_en": "A black and yellow 'turtle shell' with strange cracks.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "平衡者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_01_hand_of_order",
+    "pathway_id": "justiciar",
+    "sequence_number": 1,
+    "appearance_cn": "A brass 'fist' with clearly defined knuckles that clenches tightly.",
+    "appearance_en": "A brass 'fist' with clearly defined knuckles that clenches tightly.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "秩序之手途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  },
+  {
+    "characteristic_id": "char_justiciar_00_justiciar",
+    "pathway_id": "justiciar",
+    "sequence_number": 0,
+    "appearance_cn": "A book made of solidified brass.",
+    "appearance_en": "A book made of solidified brass.",
+    "risk_level": "extreme",
+    "mental_imprint": "可能残留前任非凡者的情绪、本能或认知偏差。",
+    "can_replace_material": true,
+    "storage_requirement": "密封保存，避免长期直接接触或暴露在灵性环境中。",
+    "possible_artifact_result": [
+      "审判者途径相关神奇物品"
+    ],
+    "gameplay_effect": "可作为同途径对应序列的主材料替代，也可用于封印物或神奇物品制作。",
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "wiki_only"
+  }
+]

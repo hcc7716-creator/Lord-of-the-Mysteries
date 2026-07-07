@@ -1,0 +1,710 @@
+[
+  {
+    "artifact_id": "artifact_2_049_antigonus_family_puppet",
+    "artifact_name_cn": "2-049 安提哥努斯家族木偶",
+    "artifact_name_en": "Antigonus Family Puppet",
+    "artifact_level": "2",
+    "appearance": "红黄小丑脸木偶。",
+    "positive_effect": "让附近人员身体和思维变得迟缓，可作为规则战教学对象。",
+    "negative_effect": "影响所有附近人员，包括使用者或玩家队友。",
+    "containment_method": "需隔离收容，避免无防护人员接近。",
+    "related_pathway": "fool",
+    "obtain_method": [
+      "廷根篇主线",
+      "官方封印物接触"
+    ],
+    "quest_usage": [
+      "quest_tingen_rule_battle_tutorial"
+    ],
+    "can_player_use": false,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 7",
+      "当前 Markdown 文档 10.1.13",
+      "第一部小说正文",
+      "游戏化改编"
+    ],
+    "canon_status": "novel_confirmed"
+  },
+  {
+    "artifact_id": "artifact_all_black_eye",
+    "artifact_name_cn": "全黑之眼",
+    "artifact_name_en": "All-Black Eye",
+    "artifact_level": "unclassified",
+    "appearance": "全黑眼球状物品，外观与秘偶大师相关能力意象相连。",
+    "positive_effect": "可表现为看见灵体之线、追踪隐匿目标或秘偶玩法前置物。",
+    "negative_effect": "使用者可能被灵体之线、秘偶化冲动或污染反向影响。",
+    "containment_method": "需封存在防灵性污染容器中，使用前进行风险检查。",
+    "related_pathway": "fool",
+    "obtain_method": [
+      "秘偶大师相关任务",
+      "地下黑市高危交易"
+    ],
+    "quest_usage": [
+      "quest_first_marionette",
+      "quest_marionette_system_unlock"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.1.13",
+      "游戏化改编",
+      "待核对"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_antigonus_family_notebook",
+    "artifact_name_cn": "安提哥努斯家族笔记",
+    "artifact_name_en": "Antigonus Family's Notebook",
+    "artifact_level": "1",
+    "appearance": "黑色硬皮笔记本，记录安提哥努斯家族相关高危知识。",
+    "positive_effect": "提供愚者途径、安提哥努斯家族遗产和开局谜团的重要线索。",
+    "negative_effect": "阅读者会受到隐秘腐蚀和高危知识影响，可能引发污染或追踪。",
+    "containment_method": "应由官方非凡组织封存，普通人和低序列非凡者不应长期接触。",
+    "related_pathway": "fool",
+    "obtain_method": [
+      "廷根篇主线",
+      "韦尔奇事件调查"
+    ],
+    "quest_usage": [
+      "quest_tingen_antigonus_notebook",
+      "quest_tingen_become_seer"
+    ],
+    "can_player_use": false,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 7",
+      "当前 Markdown 文档 10.1.13",
+      "第一部小说正文",
+      "游戏化改编"
+    ],
+    "canon_status": "novel_confirmed"
+  },
+  {
+    "artifact_id": "artifact_sefirah_castle_gray_fog",
+    "artifact_name_cn": "源堡/灰雾之上",
+    "artifact_name_en": "Sefirah Castle / Above the Gray Fog",
+    "artifact_level": "unique_space",
+    "appearance": "灰雾之上的高阶神秘空间，不作为普通背包物品表现。",
+    "positive_effect": "用于塔罗会、灰雾占卜、复活伏笔、高阶权柄和终局系统。",
+    "negative_effect": "过度依赖会增加高位知识、旧日意志和身份侵蚀风险。",
+    "containment_method": "不可常规收容；以主线空间和系统权限管理。",
+    "related_pathway": "fool",
+    "obtain_method": [
+      "开局主线",
+      "灰雾系统解锁"
+    ],
+    "quest_usage": [
+      "quest_tingen_first_gray_fog",
+      "quest_tarot_club_first_meeting",
+      "quest_fool_fate"
+    ],
+    "can_player_use": true,
+    "risk_level": "extreme",
+    "source_note": [
+      "当前 Markdown 文档 10.1.13",
+      "第一部小说正文",
+      "游戏化改编"
+    ],
+    "canon_status": "novel_confirmed"
+  },
+  {
+    "artifact_id": "artifact_error_monocle",
+    "artifact_name_cn": "错误单片眼镜",
+    "artifact_name_en": "Error Monocle",
+    "artifact_level": "1",
+    "appearance": "错误单片眼镜",
+    "positive_effect": "偷窃、欺诈、身份错位和规则漏洞",
+    "negative_effect": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "error",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_error_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.2",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_marauder_severed_finger",
+    "artifact_name_cn": "偷盗者断指",
+    "artifact_name_en": "Marauder Severed Finger",
+    "artifact_level": "3",
+    "appearance": "偷盗者断指",
+    "positive_effect": "偷窃、欺诈、身份错位和规则漏洞",
+    "negative_effect": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "error",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_error_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "medium",
+    "source_note": [
+      "当前 Markdown 文档 10.2",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_worm_of_time_fragment",
+    "artifact_name_cn": "时之虫残片",
+    "artifact_name_en": "Worm of Time Fragment",
+    "artifact_level": "1",
+    "appearance": "时之虫残片",
+    "positive_effect": "偷窃、欺诈、身份错位和规则漏洞",
+    "negative_effect": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "error",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_error_sealed_artifact_case"
+    ],
+    "can_player_use": false,
+    "risk_level": "extreme",
+    "source_note": [
+      "当前 Markdown 文档 10.2",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_master_key",
+    "artifact_name_cn": "万能钥匙",
+    "artifact_name_en": "Master Key",
+    "artifact_level": "2",
+    "appearance": "万能钥匙",
+    "positive_effect": "空间定位、边界穿越、能力记录和地图解锁",
+    "negative_effect": "频繁穿越边界会让玩家暴露在星空和未知存在的注视中。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "door",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_door_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.3",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_collective_dream_mask",
+    "artifact_name_cn": "集体梦境面具",
+    "artifact_name_en": "Collective Dream Mask",
+    "artifact_level": "2",
+    "appearance": "集体梦境面具",
+    "positive_effect": "社交观察、NPC 情绪分析、心理暗示、梦境行走和叙事干涉",
+    "negative_effect": "越擅长影响他人，越容易把自我也当成可被编写的故事。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "visionary",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_visionary_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.4",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_3_0782_mutated_sun_sacred_emblem",
+    "artifact_name_cn": "变异太阳圣徽",
+    "artifact_name_en": "Mutated Sun Sacred Emblem",
+    "artifact_level": "3",
+    "appearance": "变异太阳圣徽",
+    "positive_effect": "神圣净化、光辉祝福、对抗怪物和仪式公证",
+    "negative_effect": "越接近纯粹光明，越容易把自己变成容不下灰色地带的审判工具。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "sun",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_sun_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "medium",
+    "source_note": [
+      "当前 Markdown 文档 10.5",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_word_of_the_sea",
+    "artifact_name_cn": "海之言",
+    "artifact_name_en": "Word of the Sea",
+    "artifact_level": "2",
+    "appearance": "海之言",
+    "positive_effect": "风暴打击、海潮掌控、水下行动和灾难压制",
+    "negative_effect": "愤怒、支配欲和灾难权柄会使使用者越来越像不可质疑的暴君。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "tyrant",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_tyrant_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.6",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_white_tower_analysis_lens",
+    "artifact_name_cn": "白塔解析镜片",
+    "artifact_name_en": "White Tower Analysis Lens",
+    "artifact_level": "2",
+    "appearance": "白塔解析镜片",
+    "positive_effect": "情报分析、弱点识别、仪式破解、法术复制和百科式成长",
+    "negative_effect": "过量知识会让使用者被信息洪流和未经消化的神秘学规则压垮。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "white_tower",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_white_tower_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "medium",
+    "source_note": [
+      "当前 Markdown 文档 10.7",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_aurora_order_blood_scripture",
+    "artifact_name_cn": "极光会血色经卷",
+    "artifact_name_en": "Aurora Order Blood Scripture",
+    "artifact_level": "2",
+    "appearance": "极光会血色经卷",
+    "positive_effect": "秘祈倾听、血肉异变、能力牧羊、暗影防御和堕落污染",
+    "negative_effect": "倾听越深，越容易被堕落低语、血肉异化和真实造物主污染吞没。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "hanged_man",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_hanged_man_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.8",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_0_17_angel_of_concealment",
+    "artifact_name_cn": "隐秘天使之幕",
+    "artifact_name_en": "Angel of Concealment Veil",
+    "artifact_level": "0",
+    "appearance": "隐秘天使之幕",
+    "positive_effect": "夜幕感知、梦境干涉、隐秘屏障和恐惧控制",
+    "negative_effect": "长期接触梦境、灵界和隐秘力量会使自我被夜色、安眠和厄运慢慢覆盖。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "darkness",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_darkness_sealed_artifact_case"
+    ],
+    "can_player_use": false,
+    "risk_level": "extreme",
+    "source_note": [
+      "当前 Markdown 文档 10.9",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_azik_copper_whistle",
+    "artifact_name_cn": "阿兹克铜哨",
+    "artifact_name_en": "Azik Copper Whistle",
+    "artifact_level": "2",
+    "appearance": "阿兹克铜哨",
+    "positive_effect": "尸检、亡灵沟通、死亡仪式、冥界裂隙和灵魂摆渡",
+    "negative_effect": "越频繁接触死者世界，越容易被亡者记忆、冥界气息和死亡秩序同化。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "death",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_death_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.10",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_giant_king_court_shield_fragment",
+    "artifact_name_cn": "巨人王庭盾牌残片",
+    "artifact_name_en": "Giant King Court Shield Fragment",
+    "artifact_level": "1",
+    "appearance": "巨人王庭盾牌残片",
+    "positive_effect": "近战承伤、防御光辉、武器动作、巨人遗迹和黄昏衰败",
+    "negative_effect": "身体巨大化、笨重化和黄昏衰败污染会使使用者逐渐变成一座仍在战斗的巨人遗迹。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "twilight_giant",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_twilight_giant_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.11",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_demoness_mirror_shard",
+    "artifact_name_cn": "魔女镜面碎片",
+    "artifact_name_en": "Demoness Mirror Shard",
+    "artifact_level": "2",
+    "appearance": "魔女镜面碎片",
+    "positive_effect": "暗杀潜行、教唆操控、魅惑干扰、疾病状态和镜面穿行",
+    "negative_effect": "魅惑、疾病和灾祸将使用者与苦难绑定，越是传播灾难，越难保持自我边界。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "demoness",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_demoness_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.12",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_red_priest_war_banner",
+    "artifact_name_cn": "红祭司战旗",
+    "artifact_name_en": "Red Priest War Banner",
+    "artifact_level": "1",
+    "appearance": "红祭司战旗",
+    "positive_effect": "追踪猎杀、挑衅拉仇恨、战术阴谋、火焰压制和战场指挥",
+    "negative_effect": "战争和挑衅会不断把使用者推向冲突，最终只能通过灾难来证明自己。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "red_priest",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_red_priest_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.13",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_hermit_mystic_scroll",
+    "artifact_name_cn": "隐者秘术卷轴",
+    "artifact_name_en": "Hermit Mystic Scroll",
+    "artifact_level": "2",
+    "appearance": "隐者秘术卷轴",
+    "positive_effect": "神秘学研究、卷轴制作、星象观测、法术收集和神秘再现",
+    "negative_effect": "窥探未被消化的神秘知识会引发认知污染、星空注视和知识活化风险。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "hermit",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_hermit_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.14",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_paragon_alchemy_toolbox",
+    "artifact_name_cn": "完美者炼金工具箱",
+    "artifact_name_en": "Paragon Alchemy Toolbox",
+    "artifact_level": "2",
+    "appearance": "完美者炼金工具箱",
+    "positive_effect": "装备制造、道具鉴定、封印物改造、机械机关和炼金科技",
+    "negative_effect": "追求完美会使使用者把生命、神秘和社会都当成可被改造的机械系统。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "paragon",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_paragon_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "medium",
+    "source_note": [
+      "当前 Markdown 文档 10.15",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_mercury_serpent_scale",
+    "artifact_name_cn": "水银之蛇鳞片",
+    "artifact_name_en": "Snake of Mercury Scale",
+    "artifact_level": "1",
+    "appearance": "水银之蛇鳞片",
+    "positive_effect": "危险预感、幸运爆发、厄运转移、随机事件和命运循环",
+    "negative_effect": "命运偏移会把使用者卷入更大的概率代价，幸运与厄运总会在某处平衡。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "wheel_of_fortune",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_wheel_of_fortune_sealed_artifact_case"
+    ],
+    "can_player_use": false,
+    "risk_level": "extreme",
+    "source_note": [
+      "当前 Markdown 文档 10.16",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_mother_fertility_seed",
+    "artifact_name_cn": "丰饶之种",
+    "artifact_name_en": "Fertility Seed",
+    "artifact_level": "2",
+    "appearance": "丰饶之种",
+    "positive_effect": "种植培育、治疗支援、生物改造、自然仪式和生命污染对抗",
+    "negative_effect": "生命与丰饶过剩会转化为失控生长、肉体扩张和母神污染。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "mother",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_mother_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.17",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_moon_blood_vial",
+    "artifact_name_cn": "月血小瓶",
+    "artifact_name_en": "Moon Blood Vial",
+    "artifact_level": "2",
+    "appearance": "月血小瓶",
+    "positive_effect": "药剂制作、治疗与毒药、血族层级、月相恢复和变异控制",
+    "negative_effect": "满月、血液和药性变异可能引发血族失控、再生失衡和母神污染。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "moon",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_moon_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.18",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_abyss_desire_mask",
+    "artifact_name_cn": "深渊欲望面具",
+    "artifact_name_en": "Abyss Desire Mask",
+    "artifact_level": "1",
+    "appearance": "深渊欲望面具",
+    "positive_effect": "恶意感知、犯罪追踪、欲望诱导、诅咒标记和深渊污染",
+    "negative_effect": "罪恶、欲望和杀戮会逐步改写使用者的人性，将其推向深渊化的恶魔本能。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "abyss",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_abyss_sealed_artifact_case"
+    ],
+    "can_player_use": false,
+    "risk_level": "extreme",
+    "source_note": [
+      "当前 Markdown 文档 10.19",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_chained_silver_shackle",
+    "artifact_name_cn": "被缚者银锁",
+    "artifact_name_en": "Chained Silver Shackle",
+    "artifact_level": "1",
+    "appearance": "被缚者银锁",
+    "positive_effect": "囚禁束缚、怨灵同伴、狼人与活尸异变、节制派与放纵派冲突",
+    "negative_effect": "压抑与放纵之间的摆动会让使用者被身体异变、怨灵化和诅咒异化吞没。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "chained",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_chained_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.20",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_black_emperor_corruption_contract",
+    "artifact_name_cn": "黑皇帝腐化契约",
+    "artifact_name_en": "Black Emperor Corruption Contract",
+    "artifact_level": "1",
+    "appearance": "黑皇帝腐化契约",
+    "positive_effect": "法律话术、贿赂腐化、规则扭曲、秩序漏洞和王权仪式",
+    "negative_effect": "扭曲规则的人最终会被扭曲后的秩序反噬，将一切关系都视为可腐化的契约。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "black_emperor",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_black_emperor_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.21",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "artifact_id": "artifact_justiciar_order_badge",
+    "artifact_name_cn": "审判者秩序徽章",
+    "artifact_name_en": "Justiciar Order Badge",
+    "artifact_level": "1",
+    "appearance": "审判者秩序徽章",
+    "positive_effect": "仲裁执法、审讯判断、区域禁令、秩序建立和惩戒裁决",
+    "negative_effect": "秩序越绝对，越容易把使用者变成只会执行条文的裁决机器。",
+    "containment_method": "需由官方非凡组织或专门封印场所保管，使用前必须记录污染和副作用。",
+    "related_pathway": "justiciar",
+    "obtain_method": [
+      "main_quest",
+      "sealed_artifact_archive",
+      "black_market_case"
+    ],
+    "quest_usage": [
+      "quest_justiciar_sealed_artifact_case"
+    ],
+    "can_player_use": true,
+    "risk_level": "high",
+    "source_note": [
+      "当前 Markdown 文档 10.22",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  }
+]

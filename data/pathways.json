@@ -1,0 +1,1191 @@
+[
+  {
+    "pathway_id": "fool",
+    "pathway_name_cn": "愚者途径",
+    "pathway_name_en": "Fool Pathway",
+    "base_sequence_name_cn": "占卜家",
+    "base_sequence_name_en": "Seer",
+    "group": "mystery",
+    "adjacent_pathways": [
+      "error",
+      "door"
+    ],
+    "theme_keywords": [
+      "占卜",
+      "命运",
+      "表演",
+      "身份伪装",
+      "秘偶",
+      "历史",
+      "奇迹",
+      "愚弄"
+    ],
+    "gameplay_role": "以调查、预判、误导、替身、秘偶控制和后期历史/命运权柄为核心的主角成长途径。",
+    "main_mechanics": [
+      "divination",
+      "spiritual_vision",
+      "danger_premonition",
+      "misdirection",
+      "identity_disguise",
+      "marionette_control",
+      "historical_projection",
+      "miracle_invocation",
+      "fooling_authority"
+    ],
+    "risk_theme": "越深入命运、历史和高位知识，越容易遭遇精神污染、身份失衡、错误预感和旧日意志侵蚀。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-廷根市"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.1",
+      "当前 Markdown 文档 10.1",
+      "当前 Markdown 文档 12",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "error",
+    "pathway_name_cn": "错误途径",
+    "pathway_name_en": "Error Pathway",
+    "base_sequence_name_cn": "偷盗者",
+    "base_sequence_name_en": "Marauder",
+    "group": "mystery",
+    "adjacent_pathways": [
+      "fool",
+      "door"
+    ],
+    "theme_keywords": [
+      "偷窃",
+      "欺诈",
+      "规则漏洞",
+      "寄生",
+      "身份替换",
+      "时间错位"
+    ],
+    "gameplay_role": "以偷窃、欺诈、漏洞利用、寄生和时间错位为核心的潜入/反派/高阶敌人途径。",
+    "main_mechanics": [
+      "steal_item",
+      "deception",
+      "loophole",
+      "parasite_control",
+      "identity_replacement",
+      "time_error"
+    ],
+    "risk_theme": "欺诈和寄生越深，越容易失去自我边界，被阿蒙式的时间与命运污染吞没。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-地下黑市",
+      "贝克兰德"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.2",
+      "当前 Markdown 文档 10.2",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "door",
+    "pathway_name_cn": "门途径",
+    "pathway_name_en": "Door Pathway",
+    "base_sequence_name_cn": "学徒",
+    "base_sequence_name_en": "Apprentice",
+    "group": "mystery",
+    "adjacent_pathways": [
+      "fool",
+      "error"
+    ],
+    "theme_keywords": [
+      "空间",
+      "旅行",
+      "记录",
+      "门",
+      "封印",
+      "星界"
+    ],
+    "gameplay_role": "以空间探索、能力记录、区域迁移和跨地图解锁为核心的探索/支援途径。",
+    "main_mechanics": [
+      "space_sense",
+      "trick",
+      "astrology",
+      "record_ability",
+      "teleport",
+      "seal_space",
+      "planeswalk"
+    ],
+    "risk_theme": "频繁穿越边界会让玩家暴露在星空和未知存在的注视中。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-贝克兰德",
+      "五海区域"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.3",
+      "当前 Markdown 文档 10.3",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "visionary",
+    "pathway_name_cn": "空想家途径",
+    "pathway_name_en": "Visionary Pathway",
+    "base_sequence_name_cn": "观众",
+    "base_sequence_name_en": "Spectator",
+    "group": "god_almighty",
+    "adjacent_pathways": [
+      "sun",
+      "tyrant",
+      "white_tower",
+      "hanged_man"
+    ],
+    "theme_keywords": [
+      "观察",
+      "心理",
+      "梦境",
+      "暗示",
+      "集体潜意识",
+      "叙事操控"
+    ],
+    "gameplay_role": "以社交观察、心理战、梦境副本和高阶叙事干涉为核心的调查/控制途径。",
+    "main_mechanics": [
+      "emotion_reading",
+      "psychological_hint",
+      "dreamwalking",
+      "manipulation",
+      "collective_unconscious",
+      "narrative_control"
+    ],
+    "risk_theme": "越擅长影响他人，越容易把自我也当成可被编写的故事。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-贵族社交圈",
+      "贝克兰德-心理案件",
+      "梦境副本"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.4",
+      "当前 Markdown 文档 10.4",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "sun",
+    "pathway_name_cn": "太阳途径",
+    "pathway_name_en": "Sun Pathway",
+    "base_sequence_name_cn": "歌颂者",
+    "base_sequence_name_en": "Bard",
+    "group": "god_almighty",
+    "adjacent_pathways": [
+      "visionary",
+      "tyrant",
+      "white_tower",
+      "hanged_man"
+    ],
+    "theme_keywords": [
+      "光明",
+      "净化",
+      "赞美",
+      "公证",
+      "神圣",
+      "对抗污染"
+    ],
+    "gameplay_role": "以净化、祝福、审判和团队保护为核心的正面战斗/辅助途径。",
+    "main_mechanics": [
+      "purification",
+      "blessing",
+      "holy_flame",
+      "notarization",
+      "judgment",
+      "anti_corruption"
+    ],
+    "risk_theme": "越接近纯粹光明，越容易把自己变成容不下灰色地带的审判工具。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "贝克兰德-教会区",
+      "神弃之地"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.5",
+      "当前 Markdown 文档 10.5",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "tyrant",
+    "pathway_name_cn": "暴君途径",
+    "pathway_name_en": "Tyrant Pathway",
+    "base_sequence_name_cn": "水手",
+    "base_sequence_name_en": "Sailor",
+    "group": "god_almighty",
+    "adjacent_pathways": [
+      "visionary",
+      "sun",
+      "white_tower",
+      "hanged_man"
+    ],
+    "theme_keywords": [
+      "海洋",
+      "风暴",
+      "雷电",
+      "愤怒",
+      "灾难",
+      "支配"
+    ],
+    "gameplay_role": "以海洋生存、风暴战斗、群体威压和灾难权柄为核心的正面战斗途径。",
+    "main_mechanics": [
+      "sailing",
+      "storm_combat",
+      "lightning",
+      "rage",
+      "sea_control",
+      "disaster_authority"
+    ],
+    "risk_theme": "愤怒、支配欲和灾难权柄会使使用者越来越像不可质疑的暴君。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "五海区域",
+      "风暴教会港口"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.6",
+      "当前 Markdown 文档 10.6",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "white_tower",
+    "pathway_name_cn": "白塔途径",
+    "pathway_name_en": "White Tower Pathway",
+    "base_sequence_name_cn": "阅读者",
+    "base_sequence_name_en": "Reader",
+    "group": "god_almighty",
+    "adjacent_pathways": [
+      "visionary",
+      "sun",
+      "tyrant",
+      "hanged_man"
+    ],
+    "theme_keywords": [
+      "阅读",
+      "解析",
+      "推理",
+      "学习",
+      "复制",
+      "知识权柄"
+    ],
+    "gameplay_role": "以情报分析、弱点识别、仪式破解、能力学习和知识权柄为核心的研究/支援途径。",
+    "main_mechanics": [
+      "clue_analysis",
+      "weak_point_scan",
+      "ritual_decoding",
+      "ability_copying",
+      "prophecy",
+      "knowledge_authority"
+    ],
+    "risk_theme": "过量知识会让使用者被信息洪流和未经消化的神秘学规则压垮。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-大学档案",
+      "贝克兰德-图书馆",
+      "知识与智慧教会"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.7",
+      "当前 Markdown 文档 10.7",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "hanged_man",
+    "pathway_name_cn": "倒吊人途径",
+    "pathway_name_en": "Hanged Man Pathway",
+    "base_sequence_name_cn": "秘祈人",
+    "base_sequence_name_en": "Secrets Suppliant",
+    "group": "god_almighty",
+    "adjacent_pathways": [
+      "visionary",
+      "sun",
+      "tyrant",
+      "white_tower"
+    ],
+    "theme_keywords": [
+      "秘祈",
+      "倾听",
+      "血肉",
+      "堕落",
+      "牧羊",
+      "暗影",
+      "污染"
+    ],
+    "gameplay_role": "以秘祈倾听、血肉异变、能力吞噬和堕落污染为核心的高风险邪教/敌人途径。",
+    "main_mechanics": [
+      "secret_prayer",
+      "whisper_listening",
+      "flesh_mutation",
+      "corruption_spread",
+      "ability_grazing",
+      "shadow_domain"
+    ],
+    "risk_theme": "倾听越深，越容易被堕落低语、血肉异化和真实造物主污染吞没。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-邪教案件",
+      "极光会据点",
+      "地下污染副本"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.8",
+      "当前 Markdown 文档 10.8",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "darkness",
+    "pathway_name_cn": "黑夜途径",
+    "pathway_name_en": "Darkness Pathway",
+    "base_sequence_name_cn": "不眠者",
+    "base_sequence_name_en": "Sleepless",
+    "group": "eternal_darkness",
+    "adjacent_pathways": [
+      "death",
+      "twilight_giant"
+    ],
+    "theme_keywords": [
+      "夜晚",
+      "安眠",
+      "梦境",
+      "隐秘",
+      "恐惧",
+      "厄运"
+    ],
+    "gameplay_role": "以夜间行动、梦境干涉、隐秘守护和恐惧控制为核心的调查/控制途径。",
+    "main_mechanics": [
+      "night_action",
+      "dream_control",
+      "spirit_world",
+      "concealment",
+      "fear",
+      "misfortune"
+    ],
+    "risk_theme": "长期接触梦境、灵界和隐秘力量会使自我被夜色、安眠和厄运慢慢覆盖。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-黑夜教会",
+      "灵界边缘"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.9",
+      "当前 Markdown 文档 10.9",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "death",
+    "pathway_name_cn": "死神途径",
+    "pathway_name_en": "Death Pathway",
+    "base_sequence_name_cn": "收尸人",
+    "base_sequence_name_en": "Corpse Collector",
+    "group": "eternal_darkness",
+    "adjacent_pathways": [
+      "darkness",
+      "twilight_giant"
+    ],
+    "theme_keywords": [
+      "尸体",
+      "亡灵",
+      "灵魂",
+      "死亡",
+      "冥界",
+      "陵寝"
+    ],
+    "gameplay_role": "以尸检、亡灵沟通、控灵、冥界裂隙和死亡秩序为核心的调查/控制途径。",
+    "main_mechanics": [
+      "corpse_inspection",
+      "spirit_communication",
+      "undead_control",
+      "underworld_gate",
+      "soul_ferry",
+      "death_domain"
+    ],
+    "risk_theme": "越频繁接触死者世界，越容易被亡者记忆、冥界气息和死亡秩序同化。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-墓园",
+      "南大陆-拜朗遗迹",
+      "五海区域-幽灵船海域"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.10",
+      "当前 Markdown 文档 10.10",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "twilight_giant",
+    "pathway_name_cn": "黄昏巨人途径",
+    "pathway_name_en": "Twilight Giant Pathway",
+    "base_sequence_name_cn": "战士",
+    "base_sequence_name_en": "Warrior",
+    "group": "eternal_darkness",
+    "adjacent_pathways": [
+      "darkness",
+      "death"
+    ],
+    "theme_keywords": [
+      "战士",
+      "巨力",
+      "防御",
+      "守护",
+      "黄昏",
+      "衰败"
+    ],
+    "gameplay_role": "以近战承伤、武器专精、重甲守护和黄昏衰败权柄为核心的前排战斗途径。",
+    "main_mechanics": [
+      "melee_guard",
+      "parry",
+      "weapon_mastery",
+      "armor_guard",
+      "dawn_light",
+      "decay_authority"
+    ],
+    "risk_theme": "身体巨大化、笨重化和黄昏衰败污染会使使用者逐渐变成一座仍在战斗的巨人遗迹。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "弗萨克帝国-北境",
+      "神弃之地-巨人王庭",
+      "鲁恩王国-战场支线"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.11",
+      "当前 Markdown 文档 10.11",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "demoness",
+    "pathway_name_cn": "魔女途径",
+    "pathway_name_en": "Demoness Pathway",
+    "base_sequence_name_cn": "刺客",
+    "base_sequence_name_en": "Assassin",
+    "group": "calamity_of_destruction",
+    "adjacent_pathways": [
+      "red_priest"
+    ],
+    "theme_keywords": [
+      "刺杀",
+      "教唆",
+      "疾病",
+      "魅惑",
+      "镜面",
+      "灾祸",
+      "灾难传播"
+    ],
+    "gameplay_role": "以暗杀、教唆、魅惑、疾病和灾祸传播为核心的潜行/状态伤害途径。",
+    "main_mechanics": [
+      "assassination",
+      "instigation",
+      "charm",
+      "disease_spread",
+      "mirror_travel",
+      "catastrophe_spread"
+    ],
+    "risk_theme": "魅惑、疾病和灾祸将使用者与苦难绑定，越是传播灾难，越难保持自我边界。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "贝克兰德-魔女教派",
+      "因蒂斯共和国-政治阴谋",
+      "镜中空间"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.12",
+      "当前 Markdown 文档 10.12",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "red_priest",
+    "pathway_name_cn": "红祭司途径",
+    "pathway_name_en": "Red Priest Pathway",
+    "base_sequence_name_cn": "猎人",
+    "base_sequence_name_en": "Hunter",
+    "group": "calamity_of_destruction",
+    "adjacent_pathways": [
+      "demoness"
+    ],
+    "theme_keywords": [
+      "猎人",
+      "挑衅",
+      "阴谋",
+      "火焰",
+      "战争",
+      "军团指挥"
+    ],
+    "gameplay_role": "以追踪、挑衅、战术阴谋、火焰战斗和战场指挥为核心的攻击/战争途径。",
+    "main_mechanics": [
+      "tracking",
+      "provocation",
+      "conspiracy",
+      "fire_control",
+      "reaping",
+      "war_command"
+    ],
+    "risk_theme": "战争和挑衅会不断把使用者推向冲突，最终只能通过灾难来证明自己。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "因蒂斯共和国-阴谋支线",
+      "弗萨克战场",
+      "鲁恩王国-军方任务"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.13",
+      "当前 Markdown 文档 10.13",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "hermit",
+    "pathway_name_cn": "隐者途径",
+    "pathway_name_en": "Hermit Pathway",
+    "base_sequence_name_cn": "窥秘人",
+    "base_sequence_name_en": "Mystery Pryer",
+    "group": "demon_of_knowledge",
+    "adjacent_pathways": [
+      "paragon"
+    ],
+    "theme_keywords": [
+      "神秘知识",
+      "窥探",
+      "秘术",
+      "卷轴",
+      "星象",
+      "童话再现"
+    ],
+    "gameplay_role": "以神秘学研究、法术收集、卷轴制作和神秘再现为核心的知识/法术途径。",
+    "main_mechanics": [
+      "mystery_prying",
+      "spell_collection",
+      "scroll_crafting",
+      "astrology",
+      "mysticism_reenactment",
+      "knowledge_corruption"
+    ],
+    "risk_theme": "窥探未被消化的神秘知识会引发认知污染、星空注视和知识活化风险。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "贝克兰德-神秘学聚会",
+      "海上-星之上将来号",
+      "隐秘组织据点"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.14",
+      "当前 Markdown 文档 10.14",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "paragon",
+    "pathway_name_cn": "完美者途径",
+    "pathway_name_en": "Paragon Pathway",
+    "base_sequence_name_cn": "通识者",
+    "base_sequence_name_en": "Savant",
+    "group": "demon_of_knowledge",
+    "adjacent_pathways": [
+      "hermit"
+    ],
+    "theme_keywords": [
+      "通识",
+      "鉴定",
+      "工匠",
+      "机械",
+      "炼金",
+      "科技",
+      "完美造物"
+    ],
+    "gameplay_role": "以装备制造、封印物改造、机械机关和炼金科技为核心的制造/工程途径。",
+    "main_mechanics": [
+      "identification",
+      "crafting",
+      "artifact_modding",
+      "mechanism_control",
+      "alchemy_engineering",
+      "perfect_creation"
+    ],
+    "risk_theme": "追求完美会使使用者把生命、神秘和社会都当成可被改造的机械系统。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "贝克兰德-机械与蒸汽教会",
+      "因蒂斯共和国-罗塞尔遗产",
+      "蒸汽都市工坊"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.15",
+      "当前 Markdown 文档 10.15",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "wheel_of_fortune",
+    "pathway_name_cn": "命运之轮途径",
+    "pathway_name_en": "Wheel of Fortune Pathway",
+    "base_sequence_name_cn": "怪物",
+    "base_sequence_name_en": "Monster",
+    "group": "key_of_light",
+    "adjacent_pathways": [],
+    "theme_keywords": [
+      "怪物",
+      "幸运",
+      "厄运",
+      "概率",
+      "预感",
+      "命运摆动"
+    ],
+    "gameplay_role": "以危险预感、概率操控、幸运爆发和厄运转移为核心的随机/命运途径。",
+    "main_mechanics": [
+      "danger_premonition",
+      "luck_burst",
+      "misfortune_transfer",
+      "probability_shift",
+      "fate_loop",
+      "mercury_serpent"
+    ],
+    "risk_theme": "命运偏移会把使用者卷入更大的概率代价，幸运与厄运总会在某处平衡。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "贝克兰德-命运支线",
+      "灵界-概率裂隙",
+      "马戏团与赌局场景"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.16",
+      "当前 Markdown 文档 10.16",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "mother",
+    "pathway_name_cn": "母亲途径",
+    "pathway_name_en": "Mother Pathway",
+    "base_sequence_name_cn": "耕种者",
+    "base_sequence_name_en": "Planter",
+    "group": "goddess_of_origin",
+    "adjacent_pathways": [
+      "moon"
+    ],
+    "theme_keywords": [
+      "生命",
+      "丰饶",
+      "种植",
+      "治疗",
+      "繁殖",
+      "自然生长"
+    ],
+    "gameplay_role": "以种植、治疗、生物培育和自然仪式为核心的生命/支援途径。",
+    "main_mechanics": [
+      "plant_growth",
+      "healing",
+      "biological_cultivation",
+      "nature_ritual",
+      "fertility_overgrowth",
+      "life_creation"
+    ],
+    "risk_theme": "生命与丰饶过剩会转化为失控生长、肉体扩张和母神污染。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "费内波特王国-丰饶平原",
+      "古老森林",
+      "大地母神教会"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.17",
+      "当前 Markdown 文档 10.17",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "moon",
+    "pathway_name_cn": "月亮途径",
+    "pathway_name_en": "Moon Pathway",
+    "base_sequence_name_cn": "药师",
+    "base_sequence_name_en": "Apothecary",
+    "group": "goddess_of_origin",
+    "adjacent_pathways": [
+      "mother"
+    ],
+    "theme_keywords": [
+      "药剂",
+      "血族",
+      "月相",
+      "恢复",
+      "毒性",
+      "变异"
+    ],
+    "gameplay_role": "以药剂制作、血族社会、月相恢复和毒药双重效果为核心的药学/恢复途径。",
+    "main_mechanics": [
+      "potion_crafting",
+      "beast_taming",
+      "bloodline_recovery",
+      "moon_phase",
+      "poison_medicine",
+      "mutation_control"
+    ],
+    "risk_theme": "满月、血液和药性变异可能引发血族失控、再生失衡和母神污染。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "费内波特王国-药剂市场",
+      "血族社群",
+      "满月仪式场景"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.18",
+      "当前 Markdown 文档 10.18",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "abyss",
+    "pathway_name_cn": "深渊途径",
+    "pathway_name_en": "Abyss Pathway",
+    "base_sequence_name_cn": "罪犯",
+    "base_sequence_name_en": "Criminal",
+    "group": "father_of_devils",
+    "adjacent_pathways": [
+      "chained"
+    ],
+    "theme_keywords": [
+      "罪恶",
+      "欲望",
+      "恶魔",
+      "杀戮",
+      "诅咒",
+      "深渊污染"
+    ],
+    "gameplay_role": "以犯罪调查、恶意感知、欲望诱导和恶魔化为核心的高风险敌人/污染途径。",
+    "main_mechanics": [
+      "evil_sense",
+      "criminal_tracking",
+      "desire_corruption",
+      "curse_mark",
+      "devil_form",
+      "abyss_domain"
+    ],
+    "risk_theme": "罪恶、欲望和杀戮会逐步改写使用者的人性，将其推向深渊化的恶魔本能。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "南大陆-高危黑市",
+      "鲁恩王国-连环杀人案",
+      "地下恶魔仪式场"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.19",
+      "当前 Markdown 文档 10.19",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "chained",
+    "pathway_name_cn": "被缚者途径",
+    "pathway_name_en": "Chained Pathway",
+    "base_sequence_name_cn": "囚犯",
+    "base_sequence_name_en": "Prisoner",
+    "group": "father_of_devils",
+    "adjacent_pathways": [
+      "abyss"
+    ],
+    "theme_keywords": [
+      "囚禁",
+      "节制",
+      "怨灵",
+      "狼人",
+      "活尸",
+      "束缚",
+      "释放"
+    ],
+    "gameplay_role": "以囚禁、节制、身体异变、怨灵化和束缚释放为核心的异变/控制途径。",
+    "main_mechanics": [
+      "self_restraint",
+      "chain_bind",
+      "werewolf_change",
+      "zombie_body",
+      "wraith_shift",
+      "curse_release"
+    ],
+    "risk_theme": "压抑与放纵之间的摆动会让使用者被身体异变、怨灵化和诅咒异化吞没。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "玫瑰学派支线",
+      "地下监牢",
+      "怨灵污染区"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.20",
+      "当前 Markdown 文档 10.20",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "black_emperor",
+    "pathway_name_cn": "黑皇帝途径",
+    "pathway_name_en": "Black Emperor Pathway",
+    "base_sequence_name_cn": "律师",
+    "base_sequence_name_en": "Lawyer",
+    "group": "nation_of_disorder",
+    "adjacent_pathways": [
+      "justiciar"
+    ],
+    "theme_keywords": [
+      "律师",
+      "贿赂",
+      "腐化",
+      "规则扭曲",
+      "秩序漏洞",
+      "王权"
+    ],
+    "gameplay_role": "以法律话术、贿赂腐化、规则扭曲和王权秩序为核心的政治/规则途径。",
+    "main_mechanics": [
+      "legal_argument",
+      "bribery",
+      "corruption",
+      "rule_distortion",
+      "order_loophole",
+      "king_authority"
+    ],
+    "risk_theme": "扭曲规则的人最终会被扭曲后的秩序反噬，将一切关系都视为可腐化的契约。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-王室与贵族",
+      "贝克兰德-法庭区",
+      "政治腐败支线"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.21",
+      "当前 Markdown 文档 10.21",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "pathway_id": "justiciar",
+    "pathway_name_cn": "审判者途径",
+    "pathway_name_en": "Justiciar Pathway",
+    "base_sequence_name_cn": "仲裁人",
+    "base_sequence_name_en": "Arbiter",
+    "group": "nation_of_disorder",
+    "adjacent_pathways": [
+      "black_emperor"
+    ],
+    "theme_keywords": [
+      "仲裁",
+      "治安",
+      "审讯",
+      "法官",
+      "惩戒",
+      "秩序",
+      "裁决"
+    ],
+    "gameplay_role": "以执法、审讯、区域禁令、惩戒和秩序裁决为核心的官方/规则途径。",
+    "main_mechanics": [
+      "arbitration",
+      "law_enforcement",
+      "interrogation",
+      "decree_zone",
+      "punishment",
+      "order_verdict"
+    ],
+    "risk_theme": "秩序越绝对，越容易把使用者变成只会执行条文的裁决机器。",
+    "available_sequences": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "unlock_region": [
+      "鲁恩王国-官方执法组织",
+      "军情九处",
+      "封锁区与审判仪式"
+    ],
+    "source_note": [
+      "当前 Markdown 文档 3.22",
+      "当前 Markdown 文档 10.22",
+      "Lord of the Mysteries Wiki",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  }
+]
