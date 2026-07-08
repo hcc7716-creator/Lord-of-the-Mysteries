@@ -3,7 +3,7 @@ extends Node
 signal pathway_changed
 
 var current_pathway_id := "fool"
-var current_sequence_id := "fool_09_seer"
+var current_sequence_id := ""
 var unlocked_ability_ids: Array[String] = []
 
 
@@ -22,6 +22,8 @@ func set_current_sequence(sequence_id: String) -> void:
 func refresh_unlocked_abilities() -> void:
 	unlocked_ability_ids.clear()
 	var sequence := get_current_sequence()
+	if sequence.is_empty():
+		return
 	for ability_id in sequence.get("abilities", []):
 		unlocked_ability_ids.append(str(ability_id))
 
@@ -31,6 +33,8 @@ func get_current_pathway() -> Dictionary:
 
 
 func get_current_sequence() -> Dictionary:
+	if current_sequence_id == "":
+		return {}
 	return DataManager.get_sequence(current_sequence_id)
 
 
@@ -45,6 +49,8 @@ func get_unlocked_abilities() -> Array:
 
 func get_current_characteristic() -> Dictionary:
 	var sequence := get_current_sequence()
+	if sequence.is_empty():
+		return {}
 	var characteristic_id := str(sequence.get("characteristic_id", ""))
 	if characteristic_id == "":
 		characteristic_id = "char_%s_%02d_%s" % [

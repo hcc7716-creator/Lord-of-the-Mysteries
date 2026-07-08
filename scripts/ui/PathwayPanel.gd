@@ -18,29 +18,49 @@ func refresh() -> void:
 		pathway.get("pathway_name_cn", "未知途径"),
 		pathway.get("pathway_name_en", "Unknown Pathway"),
 	]
-	text += "当前序列：序列 %s %s / %s\n\n" % [
-		str(sequence.get("sequence_number", "?")),
-		sequence.get("sequence_name_cn", "未知序列"),
-		sequence.get("sequence_name_en", "Unknown"),
-	]
-
-	text += "已解锁技能：\n"
-	for ability in PathwayManager.get_unlocked_abilities():
-		text += " - %s / %s：%s\n" % [
-			ability.get("ability_name_cn", ability.get("ability_id", "")),
-			ability.get("ability_name_en", ""),
-			ability.get("effect_description", ""),
+	if sequence.is_empty():
+		text += "当前序列：普通人 / Unawakened\n"
+		text += "目标序列：序列 9 占卜家 / Seer\n\n"
+	else:
+		text += "当前序列：序列 %s %s / %s\n\n" % [
+			str(sequence.get("sequence_number", "?")),
+			sequence.get("sequence_name_cn", "未知序列"),
+			sequence.get("sequence_name_en", "Unknown"),
 		]
 
+	text += "已解锁技能：\n"
+	var abilities := PathwayManager.get_unlocked_abilities()
+	if abilities.is_empty():
+		text += " - 暂未永久解锁。接取老尼尔任务后可临时使用见习灵视与占卜。\n"
+	else:
+		for ability in abilities:
+			text += " - %s / %s：%s\n" % [
+				ability.get("ability_name_cn", ability.get("ability_id", "")),
+				ability.get("ability_name_en", ""),
+				ability.get("effect_description", ""),
+			]
+
 	text += "\n晋升所需主材料：\n"
-	text += _format_material_list(sequence.get("main_materials", []))
+	var target_sequence := sequence
+	if target_sequence.is_empty():
+		target_sequence = PotionManager.get_target_sequence()
+	text += _format_material_list(target_sequence.get("main_materials", []))
 
 	text += "\n晋升所需辅助材料：\n"
-	text += _format_material_list(sequence.get("auxiliary_materials", []))
+	text += _format_material_list(target_sequence.get("auxiliary_materials", []))
 
 	text += "\n非凡特性说明：\n"
 	if characteristic.is_empty():
-		text += " - 暂无非凡特性数据\n"
+		var target_characteristic: Dictionary = DataManager.get_characteristic("char_fool_09_seer")
+		if target_characteristic.is_empty():
+			text += " - 暂无非凡特性数据\n"
+		else:
+			text += " - 外观：%s / %s\n" % [
+				target_characteristic.get("appearance_cn", "未记录"),
+				target_characteristic.get("appearance_en", "Unrecorded"),
+			]
+			text += " - 风险等级：%s\n" % target_characteristic.get("risk_level", "unknown")
+			text += " - 游戏效果：%s\n" % target_characteristic.get("gameplay_effect", "未记录")
 	else:
 		text += " - 外观：%s / %s\n" % [
 			characteristic.get("appearance_cn", "未记录"),

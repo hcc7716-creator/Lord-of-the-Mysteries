@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/HUD.gd" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/ui/DialogueBox.tscn" id="2"]
 [ext_resource type="PackedScene" path="res://scenes/ui/InventoryPanel.tscn" id="3"]
 [ext_resource type="PackedScene" path="res://scenes/ui/QuestPanel.tscn" id="4"]
 [ext_resource type="PackedScene" path="res://scenes/ui/PathwayPanel.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/ui/PotionPanel.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://scenes/ui/CaseNotebookPanel.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://scenes/ui/SkillBar.tscn" id="8"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1")
@@ -12,8 +15,8 @@ script = ExtResource("1")
 [node name="TopLeft" type="PanelContainer" parent="."]
 offset_left = 16.0
 offset_top = 16.0
-offset_right = 420.0
-offset_bottom = 108.0
+offset_right = 560.0
+offset_bottom = 178.0
 
 [node name="MarginContainer" type="MarginContainer" parent="TopLeft"]
 layout_mode = 2
@@ -29,9 +32,22 @@ layout_mode = 2
 layout_mode = 2
 text = "当前任务：无"
 
+[node name="SpiritualityLabel" type="Label" parent="TopLeft/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "灵性：60 / 60"
+
+[node name="CorruptionLabel" type="Label" parent="TopLeft/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "污染：0 | 稳定：100 | 风险：低"
+
 [node name="HintLabel" type="Label" parent="TopLeft/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = ""
+
+[node name="StatusLabel" type="Label" parent="TopLeft/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "快捷键：1 灵视 / 2 灵摆占卜 / 3 纸笔占卜 / O 魔药 / N 笔记"
+autowrap_mode = 2
 
 [node name="DialogueBox" parent="." instance=ExtResource("2")]
 
@@ -40,3 +56,9 @@ text = ""
 [node name="QuestPanel" parent="." instance=ExtResource("4")]
 
 [node name="PathwayPanel" parent="." instance=ExtResource("5")]
+
+[node name="PotionPanel" parent="." instance=ExtResource("6")]
+
+[node name="CaseNotebookPanel" parent="." instance=ExtResource("7")]
+
+[node name="SkillBar" parent="." instance=ExtResource("8")]

@@ -28,6 +28,16 @@ func toggle_pathway_panel() -> void:
 		hud.toggle_pathway_panel()
 
 
+func toggle_potion_panel() -> void:
+	if hud and hud.has_method("toggle_potion_panel"):
+		hud.toggle_potion_panel()
+
+
+func toggle_case_notebook() -> void:
+	if hud and hud.has_method("toggle_case_notebook"):
+		hud.toggle_case_notebook()
+
+
 func show_dialogue(npc_name: String, lines, options: Array = []) -> void:
 	if hud and hud.has_method("show_dialogue"):
 		hud.show_dialogue(npc_name, lines, options)
@@ -41,6 +51,13 @@ func show_interaction_hint(text: String) -> void:
 func clear_interaction_hint() -> void:
 	if hud and hud.has_method("clear_interaction_hint"):
 		hud.clear_interaction_hint()
+
+
+func show_status_message(text: String) -> void:
+	if hud and hud.has_method("show_status_message"):
+		hud.show_status_message(text)
+	else:
+		print(text)
 
 
 func _refresh_hud() -> void:

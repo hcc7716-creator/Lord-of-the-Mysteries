@@ -1,6 +1,7 @@
 extends Node
 
 signal quest_updated(quest_id: String)
+signal quest_objective_updated(quest_id: String, objective_id: String)
 
 enum QuestStatus {
 	NOT_STARTED,
@@ -22,9 +23,25 @@ const QUESTS := {
 			"mat_gold_mint_leaves": 1,
 		},
 	},
+	"quest_tingen_become_seer": {
+		"title": "成为占卜家",
+		"description": "在老尼尔的指导下调查异常死亡案件，收集占卜家魔药材料，并完成第一次晋升。",
+		"objectives": [
+			{"id": "talk_old_neil", "text": "与老尼尔交谈，接取案件"},
+			{"id": "investigate_death_scene", "text": "调查异常死亡现场"},
+			{"id": "investigate_ritual_residue", "text": "调查仪式残留痕迹"},
+			{"id": "find_hidden_pollution", "text": "使用灵视发现隐藏的灵性污染点"},
+			{"id": "pendulum_divination", "text": "使用灵摆占卜确认方向"},
+			{"id": "paper_divination", "text": "使用纸笔占卜记录关键词"},
+			{"id": "brew_potion", "text": "在魔药面板调配占卜家魔药"},
+			{"id": "advance_seer", "text": "晋升为序列 9 占卜家"},
+		],
+		"reward_materials": {},
+	},
 }
 
 var quest_status: Dictionary = {}
+var quest_progress: Dictionary = {}
 var active_quest_id := ""
 
 
@@ -36,6 +53,9 @@ func accept_quest(quest_id: String) -> void:
 		return
 	quest_status[quest_id] = QuestStatus.ACTIVE
 	active_quest_id = quest_id
+	if not quest_progress.has(quest_id):
+		quest_progress[quest_id] = {}
+	mark_objective(quest_id, "talk_old_neil")
 	quest_updated.emit(quest_id)
 
 
@@ -50,6 +70,27 @@ func complete_quest(quest_id: String) -> void:
 	for material_id in rewards.keys():
 		InventoryManager.add_material(str(material_id), int(rewards[material_id]))
 	quest_updated.emit(quest_id)
+
+
+func mark_objective(quest_id: String, objective_id: String) -> void:
+	if quest_id == "" or objective_id == "":
+		return
+	if not QUESTS.has(quest_id):
+		return
+	if not quest_progress.has(quest_id):
+		quest_progress[quest_id] = {}
+	var progress: Dictionary = quest_progress[quest_id]
+	if bool(progress.get(objective_id, false)):
+		return
+	progress[objective_id] = true
+	quest_progress[quest_id] = progress
+	quest_objective_updated.emit(quest_id, objective_id)
+	quest_updated.emit(quest_id)
+
+
+func is_objective_done(quest_id: String, objective_id: String) -> bool:
+	var progress: Dictionary = quest_progress.get(quest_id, {})
+	return bool(progress.get(objective_id, false))
 
 
 func get_quest_status(quest_id: String) -> int:
@@ -67,10 +108,28 @@ func get_active_quest() -> Dictionary:
 
 
 func get_active_quest_title() -> String:
-	var quest := get_active_quest()
+	var quest: Dictionary = get_active_quest()
 	if quest.is_empty():
 		return "当前任务：无"
 	return "当前任务：%s" % quest.get("title", active_quest_id)
+
+
+func get_objective_lines(quest_id: String) -> Array[String]:
+	var quest: Dictionary = get_quest(quest_id)
+	var lines: Array[String] = []
+	for objective in quest.get("objectives", []):
+		var objective_id := ""
+		var objective_text := ""
+		if typeof(objective) == TYPE_DICTIONARY:
+			objective_id = str(objective.get("id", ""))
+			objective_text = str(objective.get("text", objective_id))
+		else:
+			objective_text = str(objective)
+		var marker := "[ ]"
+		if objective_id != "" and is_objective_done(quest_id, objective_id):
+			marker = "[x]"
+		lines.append("%s %s" % [marker, objective_text])
+	return lines
 
 
 func get_all_quests() -> Dictionary:

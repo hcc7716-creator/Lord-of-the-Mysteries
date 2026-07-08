@@ -18,8 +18,8 @@ func refresh() -> void:
 		var status_text := _status_to_text(status)
 		_add_line("%s [%s]" % [quest.get("title", quest_id), status_text])
 		_add_line(str(quest.get("description", "")))
-		for objective in quest.get("objectives", []):
-			_add_line(" - %s" % objective)
+		for objective_line in QuestManager.get_objective_lines(str(quest_id)):
+			_add_line(" %s" % objective_line)
 		_add_line("")
 
 

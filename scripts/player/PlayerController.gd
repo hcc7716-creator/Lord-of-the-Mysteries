@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed := 180.0
+@export var speed := 240.0
 
 var nearby_interactables: Array[Node] = []
 
@@ -14,15 +14,15 @@ func _ready() -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	var direction := Vector2.ZERO
+	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 
-	if Input.is_action_pressed("move_left") or Input.is_key_pressed(KEY_A):
+	if Input.is_key_pressed(KEY_A) or Input.is_key_pressed(KEY_LEFT):
 		direction.x -= 1.0
-	if Input.is_action_pressed("move_right") or Input.is_key_pressed(KEY_D):
+	if Input.is_key_pressed(KEY_D) or Input.is_key_pressed(KEY_RIGHT):
 		direction.x += 1.0
-	if Input.is_action_pressed("move_up") or Input.is_key_pressed(KEY_W):
+	if Input.is_key_pressed(KEY_W) or Input.is_key_pressed(KEY_UP):
 		direction.y -= 1.0
-	if Input.is_action_pressed("move_down") or Input.is_key_pressed(KEY_S):
+	if Input.is_key_pressed(KEY_S) or Input.is_key_pressed(KEY_DOWN):
 		direction.y += 1.0
 
 	velocity = direction.normalized() * speed
@@ -31,7 +31,8 @@ func _physics_process(_delta: float) -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
-		match event.physical_keycode:
+		var pressed_key: int = event.physical_keycode if event.physical_keycode != 0 else event.keycode
+		match pressed_key:
 			KEY_E:
 				_try_interact()
 			KEY_I:
@@ -40,6 +41,16 @@ func _unhandled_input(event: InputEvent) -> void:
 				GameManager.toggle_quest_panel()
 			KEY_P:
 				GameManager.toggle_pathway_panel()
+			KEY_O:
+				GameManager.toggle_potion_panel()
+			KEY_N:
+				GameManager.toggle_case_notebook()
+			KEY_1:
+				SkillManager.execute_skill("skill_seer_spiritual_vision")
+			KEY_2:
+				SkillManager.execute_skill("skill_seer_pendulum_divination")
+			KEY_3:
+				SkillManager.execute_skill("skill_seer_paper_divination")
 
 
 func _try_interact() -> void:

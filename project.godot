@@ -13,10 +13,16 @@ config/features=PackedStringArray("4.2")
 
 GameManager="*res://scripts/autoload/GameManager.gd"
 DataManager="*res://scripts/autoload/DataManager.gd"
+CorruptionManager="*res://scripts/autoload/CorruptionManager.gd"
 QuestManager="*res://scripts/autoload/QuestManager.gd"
 InventoryManager="*res://scripts/autoload/InventoryManager.gd"
 DialogueManager="*res://scripts/autoload/DialogueManager.gd"
+ClueManager="*res://scripts/autoload/ClueManager.gd"
+DivinationManager="*res://scripts/autoload/DivinationManager.gd"
 PathwayManager="*res://scripts/autoload/PathwayManager.gd"
+SkillManager="*res://scripts/autoload/SkillManager.gd"
+PotionManager="*res://scripts/autoload/PotionManager.gd"
+AdvancementManager="*res://scripts/autoload/AdvancementManager.gd"
 SaveManager="*res://scripts/autoload/SaveManager.gd"
 
 [display]
@@ -59,6 +65,26 @@ open_quest_panel={
 open_pathway_panel={
 "deadzone": 0.5,
 "events": [Object(InputEventKey,"physical_keycode":80)]
+}
+open_potion_panel={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":79)]
+}
+open_case_notebook={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":78)]
+}
+skill_slot_1={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":49)]
+}
+skill_slot_2={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":50)]
+}
+skill_slot_3={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":51)]
 }
 
 [rendering]
