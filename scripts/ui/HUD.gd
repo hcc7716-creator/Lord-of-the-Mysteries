@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+@onready var spiritual_vision_overlay: ColorRect = $SpiritualVisionOverlay
 @onready var quest_label: Label = $TopLeft/MarginContainer/VBoxContainer/QuestLabel
 @onready var next_step_label: Label = $TopLeft/MarginContainer/VBoxContainer/NextStepLabel
 @onready var spirituality_label: Label = $TopLeft/MarginContainer/VBoxContainer/SpiritualityLabel
@@ -19,6 +20,7 @@ var help_panel_pinned := false
 var interaction_hint := ""
 var transient_message := ""
 var feedback_generation := 0
+var spiritual_vision_tween: Tween = null
 
 
 func _ready() -> void:
@@ -29,9 +31,11 @@ func _ready() -> void:
 	CorruptionManager.stats_changed.connect(_on_stats_changed)
 	CorruptionManager.corruption_warning.connect(show_status_message)
 	ClueManager.notebook_updated.connect(_on_notebook_updated)
+	SkillManager.spiritual_vision_changed.connect(_on_spiritual_vision_changed)
 	PotionManager.potion_brewed.connect(func(_sequence_id: String): refresh_all())
 	DialogueManager.dialogue_started.connect(_on_dialogue_started)
 	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
+	_on_spiritual_vision_changed(SkillManager.spiritual_vision_active)
 	refresh_all()
 
 
@@ -189,6 +193,23 @@ func _on_stats_changed() -> void:
 func _on_notebook_updated() -> void:
 	if case_notebook_panel.has_method("refresh"):
 		case_notebook_panel.refresh()
+
+
+func _on_spiritual_vision_changed(active: bool) -> void:
+	if spiritual_vision_tween:
+		spiritual_vision_tween.kill()
+	if active:
+		spiritual_vision_overlay.visible = true
+		spiritual_vision_overlay.modulate.a = 0.0
+		spiritual_vision_tween = create_tween()
+		spiritual_vision_tween.tween_property(spiritual_vision_overlay, "modulate:a", 1.0, 0.18)
+	else:
+		spiritual_vision_tween = create_tween()
+		spiritual_vision_tween.tween_property(spiritual_vision_overlay, "modulate:a", 0.0, 0.24)
+		spiritual_vision_tween.tween_callback(func():
+			if not SkillManager.spiritual_vision_active:
+				spiritual_vision_overlay.visible = false
+		)
 
 
 func _on_dialogue_started(_npc_name, _lines, _options) -> void:

@@ -10,10 +10,12 @@ const DEMO_TRAINING_SKILLS: Array[String] = [
 	"skill_seer_pendulum_divination",
 	"skill_seer_paper_divination",
 ]
+const SPIRITUAL_VISION_DURATION := 8.0
 
 var permanent_unlocked_skill_ids: Array[String] = []
 var cooldowns: Dictionary = {}
 var spiritual_vision_active := false
+var spiritual_vision_generation := 0
 
 
 func _process(delta: float) -> void:
@@ -74,7 +76,7 @@ func execute_skill(skill_id: String) -> bool:
 
 	var cost: int = get_skill_cost(skill_id)
 	CorruptionManager.consume_spirituality(cost)
-	cooldowns[skill_id] = get_skill_cooldown(skill_id)
+	cooldowns[skill_id] = _get_applied_cooldown(skill_id)
 
 	match skill_id:
 		"skill_seer_spiritual_vision":
@@ -130,11 +132,21 @@ func get_skill_cooldown(skill_id: String) -> float:
 	return float(skill.get("cooldown", 0))
 
 
+func _get_applied_cooldown(skill_id: String) -> float:
+	if skill_id == "skill_seer_spiritual_vision":
+		return max(get_skill_cooldown(skill_id), SPIRITUAL_VISION_DURATION)
+	return get_skill_cooldown(skill_id)
+
+
 func _activate_spiritual_vision() -> void:
+	spiritual_vision_generation += 1
+	var generation := spiritual_vision_generation
 	spiritual_vision_active = true
 	spiritual_vision_changed.emit(true)
-	var timer: SceneTreeTimer = get_tree().create_timer(8.0)
+	var timer: SceneTreeTimer = get_tree().create_timer(SPIRITUAL_VISION_DURATION)
 	timer.timeout.connect(func():
+		if generation != spiritual_vision_generation:
+			return
 		spiritual_vision_active = false
 		spiritual_vision_changed.emit(false)
 		GameManager.show_status_message("灵视效果结束。")

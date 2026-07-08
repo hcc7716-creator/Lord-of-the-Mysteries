@@ -1,10 +1,16 @@
 extends Area2D
 
+const STATE_NORMAL := "normal"
+const STATE_UNDISCOVERED := "undiscovered"
+const STATE_REVEALED := "revealed"
+const STATE_DISCOVERED := "discovered"
+
 @export var investigation_id := "investigation_point"
 @export var point_name := "调查点"
 @export var title := ""
 @export_multiline var description := "这里残留着异常的灵性痕迹。"
 @export var requires_spiritual_vision := false
+@export var spiritual_vision_highlight := false
 @export var requires_objective_done := ""
 @export var clue_id := ""
 @export var reward_items: Dictionary = {}
@@ -18,7 +24,13 @@ extends Area2D
 @export var interaction_prompt := "按 E 调查"
 
 var already_investigated := false
+var pulse_time := 0.0
+var marker_base_color := Color(0.45, 0.76, 0.72, 1.0)
+var label_base_modulate := Color.WHITE
 
+@onready var vision_glow: Polygon2D = $VisionGlow
+@onready var vision_outline: Line2D = $VisionOutline
+@onready var marker: Polygon2D = $Marker
 @onready var label: Label = $Label
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 
@@ -26,10 +38,21 @@ var already_investigated := false
 func _ready() -> void:
 	if title == "":
 		title = point_name
+	marker_base_color = marker.color
+	label_base_modulate = label.modulate
 	label.text = title
+	if requires_spiritual_vision:
+		spiritual_vision_highlight = true
+	_restore_investigation_state()
 	SkillManager.spiritual_vision_changed.connect(_on_spiritual_vision_changed)
 	QuestManager.quest_objective_updated.connect(_on_quest_objective_updated)
 	_update_visibility()
+
+
+func _process(delta: float) -> void:
+	pulse_time += delta
+	if _should_pulse():
+		_apply_visual_state()
 
 
 func interact(_actor: Node = null) -> void:
@@ -86,17 +109,97 @@ func _on_spiritual_vision_changed(_active: bool) -> void:
 
 
 func _on_quest_objective_updated(_quest_id: String, _objective_id: String) -> void:
+	_restore_investigation_state()
 	_update_visibility()
 
 
+func get_visual_state() -> String:
+	if not requires_spiritual_vision:
+		return STATE_NORMAL
+	if already_investigated:
+		return STATE_DISCOVERED
+	if SkillManager.spiritual_vision_active and _is_objective_available():
+		return STATE_REVEALED
+	return STATE_UNDISCOVERED
+
+
 func _update_visibility() -> void:
-	var active := true
-	if requires_spiritual_vision and not SkillManager.spiritual_vision_active and not already_investigated:
-		active = false
-	if requires_objective_done != "" and not QuestManager.is_objective_done(quest_id, requires_objective_done) and not already_investigated:
+	var active := _is_objective_available()
+	if requires_spiritual_vision and get_visual_state() == STATE_UNDISCOVERED:
 		active = false
 	visible = active
 	monitoring = active
 	monitorable = active
 	if collision_shape:
 		collision_shape.disabled = not active
+	_apply_visual_state()
+
+
+func _restore_investigation_state() -> void:
+	if already_investigated:
+		return
+	if clue_id != "" and ClueManager.has_clue(clue_id):
+		already_investigated = true
+		return
+	if quest_update != "" and QuestManager.is_objective_done(quest_id, quest_update):
+		already_investigated = true
+		return
+	for objective_id in quest_updates:
+		if QuestManager.is_objective_done(quest_id, str(objective_id)):
+			already_investigated = true
+			return
+
+
+func _is_objective_available() -> bool:
+	if requires_objective_done == "" or already_investigated:
+		return true
+	return QuestManager.is_objective_done(quest_id, requires_objective_done)
+
+
+func _should_pulse() -> bool:
+	if not visible:
+		return false
+	if get_visual_state() == STATE_REVEALED:
+		return true
+	return SkillManager.spiritual_vision_active and spiritual_vision_highlight and not already_investigated
+
+
+func _apply_visual_state() -> void:
+	var state := get_visual_state()
+	var pulse := (sin(pulse_time * 6.0) + 1.0) * 0.5
+	marker.scale = Vector2.ONE
+	vision_glow.visible = false
+	vision_outline.visible = false
+	label.modulate = label_base_modulate
+
+	match state:
+		STATE_UNDISCOVERED:
+			marker.color = Color(marker_base_color.r, marker_base_color.g, marker_base_color.b, 0.0)
+			label.modulate = Color(label_base_modulate.r, label_base_modulate.g, label_base_modulate.b, 0.0)
+		STATE_REVEALED:
+			marker.color = Color(0.58, 0.92, 1.0, 0.92)
+			marker.scale = Vector2.ONE * (1.0 + pulse * 0.12)
+			vision_glow.visible = true
+			vision_outline.visible = true
+			vision_glow.color = Color(0.30, 0.74, 1.0, 0.30 + pulse * 0.30)
+			vision_glow.scale = Vector2.ONE * (1.0 + pulse * 0.10)
+			vision_outline.default_color = Color(0.78, 0.95, 1.0, 0.62 + pulse * 0.32)
+			vision_outline.scale = Vector2.ONE * (1.0 + pulse * 0.08)
+			label.modulate = Color(0.78, 0.95, 1.0, 1.0)
+		STATE_DISCOVERED:
+			marker.color = Color(marker_base_color.r, marker_base_color.g, marker_base_color.b, 0.38)
+			vision_outline.visible = true
+			vision_outline.default_color = Color(0.56, 0.82, 0.90, 0.22)
+			vision_outline.scale = Vector2.ONE
+			label.modulate = Color(label_base_modulate.r, label_base_modulate.g, label_base_modulate.b, 0.48)
+		_:
+			if SkillManager.spiritual_vision_active and spiritual_vision_highlight:
+				marker.color = Color(0.55, 0.86, 0.96, 0.90)
+				vision_glow.visible = true
+				vision_outline.visible = true
+				vision_glow.color = Color(0.25, 0.60, 0.85, 0.12 + pulse * 0.16)
+				vision_glow.scale = Vector2.ONE * (0.92 + pulse * 0.08)
+				vision_outline.default_color = Color(0.60, 0.86, 0.95, 0.28 + pulse * 0.20)
+				vision_outline.scale = Vector2.ONE * (0.96 + pulse * 0.04)
+			else:
+				marker.color = marker_base_color
