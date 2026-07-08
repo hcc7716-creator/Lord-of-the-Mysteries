@@ -23,6 +23,8 @@ func _ready() -> void:
 	CorruptionManager.corruption_warning.connect(show_status_message)
 	ClueManager.notebook_updated.connect(_on_notebook_updated)
 	PotionManager.potion_brewed.connect(func(_sequence_id: String): refresh_all())
+	DialogueManager.dialogue_started.connect(_on_dialogue_started)
+	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
 	refresh_all()
 
 
@@ -54,6 +56,8 @@ func clear_interaction_hint() -> void:
 
 
 func show_dialogue(npc_name: String, lines, options: Array = []) -> void:
+	_close_overlay_panels()
+	skill_bar.visible = false
 	if dialogue_box.has_method("show_dialogue"):
 		dialogue_box.show_dialogue(npc_name, lines, options)
 
@@ -80,14 +84,18 @@ func toggle_case_notebook() -> void:
 
 func _toggle_panel(panel: PanelContainer) -> void:
 	var next_visibility := not panel.visible
+	_close_overlay_panels()
+	panel.visible = next_visibility
+	if next_visibility and panel.has_method("refresh"):
+		panel.refresh()
+
+
+func _close_overlay_panels() -> void:
 	inventory_panel.visible = false
 	quest_panel.visible = false
 	pathway_panel.visible = false
 	potion_panel.visible = false
 	case_notebook_panel.visible = false
-	panel.visible = next_visibility
-	if next_visibility and panel.has_method("refresh"):
-		panel.refresh()
 
 
 func show_status_message(text: String) -> void:
@@ -141,3 +149,14 @@ func _on_stats_changed() -> void:
 func _on_notebook_updated() -> void:
 	if case_notebook_panel.has_method("refresh"):
 		case_notebook_panel.refresh()
+
+
+func _on_dialogue_started(_npc_name, _lines, _options) -> void:
+	_close_overlay_panels()
+	skill_bar.visible = false
+
+
+func _on_dialogue_finished() -> void:
+	skill_bar.visible = true
+	if skill_bar.has_method("refresh"):
+		skill_bar.refresh()
