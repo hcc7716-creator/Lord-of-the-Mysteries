@@ -46,14 +46,15 @@ func refresh() -> void:
 				ability.get("effect_description", ""),
 			]
 
-	text += "\n晋升所需主材料：\n"
-	var target_sequence := sequence
-	if target_sequence.is_empty():
-		target_sequence = PotionManager.get_target_sequence()
-	text += _format_material_list(target_sequence.get("main_materials", []))
+	if sequence.is_empty():
+		var target_sequence := PotionManager.get_target_sequence()
+		text += "\n晋升所需主材料：\n"
+		text += _format_material_list(target_sequence.get("main_materials", []))
 
-	text += "\n晋升所需辅助材料：\n"
-	text += _format_material_list(target_sequence.get("auxiliary_materials", []))
+		text += "\n晋升所需辅助材料：\n"
+		text += _format_material_list(target_sequence.get("auxiliary_materials", []))
+	else:
+		text += "\n晋升状态：已完成当前序列晋升。下一序列晋升材料暂未开放。\n"
 
 	text += "\n非凡特性说明：\n"
 	if characteristic.is_empty():
