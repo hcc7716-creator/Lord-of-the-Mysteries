@@ -4,6 +4,7 @@
 
 [node name="PotionPanel" type="PanelContainer"]
 visible = false
+z_index = 70
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -28,13 +29,19 @@ layout_mode = 2
 text = "魔药调配"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 460)
+custom_minimum_size = Vector2(760, 460)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="Content" type="RichTextLabel" parent="MarginContainer/VBoxContainer/ScrollContainer"]
-custom_minimum_size = Vector2(0, 440)
+custom_minimum_size = Vector2(760, 440)
 layout_mode = 2
-fit_content = true
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+fit_content = false
+scroll_active = true
 text = ""
 
 [node name="BrewButton" type="Button" parent="MarginContainer/VBoxContainer"]

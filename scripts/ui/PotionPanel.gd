@@ -1,5 +1,10 @@
 extends PanelContainer
 
+const REQUIRED_QUANTITY := 1
+const COLOR_OK := "#7ee787"
+const COLOR_MISSING := "#ff8a8a"
+const COLOR_DIM := "#a9a9a9"
+
 @onready var content: RichTextLabel = $MarginContainer/VBoxContainer/ScrollContainer/Content
 @onready var brew_button: Button = $MarginContainer/VBoxContainer/BrewButton
 
@@ -16,32 +21,38 @@ func _ready() -> void:
 func refresh() -> void:
 	var sequence: Dictionary = PotionManager.get_target_sequence()
 	var text := ""
-	text += "目标序列：序列 %s %s / %s\n\n" % [
+	text += "[b]目标序列[/b]：序列 %s %s / %s\n" % [
 		str(sequence.get("sequence_number", "?")),
 		sequence.get("sequence_name_cn", "未知序列"),
 		sequence.get("sequence_name_en", "Unknown"),
 	]
+	text += "[color=%s]目标 ID：%s[/color]\n\n" % [COLOR_DIM, PotionManager.target_sequence_id]
 
-	text += "主材料：\n"
-	text += _format_materials(PotionManager.get_main_material_ids())
-	text += "\n辅助材料：\n"
-	text += _format_materials(PotionManager.get_auxiliary_material_ids())
+	text += "[b]主材料[/b]\n"
+	text += _format_material_checklist(PotionManager.get_main_material_ids())
+	text += "\n[b]辅助材料[/b]\n"
+	text += _format_material_checklist(PotionManager.get_auxiliary_material_ids())
 
 	var missing := PotionManager.get_missing_material_names()
-	text += "\n缺失材料：\n"
+	text += "\n[b]缺失材料[/b]："
 	if missing.is_empty():
-		text += " - 无，材料已满足\n"
+		text += "[color=%s]无，材料已满足[/color]\n" % COLOR_OK
 	else:
+		text += "\n"
 		for name in missing:
-			text += " - %s\n" % name
+			text += " - [color=%s]%s[/color]\n" % [COLOR_MISSING, name]
 
-	text += "\n预计失控风险：%s\n" % PotionManager.estimate_corruption_risk()
+	text += "\n[b]预计失控风险[/b]：%s\n" % PotionManager.estimate_corruption_risk()
+	text += "[color=%s]配方风险：%s[/color]\n" % [
+		COLOR_DIM,
+		sequence.get("loss_control_risk", "暂无记录"),
+	]
 
 	var block_reason := PotionManager.get_brew_block_reason()
 	if block_reason != "":
-		text += "\n调配条件：%s\n" % block_reason
+		text += "\n[b]调配条件[/b]：[color=%s]%s[/color]\n" % [COLOR_MISSING, block_reason]
 	else:
-		text += "\n调配条件：可以调配并服食魔药\n"
+		text += "\n[b]调配条件[/b]：[color=%s]可以调配并服食魔药[/color]\n" % COLOR_OK
 	content.text = text
 
 	var can_brew := PotionManager.can_brew_target_potion()
@@ -51,20 +62,26 @@ func refresh() -> void:
 	elif can_brew:
 		brew_button.text = "调配并服食魔药"
 	else:
-		brew_button.text = "暂不可调配"
+		brew_button.text = "材料不足，暂不可调配" if not PotionManager.has_required_materials() else "暂不可调配"
 
 
-func _format_materials(material_ids: Array) -> String:
+func _format_material_checklist(material_ids: Array) -> String:
 	if material_ids.is_empty():
 		return " - 无\n"
 	var text := ""
 	for material_id in material_ids:
 		var material: Dictionary = DataManager.get_material(str(material_id))
 		var owned := InventoryManager.get_material_count(str(material_id))
-		text += " - %s / %s：%d / 1\n" % [
+		var is_satisfied := owned >= REQUIRED_QUANTITY
+		var status := "[color=%s]✓ 已满足[/color]" % COLOR_OK
+		if not is_satisfied:
+			status = "[color=%s]缺失 %d[/color]" % [COLOR_MISSING, REQUIRED_QUANTITY - owned]
+		text += " - %s %s：拥有 %d / %d（%s）\n" % [
+			"[color=%s]✓[/color]" % COLOR_OK if is_satisfied else "[color=%s]□[/color]" % COLOR_MISSING,
 			material.get("name_cn", str(material_id)),
-			material.get("name_en", ""),
 			owned,
+			REQUIRED_QUANTITY,
+			status,
 		]
 	return text
 
