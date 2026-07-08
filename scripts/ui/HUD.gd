@@ -32,7 +32,7 @@ func refresh_all() -> void:
 	quest_label.text = QuestManager.get_active_quest_title()
 	_refresh_stats()
 	hint_label.text = ""
-	status_label.text = "快捷键：1 灵视 / 2 灵摆占卜 / 3 纸笔占卜 / O 魔药 / N 笔记"
+	_set_default_status_text()
 	if inventory_panel.has_method("refresh"):
 		inventory_panel.refresh()
 	if quest_panel.has_method("refresh"):
@@ -103,8 +103,15 @@ func show_status_message(text: String) -> void:
 	var timer := get_tree().create_timer(4.0)
 	timer.timeout.connect(func():
 		if status_label.text == text:
-			status_label.text = "快捷键：1 灵视 / 2 灵摆占卜 / 3 纸笔占卜 / O 魔药 / N 笔记"
+			_set_default_status_text()
 	)
+
+
+func _set_default_status_text() -> void:
+	if QuestManager.get_quest_status("quest_tingen_become_seer") == QuestManager.QuestStatus.NOT_STARTED and PathwayManager.current_sequence_id == "":
+		status_label.text = "快捷键：E 交谈 / I 背包 / J 任务 / P 途径 / N 笔记"
+	else:
+		status_label.text = "快捷键：1 灵视 / 2 灵摆占卜 / 3 纸笔占卜 / O 魔药 / N 笔记"
 
 
 func _refresh_stats() -> void:
@@ -118,6 +125,7 @@ func _refresh_stats() -> void:
 
 func _on_quest_updated(_quest_id: String) -> void:
 	quest_label.text = QuestManager.get_active_quest_title()
+	_set_default_status_text()
 	if quest_panel.has_method("refresh"):
 		quest_panel.refresh()
 	if case_notebook_panel.has_method("refresh"):
@@ -132,6 +140,7 @@ func _on_inventory_changed() -> void:
 
 
 func _on_pathway_changed() -> void:
+	_set_default_status_text()
 	if pathway_panel.has_method("refresh"):
 		pathway_panel.refresh()
 	if skill_bar.has_method("refresh"):

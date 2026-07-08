@@ -22,6 +22,14 @@ func refresh() -> void:
 	for child in slots.get_children():
 		child.queue_free()
 
+	if QuestManager.get_quest_status("quest_tingen_become_seer") == QuestManager.QuestStatus.NOT_STARTED and PathwayManager.current_sequence_id == "":
+		var label := Label.new()
+		label.text = "尚未接触非凡能力：与老尼尔交谈后解锁临时调查技能"
+		label.custom_minimum_size = Vector2(680, 48)
+		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		slots.add_child(label)
+		return
+
 	for slot in SKILL_SLOTS:
 		var skill_id := str(slot.get("skill_id", ""))
 		var button := Button.new()

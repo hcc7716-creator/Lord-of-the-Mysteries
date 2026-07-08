@@ -11,6 +11,10 @@ func _ready() -> void:
 
 
 func refresh() -> void:
+	if not _has_pathway_context():
+		content.text = _build_locked_text()
+		return
+
 	var pathway: Dictionary = PathwayManager.get_current_pathway()
 	var sequence: Dictionary = PathwayManager.get_current_sequence()
 	var characteristic: Dictionary = PathwayManager.get_current_characteristic()
@@ -72,6 +76,21 @@ func refresh() -> void:
 		text += " - 游戏效果：%s\n" % characteristic.get("gameplay_effect", "未记录")
 
 	content.text = text
+
+
+func _has_pathway_context() -> bool:
+	return QuestManager.get_quest_status("quest_tingen_become_seer") != QuestManager.QuestStatus.NOT_STARTED or PathwayManager.current_sequence_id != ""
+
+
+func _build_locked_text() -> String:
+	var text := ""
+	text += "当前状态：普通人 / Unawakened\n\n"
+	text += "你还没有接触任何非凡途径。\n"
+	text += "与老尼尔交谈并接取案件后，才会记录可疑途径、目标序列、临时能力和魔药线索。\n\n"
+	text += "已解锁技能：\n"
+	text += " - 无\n\n"
+	text += "提示：先靠近老尼尔，按 E 与他交谈。\n"
+	return text
 
 
 func _format_material_list(material_ids) -> String:
