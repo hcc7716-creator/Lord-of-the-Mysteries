@@ -30,7 +30,7 @@ const CLUES := {
 	},
 	"clue_paper_divination_keywords": {
 		"title": "纸笔占卜关键词",
-		"description": "纸面浮现出“红烟囱”“镜子”“午夜”三个词。",
+		"description": "纸面浮现出一组与案件有关的关键词，具体内容会随污染状态改变。",
 		"quest_id": "quest_tingen_become_seer",
 		"is_key": false,
 	},
@@ -71,13 +71,32 @@ func get_clues_for_quest(quest_id: String) -> Array:
 	return result
 
 
-func add_divination_hint(quest_id: String, skill_id: String, title: String, text: String) -> void:
-	divination_hints.append({
+func get_clue_entries_for_quest(quest_id: String) -> Array:
+	var result: Array = []
+	for clue_id in acquired_clues.keys():
+		var clue: Dictionary = get_clue(str(clue_id))
+		if str(clue.get("quest_id", "")) == quest_id:
+			var entry := clue.duplicate()
+			entry["clue_id"] = str(clue_id)
+			result.append(entry)
+	return result
+
+
+func add_divination_hint(quest_id: String, skill_id: String, title: String, text: String, keywords: Array = []) -> void:
+	var entry := {
 		"quest_id": quest_id,
 		"skill_id": skill_id,
 		"title": title,
 		"text": text,
-	})
+		"keywords": keywords,
+	}
+	for index in range(divination_hints.size()):
+		var hint: Dictionary = divination_hints[index]
+		if str(hint.get("quest_id", "")) == quest_id and str(hint.get("skill_id", "")) == skill_id:
+			divination_hints[index] = entry
+			notebook_updated.emit()
+			return
+	divination_hints.append(entry)
 	notebook_updated.emit()
 
 

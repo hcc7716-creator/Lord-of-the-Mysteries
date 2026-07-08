@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3]
+[gd_scene load_steps=11 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/HUD.gd" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/ui/DialogueBox.tscn" id="2"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/CaseNotebookPanel.tscn" id="7"]
 [ext_resource type="PackedScene" path="res://scenes/ui/SkillBar.tscn" id="8"]
 [ext_resource type="PackedScene" path="res://scenes/ui/PendulumDivinationPanel.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://scenes/ui/PaperDivinationPanel.tscn" id="10"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1")
@@ -145,3 +146,5 @@ autowrap_mode = 2
 [node name="SkillBar" parent="." instance=ExtResource("8")]
 
 [node name="PendulumDivinationPanel" parent="." instance=ExtResource("9")]
+
+[node name="PaperDivinationPanel" parent="." instance=ExtResource("10")]

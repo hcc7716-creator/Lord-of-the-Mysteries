@@ -16,6 +16,7 @@ extends CanvasLayer
 @onready var case_notebook_panel: PanelContainer = $CaseNotebookPanel
 @onready var skill_bar: PanelContainer = $SkillBar
 @onready var pendulum_divination_panel: PanelContainer = $PendulumDivinationPanel
+@onready var paper_divination_panel: PanelContainer = $PaperDivinationPanel
 
 var help_panel_pinned := false
 var interaction_hint := ""
@@ -112,6 +113,12 @@ func show_pendulum_divination(data: Dictionary) -> void:
 		pendulum_divination_panel.show_divination(data)
 
 
+func show_paper_divination(data: Dictionary) -> void:
+	_close_overlay_panels()
+	if paper_divination_panel.has_method("show_divination"):
+		paper_divination_panel.show_divination(data)
+
+
 func _toggle_panel(panel: PanelContainer) -> void:
 	var next_visibility := not panel.visible
 	_close_overlay_panels()
@@ -127,6 +134,7 @@ func _close_overlay_panels() -> void:
 	potion_panel.visible = false
 	case_notebook_panel.visible = false
 	pendulum_divination_panel.visible = false
+	paper_divination_panel.visible = false
 
 
 func show_status_message(text: String) -> void:

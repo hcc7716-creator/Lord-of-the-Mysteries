@@ -22,9 +22,21 @@ const QUEST_DIVINATION := {
 		},
 		"skill_seer_paper_divination": {
 			"title": "纸笔占卜结果",
-			"clear": "纸面浮现出“红烟囱”“镜子”“午夜”三个词。",
-			"vague": "纸面只留下“烟囱”“镜面”和一个模糊的时间符号。",
-			"distorted": "纸面被墨迹污染，只能辨认出破碎的“红”“镜”“夜”。",
+			"clear": {
+				"result": "纸面浮现出三个稳定关键词。",
+				"detail": "关键词：红烟囱、镜子、午夜。",
+				"keywords": ["红烟囱", "镜子", "午夜"],
+			},
+			"vague": {
+				"result": "墨迹迟疑地聚拢成几个模糊词。",
+				"detail": "关键词：烟囱、镜面、模糊的时间符号。",
+				"keywords": ["烟囱", "镜面", "时间符号"],
+			},
+			"distorted": {
+				"result": "纸面被污染墨迹拖拽，只剩破碎字形。",
+				"detail": "关键词：红、镜、夜。",
+				"keywords": ["红", "镜", "夜"],
+			},
 			"corruption": 2,
 			"clue_id": "clue_paper_divination_keywords",
 		},
@@ -57,16 +69,18 @@ func perform_divination_data(skill_id: String) -> Dictionary:
 	var raw_result = result_data.get(clarity, result_data.get("clear", ""))
 	var result_text := ""
 	var detail_text := ""
+	var keywords: Array = []
 	if typeof(raw_result) == TYPE_DICTIONARY:
 		result_text = str(raw_result.get("result", ""))
 		detail_text = str(raw_result.get("detail", ""))
+		keywords = raw_result.get("keywords", [])
 	else:
 		result_text = str(raw_result)
 	var title := str(result_data.get("title", "占卜结果"))
 	var combined_text := result_text
 	if detail_text != "":
 		combined_text = "%s %s" % [result_text, detail_text]
-	ClueManager.add_divination_hint(quest_id, skill_id, title, combined_text)
+	ClueManager.add_divination_hint(quest_id, skill_id, title, combined_text, keywords)
 
 	var clue_id := str(result_data.get("clue_id", ""))
 	if clue_id != "":
@@ -90,6 +104,7 @@ func perform_divination_data(skill_id: String) -> Dictionary:
 		"confidence_label": _get_confidence_label(clarity),
 		"result_text": result_text,
 		"detail_text": detail_text,
+		"keywords": keywords,
 		"combined_text": combined_text,
 	}
 

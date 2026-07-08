@@ -86,8 +86,8 @@ func execute_skill(skill_id: String) -> bool:
 			var pendulum_result := DivinationManager.perform_divination_data(skill_id)
 			GameManager.show_pendulum_divination(pendulum_result)
 		"skill_seer_paper_divination":
-			var paper_result: String = DivinationManager.perform_divination(skill_id)
-			GameManager.show_status_message(paper_result)
+			var paper_result := DivinationManager.perform_divination_data(skill_id)
+			GameManager.show_paper_divination(paper_result)
 		_:
 			GameManager.show_status_message("使用技能：%s" % get_skill_name(skill_id))
 

@@ -30,6 +30,7 @@ const QUESTS := {
 			{"id": "talk_old_neil", "text": "与老尼尔交谈，接取案件"},
 			{"id": "investigate_death_scene", "text": "调查异常死亡现场"},
 			{"id": "find_hidden_pollution", "text": "使用灵视发现隐藏的灵性污染点"},
+			{"id": "paper_divination", "text": "使用纸笔占卜记录关键词"},
 			{"id": "pendulum_divination", "text": "使用灵摆占卜得到“教堂方向”"},
 			{"id": "investigate_church_clue", "text": "调查教堂附近线索"},
 			{"id": "collect_potion_materials", "text": "获得占卜家魔药材料"},

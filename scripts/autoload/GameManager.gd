@@ -48,6 +48,11 @@ func show_pendulum_divination(data: Dictionary) -> void:
 		hud.show_pendulum_divination(data)
 
 
+func show_paper_divination(data: Dictionary) -> void:
+	if hud and hud.has_method("show_paper_divination"):
+		hud.show_paper_divination(data)
+
+
 func show_dialogue(npc_name: String, lines, options: Array = []) -> void:
 	if hud and hud.has_method("show_dialogue"):
 		hud.show_dialogue(npc_name, lines, options)
