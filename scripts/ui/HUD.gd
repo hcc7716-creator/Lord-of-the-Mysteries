@@ -95,6 +95,9 @@ func toggle_pathway_panel() -> void:
 
 
 func toggle_potion_panel() -> void:
+	if not PotionManager.has_recipe_unlocked():
+		show_status_message("尚未获得魔药配方。完成调查并回到老尼尔处确认后，才能打开魔药调配界面。")
+		return
 	_toggle_panel(potion_panel)
 
 
@@ -179,6 +182,8 @@ func _on_quest_updated(_quest_id: String) -> void:
 	_refresh_task_text()
 	if quest_panel.has_method("refresh"):
 		quest_panel.refresh()
+	if potion_panel.has_method("refresh"):
+		potion_panel.refresh()
 	if case_notebook_panel.has_method("refresh"):
 		case_notebook_panel.refresh()
 	if skill_bar.has_method("refresh"):

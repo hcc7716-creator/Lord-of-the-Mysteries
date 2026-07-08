@@ -12,6 +12,7 @@ const COLOR_DIM := "#a9a9a9"
 func _ready() -> void:
 	visible = false
 	brew_button.pressed.connect(_on_brew_pressed)
+	QuestManager.quest_updated.connect(_on_quest_updated)
 	InventoryManager.inventory_changed.connect(refresh)
 	PotionManager.potion_brewed.connect(_on_potion_brewed)
 	PotionManager.potion_brew_failed.connect(_on_potion_brew_failed)
@@ -19,6 +20,18 @@ func _ready() -> void:
 
 
 func refresh() -> void:
+	if PathwayManager.current_sequence_id != "":
+		content.text = "[b]魔药调配[/b]\n\n已完成序列 9 占卜家晋升。\n当前已不需要显示该配方材料。"
+		brew_button.disabled = true
+		brew_button.text = "已完成晋升"
+		return
+
+	if not PotionManager.has_recipe_unlocked():
+		content.text = "[b]魔药调配[/b]\n\n尚未获得占卜家魔药配方。\n\n完成调查线索后，回到老尼尔处确认调配方式，配方和材料清单才会显示。"
+		brew_button.disabled = true
+		brew_button.text = "尚未获得配方"
+		return
+
 	var sequence: Dictionary = PotionManager.get_target_sequence()
 	var text := ""
 	text += "[b]目标序列[/b]：序列 %s %s / %s\n" % [
@@ -96,4 +109,8 @@ func _on_potion_brewed(_sequence_id: String) -> void:
 
 
 func _on_potion_brew_failed(_reason: String) -> void:
+	refresh()
+
+
+func _on_quest_updated(_quest_id: String) -> void:
 	refresh()
