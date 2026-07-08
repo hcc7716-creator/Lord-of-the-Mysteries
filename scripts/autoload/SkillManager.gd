@@ -83,8 +83,8 @@ func execute_skill(skill_id: String) -> bool:
 			_activate_spiritual_vision()
 			GameManager.show_status_message("灵视开启：隐藏的灵性痕迹会短暂显现。")
 		"skill_seer_pendulum_divination":
-			var pendulum_result: String = DivinationManager.perform_divination(skill_id)
-			GameManager.show_status_message(pendulum_result)
+			var pendulum_result := DivinationManager.perform_divination_data(skill_id)
+			GameManager.show_pendulum_divination(pendulum_result)
 		"skill_seer_paper_divination":
 			var paper_result: String = DivinationManager.perform_divination(skill_id)
 			GameManager.show_status_message(paper_result)

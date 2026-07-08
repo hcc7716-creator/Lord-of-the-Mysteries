@@ -43,6 +43,11 @@ func toggle_help_panel() -> void:
 		hud.toggle_help_panel()
 
 
+func show_pendulum_divination(data: Dictionary) -> void:
+	if hud and hud.has_method("show_pendulum_divination"):
+		hud.show_pendulum_divination(data)
+
+
 func show_dialogue(npc_name: String, lines, options: Array = []) -> void:
 	if hud and hud.has_method("show_dialogue"):
 		hud.show_dialogue(npc_name, lines, options)

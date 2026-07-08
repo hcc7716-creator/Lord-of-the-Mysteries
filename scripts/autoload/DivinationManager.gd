@@ -6,9 +6,18 @@ const QUEST_DIVINATION := {
 	"quest_tingen_become_seer": {
 		"skill_seer_pendulum_divination": {
 			"title": "灵摆占卜结果",
-			"clear": "灵摆稳定地指向教堂方向。老尼尔提过，教堂后街有一处被封存的旧箱。",
-			"vague": "灵摆先是指向教堂方向，随后开始轻微颤动，像被雾干扰。",
-			"distorted": "灵摆转得很慢，方向像被灰雾折断，只剩下“钟声”和“背面”的印象。",
+			"clear": {
+				"result": "灵摆稳定地指向教堂方向。",
+				"detail": "老尼尔提醒过，教堂后街有一处被封存的旧箱。",
+			},
+			"vague": {
+				"result": "灵摆先是指向教堂方向，随后开始轻微颤动。",
+				"detail": "你只能确认线索与教堂附近有关，旧箱的位置被雾气干扰。",
+			},
+			"distorted": {
+				"result": "灵摆转得很慢，方向像被灰雾折断。",
+				"detail": "只剩下“钟声”“背面”和“封存物”的危险印象，不能完全信任。",
+			},
 			"corruption": 3,
 		},
 		"skill_seer_paper_divination": {
@@ -24,6 +33,11 @@ const QUEST_DIVINATION := {
 
 
 func perform_divination(skill_id: String) -> String:
+	var result := perform_divination_data(skill_id)
+	return str(result.get("combined_text", result.get("result_text", "")))
+
+
+func perform_divination_data(skill_id: String) -> Dictionary:
 	var quest_id := QuestManager.active_quest_id
 	if quest_id == "":
 		quest_id = "quest_tingen_become_seer"
@@ -40,9 +54,19 @@ func perform_divination(skill_id: String) -> String:
 		}
 
 	var clarity := CorruptionManager.get_divination_clarity()
-	var result_text := str(result_data.get(clarity, result_data.get("clear", "")))
+	var raw_result = result_data.get(clarity, result_data.get("clear", ""))
+	var result_text := ""
+	var detail_text := ""
+	if typeof(raw_result) == TYPE_DICTIONARY:
+		result_text = str(raw_result.get("result", ""))
+		detail_text = str(raw_result.get("detail", ""))
+	else:
+		result_text = str(raw_result)
 	var title := str(result_data.get("title", "占卜结果"))
-	ClueManager.add_divination_hint(quest_id, skill_id, title, result_text)
+	var combined_text := result_text
+	if detail_text != "":
+		combined_text = "%s %s" % [result_text, detail_text]
+	ClueManager.add_divination_hint(quest_id, skill_id, title, combined_text)
 
 	var clue_id := str(result_data.get("clue_id", ""))
 	if clue_id != "":
@@ -57,5 +81,24 @@ func perform_divination(skill_id: String) -> String:
 	if clarity == "distorted":
 		corruption_gain += 2
 	CorruptionManager.add_corruption(corruption_gain, title)
-	divination_performed.emit(skill_id, result_text)
-	return result_text
+	divination_performed.emit(skill_id, combined_text)
+	return {
+		"skill_id": skill_id,
+		"quest_id": quest_id,
+		"title": title,
+		"clarity": clarity,
+		"confidence_label": _get_confidence_label(clarity),
+		"result_text": result_text,
+		"detail_text": detail_text,
+		"combined_text": combined_text,
+	}
+
+
+func _get_confidence_label(clarity: String) -> String:
+	match clarity:
+		"distorted":
+			return "危险"
+		"vague":
+			return "模糊"
+		_:
+			return "稳定"
