@@ -45,6 +45,8 @@ func _unhandled_input(event: InputEvent) -> void:
 				GameManager.toggle_potion_panel()
 			KEY_N:
 				GameManager.toggle_case_notebook()
+			KEY_H:
+				GameManager.toggle_help_panel()
 			KEY_1:
 				SkillManager.execute_skill("skill_seer_spiritual_vision")
 			KEY_2:

@@ -115,6 +115,33 @@ func get_active_quest_title() -> String:
 	return "当前任务：%s" % quest.get("title", active_quest_id)
 
 
+func get_hud_quest_title() -> String:
+	var quest_id := _get_hud_quest_id()
+	if quest_id == "":
+		return "当前任务：无"
+	var quest: Dictionary = get_quest(quest_id)
+	var suffix := ""
+	if get_quest_status(quest_id) == QuestStatus.COMPLETED:
+		suffix = "（已完成）"
+	return "当前任务：%s%s" % [quest.get("title", quest_id), suffix]
+
+
+func get_next_objective_text() -> String:
+	var quest_id := _get_hud_quest_id()
+	if quest_id == "":
+		return "下一步：与老尼尔交谈，接取案件"
+	var quest: Dictionary = get_quest(quest_id)
+	for objective in quest.get("objectives", []):
+		if typeof(objective) != TYPE_DICTIONARY:
+			continue
+		var objective_id := str(objective.get("id", ""))
+		if objective_id != "" and not is_objective_done(quest_id, objective_id):
+			return "下一步：%s" % str(objective.get("text", objective_id))
+	if get_quest_status(quest_id) == QuestStatus.COMPLETED:
+		return "下一步：已完成第一次晋升，尝试使用已解锁技能"
+	return "下一步：整理线索，等待新的任务目标"
+
+
 func get_objective_lines(quest_id: String) -> Array[String]:
 	var quest: Dictionary = get_quest(quest_id)
 	var lines: Array[String] = []
@@ -135,3 +162,11 @@ func get_objective_lines(quest_id: String) -> Array[String]:
 
 func get_all_quests() -> Dictionary:
 	return QUESTS
+
+
+func _get_hud_quest_id() -> String:
+	if active_quest_id != "":
+		return active_quest_id
+	if get_quest_status("quest_tingen_become_seer") != QuestStatus.NOT_STARTED:
+		return "quest_tingen_become_seer"
+	return ""

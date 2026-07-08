@@ -1,10 +1,12 @@
 extends CanvasLayer
 
 @onready var quest_label: Label = $TopLeft/MarginContainer/VBoxContainer/QuestLabel
+@onready var next_step_label: Label = $TopLeft/MarginContainer/VBoxContainer/NextStepLabel
 @onready var spirituality_label: Label = $TopLeft/MarginContainer/VBoxContainer/SpiritualityLabel
 @onready var corruption_label: Label = $TopLeft/MarginContainer/VBoxContainer/CorruptionLabel
-@onready var hint_label: Label = $TopLeft/MarginContainer/VBoxContainer/HintLabel
-@onready var status_label: Label = $TopLeft/MarginContainer/VBoxContainer/StatusLabel
+@onready var feedback_panel: PanelContainer = $FeedbackPanel
+@onready var feedback_label: Label = $FeedbackPanel/MarginContainer/FeedbackLabel
+@onready var help_panel: PanelContainer = $HelpPanel
 @onready var dialogue_box: PanelContainer = $DialogueBox
 @onready var inventory_panel: PanelContainer = $InventoryPanel
 @onready var quest_panel: PanelContainer = $QuestPanel
@@ -12,6 +14,11 @@ extends CanvasLayer
 @onready var potion_panel: PanelContainer = $PotionPanel
 @onready var case_notebook_panel: PanelContainer = $CaseNotebookPanel
 @onready var skill_bar: PanelContainer = $SkillBar
+
+var help_panel_pinned := false
+var interaction_hint := ""
+var transient_message := ""
+var feedback_generation := 0
 
 
 func _ready() -> void:
@@ -28,11 +35,16 @@ func _ready() -> void:
 	refresh_all()
 
 
+func _process(_delta: float) -> void:
+	help_panel.visible = help_panel_pinned or Input.is_key_pressed(KEY_TAB)
+
+
 func refresh_all() -> void:
-	quest_label.text = QuestManager.get_active_quest_title()
+	_refresh_task_text()
 	_refresh_stats()
-	hint_label.text = ""
-	_set_default_status_text()
+	interaction_hint = ""
+	transient_message = ""
+	_refresh_feedback()
 	if inventory_panel.has_method("refresh"):
 		inventory_panel.refresh()
 	if quest_panel.has_method("refresh"):
@@ -48,11 +60,13 @@ func refresh_all() -> void:
 
 
 func show_interaction_hint(text: String) -> void:
-	hint_label.text = text
+	interaction_hint = text
+	_refresh_feedback()
 
 
 func clear_interaction_hint() -> void:
-	hint_label.text = ""
+	interaction_hint = ""
+	_refresh_feedback()
 
 
 func show_dialogue(npc_name: String, lines, options: Array = []) -> void:
@@ -82,6 +96,11 @@ func toggle_case_notebook() -> void:
 	_toggle_panel(case_notebook_panel)
 
 
+func toggle_help_panel() -> void:
+	help_panel_pinned = not help_panel_pinned
+	help_panel.visible = help_panel_pinned
+
+
 func _toggle_panel(panel: PanelContainer) -> void:
 	var next_visibility := not panel.visible
 	_close_overlay_panels()
@@ -99,33 +118,45 @@ func _close_overlay_panels() -> void:
 
 
 func show_status_message(text: String) -> void:
-	status_label.text = text
+	transient_message = text
+	feedback_generation += 1
+	var generation := feedback_generation
+	_refresh_feedback()
 	var timer := get_tree().create_timer(4.0)
 	timer.timeout.connect(func():
-		if status_label.text == text:
-			_set_default_status_text()
+		if generation == feedback_generation and transient_message == text:
+			transient_message = ""
+			_refresh_feedback()
 	)
 
 
-func _set_default_status_text() -> void:
-	if QuestManager.get_quest_status("quest_tingen_become_seer") == QuestManager.QuestStatus.NOT_STARTED and PathwayManager.current_sequence_id == "":
-		status_label.text = "快捷键：E 交谈 / I 背包 / J 任务 / P 途径 / N 笔记"
+func _refresh_feedback() -> void:
+	if transient_message != "":
+		feedback_label.text = transient_message
+		feedback_panel.visible = true
+	elif interaction_hint != "":
+		feedback_label.text = interaction_hint
+		feedback_panel.visible = true
 	else:
-		status_label.text = "快捷键：1 灵视 / 2 灵摆占卜 / 3 纸笔占卜 / O 魔药 / N 笔记"
+		feedback_label.text = ""
+		feedback_panel.visible = false
+
+
+func _refresh_task_text() -> void:
+	quest_label.text = QuestManager.get_hud_quest_title()
+	next_step_label.text = QuestManager.get_next_objective_text()
 
 
 func _refresh_stats() -> void:
 	spirituality_label.text = "灵性：%d / %d" % [CorruptionManager.spirituality, CorruptionManager.max_spirituality]
-	corruption_label.text = "污染：%d | 稳定：%d | 风险：%s" % [
+	corruption_label.text = "污染：%d | 风险：%s" % [
 		CorruptionManager.corruption,
-		CorruptionManager.stability,
 		CorruptionManager.get_risk_label(),
 	]
 
 
 func _on_quest_updated(_quest_id: String) -> void:
-	quest_label.text = QuestManager.get_active_quest_title()
-	_set_default_status_text()
+	_refresh_task_text()
 	if quest_panel.has_method("refresh"):
 		quest_panel.refresh()
 	if case_notebook_panel.has_method("refresh"):
@@ -140,7 +171,7 @@ func _on_inventory_changed() -> void:
 
 
 func _on_pathway_changed() -> void:
-	_set_default_status_text()
+	_refresh_task_text()
 	if pathway_panel.has_method("refresh"):
 		pathway_panel.refresh()
 	if skill_bar.has_method("refresh"):

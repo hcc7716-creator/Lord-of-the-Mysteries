@@ -38,6 +38,11 @@ func toggle_case_notebook() -> void:
 		hud.toggle_case_notebook()
 
 
+func toggle_help_panel() -> void:
+	if hud and hud.has_method("toggle_help_panel"):
+		hud.toggle_help_panel()
+
+
 func show_dialogue(npc_name: String, lines, options: Array = []) -> void:
 	if hud and hud.has_method("show_dialogue"):
 		hud.show_dialogue(npc_name, lines, options)
