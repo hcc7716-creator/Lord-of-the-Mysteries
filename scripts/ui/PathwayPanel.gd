@@ -1,10 +1,12 @@
 extends PanelContainer
 
-@onready var content: RichTextLabel = $MarginContainer/VBoxContainer/ScrollContainer/Content
+@onready var content: RichTextLabel = $MarginContainer/VBoxContainer/Content
+@onready var close_button: Button = $MarginContainer/VBoxContainer/Header/CloseButton
 
 
 func _ready() -> void:
 	visible = false
+	close_button.pressed.connect(func(): visible = false)
 	refresh()
 
 
