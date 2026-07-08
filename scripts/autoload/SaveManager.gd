@@ -53,3 +53,4 @@ func load_game() -> void:
 	CorruptionManager.max_spirituality = int(parsed.get("max_spirituality", CorruptionManager.max_spirituality))
 	CorruptionManager.corruption = int(parsed.get("corruption", CorruptionManager.corruption))
 	CorruptionManager.stability = int(parsed.get("stability", CorruptionManager.stability))
+	CorruptionManager.normalize_spirituality_for_sequence(PathwayManager.current_sequence_id)
