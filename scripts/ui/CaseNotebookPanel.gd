@@ -5,18 +5,21 @@ extends PanelContainer
 
 func _ready() -> void:
 	visible = false
+	content.custom_minimum_size = Vector2(760, 500)
+	content.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	content.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	content.fit_content = false
+	content.scroll_active = true
 	ClueManager.notebook_updated.connect(refresh)
 	QuestManager.quest_updated.connect(func(_quest_id: String): refresh())
 	refresh()
 
 
 func refresh() -> void:
-	var quest_id := QuestManager.active_quest_id
-	if quest_id == "":
-		quest_id = "quest_tingen_become_seer"
+	var quest_id := _get_display_quest_id()
 
 	var text := ""
-	text += "当前案件名称：%s\n\n" % ClueManager.get_current_case_title()
+	text += "当前案件名称：%s\n\n" % _get_case_title(quest_id)
 
 	var key_count := ClueManager.get_key_clue_count(quest_id)
 	var key_total := ClueManager.get_total_key_clue_count(quest_id)
@@ -45,3 +48,20 @@ func refresh() -> void:
 			]
 
 	content.text = text
+
+
+func _get_display_quest_id() -> String:
+	if QuestManager.active_quest_id != "":
+		return QuestManager.active_quest_id
+	if not ClueManager.get_clues_for_quest("quest_tingen_become_seer").is_empty():
+		return "quest_tingen_become_seer"
+	if not ClueManager.get_divination_hints_for_quest("quest_tingen_become_seer").is_empty():
+		return "quest_tingen_become_seer"
+	return "quest_tingen_become_seer"
+
+
+func _get_case_title(quest_id: String) -> String:
+	var quest: Dictionary = QuestManager.get_quest(quest_id)
+	if quest.is_empty():
+		return "未接取案件"
+	return str(quest.get("title", quest_id))
