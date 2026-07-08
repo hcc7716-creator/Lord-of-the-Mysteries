@@ -1,0 +1,67 @@
+; Engine configuration file.
+; It is best edited using the Godot editor UI.
+
+config_version=5
+
+[application]
+
+config/name="Lord of the Mysteries RPG Prototype"
+run/main_scene="res://scenes/main/Main.tscn"
+config/features=PackedStringArray("4.2")
+
+[autoload]
+
+GameManager="*res://scripts/autoload/GameManager.gd"
+DataManager="*res://scripts/autoload/DataManager.gd"
+QuestManager="*res://scripts/autoload/QuestManager.gd"
+InventoryManager="*res://scripts/autoload/InventoryManager.gd"
+DialogueManager="*res://scripts/autoload/DialogueManager.gd"
+PathwayManager="*res://scripts/autoload/PathwayManager.gd"
+SaveManager="*res://scripts/autoload/SaveManager.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[input]
+
+move_up={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":87)]
+}
+move_down={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":83)]
+}
+move_left={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":65)]
+}
+move_right={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":68)]
+}
+interact={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":69)]
+}
+open_inventory={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":73)]
+}
+open_quest_panel={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":74)]
+}
+open_pathway_panel={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":80)]
+}
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0

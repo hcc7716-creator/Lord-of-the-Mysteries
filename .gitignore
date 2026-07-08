@@ -10,3 +10,8 @@ node_modules/
 
 .DS_Store
 Thumbs.db
+
+.godot/
+.import/
+export.cfg
+export_presets.cfg
