@@ -6,7 +6,7 @@ const QUEST_DIVINATION := {
 	"quest_tingen_become_seer": {
 		"skill_seer_pendulum_divination": {
 			"title": "灵摆占卜结果",
-			"clear": "灵摆稳定地指向教堂后方的旧街区，那里有被遮蔽的污染残留。",
+			"clear": "灵摆稳定地指向教堂方向。老尼尔提过，教堂后街有一处被封存的旧箱。",
 			"vague": "灵摆先是指向教堂方向，随后开始轻微颤动，像被雾干扰。",
 			"distorted": "灵摆转得很慢，方向像被灰雾折断，只剩下“钟声”和“背面”的印象。",
 			"corruption": 3,

@@ -38,14 +38,19 @@ func refresh() -> void:
 	text += "\n预计失控风险：%s\n" % PotionManager.estimate_corruption_risk()
 	content.text = text
 
-	var can_brew := PotionManager.has_required_materials() and PathwayManager.current_sequence_id == ""
+	var block_reason := PotionManager.get_brew_block_reason()
+	if block_reason != "":
+		text += "\n调配条件：%s\n" % block_reason
+	else:
+		text += "\n调配条件：可以调配并服食魔药\n"
+	var can_brew := PotionManager.can_brew_target_potion()
 	brew_button.disabled = not can_brew
 	if PathwayManager.current_sequence_id != "":
 		brew_button.text = "已完成晋升"
 	elif can_brew:
-		brew_button.text = "调配魔药"
+		brew_button.text = "调配并服食魔药"
 	else:
-		brew_button.text = "材料不足"
+		brew_button.text = "暂不可调配"
 
 
 func _format_materials(material_ids: Array) -> String:

@@ -14,11 +14,17 @@ const CLUES := {
 		"title": "仪式残留痕迹",
 		"description": "残留物中混有星晶碎屑与药草气味，像是某种低序列魔药准备仪式。",
 		"quest_id": "quest_tingen_become_seer",
-		"is_key": true,
+		"is_key": false,
 	},
 	"clue_hidden_pollution": {
 		"title": "隐藏的灵性污染点",
 		"description": "灵视下能看到墙缝里渗出的灰蓝色灵性污染，说明现场曾被刻意遮蔽。",
+		"quest_id": "quest_tingen_become_seer",
+		"is_key": true,
+	},
+	"clue_church_direction": {
+		"title": "教堂附近线索",
+		"description": "灵摆指向教堂方向后，你在教堂后街的旧箱中找到完整的占卜家魔药材料。",
 		"quest_id": "quest_tingen_become_seer",
 		"is_key": true,
 	},

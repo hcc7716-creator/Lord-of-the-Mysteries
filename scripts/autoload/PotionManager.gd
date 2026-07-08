@@ -31,6 +31,20 @@ func has_required_materials() -> bool:
 	return get_missing_materials().is_empty()
 
 
+func can_brew_target_potion() -> bool:
+	return has_required_materials() and QuestManager.is_objective_done("quest_tingen_become_seer", "return_old_neil") and PathwayManager.current_sequence_id == ""
+
+
+func get_brew_block_reason() -> String:
+	if PathwayManager.current_sequence_id != "":
+		return "你已经完成占卜家晋升。"
+	if not has_required_materials():
+		return "材料不足：%s" % ", ".join(get_missing_material_names())
+	if not QuestManager.is_objective_done("quest_tingen_become_seer", "return_old_neil"):
+		return "材料已收集，先回到老尼尔处确认调配方式。"
+	return ""
+
+
 func get_missing_materials() -> Array:
 	var missing: Array = []
 	for material_id in get_required_material_ids():
@@ -40,8 +54,8 @@ func get_missing_materials() -> Array:
 
 
 func brew_target_potion() -> bool:
-	if not has_required_materials():
-		var reason := "材料不足：%s" % ", ".join(get_missing_material_names())
+	if not can_brew_target_potion():
+		var reason := get_brew_block_reason()
 		potion_brew_failed.emit(reason)
 		GameManager.show_status_message(reason)
 		return false

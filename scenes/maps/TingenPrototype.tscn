@@ -37,7 +37,7 @@ position = Vector2(-260, 80)
 [node name="OldNeil" parent="NPCs" instance=ExtResource("2")]
 position = Vector2(-80, 40)
 npc_name = "老尼尔"
-dialogue_text = "你终于来了。\n这起死亡案不像普通谋杀，现场留下了很轻的灵性波动。\n我会临时教你打开灵视，也允许你做两次基础占卜。\n先调查死亡现场、仪式残留，再用灵视找出被遮蔽的污染点。"
+dialogue_text = "你终于来了。\n这起死亡案不像普通谋杀，现场留下了很轻的灵性波动。\n我会临时教你打开灵视，也允许你做基础占卜。\n先调查异常死亡现场，再用灵视找出被遮蔽的污染残留。之后用灵摆确认方向。"
 quest_to_offer = "quest_tingen_become_seer"
 interaction_prompt = "按 E 与老尼尔交谈"
 
@@ -48,34 +48,35 @@ position = Vector2(190, 40)
 investigation_id = "abnormal_death_scene"
 point_name = "异常死亡现场"
 title = "异常死亡现场"
-description = "地板上有一圈几乎被擦掉的粉末痕迹，靠近时能感到轻微眩晕。粉末里混着星晶碎屑和一小瓶拉沃斯鱿鱼血。"
+description = "地板上有一圈几乎被擦掉的粉末痕迹，靠近时能感到轻微眩晕。尸体旁没有搏斗痕迹，像是某种仪式失败后的结果。"
 clue_id = "clue_abnormal_death_scene"
-reward_items = {"mat_star_crystal": 1, "mat_lavos_squid_blood": 1}
+reward_items = {}
 quest_update = "investigate_death_scene"
 material_id = ""
 interaction_prompt = "按 E 调查异常死亡现场"
 
-[node name="RitualResidue" parent="Interactables" instance=ExtResource("3")]
+[node name="ChurchBackstreetClue" parent="Interactables" instance=ExtResource("3")]
 position = Vector2(300, -120)
-investigation_id = "ritual_residue"
-point_name = "仪式残留痕迹"
-title = "仪式残留痕迹"
-description = "箱子旁的羊皮纸写着残缺配方，旁边摆着纯水、夜香草汁液和金薄荷叶。"
-clue_id = "clue_ritual_residue"
-reward_items = {"mat_purified_water": 1, "mat_night_vanilla_liquids": 1, "mat_gold_mint_leaves": 1}
-quest_update = "investigate_ritual_residue"
+investigation_id = "church_backstreet_clue"
+point_name = "教堂附近线索"
+title = "教堂附近线索"
+description = "沿着灵摆指向的教堂方向，你在后街旧箱里找到了老尼尔标记过的材料包。里面正好能调配一份占卜家魔药。"
+requires_objective_done = "pendulum_divination"
+clue_id = "clue_church_direction"
+reward_items = {"mat_star_crystal": 1, "mat_lavos_squid_blood": 1, "mat_purified_water": 1, "mat_night_vanilla_liquids": 1, "mat_gold_mint_leaves": 1, "mat_poison_hemlock": 1, "mat_dragon_blood_grass_powder": 1}
+quest_updates = ["investigate_church_clue", "collect_potion_materials"]
 material_id = ""
-interaction_prompt = "按 E 调查仪式残留"
+interaction_prompt = "按 E 调查教堂附近线索"
 
 [node name="HiddenPollutionPoint" parent="Interactables" instance=ExtResource("3")]
 position = Vector2(420, 130)
 investigation_id = "hidden_pollution_point"
 point_name = "隐藏的灵性污染点"
 title = "隐藏的灵性污染点"
-description = "开启灵视后，你看见墙缝里渗出的灰蓝色灵性污染。污染旁藏着毒堇汁液和龙血草粉末。"
+description = "开启灵视后，你看见墙缝里渗出的灰蓝色灵性污染。污染残留向教堂方向拖出一条极淡的灵性尾迹。"
 requires_spiritual_vision = true
 clue_id = "clue_hidden_pollution"
-reward_items = {"mat_poison_hemlock": 1, "mat_dragon_blood_grass_powder": 1}
+reward_items = {}
 quest_update = "find_hidden_pollution"
 material_id = ""
 interaction_prompt = "按 E 调查隐藏污染点"

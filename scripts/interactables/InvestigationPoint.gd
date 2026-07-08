@@ -5,10 +5,12 @@ extends Area2D
 @export var title := ""
 @export_multiline var description := "这里残留着异常的灵性痕迹。"
 @export var requires_spiritual_vision := false
+@export var requires_objective_done := ""
 @export var clue_id := ""
 @export var reward_items: Dictionary = {}
 @export var quest_id := "quest_tingen_become_seer"
 @export var quest_update := ""
+@export var quest_updates: Array = []
 @export var material_id := "mat_star_crystal"
 @export var material_quantity := 1
 @export var complete_quest_id := ""
@@ -26,12 +28,16 @@ func _ready() -> void:
 		title = point_name
 	label.text = title
 	SkillManager.spiritual_vision_changed.connect(_on_spiritual_vision_changed)
+	QuestManager.quest_objective_updated.connect(_on_quest_objective_updated)
 	_update_visibility()
 
 
 func interact(_actor: Node = null) -> void:
 	if requires_spiritual_vision and not SkillManager.spiritual_vision_active and not already_investigated:
 		DialogueManager.start_dialogue(title, ["肉眼看不到这里的真实痕迹。也许需要先开启灵视。"], [{"text": "离开", "action": "close"}])
+		return
+	if requires_objective_done != "" and not QuestManager.is_objective_done(quest_id, requires_objective_done) and not already_investigated:
+		DialogueManager.start_dialogue(title, ["你还没有获得足够明确的方向。也许需要先做一次占卜。"], [{"text": "离开", "action": "close"}])
 		return
 
 	if one_shot and already_investigated:
@@ -56,6 +62,8 @@ func interact(_actor: Node = null) -> void:
 
 	if quest_update != "":
 		QuestManager.mark_objective(quest_id, quest_update)
+	for objective_id in quest_updates:
+		QuestManager.mark_objective(quest_id, str(objective_id))
 
 	if complete_quest_id != "":
 		QuestManager.complete_quest(complete_quest_id)
@@ -77,9 +85,15 @@ func _on_spiritual_vision_changed(_active: bool) -> void:
 	_update_visibility()
 
 
+func _on_quest_objective_updated(_quest_id: String, _objective_id: String) -> void:
+	_update_visibility()
+
+
 func _update_visibility() -> void:
 	var active := true
 	if requires_spiritual_vision and not SkillManager.spiritual_vision_active and not already_investigated:
+		active = false
+	if requires_objective_done != "" and not QuestManager.is_objective_done(quest_id, requires_objective_done) and not already_investigated:
 		active = false
 	visible = active
 	monitoring = active
