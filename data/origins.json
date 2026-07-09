@@ -1,166 +1,290 @@
 [
   {
-    "origin_id": "origin_tingen_lower_worker",
-    "origin_name_cn": "雾城底层工人",
-    "origin_name_en": "Fog City Lower Worker",
+    "origin_id": "loen_lower_middle_class",
+    "region_id": "loen",
     "starting_region_id": "tingen_prototype",
-    "social_class": "working_class",
-    "background_summary": "玩家来自工厂、码头或铁路相关家庭，熟悉城市底层街区和廉价黑市入口。",
-    "starting_currency": {
-      "gold_pound": 0,
-      "soli": 8,
-      "pence": 6
-    },
-    "starting_items": [],
-    "starting_materials": {},
-    "starting_contacts": [
-      "contact_factory_foreman",
-      "contact_backstreet_runner"
-    ],
-    "starting_reputation": {
-      "ordinary_people": 5,
-      "underground_market": 1
-    },
-    "stat_modifiers": {
-      "max_spirituality": 0,
-      "stability": 5,
-      "knowledge_tolerance": -5
-    },
-    "job_access": [
-      "job_newspaper_errand",
-      "job_dock_loader"
-    ],
-    "formula_access_hints": [
-      "market_tingen_black_market"
-    ],
-    "canon_status": "game_adapted",
-    "source_note": [
-      "游戏化改编"
-    ]
-  },
-  {
-    "origin_id": "origin_tingen_university_student",
-    "origin_name_cn": "雾城大学学生",
-    "origin_name_en": "Fog City University Student",
-    "starting_region_id": "tingen_prototype",
-    "social_class": "educated_commoner",
-    "background_summary": "玩家接受过基础教育，更容易接触图书馆、社团、神秘学传闻和调查委托。",
-    "starting_currency": {
-      "gold_pound": 1,
-      "soli": 3,
-      "pence": 0
-    },
-    "starting_items": [
-      "item_student_notebook"
-    ],
-    "starting_materials": {},
-    "starting_contacts": [
-      "contact_university_librarian",
-      "contact_student_occult_circle"
-    ],
-    "starting_reputation": {
-      "academy": 6,
-      "church_of_evernight_local": 1
-    },
-    "stat_modifiers": {
-      "max_spirituality": 0,
-      "stability": 0,
-      "knowledge_tolerance": 8
-    },
-    "job_access": [
-      "job_church_archive_helper",
-      "job_divination_club_assistant"
-    ],
-    "formula_access_hints": [
-      "quest_tingen_become_seer",
-      "market_divination_club_exchange"
-    ],
-    "canon_status": "game_adapted",
-    "source_note": [
-      "游戏化改编"
-    ]
-  },
-  {
-    "origin_id": "origin_tingen_clerk",
-    "origin_name_cn": "雾城事务所职员",
-    "origin_name_en": "Fog City Clerk",
-    "starting_region_id": "tingen_prototype",
-    "social_class": "lower_middle_class",
-    "background_summary": "玩家熟悉文书、账本和人际网络，适合接触侦探、委托与账务异常事件。",
-    "starting_currency": {
-      "gold_pound": 0,
-      "soli": 15,
-      "pence": 4
-    },
+    "name_cn": "鲁恩小市民",
+    "name_en": "Loen Lower Middle Class",
+    "description": "出生于鲁恩王国普通城市家庭，熟悉报纸、警局、教会和城市生活。适合作为调查、文书、侦探和占卜家路线的中性开局。",
+    "starting_currency_pence": 240,
     "starting_items": [
       "item_account_book"
     ],
-    "starting_materials": {},
-    "starting_contacts": [
-      "contact_private_detective",
-      "contact_tax_office_clerk"
-    ],
-    "starting_reputation": {
-      "ordinary_people": 3,
-      "business_circle": 4
-    },
-    "stat_modifiers": {
-      "max_spirituality": 0,
-      "stability": 0,
-      "knowledge_tolerance": 3
-    },
-    "job_access": [
+    "available_jobs": [
       "job_newspaper_errand",
-      "job_private_detective_assistant"
+      "job_divination_club_assistant",
+      "job_church_archive_helper",
+      "job_detective_assistant",
+      "job_pharmacy_apprentice"
     ],
-    "formula_access_hints": [
-      "quest_tingen_become_seer",
-      "market_tingen_black_market"
+    "early_event_pool": [
+      "event_tingen_mystery_case",
+      "event_divination_club",
+      "event_police_assistant"
     ],
-    "canon_status": "game_adapted",
+    "pathway_bias": [
+      "fool",
+      "darkness",
+      "justiciar"
+    ],
     "source_note": [
       "游戏化改编"
-    ]
+    ],
+    "canon_status": "game_adapted"
   },
   {
-    "origin_id": "origin_tingen_church_orphan",
-    "origin_name_cn": "教会收养者",
-    "origin_name_en": "Church Ward",
+    "origin_id": "loen_university_student",
+    "region_id": "loen",
     "starting_region_id": "tingen_prototype",
-    "social_class": "church_dependent",
-    "background_summary": "玩家在教会救济体系中长大，更容易接触官方非凡组织，但行动会受到更多规训。",
-    "starting_currency": {
-      "gold_pound": 0,
-      "soli": 5,
-      "pence": 0
-    },
+    "name_cn": "鲁恩大学学生",
+    "name_en": "Loen University Student",
+    "description": "接受过较好的基础教育，能接触图书馆、学院社团、报纸专栏和神秘学传闻。更容易获得知识型线索，但也更容易主动触碰危险资料。",
+    "starting_currency_pence": 300,
+    "starting_items": [
+      "item_student_notebook",
+      "item_old_tarot_cards"
+    ],
+    "available_jobs": [
+      "job_church_archive_helper",
+      "job_divination_club_assistant",
+      "job_newspaper_errand"
+    ],
+    "early_event_pool": [
+      "event_university_occult_note",
+      "event_divination_club",
+      "event_archived_ritual_case"
+    ],
+    "pathway_bias": [
+      "fool",
+      "white_tower",
+      "paragon",
+      "door"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "origin_id": "loen_factory_worker",
+    "region_id": "loen",
+    "starting_region_id": "tingen_prototype",
+    "name_cn": "鲁恩工厂工人",
+    "name_en": "Loen Factory Worker",
+    "description": "来自工厂、码头或铁路相关家庭，熟悉城市底层街区、工会、廉价酒馆和黑市入口。初始资金较少，但更容易接触地下交易和危险委托。",
+    "starting_currency_pence": 102,
+    "starting_items": [],
+    "available_jobs": [
+      "job_newspaper_errand",
+      "job_dock_loader",
+      "job_factory_temp_worker"
+    ],
+    "early_event_pool": [
+      "event_factory_accident",
+      "event_black_market_password",
+      "event_missing_worker_case"
+    ],
+    "pathway_bias": [
+      "red_priest",
+      "tyrant",
+      "chained",
+      "fool"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "origin_id": "loen_church_ward",
+    "region_id": "loen",
+    "starting_region_id": "tingen_prototype",
+    "name_cn": "教会收养者",
+    "name_en": "Church Ward",
+    "description": "在教会救济与收养体系中长大，更容易接触官方非凡组织、教会档案和安全的基础神秘学知识，但行动会受到更多规训。",
+    "starting_currency_pence": 60,
     "starting_items": [
       "item_church_token"
     ],
-    "starting_materials": {},
-    "starting_contacts": [
-      "contact_church_deacon",
-      "contact_archive_caretaker"
+    "available_jobs": [
+      "job_church_archive_helper",
+      "job_newspaper_errand"
     ],
-    "starting_reputation": {
-      "church_of_evernight_local": 8,
-      "underground_market": -2
-    },
-    "stat_modifiers": {
-      "max_spirituality": 0,
-      "stability": 8,
-      "knowledge_tolerance": 0
-    },
-    "job_access": [
-      "job_church_archive_helper"
+    "early_event_pool": [
+      "event_church_night_watch",
+      "event_archived_ritual_case",
+      "event_official_beyonder_contact"
     ],
-    "formula_access_hints": [
-      "quest_tingen_become_seer",
-      "market_church_requisition"
+    "pathway_bias": [
+      "darkness",
+      "sun",
+      "justiciar",
+      "fool"
     ],
-    "canon_status": "game_adapted",
     "source_note": [
       "游戏化改编"
-    ]
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "origin_id": "intis_artisan_apprentice",
+    "region_id": "intis",
+    "starting_region_id": "intis",
+    "name_cn": "因蒂斯工匠学徒",
+    "name_en": "Intis Artisan Apprentice",
+    "description": "在机械工坊、钟表铺或工业学院外围做学徒，熟悉工艺、机械图纸、沙龙传闻和共和国城市生活。",
+    "starting_currency_pence": 260,
+    "starting_items": [
+      "item_basic_toolkit"
+    ],
+    "available_jobs": [
+      "job_mechanic_apprentice",
+      "job_factory_temp_worker",
+      "job_salon_attendant"
+    ],
+    "early_event_pool": [
+      "event_workshop_accident",
+      "event_salon_secret_letter",
+      "event_republic_square_speech"
+    ],
+    "pathway_bias": [
+      "paragon",
+      "red_priest",
+      "demoness",
+      "sun"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "origin_id": "feysac_border_family",
+    "region_id": "feysac",
+    "starting_region_id": "feysac",
+    "name_cn": "弗萨克边境家庭",
+    "name_en": "Feysac Border Family",
+    "description": "成长于寒冷边境、军营补给线或要塞城镇，熟悉军纪、巡逻、野外生存和北方传说。",
+    "starting_currency_pence": 150,
+    "starting_items": [
+      "item_worn_military_badge"
+    ],
+    "available_jobs": [
+      "job_border_courier",
+      "job_armory_helper",
+      "job_cold_region_guide"
+    ],
+    "early_event_pool": [
+      "event_border_patrol_disappearance",
+      "event_giant_ruin_rumor",
+      "event_northern_smuggler"
+    ],
+    "pathway_bias": [
+      "twilight_giant",
+      "darkness",
+      "red_priest",
+      "death"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "origin_id": "fenepotter_manor_servant",
+    "region_id": "fenepotter",
+    "starting_region_id": "fenepotter",
+    "name_cn": "费内波特庄园仆役",
+    "name_en": "Fenepotter Manor Servant",
+    "description": "在南方庄园、农场或葡萄园长大，熟悉贵族家务、乡野传说、草药采集和丰收祭礼。",
+    "starting_currency_pence": 130,
+    "starting_items": [
+      "item_herbal_pouch"
+    ],
+    "available_jobs": [
+      "job_manor_servant",
+      "job_herbal_collector",
+      "job_vineyard_worker"
+    ],
+    "early_event_pool": [
+      "event_harvest_festival_omen",
+      "event_manor_secret_room",
+      "event_moonlit_field"
+    ],
+    "pathway_bias": [
+      "mother",
+      "moon",
+      "justiciar"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "origin_id": "five_seas_dock_runner",
+    "region_id": "five_seas",
+    "starting_region_id": "five_seas",
+    "name_cn": "五海码头跑腿",
+    "name_en": "Five Seas Dock Runner",
+    "description": "在海港、灯塔或船坞周边谋生，熟悉水手、走私、航线消息和海上怪谈。更容易接触海盗、风暴和远洋材料。",
+    "starting_currency_pence": 110,
+    "starting_items": [
+      "item_rusty_compass"
+    ],
+    "available_jobs": [
+      "job_dock_loader",
+      "job_ship_cabin_assistant",
+      "job_lighthouse_keeper"
+    ],
+    "early_event_pool": [
+      "event_smuggled_crate",
+      "event_lighthouse_signal",
+      "event_pirate_wanted_notice"
+    ],
+    "pathway_bias": [
+      "tyrant",
+      "death",
+      "abyss",
+      "door",
+      "fool"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "origin_id": "southern_continent_mine_clerk",
+    "region_id": "southern_continent",
+    "starting_region_id": "southern_continent",
+    "name_cn": "南大陆矿区文员",
+    "name_en": "Southern Continent Mine Clerk",
+    "description": "在殖民矿区、铁路据点或热带城市边缘工作，熟悉账册、翻译、劳工纠纷和灵教团传闻。",
+    "starting_currency_pence": 90,
+    "starting_items": [
+      "item_mine_record_sheet"
+    ],
+    "available_jobs": [
+      "job_mine_record_keeper",
+      "job_colonial_translator",
+      "job_jungle_guide"
+    ],
+    "early_event_pool": [
+      "event_mine_collapse_ritual",
+      "event_spirit_order_symbol",
+      "event_colonial_smuggler"
+    ],
+    "pathway_bias": [
+      "death",
+      "chained",
+      "abyss",
+      "mother",
+      "moon"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
   }
 ]

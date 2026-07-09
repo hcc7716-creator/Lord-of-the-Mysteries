@@ -227,7 +227,7 @@ func get_origins_for_region(region_id: String) -> Array:
 	_ensure_loaded()
 	var result: Array = []
 	for origin in origins.values():
-		if str(origin.get("starting_region_id", "")) == region_id:
+		if str(origin.get("region_id", "")) == region_id or str(origin.get("starting_region_id", "")) == region_id:
 			result.append(origin)
 	return result
 
