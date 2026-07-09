@@ -1,0 +1,186 @@
+[
+  {
+    "market_id": "market_tingen_black_market",
+    "market_name_cn": "雾城地下交易会",
+    "market_name_en": "Fog City Underground Gathering",
+    "region_id": "tingen_prototype",
+    "market_type": "black_market",
+    "description": "夜间开放的地下交易会，出售低序列材料、可疑情报和未经核验的魔药配方线索。",
+    "schedule": {
+      "days": [
+        "saturday"
+      ],
+      "time_block": "night"
+    },
+    "access_conditions": [
+      "know_market_password",
+      "reputation_underground_market_1"
+    ],
+    "accepted_currencies": [
+      "gold_pound",
+      "soli"
+    ],
+    "inventory_pool": [
+      {
+        "item_id": "mat_purified_water",
+        "price": {
+          "soli": 2,
+          "pence": 0
+        },
+        "stock_rule": "common"
+      },
+      {
+        "item_id": "mat_night_vanilla_liquids",
+        "price": {
+          "soli": 8,
+          "pence": 0
+        },
+        "stock_rule": "uncommon"
+      },
+      {
+        "item_id": "mat_lavos_squid_blood",
+        "price": {
+          "gold_pound": 2,
+          "soli": 0
+        },
+        "stock_rule": "rare"
+      }
+    ],
+    "formula_pool": [
+      "formula_fool_09_seer_black_market_copy"
+    ],
+    "risk": {
+      "fraud_chance": 0.2,
+      "corruption": 2,
+      "official_attention": 1
+    },
+    "restock_rule": "weekly_saturday_night",
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  },
+  {
+    "market_id": "market_divination_club_exchange",
+    "market_name_cn": "占卜俱乐部私下交换",
+    "market_name_en": "Divination Club Private Exchange",
+    "region_id": "tingen_prototype",
+    "market_type": "social_exchange",
+    "description": "通过普通人社交圈交换低风险道具、旧塔罗牌、灵摆和传闻。",
+    "schedule": {
+      "days": [
+        "wednesday",
+        "sunday"
+      ],
+      "time_block": "afternoon"
+    },
+    "access_conditions": [
+      "job_divination_club_assistant_or_contact"
+    ],
+    "accepted_currencies": [
+      "soli",
+      "pence"
+    ],
+    "inventory_pool": [
+      {
+        "item_id": "item_old_tarot_cards",
+        "price": {
+          "soli": 1,
+          "pence": 6
+        },
+        "stock_rule": "common"
+      }
+    ],
+    "formula_pool": [
+      "formula_fool_09_seer_hint_only"
+    ],
+    "risk": {
+      "fraud_chance": 0.05,
+      "corruption": 0,
+      "official_attention": 0
+    },
+    "restock_rule": "weekly_social_stock",
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  },
+  {
+    "market_id": "market_church_requisition",
+    "market_name_cn": "教会物资申请",
+    "market_name_en": "Church Requisition",
+    "region_id": "tingen_prototype",
+    "market_type": "organization_supply",
+    "description": "官方组织批准后的安全物资申请渠道，价格低但需要任务进度和声望。",
+    "schedule": {
+      "days": [
+        "monday",
+        "thursday"
+      ],
+      "time_block": "evening"
+    },
+    "access_conditions": [
+      "church_reputation_5",
+      "active_official_case"
+    ],
+    "accepted_currencies": [
+      "soli"
+    ],
+    "inventory_pool": [
+      {
+        "item_id": "mat_purified_water",
+        "price": {
+          "soli": 0,
+          "pence": 6
+        },
+        "stock_rule": "case_limited"
+      }
+    ],
+    "formula_pool": [
+      "formula_fool_09_seer_official_training"
+    ],
+    "risk": {
+      "fraud_chance": 0.0,
+      "corruption": 0,
+      "official_attention": 0
+    },
+    "restock_rule": "case_limited",
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  },
+  {
+    "market_id": "market_tarot_equal_exchange",
+    "market_name_cn": "灰雾之上等价交换",
+    "market_name_en": "Gray Fog Equivalent Exchange",
+    "region_id": "gray_fog_space",
+    "market_type": "tarot_exchange",
+    "description": "每周日开启的塔罗会交换渠道，玩家可用物品、材料、情报或承诺换取所需信息。",
+    "schedule": {
+      "days": [
+        "sunday"
+      ],
+      "time_block": "gray_fog_meeting"
+    },
+    "access_conditions": [
+      "unlock_tarot_club"
+    ],
+    "accepted_currencies": [
+      "tarot_credit"
+    ],
+    "inventory_pool": [],
+    "formula_pool": [],
+    "risk": {
+      "fraud_chance": 0.0,
+      "corruption": 1,
+      "official_attention": 0
+    },
+    "restock_rule": "weekly_sunday_meeting",
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编",
+      "塔罗会系统预埋"
+    ]
+  }
+]

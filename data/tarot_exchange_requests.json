@@ -1,0 +1,145 @@
+[
+  {
+    "request_id": "tarot_req_seer_material_hint_001",
+    "request_name_cn": "占卜家材料线索交换",
+    "request_name_en": "Seer Material Hint Exchange",
+    "meeting_space": "gray_fog_space",
+    "schedule": {
+      "weekday": "sunday",
+      "time_block": "gray_fog_meeting"
+    },
+    "unlock_conditions": [
+      "unlock_tarot_club"
+    ],
+    "requester_alias": "the_student",
+    "request_type": "information_for_information",
+    "requested": {
+      "type": "information",
+      "ids": [
+        "hint_lavos_squid_blood_source",
+        "hint_star_crystal_source"
+      ],
+      "description": "需要低序列占卜家主材料的可靠来源。"
+    },
+    "offered": {
+      "type": "information",
+      "ids": [
+        "clue_archived_ritual_case"
+      ],
+      "description": "提供雾城一处旧仪式案件的档案编号。"
+    },
+    "equivalent_value": {
+      "tarot_credit": 2,
+      "risk_level": "low"
+    },
+    "outcome": {
+      "success_flags": [
+        "known_seer_material_sources"
+      ],
+      "failure_risk": [
+        "receive_vague_hint"
+      ]
+    },
+    "expires_after_meetings": 2,
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编",
+      "塔罗会系统预埋"
+    ]
+  },
+  {
+    "request_id": "tarot_req_black_market_password_001",
+    "request_name_cn": "地下交易会口令",
+    "request_name_en": "Underground Gathering Password",
+    "meeting_space": "gray_fog_space",
+    "schedule": {
+      "weekday": "sunday",
+      "time_block": "gray_fog_meeting"
+    },
+    "unlock_conditions": [
+      "unlock_tarot_club"
+    ],
+    "requester_alias": "the_worker",
+    "request_type": "service_for_information",
+    "requested": {
+      "type": "information",
+      "ids": [
+        "market_tingen_black_market_password"
+      ],
+      "description": "需要本周雾城地下交易会的入场口令。"
+    },
+    "offered": {
+      "type": "service",
+      "ids": [
+        "future_delivery_task"
+      ],
+      "description": "愿意代为传递一份不涉及真实身份的普通包裹。"
+    },
+    "equivalent_value": {
+      "tarot_credit": 1,
+      "risk_level": "medium"
+    },
+    "outcome": {
+      "success_flags": [
+        "know_market_password"
+      ],
+      "failure_risk": [
+        "increase_underground_attention"
+      ]
+    },
+    "expires_after_meetings": 1,
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编",
+      "塔罗会系统预埋"
+    ]
+  },
+  {
+    "request_id": "tarot_req_placeholder_door_formula",
+    "request_name_cn": "学徒配方情报（占位）",
+    "request_name_en": "Apprentice Formula Intel - Placeholder",
+    "meeting_space": "gray_fog_space",
+    "schedule": {
+      "weekday": "sunday",
+      "time_block": "gray_fog_meeting"
+    },
+    "unlock_conditions": [
+      "unlock_tarot_club",
+      "future_abraham_contact"
+    ],
+    "requester_alias": "the_traveler",
+    "request_type": "formula_for_material",
+    "requested": {
+      "type": "formula",
+      "ids": [
+        "formula_door_09_apprentice_placeholder"
+      ],
+      "description": "需要学徒途径序列 9 的可靠配方。"
+    },
+    "offered": {
+      "type": "material",
+      "ids": [
+        "future_spirit_world_material"
+      ],
+      "description": "提供一份后续灵界材料。"
+    },
+    "equivalent_value": {
+      "tarot_credit": 4,
+      "risk_level": "high"
+    },
+    "outcome": {
+      "success_flags": [
+        "known_door_09_formula"
+      ],
+      "failure_risk": [
+        "formula_is_incomplete"
+      ]
+    },
+    "expires_after_meetings": 3,
+    "canon_status": "original_placeholder",
+    "source_note": [
+      "游戏化改编",
+      "最终版多途径预埋"
+    ]
+  }
+]

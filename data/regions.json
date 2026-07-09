@@ -1,0 +1,174 @@
+[
+  {
+    "region_id": "tingen_prototype",
+    "region_name_cn": "雾城 / 廷根原型",
+    "region_name_en": "Fog City / Tingen Prototype",
+    "region_type": "starting_city",
+    "is_starting_region": true,
+    "open_world_scope": "mvp_area",
+    "description": "第一阶段可探索城市区域，包含老城区、教堂区、大学区、黑市入口和若干异常案件现场。",
+    "starting_origins": [
+      "origin_tingen_lower_worker",
+      "origin_tingen_university_student",
+      "origin_tingen_clerk",
+      "origin_tingen_church_orphan"
+    ],
+    "available_jobs": [
+      "job_newspaper_errand",
+      "job_divination_club_assistant",
+      "job_church_archive_helper"
+    ],
+    "markets": [
+      "market_tingen_black_market",
+      "market_divination_club_exchange",
+      "market_church_requisition"
+    ],
+    "dominant_factions": [
+      "church_of_evernight_local",
+      "official_beyonder_watchers",
+      "underground_gathering_tingen"
+    ],
+    "risk_tags": [
+      "low_sequence_pollution",
+      "cult_activity",
+      "hidden_ritual_sites"
+    ],
+    "unlock_conditions": [],
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编",
+      "MVP 范围"
+    ]
+  },
+  {
+    "region_id": "backlund_prototype",
+    "region_name_cn": "王都 / 贝克兰德原型",
+    "region_name_en": "Capital / Backlund Prototype",
+    "region_type": "major_city",
+    "is_starting_region": false,
+    "open_world_scope": "future_area",
+    "description": "后续版本的大型城市区域，承担贵族、工业、地下势力和中序列剧情。",
+    "starting_origins": [],
+    "available_jobs": [
+      "job_factory_temp_worker",
+      "job_private_detective_assistant"
+    ],
+    "markets": [
+      "market_backlund_underground_trade"
+    ],
+    "dominant_factions": [
+      "noble_society",
+      "industrial_guilds",
+      "secret_orders"
+    ],
+    "risk_tags": [
+      "political_conspiracy",
+      "industrial_pollution",
+      "mid_sequence_conflict"
+    ],
+    "unlock_conditions": [
+      "complete_volume_1"
+    ],
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编",
+      "后续区域占位"
+    ]
+  },
+  {
+    "region_id": "sea_routes",
+    "region_name_cn": "海上区域",
+    "region_name_en": "Sea Routes",
+    "region_type": "ocean",
+    "is_starting_region": false,
+    "open_world_scope": "future_area",
+    "description": "后续扩展区域，承担海盗势力、风暴教会、远洋材料和航线事件。",
+    "starting_origins": [],
+    "available_jobs": [
+      "job_dock_loader",
+      "job_ship_cabin_assistant"
+    ],
+    "markets": [
+      "market_sea_smuggler_deck"
+    ],
+    "dominant_factions": [
+      "pirate_crews",
+      "storm_church_patrol",
+      "smugglers"
+    ],
+    "risk_tags": [
+      "storm",
+      "pirates",
+      "sea_monsters"
+    ],
+    "unlock_conditions": [
+      "unlock_ocean_travel"
+    ],
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编",
+      "后续区域占位"
+    ]
+  },
+  {
+    "region_id": "spirit_world",
+    "region_name_cn": "灵界",
+    "region_name_en": "Spirit World",
+    "region_type": "mystical_plane",
+    "is_starting_region": false,
+    "open_world_scope": "future_area",
+    "description": "后续高风险探索区域，用于仪式、灵界穿梭、特殊材料和高污染事件。",
+    "starting_origins": [],
+    "available_jobs": [],
+    "markets": [
+      "market_spirit_world_echo_trade"
+    ],
+    "dominant_factions": [
+      "spirit_entities",
+      "hidden_observers"
+    ],
+    "risk_tags": [
+      "high_pollution",
+      "navigation_failure",
+      "identity_erosion"
+    ],
+    "unlock_conditions": [
+      "unlock_spirit_world_access"
+    ],
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编",
+      "后续系统占位"
+    ]
+  },
+  {
+    "region_id": "gray_fog_space",
+    "region_name_cn": "灰雾之上",
+    "region_name_en": "Above the Gray Fog",
+    "region_type": "special_meeting_space",
+    "is_starting_region": false,
+    "open_world_scope": "system_space",
+    "description": "塔罗会与每周日等价交换系统的特殊空间。第一版仅预埋数据，不开放完整玩法。",
+    "starting_origins": [],
+    "available_jobs": [],
+    "markets": [
+      "market_tarot_equal_exchange"
+    ],
+    "dominant_factions": [
+      "tarot_club"
+    ],
+    "risk_tags": [
+      "secret_identity",
+      "information_trade",
+      "equivalent_exchange"
+    ],
+    "unlock_conditions": [
+      "unlock_tarot_club"
+    ],
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编",
+      "塔罗会系统预埋"
+    ]
+  }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "job_id": "job_newspaper_errand",
+    "job_name_cn": "报社跑腿",
+    "job_name_en": "Newspaper Errand Runner",
+    "region_id": "tingen_prototype",
+    "job_type": "ordinary_work",
+    "description": "为报社递送稿件、收集街头传闻，可接触案件线索和低风险调查任务。",
+    "requirements": {
+      "origin_ids": [],
+      "minimum_reputation": {},
+      "quest_flags": []
+    },
+    "schedule": {
+      "days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "time_block": "morning"
+    },
+    "wage": {
+      "gold_pound": 0,
+      "soli": 1,
+      "pence": 6
+    },
+    "possible_rewards": {
+      "items": [],
+      "materials": {},
+      "clues": [
+        "clue_local_rumor"
+      ],
+      "formula_hints": []
+    },
+    "risk": {
+      "corruption": 0,
+      "stability": 0,
+      "injury_chance": 0.02
+    },
+    "repeat_rule": "repeatable_daily",
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  },
+  {
+    "job_id": "job_divination_club_assistant",
+    "job_name_cn": "占卜俱乐部助理",
+    "job_name_en": "Divination Club Assistant",
+    "region_id": "tingen_prototype",
+    "job_type": "social_work",
+    "description": "整理预约、接待客人并观察占卜流程，是普通人接触占卜家配方线索的温和入口。",
+    "requirements": {
+      "origin_ids": [
+        "origin_tingen_university_student",
+        "origin_tingen_clerk"
+      ],
+      "minimum_reputation": {},
+      "quest_flags": []
+    },
+    "schedule": {
+      "days": [
+        "wednesday",
+        "friday",
+        "sunday"
+      ],
+      "time_block": "afternoon"
+    },
+    "wage": {
+      "gold_pound": 0,
+      "soli": 2,
+      "pence": 0
+    },
+    "possible_rewards": {
+      "items": [
+        "item_old_tarot_cards"
+      ],
+      "materials": {},
+      "clues": [
+        "clue_divination_club_formula_rumor"
+      ],
+      "formula_hints": [
+        "formula_fool_09_seer"
+      ]
+    },
+    "risk": {
+      "corruption": 1,
+      "stability": 0,
+      "injury_chance": 0.0
+    },
+    "repeat_rule": "repeatable_weekly_unique_rewards_once",
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  },
+  {
+    "job_id": "job_church_archive_helper",
+    "job_name_cn": "教会档案帮工",
+    "job_name_en": "Church Archive Helper",
+    "region_id": "tingen_prototype",
+    "job_type": "organization_work",
+    "description": "协助整理旧档案、失踪记录和封存案件，可提高官方组织信任并接触安全的神秘学基础。",
+    "requirements": {
+      "origin_ids": [
+        "origin_tingen_university_student",
+        "origin_tingen_church_orphan"
+      ],
+      "minimum_reputation": {
+        "church_of_evernight_local": 1
+      },
+      "quest_flags": []
+    },
+    "schedule": {
+      "days": [
+        "monday",
+        "thursday"
+      ],
+      "time_block": "evening"
+    },
+    "wage": {
+      "gold_pound": 0,
+      "soli": 1,
+      "pence": 0
+    },
+    "possible_rewards": {
+      "items": [],
+      "materials": {},
+      "clues": [
+        "clue_archived_ritual_case"
+      ],
+      "formula_hints": [
+        "formula_fool_09_seer"
+      ]
+    },
+    "risk": {
+      "corruption": 0,
+      "stability": 1,
+      "injury_chance": 0.0
+    },
+    "repeat_rule": "repeatable_weekly_unique_rewards_once",
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  },
+  {
+    "job_id": "job_dock_loader",
+    "job_name_cn": "码头装卸工",
+    "job_name_en": "Dock Loader",
+    "region_id": "sea_routes",
+    "job_type": "ordinary_work",
+    "description": "后续海上区域入口工作，可接触走私货、海怪材料和船员传闻。",
+    "requirements": {
+      "origin_ids": [
+        "origin_tingen_lower_worker"
+      ],
+      "minimum_reputation": {},
+      "quest_flags": [
+        "unlock_ocean_travel"
+      ]
+    },
+    "schedule": {
+      "days": [
+        "monday",
+        "tuesday",
+        "friday"
+      ],
+      "time_block": "night"
+    },
+    "wage": {
+      "gold_pound": 0,
+      "soli": 3,
+      "pence": 0
+    },
+    "possible_rewards": {
+      "items": [],
+      "materials": {
+        "mat_purified_water": 1
+      },
+      "clues": [
+        "clue_smuggled_material_crate"
+      ],
+      "formula_hints": []
+    },
+    "risk": {
+      "corruption": 2,
+      "stability": -1,
+      "injury_chance": 0.08
+    },
+    "repeat_rule": "repeatable_daily",
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编",
+      "后续区域占位"
+    ]
+  }
+]

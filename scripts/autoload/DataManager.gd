@@ -8,6 +8,13 @@ const DATASETS := {
 	"rituals": {"path": "res://data/rituals.json", "id_key": "ritual_id"},
 	"characteristics": {"path": "res://data/characteristics.json", "id_key": "characteristic_id"},
 	"artifacts": {"path": "res://data/sealed_artifacts.json", "id_key": "artifact_id"},
+	"regions": {"path": "res://data/regions.json", "id_key": "region_id"},
+	"origins": {"path": "res://data/origins.json", "id_key": "origin_id"},
+	"currencies": {"path": "res://data/currencies.json", "id_key": "currency_id"},
+	"jobs": {"path": "res://data/jobs.json", "id_key": "job_id"},
+	"markets": {"path": "res://data/markets.json", "id_key": "market_id"},
+	"potion_formulas": {"path": "res://data/potion_formulas.json", "id_key": "formula_id"},
+	"tarot_exchange_requests": {"path": "res://data/tarot_exchange_requests.json", "id_key": "request_id"},
 }
 
 var pathways: Dictionary = {}
@@ -17,6 +24,13 @@ var abilities: Dictionary = {}
 var rituals: Dictionary = {}
 var characteristics: Dictionary = {}
 var artifacts: Dictionary = {}
+var regions: Dictionary = {}
+var origins: Dictionary = {}
+var currencies: Dictionary = {}
+var jobs: Dictionary = {}
+var markets: Dictionary = {}
+var potion_formulas: Dictionary = {}
+var tarot_exchange_requests: Dictionary = {}
 var is_loaded := false
 
 
@@ -32,8 +46,15 @@ func load_all_data() -> void:
 	_load_dataset(rituals, DATASETS["rituals"]["path"], DATASETS["rituals"]["id_key"])
 	_load_dataset(characteristics, DATASETS["characteristics"]["path"], DATASETS["characteristics"]["id_key"])
 	_load_dataset(artifacts, DATASETS["artifacts"]["path"], DATASETS["artifacts"]["id_key"])
+	_load_dataset(regions, DATASETS["regions"]["path"], DATASETS["regions"]["id_key"])
+	_load_dataset(origins, DATASETS["origins"]["path"], DATASETS["origins"]["id_key"])
+	_load_dataset(currencies, DATASETS["currencies"]["path"], DATASETS["currencies"]["id_key"])
+	_load_dataset(jobs, DATASETS["jobs"]["path"], DATASETS["jobs"]["id_key"])
+	_load_dataset(markets, DATASETS["markets"]["path"], DATASETS["markets"]["id_key"])
+	_load_dataset(potion_formulas, DATASETS["potion_formulas"]["path"], DATASETS["potion_formulas"]["id_key"])
+	_load_dataset(tarot_exchange_requests, DATASETS["tarot_exchange_requests"]["path"], DATASETS["tarot_exchange_requests"]["id_key"])
 	is_loaded = true
-	print("DataManager loaded: %d pathways, %d sequences, %d materials, %d abilities, %d rituals, %d characteristics, %d artifacts" % [
+	print("DataManager loaded: %d pathways, %d sequences, %d materials, %d abilities, %d rituals, %d characteristics, %d artifacts, %d regions, %d origins, %d currencies, %d jobs, %d markets, %d formulas, %d tarot requests" % [
 		pathways.size(),
 		sequences.size(),
 		materials.size(),
@@ -41,6 +62,13 @@ func load_all_data() -> void:
 		rituals.size(),
 		characteristics.size(),
 		artifacts.size(),
+		regions.size(),
+		origins.size(),
+		currencies.size(),
+		jobs.size(),
+		markets.size(),
+		potion_formulas.size(),
+		tarot_exchange_requests.size(),
 	])
 
 
@@ -133,6 +161,49 @@ func get_artifact(id: String) -> Dictionary:
 	return artifacts.get(id, {})
 
 
+func get_region(id: String) -> Dictionary:
+	_ensure_loaded()
+	return regions.get(id, {})
+
+
+func get_origin(id: String) -> Dictionary:
+	_ensure_loaded()
+	return origins.get(id, {})
+
+
+func get_currency(id: String) -> Dictionary:
+	_ensure_loaded()
+	return currencies.get(id, {})
+
+
+func get_job(id: String) -> Dictionary:
+	_ensure_loaded()
+	return jobs.get(id, {})
+
+
+func get_market(id: String) -> Dictionary:
+	_ensure_loaded()
+	return markets.get(id, {})
+
+
+func get_potion_formula(id: String) -> Dictionary:
+	_ensure_loaded()
+	return potion_formulas.get(id, {})
+
+
+func get_formula(id: String) -> Dictionary:
+	return get_potion_formula(id)
+
+
+func get_tarot_exchange_request(id: String) -> Dictionary:
+	_ensure_loaded()
+	return tarot_exchange_requests.get(id, {})
+
+
+func get_tarot_request(id: String) -> Dictionary:
+	return get_tarot_exchange_request(id)
+
+
 func get_sequences_for_pathway(pathway_id: String) -> Array:
 	_ensure_loaded()
 	var result: Array = []
@@ -140,4 +211,59 @@ func get_sequences_for_pathway(pathway_id: String) -> Array:
 		if str(sequence.get("pathway_id", "")) == pathway_id:
 			result.append(sequence)
 	result.sort_custom(func(a, b): return int(a.get("sequence_number", 0)) > int(b.get("sequence_number", 0)))
+	return result
+
+
+func get_starting_regions() -> Array:
+	_ensure_loaded()
+	var result: Array = []
+	for region in regions.values():
+		if bool(region.get("is_starting_region", false)):
+			result.append(region)
+	return result
+
+
+func get_origins_for_region(region_id: String) -> Array:
+	_ensure_loaded()
+	var result: Array = []
+	for origin in origins.values():
+		if str(origin.get("starting_region_id", "")) == region_id:
+			result.append(origin)
+	return result
+
+
+func get_jobs_for_region(region_id: String) -> Array:
+	_ensure_loaded()
+	var result: Array = []
+	for job in jobs.values():
+		if str(job.get("region_id", "")) == region_id:
+			result.append(job)
+	return result
+
+
+func get_markets_for_region(region_id: String) -> Array:
+	_ensure_loaded()
+	var result: Array = []
+	for market in markets.values():
+		if str(market.get("region_id", "")) == region_id:
+			result.append(market)
+	return result
+
+
+func get_formulas_for_sequence(sequence_id: String) -> Array:
+	_ensure_loaded()
+	var result: Array = []
+	for formula in potion_formulas.values():
+		if str(formula.get("sequence_id", "")) == sequence_id:
+			result.append(formula)
+	return result
+
+
+func get_tarot_requests_for_weekday(weekday: String) -> Array:
+	_ensure_loaded()
+	var result: Array = []
+	for request in tarot_exchange_requests.values():
+		var schedule: Dictionary = request.get("schedule", {})
+		if str(schedule.get("weekday", "")) == weekday:
+			result.append(request)
 	return result

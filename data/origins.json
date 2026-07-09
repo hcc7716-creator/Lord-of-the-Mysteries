@@ -1,0 +1,166 @@
+[
+  {
+    "origin_id": "origin_tingen_lower_worker",
+    "origin_name_cn": "雾城底层工人",
+    "origin_name_en": "Fog City Lower Worker",
+    "starting_region_id": "tingen_prototype",
+    "social_class": "working_class",
+    "background_summary": "玩家来自工厂、码头或铁路相关家庭，熟悉城市底层街区和廉价黑市入口。",
+    "starting_currency": {
+      "gold_pound": 0,
+      "soli": 8,
+      "pence": 6
+    },
+    "starting_items": [],
+    "starting_materials": {},
+    "starting_contacts": [
+      "contact_factory_foreman",
+      "contact_backstreet_runner"
+    ],
+    "starting_reputation": {
+      "ordinary_people": 5,
+      "underground_market": 1
+    },
+    "stat_modifiers": {
+      "max_spirituality": 0,
+      "stability": 5,
+      "knowledge_tolerance": -5
+    },
+    "job_access": [
+      "job_newspaper_errand",
+      "job_dock_loader"
+    ],
+    "formula_access_hints": [
+      "market_tingen_black_market"
+    ],
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  },
+  {
+    "origin_id": "origin_tingen_university_student",
+    "origin_name_cn": "雾城大学学生",
+    "origin_name_en": "Fog City University Student",
+    "starting_region_id": "tingen_prototype",
+    "social_class": "educated_commoner",
+    "background_summary": "玩家接受过基础教育，更容易接触图书馆、社团、神秘学传闻和调查委托。",
+    "starting_currency": {
+      "gold_pound": 1,
+      "soli": 3,
+      "pence": 0
+    },
+    "starting_items": [
+      "item_student_notebook"
+    ],
+    "starting_materials": {},
+    "starting_contacts": [
+      "contact_university_librarian",
+      "contact_student_occult_circle"
+    ],
+    "starting_reputation": {
+      "academy": 6,
+      "church_of_evernight_local": 1
+    },
+    "stat_modifiers": {
+      "max_spirituality": 0,
+      "stability": 0,
+      "knowledge_tolerance": 8
+    },
+    "job_access": [
+      "job_church_archive_helper",
+      "job_divination_club_assistant"
+    ],
+    "formula_access_hints": [
+      "quest_tingen_become_seer",
+      "market_divination_club_exchange"
+    ],
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  },
+  {
+    "origin_id": "origin_tingen_clerk",
+    "origin_name_cn": "雾城事务所职员",
+    "origin_name_en": "Fog City Clerk",
+    "starting_region_id": "tingen_prototype",
+    "social_class": "lower_middle_class",
+    "background_summary": "玩家熟悉文书、账本和人际网络，适合接触侦探、委托与账务异常事件。",
+    "starting_currency": {
+      "gold_pound": 0,
+      "soli": 15,
+      "pence": 4
+    },
+    "starting_items": [
+      "item_account_book"
+    ],
+    "starting_materials": {},
+    "starting_contacts": [
+      "contact_private_detective",
+      "contact_tax_office_clerk"
+    ],
+    "starting_reputation": {
+      "ordinary_people": 3,
+      "business_circle": 4
+    },
+    "stat_modifiers": {
+      "max_spirituality": 0,
+      "stability": 0,
+      "knowledge_tolerance": 3
+    },
+    "job_access": [
+      "job_newspaper_errand",
+      "job_private_detective_assistant"
+    ],
+    "formula_access_hints": [
+      "quest_tingen_become_seer",
+      "market_tingen_black_market"
+    ],
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  },
+  {
+    "origin_id": "origin_tingen_church_orphan",
+    "origin_name_cn": "教会收养者",
+    "origin_name_en": "Church Ward",
+    "starting_region_id": "tingen_prototype",
+    "social_class": "church_dependent",
+    "background_summary": "玩家在教会救济体系中长大，更容易接触官方非凡组织，但行动会受到更多规训。",
+    "starting_currency": {
+      "gold_pound": 0,
+      "soli": 5,
+      "pence": 0
+    },
+    "starting_items": [
+      "item_church_token"
+    ],
+    "starting_materials": {},
+    "starting_contacts": [
+      "contact_church_deacon",
+      "contact_archive_caretaker"
+    ],
+    "starting_reputation": {
+      "church_of_evernight_local": 8,
+      "underground_market": -2
+    },
+    "stat_modifiers": {
+      "max_spirituality": 0,
+      "stability": 8,
+      "knowledge_tolerance": 0
+    },
+    "job_access": [
+      "job_church_archive_helper"
+    ],
+    "formula_access_hints": [
+      "quest_tingen_become_seer",
+      "market_church_requisition"
+    ],
+    "canon_status": "game_adapted",
+    "source_note": [
+      "游戏化改编"
+    ]
+  }
+]
