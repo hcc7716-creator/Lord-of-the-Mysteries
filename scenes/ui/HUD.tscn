@@ -131,6 +131,118 @@ layout_mode = 2
 text = "帮助：按住 Tab 临时查看 / H 切换显示"
 autowrap_mode = 2
 
+[node name="AdvancementDarken" type="ColorRect" parent="."]
+visible = false
+z_index = 110
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.0156863, 0.0196078, 0.027451, 0.72)
+
+[node name="AdvancementVFX" type="Control" parent="."]
+visible = false
+z_index = 115
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Pulse" type="ColorRect" parent="AdvancementVFX"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+mouse_filter = 2
+color = Color(0.741176, 0.627451, 0.333333, 0.5)
+
+[node name="Spark" type="Label" parent="AdvancementVFX"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -48.0
+offset_right = 120.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 58
+text = "*"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AdvancementPopup" type="PanelContainer" parent="."]
+visible = false
+z_index = 120
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -330.0
+offset_top = -220.0
+offset_right = 330.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="AdvancementPopup"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AdvancementPopup/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="AdvancementPopup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "晋升成功"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="AdvancementPopup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "序列 9 占卜家 / Seer"
+horizontal_alignment = 1
+
+[node name="SpiritualityLabel" type="Label" parent="AdvancementPopup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "灵性上限：90 / 90"
+horizontal_alignment = 1
+
+[node name="UnlockedTitle" type="Label" parent="AdvancementPopup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "解锁技能"
+
+[node name="SkillList" type="RichTextLabel" parent="AdvancementPopup/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+fit_content = false
+scroll_active = false
+text = ""
+
+[node name="ContinueButton" type="Button" parent="AdvancementPopup/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "继续"
+
 [node name="DialogueBox" parent="." instance=ExtResource("2")]
 
 [node name="InventoryPanel" parent="." instance=ExtResource("3")]

@@ -17,12 +17,23 @@ extends CanvasLayer
 @onready var skill_bar: PanelContainer = $SkillBar
 @onready var pendulum_divination_panel: PanelContainer = $PendulumDivinationPanel
 @onready var paper_divination_panel: PanelContainer = $PaperDivinationPanel
+@onready var advancement_darken: ColorRect = $AdvancementDarken
+@onready var advancement_vfx: Control = $AdvancementVFX
+@onready var advancement_pulse: ColorRect = $AdvancementVFX/Pulse
+@onready var advancement_spark: Label = $AdvancementVFX/Spark
+@onready var advancement_popup: PanelContainer = $AdvancementPopup
+@onready var advancement_title: Label = $AdvancementPopup/MarginContainer/VBoxContainer/Title
+@onready var advancement_subtitle: Label = $AdvancementPopup/MarginContainer/VBoxContainer/Subtitle
+@onready var advancement_spirituality_label: Label = $AdvancementPopup/MarginContainer/VBoxContainer/SpiritualityLabel
+@onready var advancement_skill_list: RichTextLabel = $AdvancementPopup/MarginContainer/VBoxContainer/SkillList
+@onready var advancement_continue_button: Button = $AdvancementPopup/MarginContainer/VBoxContainer/ContinueButton
 
 var help_panel_pinned := false
 var interaction_hint := ""
 var transient_message := ""
 var feedback_generation := 0
 var spiritual_vision_tween: Tween = null
+var advancement_tween: Tween = null
 
 
 func _ready() -> void:
@@ -35,6 +46,8 @@ func _ready() -> void:
 	ClueManager.notebook_updated.connect(_on_notebook_updated)
 	SkillManager.spiritual_vision_changed.connect(_on_spiritual_vision_changed)
 	PotionManager.potion_brewed.connect(func(_sequence_id: String): refresh_all())
+	AdvancementManager.advancement_success.connect(_on_advancement_success)
+	advancement_continue_button.pressed.connect(_hide_advancement_feedback)
 	DialogueManager.dialogue_started.connect(_on_dialogue_started)
 	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
 	_on_spiritual_vision_changed(SkillManager.spiritual_vision_active)
@@ -43,6 +56,15 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	help_panel.visible = help_panel_pinned or Input.is_key_pressed(KEY_TAB)
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if not advancement_popup.visible:
+		return
+	if event is InputEventKey and event.pressed and not event.echo:
+		if event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER or event.keycode == KEY_ESCAPE:
+			_hide_advancement_feedback()
+			get_viewport().set_input_as_handled()
 
 
 func refresh_all() -> void:
@@ -95,9 +117,6 @@ func toggle_pathway_panel() -> void:
 
 
 func toggle_potion_panel() -> void:
-	if not PotionManager.has_recipe_unlocked():
-		show_status_message("尚未获得魔药配方。完成调查并回到老尼尔处确认后，才能打开魔药调配界面。")
-		return
 	_toggle_panel(potion_panel)
 
 
@@ -242,3 +261,77 @@ func _on_dialogue_finished() -> void:
 	skill_bar.visible = true
 	if skill_bar.has_method("refresh"):
 		skill_bar.refresh()
+
+
+func _on_advancement_success(sequence_id: String) -> void:
+	refresh_all()
+	_close_overlay_panels()
+	skill_bar.visible = false
+	_show_advancement_feedback(sequence_id)
+
+
+func _show_advancement_feedback(sequence_id: String) -> void:
+	if advancement_tween:
+		advancement_tween.kill()
+
+	var sequence := DataManager.get_sequence(sequence_id)
+	advancement_title.text = "晋升成功"
+	advancement_subtitle.text = "序列 %s %s / %s" % [
+		str(sequence.get("sequence_number", "?")),
+		sequence.get("sequence_name_cn", "未知序列"),
+		sequence.get("sequence_name_en", "Unknown"),
+	]
+	advancement_spirituality_label.text = "灵性上限：%d / %d" % [
+		CorruptionManager.spirituality,
+		CorruptionManager.max_spirituality,
+	]
+	advancement_skill_list.text = _format_unlocked_skill_list(sequence.get("abilities", []))
+
+	advancement_darken.visible = true
+	advancement_vfx.visible = true
+	advancement_popup.visible = true
+	advancement_darken.modulate.a = 0.0
+	advancement_vfx.modulate.a = 0.0
+	advancement_popup.modulate.a = 0.0
+	advancement_pulse.scale = Vector2(0.35, 0.35)
+	advancement_pulse.modulate.a = 0.85
+	advancement_spark.modulate.a = 0.0
+
+	advancement_tween = create_tween()
+	advancement_tween.tween_property(advancement_darken, "modulate:a", 1.0, 0.25)
+	advancement_tween.parallel().tween_property(advancement_vfx, "modulate:a", 1.0, 0.25)
+	advancement_tween.parallel().tween_property(advancement_spark, "modulate:a", 1.0, 0.25)
+	advancement_tween.tween_property(advancement_pulse, "scale", Vector2(7.0, 7.0), 0.55)
+	advancement_tween.parallel().tween_property(advancement_pulse, "modulate:a", 0.0, 0.55)
+	advancement_tween.parallel().tween_property(advancement_spark, "modulate:a", 0.0, 0.55)
+	advancement_tween.tween_property(advancement_popup, "modulate:a", 1.0, 0.25)
+
+
+func _hide_advancement_feedback() -> void:
+	if advancement_tween:
+		advancement_tween.kill()
+	advancement_tween = create_tween()
+	advancement_tween.tween_property(advancement_popup, "modulate:a", 0.0, 0.15)
+	advancement_tween.parallel().tween_property(advancement_darken, "modulate:a", 0.0, 0.2)
+	advancement_tween.parallel().tween_property(advancement_vfx, "modulate:a", 0.0, 0.2)
+	advancement_tween.tween_callback(func():
+		advancement_popup.visible = false
+		advancement_darken.visible = false
+		advancement_vfx.visible = false
+		skill_bar.visible = true
+		if skill_bar.has_method("refresh"):
+			skill_bar.refresh()
+	)
+
+
+func _format_unlocked_skill_list(skill_ids: Array) -> String:
+	var text := ""
+	for skill_id in skill_ids:
+		var skill := DataManager.get_ability(str(skill_id))
+		if skill.is_empty():
+			continue
+		text += "✓ %s / %s\n" % [
+			skill.get("ability_name_cn", str(skill_id)),
+			skill.get("ability_name_en", ""),
+		]
+	return text.strip_edges()
