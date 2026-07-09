@@ -1,201 +1,817 @@
 [
   {
-    "job_id": "job_newspaper_errand",
-    "job_name_cn": "报社跑腿",
-    "job_name_en": "Newspaper Errand Runner",
-    "region_id": "tingen_prototype",
-    "job_type": "ordinary_work",
-    "description": "为报社递送稿件、收集街头传闻，可接触案件线索和低风险调查任务。",
-    "requirements": {
-      "origin_ids": [],
-      "minimum_reputation": {},
-      "quest_flags": []
-    },
-    "schedule": {
-      "days": [
-        "monday",
-        "tuesday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday"
-      ],
-      "time_block": "morning"
-    },
-    "wage": {
-      "gold_pound": 0,
-      "soli": 1,
-      "pence": 6
-    },
-    "possible_rewards": {
-      "items": [],
-      "materials": {},
-      "clues": [
-        "clue_local_rumor"
-      ],
-      "formula_hints": []
-    },
-    "risk": {
-      "corruption": 0,
-      "stability": 0,
-      "injury_chance": 0.02
-    },
-    "repeat_rule": "repeatable_daily",
-    "canon_status": "game_adapted",
+    "job_id": "job_newspaper_copyist",
+    "name_cn": "报社抄写员",
+    "name_en": "Newspaper Copyist",
+    "region_id": "loen",
+    "description": "在报社抄写稿件、整理讣告和校对街头新闻。收入稳定，偶尔会接触异常死亡、失踪人口和神秘传闻。",
+    "reward_pence": 24,
+    "time_cost_hours": 4,
+    "risk_level": "low",
+    "possible_rewards": [
+      {
+        "type": "clue",
+        "id": "clue_local_rumor",
+        "chance": 0.2
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_tingen_mystery_case",
+        "chance": 0.12
+      },
+      {
+        "event_id": "event_missing_person_notice",
+        "chance": 0.08
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "fool",
+        "chance": 0.08
+      },
+      {
+        "pathway_id": "darkness",
+        "chance": 0.05
+      }
+    ],
+    "requirements": [],
     "source_note": [
       "游戏化改编"
-    ]
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_detective_assistant",
+    "name_cn": "侦探助手",
+    "name_en": "Detective Assistant",
+    "region_id": "loen",
+    "description": "协助私人侦探整理委托、跟踪目标和记录现场。更容易触发案件线索，也更容易卷入非凡事件。",
+    "reward_pence": 48,
+    "time_cost_hours": 6,
+    "risk_level": "medium",
+    "possible_rewards": [
+      {
+        "type": "clue",
+        "id": "clue_case_file_fragment",
+        "chance": 0.25
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_police_assistant",
+        "chance": 0.12
+      },
+      {
+        "event_id": "event_tail_suspicious_target",
+        "chance": 0.1
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "fool",
+        "chance": 0.12
+      },
+      {
+        "pathway_id": "justiciar",
+        "chance": 0.08
+      }
+    ],
+    "requirements": [
+      "origin_loen_or_tingen",
+      "basic_literacy"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_pharmacy_apprentice",
+    "name_cn": "药房学徒",
+    "name_en": "Pharmacy Apprentice",
+    "region_id": "loen",
+    "description": "在药房称量药草、整理瓶罐和处理订单。能接触草药、溶剂和魔药辅助材料的早期线索。",
+    "reward_pence": 36,
+    "time_cost_hours": 5,
+    "risk_level": "low",
+    "possible_rewards": [
+      {
+        "type": "material_hint",
+        "id": "hint_basic_auxiliary_materials",
+        "chance": 0.18
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_pharmacy_wrong_delivery",
+        "chance": 0.1
+      },
+      {
+        "event_id": "event_strange_herbal_order",
+        "chance": 0.08
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "mother",
+        "chance": 0.08
+      },
+      {
+        "pathway_id": "moon",
+        "chance": 0.06
+      },
+      {
+        "pathway_id": "fool",
+        "chance": 0.04
+      }
+    ],
+    "requirements": [
+      "basic_literacy"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_dock_worker",
+    "name_cn": "码头工人",
+    "name_en": "Dock Worker",
+    "region_id": "five_seas",
+    "description": "在码头搬运货物、登记船只和接触水手传闻。收入较高，但可能遇到走私、海盗或污染物品。",
+    "reward_pence": 40,
+    "time_cost_hours": 6,
+    "risk_level": "medium",
+    "possible_rewards": [
+      {
+        "type": "material",
+        "id": "mat_purified_water",
+        "quantity": 1,
+        "chance": 0.08
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_smuggled_crate",
+        "chance": 0.16
+      },
+      {
+        "event_id": "event_pirate_wanted_notice",
+        "chance": 0.08
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "tyrant",
+        "chance": 0.12
+      },
+      {
+        "pathway_id": "death",
+        "chance": 0.06
+      }
+    ],
+    "requirements": [],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_black_market_runner",
+    "name_cn": "黑市跑腿",
+    "name_en": "Black Market Runner",
+    "region_id": "loen",
+    "description": "替地下交易会传递口信、包裹和入场暗号。报酬可观，可能直接触发隐藏剧情或危险交易。",
+    "reward_pence": 72,
+    "time_cost_hours": 4,
+    "risk_level": "high",
+    "possible_rewards": [
+      {
+        "type": "flag",
+        "id": "know_market_password",
+        "chance": 0.18
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_black_market_password",
+        "chance": 0.2
+      },
+      {
+        "event_id": "event_suspicious_formula_broker",
+        "chance": 0.12
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "error",
+        "chance": 0.1
+      },
+      {
+        "pathway_id": "abyss",
+        "chance": 0.08
+      },
+      {
+        "pathway_id": "fool",
+        "chance": 0.06
+      }
+    ],
+    "requirements": [
+      "underground_market_reputation_1"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_church_helper",
+    "name_cn": "教会帮工",
+    "name_en": "Church Helper",
+    "region_id": "loen",
+    "description": "协助教会整理档案、值夜、打扫礼拜厅或登记救济名单。风险低，适合接触官方组织和安全神秘学知识。",
+    "reward_pence": 18,
+    "time_cost_hours": 4,
+    "risk_level": "low",
+    "possible_rewards": [
+      {
+        "type": "clue",
+        "id": "clue_archived_ritual_case",
+        "chance": 0.12
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_church_night_watch",
+        "chance": 0.12
+      },
+      {
+        "event_id": "event_official_beyonder_contact",
+        "chance": 0.06
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "darkness",
+        "chance": 0.1
+      },
+      {
+        "pathway_id": "sun",
+        "chance": 0.04
+      },
+      {
+        "pathway_id": "justiciar",
+        "chance": 0.04
+      }
+    ],
+    "requirements": [],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_police_informant",
+    "name_cn": "警局线人",
+    "name_en": "Police Informant",
+    "region_id": "loen",
+    "description": "向警局或巡警提供街头消息，换取报酬和保护。可能接触案件现场，也可能被地下势力盯上。",
+    "reward_pence": 60,
+    "time_cost_hours": 5,
+    "risk_level": "medium",
+    "possible_rewards": [
+      {
+        "type": "reputation",
+        "id": "police_contact",
+        "amount": 1,
+        "chance": 0.2
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_police_assistant",
+        "chance": 0.18
+      },
+      {
+        "event_id": "event_gang_retaliation",
+        "chance": 0.08
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "justiciar",
+        "chance": 0.12
+      },
+      {
+        "pathway_id": "red_priest",
+        "chance": 0.05
+      }
+    ],
+    "requirements": [
+      "ordinary_people_reputation_2"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
   },
   {
     "job_id": "job_divination_club_assistant",
-    "job_name_cn": "占卜俱乐部助理",
-    "job_name_en": "Divination Club Assistant",
-    "region_id": "tingen_prototype",
-    "job_type": "social_work",
-    "description": "整理预约、接待客人并观察占卜流程，是普通人接触占卜家配方线索的温和入口。",
-    "requirements": {
-      "origin_ids": [
-        "origin_tingen_university_student",
-        "origin_tingen_clerk"
-      ],
-      "minimum_reputation": {},
-      "quest_flags": []
-    },
-    "schedule": {
-      "days": [
-        "wednesday",
-        "friday",
-        "sunday"
-      ],
-      "time_block": "afternoon"
-    },
-    "wage": {
-      "gold_pound": 0,
-      "soli": 2,
-      "pence": 0
-    },
-    "possible_rewards": {
-      "items": [
-        "item_old_tarot_cards"
-      ],
-      "materials": {},
-      "clues": [
-        "clue_divination_club_formula_rumor"
-      ],
-      "formula_hints": [
-        "formula_fool_09_seer"
-      ]
-    },
-    "risk": {
-      "corruption": 1,
-      "stability": 0,
-      "injury_chance": 0.0
-    },
-    "repeat_rule": "repeatable_weekly_unique_rewards_once",
-    "canon_status": "game_adapted",
+    "name_cn": "占卜俱乐部助理",
+    "name_en": "Divination Club Assistant",
+    "region_id": "loen",
+    "description": "整理预约、接待客人并观察占卜流程。是普通人温和接触占卜家配方线索的入口。",
+    "reward_pence": 24,
+    "time_cost_hours": 4,
+    "risk_level": "low",
+    "possible_rewards": [
+      {
+        "type": "item",
+        "id": "item_old_tarot_cards",
+        "chance": 0.08
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_divination_club",
+        "chance": 0.2
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "fool",
+        "chance": 0.18
+      }
+    ],
+    "requirements": [
+      "basic_literacy"
+    ],
     "source_note": [
       "游戏化改编"
-    ]
+    ],
+    "canon_status": "game_adapted"
   },
   {
-    "job_id": "job_church_archive_helper",
-    "job_name_cn": "教会档案帮工",
-    "job_name_en": "Church Archive Helper",
-    "region_id": "tingen_prototype",
-    "job_type": "organization_work",
-    "description": "协助整理旧档案、失踪记录和封存案件，可提高官方组织信任并接触安全的神秘学基础。",
-    "requirements": {
-      "origin_ids": [
-        "origin_tingen_university_student",
-        "origin_tingen_church_orphan"
-      ],
-      "minimum_reputation": {
-        "church_of_evernight_local": 1
+    "job_id": "job_factory_temp_worker",
+    "name_cn": "工厂临时工",
+    "name_en": "Factory Temp Worker",
+    "region_id": "intis",
+    "description": "在工厂和机械车间做临时工，接触工业事故、机械零件和工人组织。",
+    "reward_pence": 38,
+    "time_cost_hours": 6,
+    "risk_level": "medium",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_factory_accident",
+        "chance": 0.15
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "paragon",
+        "chance": 0.1
       },
-      "quest_flags": []
-    },
-    "schedule": {
-      "days": [
-        "monday",
-        "thursday"
-      ],
-      "time_block": "evening"
-    },
-    "wage": {
-      "gold_pound": 0,
-      "soli": 1,
-      "pence": 0
-    },
-    "possible_rewards": {
-      "items": [],
-      "materials": {},
-      "clues": [
-        "clue_archived_ritual_case"
-      ],
-      "formula_hints": [
-        "formula_fool_09_seer"
-      ]
-    },
-    "risk": {
-      "corruption": 0,
-      "stability": 1,
-      "injury_chance": 0.0
-    },
-    "repeat_rule": "repeatable_weekly_unique_rewards_once",
-    "canon_status": "game_adapted",
+      {
+        "pathway_id": "red_priest",
+        "chance": 0.08
+      }
+    ],
+    "requirements": [],
     "source_note": [
       "游戏化改编"
-    ]
+    ],
+    "canon_status": "game_adapted"
   },
   {
-    "job_id": "job_dock_loader",
-    "job_name_cn": "码头装卸工",
-    "job_name_en": "Dock Loader",
+    "job_id": "job_mechanic_apprentice",
+    "name_cn": "机械学徒",
+    "name_en": "Mechanic Apprentice",
+    "region_id": "intis",
+    "description": "协助机械师维护齿轮、蒸汽管线和精密零件，容易触发工匠途径线索。",
+    "reward_pence": 44,
+    "time_cost_hours": 6,
+    "risk_level": "low",
+    "possible_rewards": [
+      {
+        "type": "item",
+        "id": "item_basic_toolkit",
+        "chance": 0.05
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_workshop_accident",
+        "chance": 0.12
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "paragon",
+        "chance": 0.16
+      }
+    ],
+    "requirements": [
+      "basic_literacy"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_salon_attendant",
+    "name_cn": "沙龙侍者",
+    "name_en": "Salon Attendant",
+    "region_id": "intis",
+    "description": "在沙龙、剧院或私人聚会中服务，能听到革命、贵族和隐秘社交圈的消息。",
+    "reward_pence": 34,
+    "time_cost_hours": 5,
+    "risk_level": "medium",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_salon_secret_letter",
+        "chance": 0.14
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "demoness",
+        "chance": 0.08
+      },
+      {
+        "pathway_id": "black_emperor",
+        "chance": 0.05
+      }
+    ],
+    "requirements": [],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_border_courier",
+    "name_cn": "边境信使",
+    "name_en": "Border Courier",
+    "region_id": "feysac",
+    "description": "在北境要塞和村镇之间传递信件与军需单据。",
+    "reward_pence": 42,
+    "time_cost_hours": 6,
+    "risk_level": "medium",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_border_patrol_disappearance",
+        "chance": 0.12
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "twilight_giant",
+        "chance": 0.12
+      }
+    ],
+    "requirements": [],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_armory_helper",
+    "name_cn": "军械库帮工",
+    "name_en": "Armory Helper",
+    "region_id": "feysac",
+    "description": "整理武器、护甲和军需库存，接触军方传闻和战士类线索。",
+    "reward_pence": 36,
+    "time_cost_hours": 5,
+    "risk_level": "medium",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_armory_missing_weapon",
+        "chance": 0.1
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "red_priest",
+        "chance": 0.08
+      },
+      {
+        "pathway_id": "twilight_giant",
+        "chance": 0.08
+      }
+    ],
+    "requirements": [],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_cold_region_guide",
+    "name_cn": "寒地向导",
+    "name_en": "Cold Region Guide",
+    "region_id": "feysac",
+    "description": "为商队和巡逻队提供雪原路线指引，可能接触巨人遗迹传闻。",
+    "reward_pence": 50,
+    "time_cost_hours": 8,
+    "risk_level": "high",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_giant_ruin_rumor",
+        "chance": 0.16
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "twilight_giant",
+        "chance": 0.15
+      },
+      {
+        "pathway_id": "darkness",
+        "chance": 0.05
+      }
+    ],
+    "requirements": [
+      "cold_region_survival"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_manor_servant",
+    "name_cn": "庄园仆役",
+    "name_en": "Manor Servant",
+    "region_id": "fenepotter",
+    "description": "服务庄园和贵族家庭，接触乡野秘密、家族传承和隐藏房间。",
+    "reward_pence": 28,
+    "time_cost_hours": 6,
+    "risk_level": "low",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_manor_secret_room",
+        "chance": 0.1
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "justiciar",
+        "chance": 0.06
+      },
+      {
+        "pathway_id": "moon",
+        "chance": 0.06
+      }
+    ],
+    "requirements": [],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_herbal_collector",
+    "name_cn": "草药采集人",
+    "name_en": "Herbal Collector",
+    "region_id": "fenepotter",
+    "description": "采集草药、露水和乡野材料，适合引出母亲与月亮途径材料线索。",
+    "reward_pence": 30,
+    "time_cost_hours": 5,
+    "risk_level": "medium",
+    "possible_rewards": [
+      {
+        "type": "material_hint",
+        "id": "hint_rural_herbs",
+        "chance": 0.2
+      }
+    ],
+    "possible_events": [
+      {
+        "event_id": "event_moonlit_field",
+        "chance": 0.1
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "mother",
+        "chance": 0.14
+      },
+      {
+        "pathway_id": "moon",
+        "chance": 0.12
+      }
+    ],
+    "requirements": [],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_vineyard_worker",
+    "name_cn": "葡萄园工人",
+    "name_en": "Vineyard Worker",
+    "region_id": "fenepotter",
+    "description": "在葡萄园和农庄工作，可能接触丰收祭、庄园交易和乡野仪式。",
+    "reward_pence": 26,
+    "time_cost_hours": 5,
+    "risk_level": "low",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_harvest_festival_omen",
+        "chance": 0.12
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "mother",
+        "chance": 0.1
+      }
+    ],
+    "requirements": [],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_ship_cabin_assistant",
+    "name_cn": "船舱杂役",
+    "name_en": "Ship Cabin Assistant",
     "region_id": "five_seas",
-    "job_type": "ordinary_work",
-    "description": "后续海上区域入口工作，可接触走私货、海怪材料和船员传闻。",
-    "requirements": {
-      "origin_ids": [
-        "origin_tingen_lower_worker"
-      ],
-      "minimum_reputation": {},
-      "quest_flags": [
-        "unlock_ocean_travel"
-      ]
-    },
-    "schedule": {
-      "days": [
-        "monday",
-        "tuesday",
-        "friday"
-      ],
-      "time_block": "night"
-    },
-    "wage": {
-      "gold_pound": 0,
-      "soli": 3,
-      "pence": 0
-    },
-    "possible_rewards": {
-      "items": [],
-      "materials": {
-        "mat_purified_water": 1
+    "description": "在船舱中搬运补给、清理货舱和监听船员传闻。",
+    "reward_pence": 46,
+    "time_cost_hours": 8,
+    "risk_level": "high",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_cabin_whisper",
+        "chance": 0.12
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "door",
+        "chance": 0.06
       },
-      "clues": [
-        "clue_smuggled_material_crate"
-      ],
-      "formula_hints": []
-    },
-    "risk": {
-      "corruption": 2,
-      "stability": -1,
-      "injury_chance": 0.08
-    },
-    "repeat_rule": "repeatable_daily",
-    "canon_status": "game_adapted",
+      {
+        "pathway_id": "tyrant",
+        "chance": 0.1
+      }
+    ],
+    "requirements": [
+      "unlock_ocean_travel"
+    ],
     "source_note": [
-      "游戏化改编",
-      "后续区域占位"
-    ]
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_lighthouse_keeper",
+    "name_cn": "灯塔看守",
+    "name_en": "Lighthouse Keeper",
+    "region_id": "five_seas",
+    "description": "维护灯塔和航道信号，夜间可能目击风暴、幽灵船或异常星象。",
+    "reward_pence": 52,
+    "time_cost_hours": 8,
+    "risk_level": "medium",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_lighthouse_signal",
+        "chance": 0.18
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "tyrant",
+        "chance": 0.12
+      },
+      {
+        "pathway_id": "fool",
+        "chance": 0.05
+      }
+    ],
+    "requirements": [
+      "unlock_ocean_travel"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_mine_record_keeper",
+    "name_cn": "矿区记录员",
+    "name_en": "Mine Record Keeper",
+    "region_id": "southern_continent",
+    "description": "整理矿区产量、伤亡和运输记录，可能发现仪式、失踪和殖民势力冲突。",
+    "reward_pence": 34,
+    "time_cost_hours": 6,
+    "risk_level": "medium",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_mine_collapse_ritual",
+        "chance": 0.14
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "death",
+        "chance": 0.1
+      },
+      {
+        "pathway_id": "chained",
+        "chance": 0.06
+      }
+    ],
+    "requirements": [
+      "basic_literacy"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_colonial_translator",
+    "name_cn": "殖民地翻译",
+    "name_en": "Colonial Translator",
+    "region_id": "southern_continent",
+    "description": "为商会、矿区或官方人员翻译文书，接触多方势力情报。",
+    "reward_pence": 60,
+    "time_cost_hours": 5,
+    "risk_level": "medium",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_colonial_smuggler",
+        "chance": 0.1
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "black_emperor",
+        "chance": 0.06
+      },
+      {
+        "pathway_id": "justiciar",
+        "chance": 0.06
+      }
+    ],
+    "requirements": [
+      "language_skill"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "job_id": "job_jungle_guide",
+    "name_cn": "雨林向导",
+    "name_en": "Jungle Guide",
+    "region_id": "southern_continent",
+    "description": "为商队或调查队进入雨林带路，可能遭遇灵教团符号、异常生物和古老祭祀痕迹。",
+    "reward_pence": 70,
+    "time_cost_hours": 8,
+    "risk_level": "high",
+    "possible_rewards": [],
+    "possible_events": [
+      {
+        "event_id": "event_spirit_order_symbol",
+        "chance": 0.16
+      }
+    ],
+    "pathway_clue_chance": [
+      {
+        "pathway_id": "death",
+        "chance": 0.12
+      },
+      {
+        "pathway_id": "abyss",
+        "chance": 0.08
+      }
+    ],
+    "requirements": [
+      "wilderness_survival"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
   }
 ]

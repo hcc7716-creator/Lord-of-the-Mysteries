@@ -14,10 +14,10 @@
       "石板路"
     ],
     "common_jobs": [
-      "job_newspaper_errand",
+      "job_newspaper_copyist",
       "job_divination_club_assistant",
-      "job_church_archive_helper",
-      "job_private_detective_assistant"
+      "job_church_helper",
+      "job_detective_assistant"
     ],
     "common_markets": [
       "market_tingen_black_market",
@@ -175,7 +175,7 @@
       "深海阴影"
     ],
     "common_jobs": [
-      "job_dock_loader",
+      "job_dock_worker",
       "job_ship_cabin_assistant",
       "job_lighthouse_keeper"
     ],
@@ -293,9 +293,9 @@
       "地下交易入口"
     ],
     "common_jobs": [
-      "job_newspaper_errand",
+      "job_newspaper_copyist",
       "job_divination_club_assistant",
-      "job_church_archive_helper"
+      "job_church_helper"
     ],
     "common_markets": [
       "market_tingen_black_market",

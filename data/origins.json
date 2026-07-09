@@ -11,9 +11,9 @@
       "item_account_book"
     ],
     "available_jobs": [
-      "job_newspaper_errand",
+      "job_newspaper_copyist",
       "job_divination_club_assistant",
-      "job_church_archive_helper",
+      "job_church_helper",
       "job_detective_assistant",
       "job_pharmacy_apprentice"
     ],
@@ -45,9 +45,9 @@
       "item_old_tarot_cards"
     ],
     "available_jobs": [
-      "job_church_archive_helper",
+      "job_church_helper",
       "job_divination_club_assistant",
-      "job_newspaper_errand"
+      "job_newspaper_copyist"
     ],
     "early_event_pool": [
       "event_university_occult_note",
@@ -75,8 +75,8 @@
     "starting_currency_pence": 102,
     "starting_items": [],
     "available_jobs": [
-      "job_newspaper_errand",
-      "job_dock_loader",
+      "job_newspaper_copyist",
+      "job_dock_worker",
       "job_factory_temp_worker"
     ],
     "early_event_pool": [
@@ -107,8 +107,8 @@
       "item_church_token"
     ],
     "available_jobs": [
-      "job_church_archive_helper",
-      "job_newspaper_errand"
+      "job_church_helper",
+      "job_newspaper_copyist"
     ],
     "early_event_pool": [
       "event_church_night_watch",
@@ -233,7 +233,7 @@
       "item_rusty_compass"
     ],
     "available_jobs": [
-      "job_dock_loader",
+      "job_dock_worker",
       "job_ship_cabin_assistant",
       "job_lighthouse_keeper"
     ],

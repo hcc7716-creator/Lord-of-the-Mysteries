@@ -277,8 +277,26 @@ func get_origins_for_region(region_id: String) -> Array:
 func get_jobs_for_region(region_id: String) -> Array:
 	_ensure_loaded()
 	var result: Array = []
+	var added_job_ids := {}
+	var accepted_region_ids := [region_id]
+	var region := get_region(region_id)
+	var parent_region_id := str(region.get("parent_region_id", ""))
+	if parent_region_id != "":
+		accepted_region_ids.append(parent_region_id)
+
+	for accepted_region_id in accepted_region_ids:
+		var accepted_region := get_region(str(accepted_region_id))
+		for job_id in accepted_region.get("common_jobs", []):
+			var job := get_job(str(job_id))
+			if job.is_empty() or added_job_ids.has(str(job_id)):
+				continue
+			added_job_ids[str(job_id)] = true
+			result.append(job)
+
 	for job in jobs.values():
-		if str(job.get("region_id", "")) == region_id:
+		var job_id := str(job.get("job_id", ""))
+		if accepted_region_ids.has(str(job.get("region_id", ""))) and not added_job_ids.has(job_id):
+			added_job_ids[job_id] = true
 			result.append(job)
 	return result
 
