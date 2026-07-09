@@ -27,7 +27,7 @@ color = Color(0.22, 0.42, 0.58, 0.28)
 offset_left = 16.0
 offset_top = 16.0
 offset_right = 460.0
-offset_bottom = 142.0
+offset_bottom = 172.0
 
 [node name="MarginContainer" type="MarginContainer" parent="TopLeft"]
 layout_mode = 2
@@ -56,6 +56,10 @@ text = "灵性：60 / 60"
 [node name="CorruptionLabel" type="Label" parent="TopLeft/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "污染：0 | 风险：低"
+
+[node name="CurrencyLabel" type="Label" parent="TopLeft/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "货币：0金镑 0苏勒 0便士"
 
 [node name="FeedbackPanel" type="PanelContainer" parent="."]
 visible = false

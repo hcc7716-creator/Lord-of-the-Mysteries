@@ -5,6 +5,7 @@ extends CanvasLayer
 @onready var next_step_label: Label = $TopLeft/MarginContainer/VBoxContainer/NextStepLabel
 @onready var spirituality_label: Label = $TopLeft/MarginContainer/VBoxContainer/SpiritualityLabel
 @onready var corruption_label: Label = $TopLeft/MarginContainer/VBoxContainer/CorruptionLabel
+@onready var currency_label: Label = $TopLeft/MarginContainer/VBoxContainer/CurrencyLabel
 @onready var feedback_panel: PanelContainer = $FeedbackPanel
 @onready var feedback_label: Label = $FeedbackPanel/MarginContainer/FeedbackLabel
 @onready var help_panel: PanelContainer = $HelpPanel
@@ -43,6 +44,7 @@ func _ready() -> void:
 	PathwayManager.pathway_changed.connect(_on_pathway_changed)
 	CorruptionManager.stats_changed.connect(_on_stats_changed)
 	CorruptionManager.corruption_warning.connect(show_status_message)
+	EconomyManager.money_changed.connect(_on_money_changed)
 	ClueManager.notebook_updated.connect(_on_notebook_updated)
 	SkillManager.spiritual_vision_changed.connect(_on_spiritual_vision_changed)
 	PotionManager.potion_brewed.connect(func(_sequence_id: String): refresh_all())
@@ -70,6 +72,7 @@ func _unhandled_input(event: InputEvent) -> void:
 func refresh_all() -> void:
 	_refresh_task_text()
 	_refresh_stats()
+	_refresh_currency()
 	interaction_hint = ""
 	transient_message = ""
 	_refresh_feedback()
@@ -197,6 +200,10 @@ func _refresh_stats() -> void:
 	]
 
 
+func _refresh_currency() -> void:
+	currency_label.text = "货币：%s" % EconomyManager.get_balance_text()
+
+
 func _on_quest_updated(_quest_id: String) -> void:
 	_refresh_task_text()
 	if quest_panel.has_method("refresh"):
@@ -210,6 +217,12 @@ func _on_quest_updated(_quest_id: String) -> void:
 
 
 func _on_inventory_changed() -> void:
+	if inventory_panel.has_method("refresh"):
+		inventory_panel.refresh()
+
+
+func _on_money_changed(_balance_pence: int) -> void:
+	_refresh_currency()
 	if inventory_panel.has_method("refresh"):
 		inventory_panel.refresh()
 

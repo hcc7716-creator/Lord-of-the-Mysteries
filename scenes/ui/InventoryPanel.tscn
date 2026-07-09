@@ -27,6 +27,10 @@ layout_mode = 2
 layout_mode = 2
 text = "材料背包"
 
+[node name="CurrencyLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "当前货币：0金镑 0苏勒 0便士"
+
 [node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 420)
 layout_mode = 2

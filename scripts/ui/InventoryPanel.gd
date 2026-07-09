@@ -1,14 +1,18 @@
 extends PanelContainer
 
+@onready var currency_label: Label = $MarginContainer/VBoxContainer/CurrencyLabel
 @onready var list: VBoxContainer = $MarginContainer/VBoxContainer/ScrollContainer/List
 
 
 func _ready() -> void:
 	visible = false
+	if not EconomyManager.money_changed.is_connected(_on_money_changed):
+		EconomyManager.money_changed.connect(_on_money_changed)
 	refresh()
 
 
 func refresh() -> void:
+	currency_label.text = "当前货币：%s" % EconomyManager.get_balance_text()
 	for child in list.get_children():
 		child.queue_free()
 
@@ -28,3 +32,7 @@ func _add_line(text: String) -> void:
 	label.text = text
 	label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	list.add_child(label)
+
+
+func _on_money_changed(_balance_pence: int) -> void:
+	refresh()
