@@ -13,6 +13,12 @@ config/features=PackedStringArray("4.2")
 
 GameManager="*res://scripts/autoload/GameManager.gd"
 DataManager="*res://scripts/autoload/DataManager.gd"
+CalendarManager="*res://scripts/autoload/CalendarManager.gd"
+EconomyManager="*res://scripts/autoload/EconomyManager.gd"
+OriginManager="*res://scripts/autoload/OriginManager.gd"
+JobManager="*res://scripts/autoload/JobManager.gd"
+MarketManager="*res://scripts/autoload/MarketManager.gd"
+TarotClubManager="*res://scripts/autoload/TarotClubManager.gd"
 CorruptionManager="*res://scripts/autoload/CorruptionManager.gd"
 QuestManager="*res://scripts/autoload/QuestManager.gd"
 InventoryManager="*res://scripts/autoload/InventoryManager.gd"

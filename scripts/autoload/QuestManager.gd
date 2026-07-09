@@ -55,6 +55,8 @@ func accept_quest(quest_id: String) -> void:
 		return
 	quest_status[quest_id] = QuestStatus.ACTIVE
 	active_quest_id = quest_id
+	if quest_id == "quest_tingen_become_seer" and PathwayManager.has_method("set_suspected_pathway"):
+		PathwayManager.set_suspected_pathway("fool")
 	if not quest_progress.has(quest_id):
 		quest_progress[quest_id] = {}
 	mark_objective(quest_id, "talk_old_neil")

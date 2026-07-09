@@ -7,6 +7,16 @@ func build_save_data() -> Dictionary:
 	return {
 		"current_pathway_id": PathwayManager.current_pathway_id,
 		"current_sequence_id": PathwayManager.current_sequence_id,
+		"selected_origin_id": OriginManager.selected_origin_id,
+		"selected_region_id": OriginManager.selected_region_id,
+		"starting_region_id": OriginManager.starting_region_id,
+		"money_pence": EconomyManager.get_balance(),
+		"calendar_week": CalendarManager.current_week,
+		"calendar_day_index": CalendarManager.day_index,
+		"calendar_hour": CalendarManager.hour,
+		"tarot_club_unlocked": TarotClubManager.is_unlocked,
+		"tarot_trust_level": TarotClubManager.trust_level,
+		"completed_tarot_request_ids": TarotClubManager.completed_request_ids,
 		"materials": InventoryManager.get_all_materials(),
 		"quest_status": QuestManager.quest_status,
 		"quest_progress": QuestManager.quest_progress,
@@ -39,9 +49,24 @@ func load_game() -> void:
 	var parsed = JSON.parse_string(file.get_as_text())
 	if typeof(parsed) != TYPE_DICTIONARY:
 		return
-	PathwayManager.current_pathway_id = str(parsed.get("current_pathway_id", "fool"))
-	PathwayManager.current_sequence_id = str(parsed.get("current_sequence_id", "fool_09_seer"))
+	PathwayManager.current_pathway_id = str(parsed.get("current_pathway_id", ""))
+	PathwayManager.current_sequence_id = str(parsed.get("current_sequence_id", ""))
 	PathwayManager.refresh_unlocked_abilities()
+	OriginManager.selected_origin_id = str(parsed.get("selected_origin_id", ""))
+	OriginManager.selected_region_id = str(parsed.get("selected_region_id", ""))
+	OriginManager.starting_region_id = str(parsed.get("starting_region_id", ""))
+	var origin := OriginManager.get_selected_origin()
+	if not origin.is_empty():
+		OriginManager.available_job_ids.assign(origin.get("available_jobs", []))
+		OriginManager.early_event_pool.assign(origin.get("early_event_pool", []))
+		OriginManager.starting_items.assign(origin.get("starting_items", []))
+	EconomyManager.set_balance(int(parsed.get("money_pence", 0)))
+	CalendarManager.current_week = int(parsed.get("calendar_week", CalendarManager.current_week))
+	CalendarManager.day_index = int(parsed.get("calendar_day_index", CalendarManager.day_index))
+	CalendarManager.hour = int(parsed.get("calendar_hour", CalendarManager.hour))
+	TarotClubManager.is_unlocked = bool(parsed.get("tarot_club_unlocked", false))
+	TarotClubManager.trust_level = int(parsed.get("tarot_trust_level", 0))
+	TarotClubManager.completed_request_ids.assign(parsed.get("completed_tarot_request_ids", []))
 	InventoryManager.materials = parsed.get("materials", {})
 	QuestManager.quest_status = parsed.get("quest_status", {})
 	QuestManager.quest_progress = parsed.get("quest_progress", {})

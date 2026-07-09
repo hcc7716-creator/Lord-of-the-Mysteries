@@ -2,7 +2,7 @@ extends Node
 
 signal pathway_changed
 
-var current_pathway_id := "fool"
+var current_pathway_id := ""
 var current_sequence_id := ""
 var unlocked_ability_ids: Array[String] = []
 
@@ -19,6 +19,20 @@ func set_current_sequence(sequence_id: String) -> void:
 	pathway_changed.emit()
 
 
+func set_suspected_pathway(pathway_id: String) -> void:
+	if current_sequence_id != "":
+		return
+	current_pathway_id = pathway_id
+	pathway_changed.emit()
+
+
+func clear_pathway() -> void:
+	current_pathway_id = ""
+	current_sequence_id = ""
+	unlocked_ability_ids.clear()
+	pathway_changed.emit()
+
+
 func refresh_unlocked_abilities() -> void:
 	unlocked_ability_ids.clear()
 	var sequence := get_current_sequence()
@@ -29,6 +43,8 @@ func refresh_unlocked_abilities() -> void:
 
 
 func get_current_pathway() -> Dictionary:
+	if current_pathway_id == "":
+		return {}
 	return DataManager.get_pathway(current_pathway_id)
 
 
