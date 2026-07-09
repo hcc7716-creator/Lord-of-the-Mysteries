@@ -10,7 +10,7 @@ const DATASETS := {
 	"artifacts": {"path": "res://data/sealed_artifacts.json", "id_key": "artifact_id"},
 	"regions": {"path": "res://data/regions.json", "id_key": "region_id"},
 	"origins": {"path": "res://data/origins.json", "id_key": "origin_id"},
-	"currencies": {"path": "res://data/currencies.json", "id_key": "currency_id"},
+	"currencies": {"path": "res://data/currencies.json", "id_key": "currency_system_id"},
 	"jobs": {"path": "res://data/jobs.json", "id_key": "job_id"},
 	"markets": {"path": "res://data/markets.json", "id_key": "market_id"},
 	"potion_formulas": {"path": "res://data/potion_formulas.json", "id_key": "formula_id"},
@@ -27,6 +27,7 @@ var artifacts: Dictionary = {}
 var regions: Dictionary = {}
 var origins: Dictionary = {}
 var currencies: Dictionary = {}
+var currency_units: Dictionary = {}
 var jobs: Dictionary = {}
 var markets: Dictionary = {}
 var potion_formulas: Dictionary = {}
@@ -49,6 +50,7 @@ func load_all_data() -> void:
 	_load_dataset(regions, DATASETS["regions"]["path"], DATASETS["regions"]["id_key"])
 	_load_dataset(origins, DATASETS["origins"]["path"], DATASETS["origins"]["id_key"])
 	_load_dataset(currencies, DATASETS["currencies"]["path"], DATASETS["currencies"]["id_key"])
+	_index_currency_units()
 	_load_dataset(jobs, DATASETS["jobs"]["path"], DATASETS["jobs"]["id_key"])
 	_load_dataset(markets, DATASETS["markets"]["path"], DATASETS["markets"]["id_key"])
 	_load_dataset(potion_formulas, DATASETS["potion_formulas"]["path"], DATASETS["potion_formulas"]["id_key"])
@@ -98,7 +100,9 @@ func _index_records(records, target: Dictionary, id_key: String) -> void:
 			for item in records:
 				_index_record(item, target, id_key)
 		TYPE_DICTIONARY:
-			if records.has("data") and typeof(records["data"]) == TYPE_ARRAY:
+			if records.has(id_key):
+				_index_record(records, target, id_key)
+			elif records.has("data") and typeof(records["data"]) == TYPE_ARRAY:
 				for item in records["data"]:
 					_index_record(item, target, id_key)
 			else:
@@ -119,6 +123,21 @@ func _index_record(item, target: Dictionary, id_key: String) -> void:
 		push_warning("DataManager: skipped record without id key %s" % id_key)
 		return
 	target[str(item[id_key])] = item
+
+
+func _index_currency_units() -> void:
+	currency_units.clear()
+	for system in currencies.values():
+		for unit in system.get("units", []):
+			if typeof(unit) != TYPE_DICTIONARY:
+				continue
+			var unit_id := str(unit.get("unit_id", ""))
+			if unit_id == "":
+				continue
+			var normalized: Dictionary = unit.duplicate(true)
+			normalized["currency_system_id"] = str(system.get("currency_system_id", ""))
+			normalized["base_unit"] = str(system.get("base_unit", "pence"))
+			currency_units[unit_id] = normalized
 
 
 func _ensure_loaded() -> void:
@@ -173,7 +192,30 @@ func get_origin(id: String) -> Dictionary:
 
 func get_currency(id: String) -> Dictionary:
 	_ensure_loaded()
+	if currencies.has(id):
+		return currencies.get(id, {})
+	return currency_units.get(id, {})
+
+
+func get_currency_system(id: String) -> Dictionary:
+	_ensure_loaded()
 	return currencies.get(id, {})
+
+
+func get_currency_unit(id: String) -> Dictionary:
+	_ensure_loaded()
+	return currency_units.get(id, {})
+
+
+func currency_amount_to_pence(amounts: Dictionary) -> int:
+	_ensure_loaded()
+	var total := 0
+	for unit_id in amounts.keys():
+		var unit := get_currency_unit(str(unit_id))
+		if unit.is_empty():
+			continue
+		total += int(amounts[unit_id]) * int(unit.get("value_in_pence", 0))
+	return total
 
 
 func get_job(id: String) -> Dictionary:

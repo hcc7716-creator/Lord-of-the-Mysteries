@@ -17,7 +17,7 @@
       "reputation_underground_market_1"
     ],
     "accepted_currencies": [
-      "gold_pound",
+      "pound",
       "soli"
     ],
     "inventory_pool": [
@@ -40,7 +40,7 @@
       {
         "item_id": "mat_lavos_squid_blood",
         "price": {
-          "gold_pound": 2,
+          "pound": 2,
           "soli": 0
         },
         "stock_rule": "rare"

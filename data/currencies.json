@@ -1,86 +1,28 @@
-[
-  {
-    "currency_id": "gold_pound",
-    "name_cn": "金镑",
-    "name_en": "Gold Pound",
-    "symbol": "£",
-    "base_unit": "pence",
-    "value_in_pence": 240,
-    "display_order": 1,
-    "is_physical": true,
-    "can_trade": true,
-    "usage": [
-      "高价值交易",
-      "黑市魔药材料",
-      "房租与大额委托"
-    ],
-    "canon_status": "game_adapted",
-    "source_note": [
-      "接近原著货币体系",
-      "游戏化改编"
-    ]
-  },
-  {
-    "currency_id": "soli",
-    "name_cn": "苏勒",
-    "name_en": "Soli",
-    "symbol": "s",
-    "base_unit": "pence",
-    "value_in_pence": 12,
-    "display_order": 2,
-    "is_physical": true,
-    "can_trade": true,
-    "usage": [
-      "日常消费",
-      "低级委托报酬",
-      "普通道具交易"
-    ],
-    "canon_status": "game_adapted",
-    "source_note": [
-      "接近原著货币体系",
-      "游戏化改编"
-    ]
-  },
-  {
-    "currency_id": "pence",
-    "name_cn": "便士",
-    "name_en": "Pence",
-    "symbol": "p",
-    "base_unit": "pence",
-    "value_in_pence": 1,
-    "display_order": 3,
-    "is_physical": true,
-    "can_trade": true,
-    "usage": [
-      "零散消费",
-      "公共交通",
-      "廉价食物"
-    ],
-    "canon_status": "game_adapted",
-    "source_note": [
-      "接近原著货币体系",
-      "游戏化改编"
-    ]
-  },
-  {
-    "currency_id": "tarot_credit",
-    "name_cn": "塔罗会信用",
-    "name_en": "Tarot Credit",
-    "symbol": "TC",
-    "base_unit": "tarot_credit",
-    "value_in_pence": 0,
-    "display_order": 10,
-    "is_physical": false,
-    "can_trade": false,
-    "usage": [
-      "灰雾之上等价交换记账",
-      "跨区域情报信用",
-      "后续塔罗会系统预埋"
-    ],
-    "canon_status": "game_adapted",
-    "source_note": [
-      "游戏化改编",
-      "系统占位"
-    ]
-  }
-]
+{
+  "currency_system_id": "loen_currency",
+  "base_unit": "pence",
+  "units": [
+    {
+      "unit_id": "pound",
+      "name_cn": "金镑",
+      "name_en": "Pound",
+      "value_in_pence": 240
+    },
+    {
+      "unit_id": "soli",
+      "name_cn": "苏勒",
+      "name_en": "Soli",
+      "value_in_pence": 12
+    },
+    {
+      "unit_id": "pence",
+      "name_cn": "便士",
+      "name_en": "Pence",
+      "value_in_pence": 1
+    }
+  ],
+  "source_note": [
+    "游戏化改编"
+  ],
+  "canon_status": "game_adapted"
+}
