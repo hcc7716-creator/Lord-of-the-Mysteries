@@ -304,8 +304,26 @@ func get_jobs_for_region(region_id: String) -> Array:
 func get_markets_for_region(region_id: String) -> Array:
 	_ensure_loaded()
 	var result: Array = []
+	var added_market_ids := {}
+	var accepted_region_ids := [region_id]
+	var region := get_region(region_id)
+	var parent_region_id := str(region.get("parent_region_id", ""))
+	if parent_region_id != "":
+		accepted_region_ids.append(parent_region_id)
+
+	for accepted_region_id in accepted_region_ids:
+		var accepted_region := get_region(str(accepted_region_id))
+		for market_id in accepted_region.get("common_markets", []):
+			var market := get_market(str(market_id))
+			if market.is_empty() or added_market_ids.has(str(market_id)):
+				continue
+			added_market_ids[str(market_id)] = true
+			result.append(market)
+
 	for market in markets.values():
-		if str(market.get("region_id", "")) == region_id:
+		var market_id := str(market.get("market_id", ""))
+		if accepted_region_ids.has(str(market.get("region_id", ""))) and not added_market_ids.has(market_id):
+			added_market_ids[market_id] = true
 			result.append(market)
 	return result
 

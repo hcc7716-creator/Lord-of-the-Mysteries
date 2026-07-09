@@ -1,186 +1,490 @@
 [
   {
     "market_id": "market_tingen_black_market",
-    "market_name_cn": "雾城地下交易会",
-    "market_name_en": "Fog City Underground Gathering",
-    "region_id": "tingen_prototype",
+    "name_cn": "廷根地下黑市",
+    "name_en": "Tingen Underground Black Market",
+    "region_id": "loen",
     "market_type": "black_market",
     "description": "夜间开放的地下交易会，出售低序列材料、可疑情报和未经核验的魔药配方线索。",
-    "schedule": {
-      "days": [
-        "saturday"
-      ],
-      "time_block": "night"
-    },
-    "access_conditions": [
-      "know_market_password",
-      "reputation_underground_market_1"
-    ],
-    "accepted_currencies": [
-      "pound",
-      "soli"
-    ],
-    "inventory_pool": [
+    "available_items": [
       {
         "item_id": "mat_purified_water",
-        "price": {
-          "soli": 2,
-          "pence": 0
-        },
+        "price_pence": 24,
         "stock_rule": "common"
       },
       {
         "item_id": "mat_night_vanilla_liquids",
-        "price": {
-          "soli": 8,
-          "pence": 0
-        },
+        "price_pence": 96,
         "stock_rule": "uncommon"
       },
       {
         "item_id": "mat_lavos_squid_blood",
-        "price": {
-          "pound": 2,
-          "soli": 0
-        },
+        "price_pence": 480,
         "stock_rule": "rare"
       }
     ],
-    "formula_pool": [
+    "available_formulas": [
       "formula_fool_09_seer_black_market_copy"
     ],
-    "risk": {
-      "fraud_chance": 0.2,
-      "corruption": 2,
-      "official_attention": 1
-    },
-    "restock_rule": "weekly_saturday_night",
-    "canon_status": "game_adapted",
+    "risk_events": [
+      {
+        "event_id": "event_black_market_fraud",
+        "chance": 0.2
+      },
+      {
+        "event_id": "event_official_attention",
+        "chance": 0.1
+      }
+    ],
+    "unlock_conditions": [
+      "know_market_password",
+      "underground_market_reputation_1"
+    ],
+    "open_days": [
+      "saturday_night"
+    ],
     "source_note": [
       "游戏化改编"
-    ]
+    ],
+    "canon_status": "game_adapted"
   },
   {
     "market_id": "market_divination_club_exchange",
-    "market_name_cn": "占卜俱乐部私下交换",
-    "market_name_en": "Divination Club Private Exchange",
-    "region_id": "tingen_prototype",
-    "market_type": "social_exchange",
+    "name_cn": "占卜俱乐部私下交换",
+    "name_en": "Divination Club Private Exchange",
+    "region_id": "loen",
+    "market_type": "normal_market",
     "description": "通过普通人社交圈交换低风险道具、旧塔罗牌、灵摆和传闻。",
-    "schedule": {
-      "days": [
-        "wednesday",
-        "sunday"
-      ],
-      "time_block": "afternoon"
-    },
-    "access_conditions": [
-      "job_divination_club_assistant_or_contact"
-    ],
-    "accepted_currencies": [
-      "soli",
-      "pence"
-    ],
-    "inventory_pool": [
+    "available_items": [
       {
         "item_id": "item_old_tarot_cards",
-        "price": {
-          "soli": 1,
-          "pence": 6
-        },
+        "price_pence": 18,
         "stock_rule": "common"
       }
     ],
-    "formula_pool": [
+    "available_formulas": [
       "formula_fool_09_seer_hint_only"
     ],
-    "risk": {
-      "fraud_chance": 0.05,
-      "corruption": 0,
-      "official_attention": 0
-    },
-    "restock_rule": "weekly_social_stock",
-    "canon_status": "game_adapted",
+    "risk_events": [
+      {
+        "event_id": "event_unreliable_divination_rumor",
+        "chance": 0.05
+      }
+    ],
+    "unlock_conditions": [
+      "job_divination_club_assistant_or_contact"
+    ],
+    "open_days": [
+      "wednesday_afternoon",
+      "sunday_afternoon"
+    ],
     "source_note": [
       "游戏化改编"
-    ]
+    ],
+    "canon_status": "game_adapted"
   },
   {
     "market_id": "market_church_requisition",
-    "market_name_cn": "教会物资申请",
-    "market_name_en": "Church Requisition",
-    "region_id": "tingen_prototype",
-    "market_type": "organization_supply",
-    "description": "官方组织批准后的安全物资申请渠道，价格低但需要任务进度和声望。",
-    "schedule": {
-      "days": [
-        "monday",
-        "thursday"
-      ],
-      "time_block": "evening"
-    },
-    "access_conditions": [
-      "church_reputation_5",
-      "active_official_case"
-    ],
-    "accepted_currencies": [
-      "soli"
-    ],
-    "inventory_pool": [
+    "name_cn": "教会物资申请",
+    "name_en": "Church Requisition Storehouse",
+    "region_id": "loen",
+    "market_type": "church_storehouse",
+    "description": "官方组织批准后的安全物资申请渠道，价格低但需要任务进度、信誉或值夜许可。",
+    "available_items": [
       {
         "item_id": "mat_purified_water",
-        "price": {
-          "soli": 0,
-          "pence": 6
-        },
+        "price_pence": 6,
         "stock_rule": "case_limited"
       }
     ],
-    "formula_pool": [
+    "available_formulas": [
       "formula_fool_09_seer_official_training"
     ],
-    "risk": {
-      "fraud_chance": 0.0,
-      "corruption": 0,
-      "official_attention": 0
-    },
-    "restock_rule": "case_limited",
-    "canon_status": "game_adapted",
+    "risk_events": [],
+    "unlock_conditions": [
+      "church_reputation_5",
+      "active_official_case"
+    ],
+    "open_days": [
+      "monday_evening",
+      "thursday_evening"
+    ],
     "source_note": [
       "游戏化改编"
-    ]
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_intis_artisan_exchange",
+    "name_cn": "因蒂斯工匠交换会",
+    "name_en": "Intis Artisan Exchange",
+    "region_id": "intis",
+    "market_type": "normal_market",
+    "description": "机械师、工匠学徒和小商人交换零件、工具、材料传闻的公开集市。",
+    "available_items": [
+      {
+        "item_id": "item_basic_toolkit",
+        "price_pence": 72,
+        "stock_rule": "common"
+      }
+    ],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_workshop_accident",
+        "chance": 0.08
+      }
+    ],
+    "unlock_conditions": [
+      "future_region_unlock"
+    ],
+    "open_days": [
+      "tuesday_morning",
+      "friday_morning"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_intis_salon_information",
+    "name_cn": "因蒂斯沙龙情报圈",
+    "name_en": "Intis Salon Information Circle",
+    "region_id": "intis",
+    "market_type": "normal_market",
+    "description": "以社交、赞助和私人信件流通为核心的情报交换场。",
+    "available_items": [],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_salon_secret_letter",
+        "chance": 0.14
+      }
+    ],
+    "unlock_conditions": [
+      "future_region_unlock",
+      "salon_contact_1"
+    ],
+    "open_days": [
+      "saturday_evening"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_feysac_military_surplus",
+    "name_cn": "弗萨克军需余货市",
+    "name_en": "Feysac Military Surplus Market",
+    "region_id": "feysac",
+    "market_type": "normal_market",
+    "description": "边境军需、旧装备和寒地生存物资的半公开市场。",
+    "available_items": [
+      {
+        "item_id": "item_worn_military_badge",
+        "price_pence": 36,
+        "stock_rule": "uncommon"
+      }
+    ],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_armory_missing_weapon",
+        "chance": 0.08
+      }
+    ],
+    "unlock_conditions": [
+      "future_region_unlock"
+    ],
+    "open_days": [
+      "monday_morning",
+      "thursday_morning"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_northern_border_trade",
+    "name_cn": "北境边贸集",
+    "name_en": "Northern Border Trade",
+    "region_id": "feysac",
+    "market_type": "black_market",
+    "description": "寒地向导、边境信使和走私者共享路线、补给和遗迹传闻的高风险交易点。",
+    "available_items": [],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_northern_smuggler",
+        "chance": 0.16
+      },
+      {
+        "event_id": "event_giant_ruin_rumor",
+        "chance": 0.1
+      }
+    ],
+    "unlock_conditions": [
+      "future_region_unlock",
+      "border_contact_1"
+    ],
+    "open_days": [
+      "friday_night"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_fenepotter_harvest_fair",
+    "name_cn": "费内波特丰收集市",
+    "name_en": "Fenepotter Harvest Fair",
+    "region_id": "fenepotter",
+    "market_type": "normal_market",
+    "description": "农庄、庄园和乡村教堂之间流通草药、粮食、酒类和乡野传闻的市场。",
+    "available_items": [
+      {
+        "item_id": "item_herbal_pouch",
+        "price_pence": 30,
+        "stock_rule": "common"
+      }
+    ],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_harvest_festival_omen",
+        "chance": 0.12
+      }
+    ],
+    "unlock_conditions": [
+      "future_region_unlock"
+    ],
+    "open_days": [
+      "sunday_morning"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_rural_herbal_trade",
+    "name_cn": "乡野草药交易",
+    "name_en": "Rural Herbal Trade",
+    "region_id": "fenepotter",
+    "market_type": "normal_market",
+    "description": "草药采集人和乡村药师交换辅助材料、月夜露水与植物类材料线索。",
+    "available_items": [
+      {
+        "item_id": "hint_rural_herbs",
+        "price_pence": 18,
+        "stock_rule": "rumor"
+      }
+    ],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_moonlit_field",
+        "chance": 0.1
+      }
+    ],
+    "unlock_conditions": [
+      "future_region_unlock"
+    ],
+    "open_days": [
+      "wednesday_morning",
+      "saturday_morning"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_sea_smuggler_deck",
+    "name_cn": "海上走私甲板",
+    "name_en": "Sea Smuggler Deck",
+    "region_id": "five_seas",
+    "market_type": "black_market",
+    "description": "海港、货船和走私船之间流动的黑市，可获得远洋材料、船员传闻和危险货箱。",
+    "available_items": [
+      {
+        "item_id": "mat_purified_water",
+        "price_pence": 20,
+        "stock_rule": "common"
+      }
+    ],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_smuggled_crate",
+        "chance": 0.18
+      },
+      {
+        "event_id": "event_pirate_wanted_notice",
+        "chance": 0.08
+      }
+    ],
+    "unlock_conditions": [
+      "unlock_ocean_travel"
+    ],
+    "open_days": [
+      "tuesday_night",
+      "saturday_night"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_pirate_spoils_trade",
+    "name_cn": "海盗战利品交易",
+    "name_en": "Pirate Spoils Trade",
+    "region_id": "five_seas",
+    "market_type": "black_market",
+    "description": "海盗、赏金猎人和黑市商人交换封存货、赃物和海上情报的危险渠道。",
+    "available_items": [],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_pirate_wanted_notice",
+        "chance": 0.16
+      },
+      {
+        "event_id": "event_cabin_whisper",
+        "chance": 0.08
+      }
+    ],
+    "unlock_conditions": [
+      "unlock_ocean_travel",
+      "pirate_contact_1"
+    ],
+    "open_days": [
+      "friday_night"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_southern_spirit_trade",
+    "name_cn": "南大陆灵性物资交易",
+    "name_en": "Southern Continent Spirit Trade",
+    "region_id": "southern_continent",
+    "market_type": "black_market",
+    "description": "殖民城市边缘流通灵性材料、矿区情报和灵教团符号的地下交易。",
+    "available_items": [],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_spirit_order_symbol",
+        "chance": 0.16
+      },
+      {
+        "event_id": "event_mine_collapse_ritual",
+        "chance": 0.1
+      }
+    ],
+    "unlock_conditions": [
+      "future_region_unlock"
+    ],
+    "open_days": [
+      "saturday_night"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_colonial_smuggling_ring",
+    "name_cn": "殖民地走私环",
+    "name_en": "Colonial Smuggling Ring",
+    "region_id": "southern_continent",
+    "market_type": "black_market",
+    "description": "矿区账册、商会货单和殖民势力之间形成的走私交易网络。",
+    "available_items": [
+      {
+        "item_id": "item_mine_record_sheet",
+        "price_pence": 28,
+        "stock_rule": "rumor"
+      }
+    ],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_colonial_smuggler",
+        "chance": 0.14
+      }
+    ],
+    "unlock_conditions": [
+      "future_region_unlock",
+      "colonial_contact_1"
+    ],
+    "open_days": [
+      "thursday_night"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "market_id": "market_forsaken_survivor_exchange",
+    "name_cn": "神弃之地幸存者交换",
+    "name_en": "Forsaken Land Survivor Exchange",
+    "region_id": "forsaken_land",
+    "market_type": "normal_market",
+    "description": "极后期区域中幸存聚落之间的物资互换占位，重在食物、火光、情报和庇护。",
+    "available_items": [],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_forsaken_night_attack",
+        "chance": 0.25
+      }
+    ],
+    "unlock_conditions": [
+      "late_game_main_story"
+    ],
+    "open_days": [
+      "conditional_safe_window"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
   },
   {
     "market_id": "market_tarot_equal_exchange",
-    "market_name_cn": "灰雾之上等价交换",
-    "market_name_en": "Gray Fog Equivalent Exchange",
+    "name_cn": "灰雾之上等价交换",
+    "name_en": "Gray Fog Equivalent Exchange",
     "region_id": "gray_fog_space",
     "market_type": "tarot_exchange",
     "description": "每周日开启的塔罗会交换渠道，玩家可用物品、材料、情报或承诺换取所需信息。",
-    "schedule": {
-      "days": [
-        "sunday"
-      ],
-      "time_block": "gray_fog_meeting"
-    },
-    "access_conditions": [
+    "available_items": [],
+    "available_formulas": [],
+    "risk_events": [
+      {
+        "event_id": "event_tarot_exchange_debt",
+        "chance": 0.05
+      }
+    ],
+    "unlock_conditions": [
       "unlock_tarot_club"
     ],
-    "accepted_currencies": [
-      "tarot_credit"
+    "open_days": [
+      "sunday_gray_fog_meeting"
     ],
-    "inventory_pool": [],
-    "formula_pool": [],
-    "risk": {
-      "fraud_chance": 0.0,
-      "corruption": 1,
-      "official_attention": 0
-    },
-    "restock_rule": "weekly_sunday_meeting",
-    "canon_status": "game_adapted",
     "source_note": [
       "游戏化改编",
       "塔罗会系统预埋"
-    ]
+    ],
+    "canon_status": "game_adapted"
   }
 ]
