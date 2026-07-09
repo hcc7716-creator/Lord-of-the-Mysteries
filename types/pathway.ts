@@ -109,6 +109,20 @@ export interface PotionFormula {
   canon_status: CanonStatus;
 }
 
+export interface TarotExchangeRequest {
+  request_id: Id;
+  title_cn: string;
+  title_en?: string;
+  request_type: "formula" | "material" | "information" | "service";
+  offered_items: Id[];
+  requested_items: Id[];
+  requested_info: Id[];
+  required_trust_level: number;
+  available_after_week: number;
+  source_note: SourceNote[];
+  canon_status: CanonStatus;
+}
+
 export interface Material {
   material_id: Id;
   name_cn: string;

@@ -342,6 +342,20 @@ func get_tarot_requests_for_weekday(weekday: String) -> Array:
 	var result: Array = []
 	for request in tarot_exchange_requests.values():
 		var schedule: Dictionary = request.get("schedule", {})
-		if str(schedule.get("weekday", "")) == weekday:
+		if schedule.has("weekday") and str(schedule.get("weekday", "")) == weekday:
 			result.append(request)
+		elif not schedule.has("weekday") and weekday == "sunday":
+			result.append(request)
+	return result
+
+
+func get_available_tarot_requests(current_week: int, trust_level: int) -> Array:
+	_ensure_loaded()
+	var result: Array = []
+	for request in tarot_exchange_requests.values():
+		if int(request.get("available_after_week", 0)) > current_week:
+			continue
+		if int(request.get("required_trust_level", 0)) > trust_level:
+			continue
+		result.append(request)
 	return result
