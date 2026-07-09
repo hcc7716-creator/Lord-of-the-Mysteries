@@ -7,18 +7,36 @@ const RECIPE_QUEST_ID := "quest_tingen_become_seer"
 const RECIPE_UNLOCK_OBJECTIVE := "return_old_neil"
 
 var target_sequence_id := "fool_09_seer"
+var target_formula_id := "formula_fool_09_seer"
 
 
 func get_target_sequence() -> Dictionary:
 	return DataManager.get_sequence(target_sequence_id)
 
 
+func get_target_formula() -> Dictionary:
+	var formula := DataManager.get_formula(target_formula_id)
+	if not formula.is_empty():
+		return formula
+
+	var formulas := DataManager.get_formulas_for_sequence(target_sequence_id)
+	if formulas.size() > 0:
+		return formulas[0]
+	return {}
+
+
 func get_main_material_ids() -> Array:
+	var formula := get_target_formula()
+	if not formula.is_empty():
+		return formula.get("main_materials", [])
 	var sequence := get_target_sequence()
 	return sequence.get("main_materials", [])
 
 
 func get_auxiliary_material_ids() -> Array:
+	var formula := get_target_formula()
+	if not formula.is_empty():
+		return formula.get("auxiliary_materials", [])
 	var sequence := get_target_sequence()
 	return sequence.get("auxiliary_materials", [])
 

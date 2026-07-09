@@ -24,7 +24,9 @@
       }
     ],
     "available_formulas": [
-      "formula_fool_09_seer_black_market_copy"
+      "formula_fool_09_seer",
+      "formula_fool_08_clown",
+      "formula_fool_07_magician"
     ],
     "risk_events": [
       {
@@ -63,7 +65,7 @@
       }
     ],
     "available_formulas": [
-      "formula_fool_09_seer_hint_only"
+      "formula_fool_09_seer"
     ],
     "risk_events": [
       {
@@ -98,7 +100,7 @@
       }
     ],
     "available_formulas": [
-      "formula_fool_09_seer_official_training"
+      "formula_fool_09_seer"
     ],
     "risk_events": [],
     "unlock_conditions": [

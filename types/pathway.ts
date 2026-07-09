@@ -94,6 +94,21 @@ export interface Sequence {
   game_adaptation_note: string;
 }
 
+export interface PotionFormula {
+  formula_id: Id;
+  sequence_id: Id;
+  pathway_id: Id;
+  name_cn: string;
+  name_en: string;
+  main_materials: Id[];
+  auxiliary_materials: Id[];
+  obtain_methods: Id[];
+  base_price_pence: number;
+  risk_level: RiskLevel;
+  source_note: SourceNote[];
+  canon_status: CanonStatus;
+}
+
 export interface Material {
   material_id: Id;
   name_cn: string;

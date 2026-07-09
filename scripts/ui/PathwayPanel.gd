@@ -47,12 +47,15 @@ func refresh() -> void:
 			]
 
 	if sequence.is_empty():
+		var target_formula := PotionManager.get_target_formula()
 		var target_sequence := PotionManager.get_target_sequence()
+		var main_materials = target_formula.get("main_materials", target_sequence.get("main_materials", []))
+		var auxiliary_materials = target_formula.get("auxiliary_materials", target_sequence.get("auxiliary_materials", []))
 		text += "\n晋升所需主材料：\n"
-		text += _format_material_list(target_sequence.get("main_materials", []))
+		text += _format_material_list(main_materials)
 
 		text += "\n晋升所需辅助材料：\n"
-		text += _format_material_list(target_sequence.get("auxiliary_materials", []))
+		text += _format_material_list(auxiliary_materials)
 	else:
 		text += "\n晋升状态：已完成当前序列晋升。下一序列晋升材料暂未开放。\n"
 

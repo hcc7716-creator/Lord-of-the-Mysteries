@@ -1,183 +1,131 @@
 [
   {
-    "formula_id": "formula_fool_09_seer_official_training",
+    "formula_id": "formula_fool_09_seer",
     "sequence_id": "fool_09_seer",
     "pathway_id": "fool",
-    "formula_name_cn": "占卜家魔药配方（官方训练版）",
-    "formula_name_en": "Seer Potion Formula - Official Training",
-    "formula_status": "verified",
-    "source_type": "official_organization",
-    "source_id": "npc_old_neil",
-    "unlock_conditions": [
-      "quest_tingen_become_seer.return_old_neil"
-    ],
+    "name_cn": "占卜家魔药配方",
+    "name_en": "Seer Potion Formula",
     "main_materials": [
-      {
-        "material_id": "mat_lavos_squid_blood",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_star_crystal",
-        "quantity": 1
-      }
+      "mat_lavos_squid_blood",
+      "mat_star_crystal"
     ],
     "auxiliary_materials": [
-      {
-        "material_id": "mat_purified_water",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_night_vanilla_liquids",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_gold_mint_leaves",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_poison_hemlock",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_dragon_blood_grass_powder",
-        "quantity": 1
-      }
+      "mat_purified_water",
+      "mat_night_vanilla_liquids",
+      "mat_gold_mint_leaves",
+      "mat_poison_hemlock",
+      "mat_dragon_blood_grass_powder"
     ],
-    "ritual_id": null,
-    "risk_profile": {
-      "base_loss_control_risk": "low",
-      "corruption_modifier": 1,
-      "requires_supervision": true
-    },
-    "can_be_discovered_by": [
-      "quest",
-      "organization_contact"
+    "obtain_methods": [
+      "quest_tingen_become_seer",
+      "market_tingen_black_market",
+      "tarot_exchange"
     ],
-    "canon_status": "game_adapted",
+    "base_price_pence": 1200,
+    "risk_level": "medium",
     "source_note": [
-      "当前 Demo 使用",
+      "当前 JSON sequences.json",
       "游戏化改编"
-    ]
+    ],
+    "canon_status": "game_adapted"
   },
   {
-    "formula_id": "formula_fool_09_seer_black_market_copy",
-    "sequence_id": "fool_09_seer",
+    "formula_id": "formula_fool_08_clown",
+    "sequence_id": "fool_08_clown",
     "pathway_id": "fool",
-    "formula_name_cn": "占卜家魔药配方（黑市抄本）",
-    "formula_name_en": "Seer Potion Formula - Black Market Copy",
-    "formula_status": "unverified",
-    "source_type": "black_market",
-    "source_id": "market_tingen_black_market",
-    "unlock_conditions": [
-      "know_market_password",
-      "pay_formula_price"
-    ],
+    "name_cn": "小丑魔药配方",
+    "name_en": "Clown Potion Formula",
     "main_materials": [
-      {
-        "material_id": "mat_lavos_squid_blood",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_star_crystal",
-        "quantity": 1
-      }
+      "mat_hornacis_gray_mountain_goat_horn_crystal",
+      "mat_human_faced_rose_complete_stalk"
     ],
     "auxiliary_materials": [
-      {
-        "material_id": "mat_purified_water",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_night_vanilla_liquids",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_gold_mint_leaves",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_poison_hemlock",
-        "quantity": 1
-      },
-      {
-        "material_id": "mat_dragon_blood_grass_powder",
-        "quantity": 1
-      }
+      "mat_purified_water",
+      "mat_tornapple_juice",
+      "mat_black_rimmed_sunflower_powder",
+      "mat_golden_cloak_grass_powder",
+      "mat_poison_hemlock"
     ],
-    "ritual_id": null,
-    "risk_profile": {
-      "base_loss_control_risk": "medium",
-      "corruption_modifier": 5,
-      "requires_supervision": false
-    },
-    "can_be_discovered_by": [
-      "black_market",
-      "hidden_plot"
+    "obtain_methods": [
+      "quest_tingen_clown_smile",
+      "market_tingen_black_market",
+      "tarot_exchange"
     ],
-    "canon_status": "game_adapted",
+    "base_price_pence": 2400,
+    "risk_level": "medium",
     "source_note": [
-      "游戏化改编",
-      "黑市系统预埋"
-    ]
+      "当前 JSON sequences.json",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
+  },
+  {
+    "formula_id": "formula_fool_07_magician",
+    "sequence_id": "fool_07_magician",
+    "pathway_id": "fool",
+    "name_cn": "魔术师魔药配方",
+    "name_en": "Magician Potion Formula",
+    "main_materials": [
+      "mat_mist_treant_true_root",
+      "mat_dark_patterned_black_panther_spinal_fluid"
+    ],
+    "auxiliary_materials": [
+      "mat_purified_water",
+      "mat_mist_treant_juice",
+      "mat_droplet_gem_powder",
+      "mat_fantasy_grass_essential_oil"
+    ],
+    "obtain_methods": [
+      "quest_backlund_detective_escape_lesson",
+      "market_tingen_black_market",
+      "tarot_exchange"
+    ],
+    "base_price_pence": 4800,
+    "risk_level": "high",
+    "source_note": [
+      "当前 JSON sequences.json",
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted"
   },
   {
     "formula_id": "formula_error_09_marauder_placeholder",
     "sequence_id": "error_09_marauder",
     "pathway_id": "error",
-    "formula_name_cn": "偷盗者魔药配方（占位）",
-    "formula_name_en": "Marauder Potion Formula - Placeholder",
-    "formula_status": "placeholder",
-    "source_type": "hidden_plot",
-    "source_id": "future_error_pathway_thread",
-    "unlock_conditions": [
-      "future_content"
-    ],
+    "name_cn": "偷盗者魔药配方（占位）",
+    "name_en": "Marauder Potion Formula - Placeholder",
     "main_materials": [],
     "auxiliary_materials": [],
-    "ritual_id": null,
-    "risk_profile": {
-      "base_loss_control_risk": "unknown",
-      "corruption_modifier": 0,
-      "requires_supervision": false
-    },
-    "can_be_discovered_by": [
-      "hidden_plot",
+    "obtain_methods": [
+      "future_hidden_plot",
       "tarot_exchange"
     ],
-    "canon_status": "original_placeholder",
+    "base_price_pence": 1200,
+    "risk_level": "unknown",
     "source_note": [
       "游戏化改编",
       "最终版多途径预埋"
-    ]
+    ],
+    "canon_status": "original_placeholder"
   },
   {
     "formula_id": "formula_door_09_apprentice_placeholder",
     "sequence_id": "door_09_apprentice",
     "pathway_id": "door",
-    "formula_name_cn": "学徒魔药配方（占位）",
-    "formula_name_en": "Apprentice Potion Formula - Placeholder",
-    "formula_status": "placeholder",
-    "source_type": "organization_contact",
-    "source_id": "future_abraham_contact",
-    "unlock_conditions": [
-      "future_content"
-    ],
+    "name_cn": "学徒魔药配方（占位）",
+    "name_en": "Apprentice Potion Formula - Placeholder",
     "main_materials": [],
     "auxiliary_materials": [],
-    "ritual_id": null,
-    "risk_profile": {
-      "base_loss_control_risk": "unknown",
-      "corruption_modifier": 0,
-      "requires_supervision": false
-    },
-    "can_be_discovered_by": [
-      "organization_contact",
+    "obtain_methods": [
+      "future_abraham_contact",
       "tarot_exchange"
     ],
-    "canon_status": "original_placeholder",
+    "base_price_pence": 1200,
+    "risk_level": "unknown",
     "source_note": [
       "游戏化改编",
       "最终版多途径预埋"
-    ]
+    ],
+    "canon_status": "original_placeholder"
   }
 ]
