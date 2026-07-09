@@ -151,7 +151,7 @@
     "job_id": "job_dock_loader",
     "job_name_cn": "码头装卸工",
     "job_name_en": "Dock Loader",
-    "region_id": "sea_routes",
+    "region_id": "five_seas",
     "job_type": "ordinary_work",
     "description": "后续海上区域入口工作，可接触走私货、海怪材料和船员传闻。",
     "requirements": {

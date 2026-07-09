@@ -1,174 +1,356 @@
 [
   {
-    "region_id": "tingen_prototype",
-    "region_name_cn": "雾城 / 廷根原型",
-    "region_name_en": "Fog City / Tingen Prototype",
-    "region_type": "starting_city",
-    "is_starting_region": true,
-    "open_world_scope": "mvp_area",
-    "description": "第一阶段可探索城市区域，包含老城区、教堂区、大学区、黑市入口和若干异常案件现场。",
-    "starting_origins": [
-      "origin_tingen_lower_worker",
-      "origin_tingen_university_student",
-      "origin_tingen_clerk",
-      "origin_tingen_church_orphan"
+    "region_id": "loen",
+    "name_cn": "鲁恩王国",
+    "name_en": "Loen Kingdom",
+    "description": "北大陆工业与蒸汽文明核心区域之一，也是当前 Demo 的主要叙事母区。这里有浓雾、教会、工厂、大学、报社、侦探事务所和隐秘的地下交易会。",
+    "visual_keywords": [
+      "维多利亚城市",
+      "煤气灯",
+      "灰雾",
+      "钟楼",
+      "教堂",
+      "工厂烟囱",
+      "石板路"
     ],
-    "available_jobs": [
+    "common_jobs": [
       "job_newspaper_errand",
       "job_divination_club_assistant",
-      "job_church_archive_helper"
+      "job_church_archive_helper",
+      "job_private_detective_assistant"
     ],
-    "markets": [
+    "common_markets": [
       "market_tingen_black_market",
       "market_divination_club_exchange",
       "market_church_requisition"
     ],
-    "dominant_factions": [
-      "church_of_evernight_local",
-      "official_beyonder_watchers",
-      "underground_gathering_tingen"
+    "common_pathway_clues": [
+      "fool",
+      "darkness",
+      "red_priest",
+      "paragon",
+      "justiciar"
     ],
-    "risk_tags": [
-      "low_sequence_pollution",
-      "cult_activity",
-      "hidden_ritual_sites"
+    "starting_currency_pence": 180,
+    "risk_level": "low",
+    "unlock_condition": [],
+    "source_note": [
+      "游戏化改编"
     ],
-    "unlock_conditions": [],
     "canon_status": "game_adapted",
+    "is_starting_region": false
+  },
+  {
+    "region_id": "intis",
+    "name_cn": "因蒂斯共和国",
+    "name_en": "Intis Republic",
+    "description": "重视工业、商业、艺术、革命与社交圈层的大陆强国。适合作为后续版本中红祭司、魔女、完美者、太阳等线索较活跃的地区。",
+    "visual_keywords": [
+      "共和国广场",
+      "剧院",
+      "沙龙",
+      "机械工坊",
+      "铁塔",
+      "革命海报",
+      "金色街灯"
+    ],
+    "common_jobs": [
+      "job_factory_temp_worker",
+      "job_mechanic_apprentice",
+      "job_salon_attendant"
+    ],
+    "common_markets": [
+      "market_intis_artisan_exchange",
+      "market_intis_salon_information"
+    ],
+    "common_pathway_clues": [
+      "red_priest",
+      "demoness",
+      "paragon",
+      "sun",
+      "black_emperor"
+    ],
+    "starting_currency_pence": 220,
+    "risk_level": "medium",
+    "unlock_condition": [
+      "future_region_unlock"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted",
+    "is_starting_region": false
+  },
+  {
+    "region_id": "feysac",
+    "name_cn": "弗萨克帝国",
+    "name_en": "Feysac Empire",
+    "description": "北方寒冷、军事化和贵族传统浓厚的帝国区域。适合承载黄昏巨人、黑夜、战士、军方任务和边境冲突剧情。",
+    "visual_keywords": [
+      "雪原",
+      "军营",
+      "重甲",
+      "要塞",
+      "寒风",
+      "巨人遗迹",
+      "铁灰旗帜"
+    ],
+    "common_jobs": [
+      "job_border_courier",
+      "job_armory_helper",
+      "job_cold_region_guide"
+    ],
+    "common_markets": [
+      "market_feysac_military_surplus",
+      "market_northern_border_trade"
+    ],
+    "common_pathway_clues": [
+      "twilight_giant",
+      "darkness",
+      "red_priest",
+      "death"
+    ],
+    "starting_currency_pence": 160,
+    "risk_level": "medium",
+    "unlock_condition": [
+      "future_region_unlock"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted",
+    "is_starting_region": false
+  },
+  {
+    "region_id": "fenepotter",
+    "name_cn": "费内波特王国",
+    "name_en": "Fenepotter Kingdom",
+    "description": "农业、土地、贵族庄园和大地信仰浓厚的南方王国。适合承载母亲、月亮、丰收、贵族庄园和乡野神秘事件。",
+    "visual_keywords": [
+      "庄园",
+      "麦田",
+      "葡萄园",
+      "丰收祭",
+      "乡村教堂",
+      "泥土色",
+      "月夜农田"
+    ],
+    "common_jobs": [
+      "job_manor_servant",
+      "job_herbal_collector",
+      "job_vineyard_worker"
+    ],
+    "common_markets": [
+      "market_fenepotter_harvest_fair",
+      "market_rural_herbal_trade"
+    ],
+    "common_pathway_clues": [
+      "mother",
+      "moon",
+      "justiciar"
+    ],
+    "starting_currency_pence": 140,
+    "risk_level": "low",
+    "unlock_condition": [
+      "future_region_unlock"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted",
+    "is_starting_region": false
+  },
+  {
+    "region_id": "five_seas",
+    "name_cn": "五海海域",
+    "name_en": "Five Seas",
+    "description": "航线、海盗、风暴、走私、殖民港口和远洋非凡材料交汇的区域。后续用于海上探索、船只系统和海盗势力玩法。",
+    "visual_keywords": [
+      "海港",
+      "灯塔",
+      "风暴",
+      "幽灵船",
+      "热带港口",
+      "走私甲板",
+      "深海阴影"
+    ],
+    "common_jobs": [
+      "job_dock_loader",
+      "job_ship_cabin_assistant",
+      "job_lighthouse_keeper"
+    ],
+    "common_markets": [
+      "market_sea_smuggler_deck",
+      "market_pirate_spoils_trade"
+    ],
+    "common_pathway_clues": [
+      "tyrant",
+      "death",
+      "abyss",
+      "door",
+      "fool"
+    ],
+    "starting_currency_pence": 120,
+    "risk_level": "high",
+    "unlock_condition": [
+      "unlock_ocean_travel"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted",
+    "is_starting_region": false
+  },
+  {
+    "region_id": "southern_continent",
+    "name_cn": "南大陆",
+    "name_en": "Southern Continent",
+    "description": "殖民、反抗、灵教团、死亡信仰、雨林、矿区和多国势力角逐的广阔区域。后续用于更复杂的势力与资源冲突。",
+    "visual_keywords": [
+      "雨林",
+      "殖民城市",
+      "矿区",
+      "灵教团符号",
+      "热带雨夜",
+      "破旧铁路",
+      "祭祀火光"
+    ],
+    "common_jobs": [
+      "job_mine_record_keeper",
+      "job_colonial_translator",
+      "job_jungle_guide"
+    ],
+    "common_markets": [
+      "market_southern_spirit_trade",
+      "market_colonial_smuggling_ring"
+    ],
+    "common_pathway_clues": [
+      "death",
+      "chained",
+      "abyss",
+      "mother",
+      "moon"
+    ],
+    "starting_currency_pence": 90,
+    "risk_level": "high",
+    "unlock_condition": [
+      "future_region_unlock"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted",
+    "is_starting_region": false
+  },
+  {
+    "region_id": "forsaken_land",
+    "name_cn": "神弃之地",
+    "name_en": "Forsaken Land of the Gods",
+    "description": "永夜、废墟、巨人遗迹、怪物和古老污染并存的高危区域。该区域不作为初始地区，只用于后期主线和高序列探索。",
+    "visual_keywords": [
+      "永夜",
+      "废墟",
+      "巨人遗迹",
+      "火光",
+      "黑暗荒原",
+      "破碎神殿",
+      "污染怪物"
+    ],
+    "common_jobs": [],
+    "common_markets": [
+      "market_forsaken_survivor_exchange"
+    ],
+    "common_pathway_clues": [
+      "sun",
+      "darkness",
+      "twilight_giant",
+      "hanged_man",
+      "fool"
+    ],
+    "starting_currency_pence": 0,
+    "risk_level": "extreme",
+    "unlock_condition": [
+      "late_game_main_story"
+    ],
+    "source_note": [
+      "游戏化改编"
+    ],
+    "canon_status": "game_adapted",
+    "is_starting_region": false
+  },
+  {
+    "region_id": "tingen_prototype",
+    "name_cn": "雾城 / 廷根原型",
+    "name_en": "Fog City / Tingen Prototype",
+    "description": "当前可玩 Demo 的城市区域，作为鲁恩王国下属的新手地图保留。这里包含老尼尔、异常死亡现场、教堂附近线索、占卜家配方任务和基础调查循环。",
+    "visual_keywords": [
+      "煤气灯",
+      "老城区",
+      "教堂区",
+      "大学区",
+      "雨夜",
+      "低序列污染",
+      "地下交易入口"
+    ],
+    "common_jobs": [
+      "job_newspaper_errand",
+      "job_divination_club_assistant",
+      "job_church_archive_helper"
+    ],
+    "common_markets": [
+      "market_tingen_black_market",
+      "market_divination_club_exchange",
+      "market_church_requisition"
+    ],
+    "common_pathway_clues": [
+      "fool",
+      "darkness",
+      "paragon"
+    ],
+    "starting_currency_pence": 180,
+    "risk_level": "low",
+    "unlock_condition": [],
     "source_note": [
       "游戏化改编",
       "MVP 范围"
-    ]
-  },
-  {
-    "region_id": "backlund_prototype",
-    "region_name_cn": "王都 / 贝克兰德原型",
-    "region_name_en": "Capital / Backlund Prototype",
-    "region_type": "major_city",
-    "is_starting_region": false,
-    "open_world_scope": "future_area",
-    "description": "后续版本的大型城市区域，承担贵族、工业、地下势力和中序列剧情。",
-    "starting_origins": [],
-    "available_jobs": [
-      "job_factory_temp_worker",
-      "job_private_detective_assistant"
-    ],
-    "markets": [
-      "market_backlund_underground_trade"
-    ],
-    "dominant_factions": [
-      "noble_society",
-      "industrial_guilds",
-      "secret_orders"
-    ],
-    "risk_tags": [
-      "political_conspiracy",
-      "industrial_pollution",
-      "mid_sequence_conflict"
-    ],
-    "unlock_conditions": [
-      "complete_volume_1"
     ],
     "canon_status": "game_adapted",
-    "source_note": [
-      "游戏化改编",
-      "后续区域占位"
-    ]
-  },
-  {
-    "region_id": "sea_routes",
-    "region_name_cn": "海上区域",
-    "region_name_en": "Sea Routes",
-    "region_type": "ocean",
-    "is_starting_region": false,
-    "open_world_scope": "future_area",
-    "description": "后续扩展区域，承担海盗势力、风暴教会、远洋材料和航线事件。",
-    "starting_origins": [],
-    "available_jobs": [
-      "job_dock_loader",
-      "job_ship_cabin_assistant"
-    ],
-    "markets": [
-      "market_sea_smuggler_deck"
-    ],
-    "dominant_factions": [
-      "pirate_crews",
-      "storm_church_patrol",
-      "smugglers"
-    ],
-    "risk_tags": [
-      "storm",
-      "pirates",
-      "sea_monsters"
-    ],
-    "unlock_conditions": [
-      "unlock_ocean_travel"
-    ],
-    "canon_status": "game_adapted",
-    "source_note": [
-      "游戏化改编",
-      "后续区域占位"
-    ]
-  },
-  {
-    "region_id": "spirit_world",
-    "region_name_cn": "灵界",
-    "region_name_en": "Spirit World",
-    "region_type": "mystical_plane",
-    "is_starting_region": false,
-    "open_world_scope": "future_area",
-    "description": "后续高风险探索区域，用于仪式、灵界穿梭、特殊材料和高污染事件。",
-    "starting_origins": [],
-    "available_jobs": [],
-    "markets": [
-      "market_spirit_world_echo_trade"
-    ],
-    "dominant_factions": [
-      "spirit_entities",
-      "hidden_observers"
-    ],
-    "risk_tags": [
-      "high_pollution",
-      "navigation_failure",
-      "identity_erosion"
-    ],
-    "unlock_conditions": [
-      "unlock_spirit_world_access"
-    ],
-    "canon_status": "game_adapted",
-    "source_note": [
-      "游戏化改编",
-      "后续系统占位"
-    ]
+    "parent_region_id": "loen",
+    "is_starting_region": true
   },
   {
     "region_id": "gray_fog_space",
-    "region_name_cn": "灰雾之上",
-    "region_name_en": "Above the Gray Fog",
-    "region_type": "special_meeting_space",
-    "is_starting_region": false,
-    "open_world_scope": "system_space",
-    "description": "塔罗会与每周日等价交换系统的特殊空间。第一版仅预埋数据，不开放完整玩法。",
-    "starting_origins": [],
-    "available_jobs": [],
-    "markets": [
+    "name_cn": "灰雾之上",
+    "name_en": "Above the Gray Fog",
+    "description": "塔罗会与每周日等价交换系统的特殊空间。它不是普通出生地区，主要用于后续秘密会议、情报交换和跨区域物资请求。",
+    "visual_keywords": [
+      "青铜长桌",
+      "星辰",
+      "灰白迷雾",
+      "高背椅",
+      "隐秘会议",
+      "等价交换"
+    ],
+    "common_jobs": [],
+    "common_markets": [
       "market_tarot_equal_exchange"
     ],
-    "dominant_factions": [
-      "tarot_club"
+    "common_pathway_clues": [
+      "fool",
+      "door",
+      "error",
+      "wheel_of_fortune"
     ],
-    "risk_tags": [
-      "secret_identity",
-      "information_trade",
-      "equivalent_exchange"
-    ],
-    "unlock_conditions": [
+    "starting_currency_pence": 0,
+    "risk_level": "unknown",
+    "unlock_condition": [
       "unlock_tarot_club"
     ],
-    "canon_status": "game_adapted",
     "source_note": [
       "游戏化改编",
       "塔罗会系统预埋"
-    ]
+    ],
+    "canon_status": "game_adapted",
+    "is_starting_region": false
   }
 ]
