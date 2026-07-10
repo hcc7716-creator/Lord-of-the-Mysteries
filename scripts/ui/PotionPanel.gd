@@ -7,16 +7,31 @@ const COLOR_DIM := "#a9a9a9"
 
 @onready var content: RichTextLabel = $MarginContainer/VBoxContainer/ScrollContainer/Content
 @onready var brew_button: Button = $MarginContainer/VBoxContainer/BrewButton
+@onready var close_button: Button = $MarginContainer/VBoxContainer/Header/CloseButton
 
 
 func _ready() -> void:
 	visible = false
 	brew_button.pressed.connect(_on_brew_pressed)
+	close_button.pressed.connect(_close)
 	QuestManager.quest_updated.connect(_on_quest_updated)
 	InventoryManager.inventory_changed.connect(refresh)
 	PotionManager.potion_brewed.connect(_on_potion_brewed)
 	PotionManager.potion_brew_failed.connect(_on_potion_brew_failed)
 	refresh()
+
+
+func _input(event: InputEvent) -> void:
+	if not visible:
+		return
+	if event is InputEventKey and event.pressed and not event.echo:
+		if event.keycode == KEY_ESCAPE or event.keycode == KEY_O:
+			_close()
+			get_viewport().set_input_as_handled()
+
+
+func _close() -> void:
+	visible = false
 
 
 func refresh() -> void:
