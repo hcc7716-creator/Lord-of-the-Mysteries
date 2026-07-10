@@ -14,6 +14,9 @@ func _ready() -> void:
 
 
 func _physics_process(_delta: float) -> void:
+	if GameManager.is_ui_modal_active():
+		velocity = Vector2.ZERO
+		return
 	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 
 	if Input.is_key_pressed(KEY_A) or Input.is_key_pressed(KEY_LEFT):
@@ -32,6 +35,11 @@ func _physics_process(_delta: float) -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
 		var pressed_key: int = event.physical_keycode if event.physical_keycode != 0 else event.keycode
+		if GameManager.is_ui_modal_active():
+			if pressed_key == KEY_ESCAPE:
+				GameManager.close_active_modal()
+				get_viewport().set_input_as_handled()
+			return
 		match pressed_key:
 			KEY_E:
 				_try_interact()
@@ -47,6 +55,14 @@ func _unhandled_input(event: InputEvent) -> void:
 				GameManager.toggle_case_notebook()
 			KEY_H:
 				GameManager.toggle_help_panel()
+			KEY_B:
+				GameManager.toggle_economy_panel()
+			KEY_K:
+				GameManager.toggle_job_panel()
+			KEY_M:
+				GameManager.toggle_market_panel()
+			KEY_G:
+				GameManager.toggle_tarot_club_panel()
 			KEY_1:
 				SkillManager.execute_skill("skill_seer_spiritual_vision")
 			KEY_2:

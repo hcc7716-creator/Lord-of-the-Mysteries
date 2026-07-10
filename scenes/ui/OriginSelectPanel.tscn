@@ -1,0 +1,79 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/OriginSelectPanel.gd" id="1"]
+
+[node name="OriginSelectPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 0
+script = ExtResource("1")
+
+[node name="Dimmer" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 0
+color = Color(0.03, 0.04, 0.06, 0.92)
+
+[node name="PanelContainer" type="PanelContainer" parent="Dimmer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -410.0
+offset_top = -270.0
+offset_right = 410.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Dimmer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Dimmer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Dimmer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "选择出身"
+horizontal_alignment = 1
+
+[node name="RegionLabel" type="Label" parent="Dimmer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+
+[node name="DescriptionLabel" type="Label" parent="Dimmer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Dimmer/PanelContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 260)
+layout_mode = 2
+
+[node name="OriginOptions" type="VBoxContainer" parent="Dimmer/PanelContainer/MarginContainer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="SelectionLabel" type="Label" parent="Dimmer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="ConfirmButton" type="Button" parent="Dimmer/PanelContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+text = "以此出身开始"

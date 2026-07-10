@@ -6,6 +6,7 @@ extends CanvasLayer
 @onready var spirituality_label: Label = $TopLeft/MarginContainer/VBoxContainer/SpiritualityLabel
 @onready var corruption_label: Label = $TopLeft/MarginContainer/VBoxContainer/CorruptionLabel
 @onready var currency_label: Label = $TopLeft/MarginContainer/VBoxContainer/CurrencyLabel
+@onready var calendar_display: PanelContainer = $CalendarDisplay
 @onready var feedback_panel: PanelContainer = $FeedbackPanel
 @onready var feedback_label: Label = $FeedbackPanel/MarginContainer/FeedbackLabel
 @onready var help_panel: PanelContainer = $HelpPanel
@@ -18,6 +19,10 @@ extends CanvasLayer
 @onready var skill_bar: PanelContainer = $SkillBar
 @onready var pendulum_divination_panel: PanelContainer = $PendulumDivinationPanel
 @onready var paper_divination_panel: PanelContainer = $PaperDivinationPanel
+@onready var economy_panel: PanelContainer = $EconomyPanel
+@onready var job_panel: PanelContainer = $JobPanel
+@onready var market_panel: PanelContainer = $MarketPanel
+@onready var tarot_club_panel: PanelContainer = $TarotClubPanel
 @onready var advancement_darken: ColorRect = $AdvancementDarken
 @onready var advancement_vfx: Control = $AdvancementVFX
 @onready var advancement_pulse: ColorRect = $AdvancementVFX/Pulse
@@ -45,6 +50,8 @@ func _ready() -> void:
 	CorruptionManager.stats_changed.connect(_on_stats_changed)
 	CorruptionManager.corruption_warning.connect(show_status_message)
 	EconomyManager.money_changed.connect(_on_money_changed)
+	CalendarManager.date_changed.connect(_on_date_changed)
+	CalendarManager.sunday_started.connect(_on_sunday_started)
 	ClueManager.notebook_updated.connect(_on_notebook_updated)
 	SkillManager.spiritual_vision_changed.connect(_on_spiritual_vision_changed)
 	PotionManager.potion_brewed.connect(func(_sequence_id: String): refresh_all())
@@ -88,6 +95,16 @@ func refresh_all() -> void:
 		case_notebook_panel.refresh()
 	if skill_bar.has_method("refresh"):
 		skill_bar.refresh()
+	if calendar_display.has_method("refresh"):
+		calendar_display.refresh()
+	if economy_panel.has_method("refresh"):
+		economy_panel.refresh()
+	if job_panel.has_method("refresh"):
+		job_panel.refresh()
+	if market_panel.has_method("refresh"):
+		market_panel.refresh()
+	if tarot_club_panel.has_method("refresh"):
+		tarot_club_panel.refresh()
 
 
 func show_interaction_hint(text: String) -> void:
@@ -127,6 +144,22 @@ func toggle_case_notebook() -> void:
 	_toggle_panel(case_notebook_panel)
 
 
+func toggle_economy_panel() -> void:
+	_toggle_panel(economy_panel)
+
+
+func toggle_job_panel() -> void:
+	_toggle_panel(job_panel)
+
+
+func toggle_market_panel() -> void:
+	_toggle_panel(market_panel)
+
+
+func toggle_tarot_club_panel() -> void:
+	_toggle_panel(tarot_club_panel)
+
+
 func toggle_help_panel() -> void:
 	help_panel_pinned = not help_panel_pinned
 	help_panel.visible = help_panel_pinned
@@ -160,6 +193,25 @@ func _close_overlay_panels() -> void:
 	case_notebook_panel.visible = false
 	pendulum_divination_panel.visible = false
 	paper_divination_panel.visible = false
+	economy_panel.visible = false
+	job_panel.visible = false
+	market_panel.visible = false
+	tarot_club_panel.visible = false
+
+
+func is_modal_panel_open() -> bool:
+	return dialogue_box.visible or inventory_panel.visible or quest_panel.visible or pathway_panel.visible or potion_panel.visible or case_notebook_panel.visible or pendulum_divination_panel.visible or paper_divination_panel.visible or economy_panel.visible or job_panel.visible or market_panel.visible or tarot_club_panel.visible or advancement_popup.visible
+
+
+func close_active_modal() -> void:
+	if advancement_popup.visible:
+		_hide_advancement_feedback()
+		return
+	if dialogue_box.visible:
+		dialogue_box.visible = false
+		DialogueManager.finish_dialogue()
+		return
+	_close_overlay_panels()
 
 
 func show_status_message(text: String) -> void:
@@ -225,6 +277,22 @@ func _on_money_changed(_balance_pence: int) -> void:
 	_refresh_currency()
 	if inventory_panel.has_method("refresh"):
 		inventory_panel.refresh()
+
+
+func _on_date_changed(_week: int, _day: String, _hour: int) -> void:
+	if calendar_display.has_method("refresh"):
+		calendar_display.refresh()
+	if job_panel.has_method("refresh"):
+		job_panel.refresh()
+	if tarot_club_panel.has_method("refresh"):
+		tarot_club_panel.refresh()
+
+
+func _on_sunday_started(_week: int) -> void:
+	if TarotClubManager.is_unlocked:
+		show_status_message("周日已至：灰雾之上的塔罗会可以进入。")
+	else:
+		show_status_message("周日已至。塔罗会尚未解锁，继续积累你的经历与线索。")
 
 
 func _on_pathway_changed() -> void:

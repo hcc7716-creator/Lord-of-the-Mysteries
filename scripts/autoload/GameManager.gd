@@ -43,6 +43,35 @@ func toggle_help_panel() -> void:
 		hud.toggle_help_panel()
 
 
+func toggle_economy_panel() -> void:
+	if hud and hud.has_method("toggle_economy_panel"):
+		hud.toggle_economy_panel()
+
+
+func toggle_job_panel() -> void:
+	if hud and hud.has_method("toggle_job_panel"):
+		hud.toggle_job_panel()
+
+
+func toggle_market_panel() -> void:
+	if hud and hud.has_method("toggle_market_panel"):
+		hud.toggle_market_panel()
+
+
+func toggle_tarot_club_panel() -> void:
+	if hud and hud.has_method("toggle_tarot_club_panel"):
+		hud.toggle_tarot_club_panel()
+
+
+func is_ui_modal_active() -> bool:
+	return hud != null and hud.has_method("is_modal_panel_open") and hud.is_modal_panel_open()
+
+
+func close_active_modal() -> void:
+	if hud and hud.has_method("close_active_modal"):
+		hud.close_active_modal()
+
+
 func show_pendulum_divination(data: Dictionary) -> void:
 	if hud and hud.has_method("show_pendulum_divination"):
 		hud.show_pendulum_divination(data)

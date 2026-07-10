@@ -2,10 +2,22 @@ extends Node
 
 signal tarot_club_unlocked
 signal tarot_request_completed(request_id: String)
+signal tarot_club_available
 
 var is_unlocked := false
 var trust_level := 0
 var completed_request_ids: Array[String] = []
+
+
+func _ready() -> void:
+	QuestManager.quest_updated.connect(_on_quest_updated)
+	CalendarManager.sunday_started.connect(_on_sunday_started)
+
+
+func reset() -> void:
+	is_unlocked = false
+	trust_level = 0
+	completed_request_ids.clear()
 
 
 func unlock_tarot_club() -> void:
@@ -32,11 +44,46 @@ func get_available_requests() -> Array:
 	return result
 
 
+func can_enter() -> bool:
+	return is_unlocked and CalendarManager.is_sunday()
+
+
 func complete_request(request_id: String) -> bool:
+	if not can_enter():
+		return false
 	if DataManager.get_tarot_request(request_id).is_empty():
+		return false
+	if not _is_request_available(request_id):
 		return false
 	if completed_request_ids.has(request_id):
 		return false
 	completed_request_ids.append(request_id)
 	tarot_request_completed.emit(request_id)
 	return true
+
+
+func submit_exchange_request(request_id: String) -> Dictionary:
+	if not is_unlocked:
+		return {"success": false, "reason": "tarot_club_locked"}
+	if not CalendarManager.is_sunday():
+		return {"success": false, "reason": "not_sunday"}
+	if not complete_request(request_id):
+		return {"success": false, "reason": "request_unavailable"}
+	return {"success": true, "request": DataManager.get_tarot_request(request_id)}
+
+
+func _is_request_available(request_id: String) -> bool:
+	for request in get_available_requests():
+		if str(request.get("request_id", "")) == request_id:
+			return true
+	return false
+
+
+func _on_quest_updated(quest_id: String) -> void:
+	if quest_id == "quest_tingen_become_seer" and QuestManager.get_quest_status(quest_id) == QuestManager.QuestStatus.COMPLETED:
+		unlock_tarot_club()
+
+
+func _on_sunday_started(_week: int) -> void:
+	if is_unlocked:
+		tarot_club_available.emit()

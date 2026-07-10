@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene load_steps=16 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/HUD.gd" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/ui/DialogueBox.tscn" id="2"]
@@ -10,6 +10,11 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/SkillBar.tscn" id="8"]
 [ext_resource type="PackedScene" path="res://scenes/ui/PendulumDivinationPanel.tscn" id="9"]
 [ext_resource type="PackedScene" path="res://scenes/ui/PaperDivinationPanel.tscn" id="10"]
+[ext_resource type="PackedScene" path="res://scenes/ui/CalendarDisplay.tscn" id="11"]
+[ext_resource type="PackedScene" path="res://scenes/ui/EconomyPanel.tscn" id="12"]
+[ext_resource type="PackedScene" path="res://scenes/ui/JobPanel.tscn" id="13"]
+[ext_resource type="PackedScene" path="res://scenes/ui/MarketPanel.tscn" id="14"]
+[ext_resource type="PackedScene" path="res://scenes/ui/TarotClubPanel.tscn" id="15"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1")
@@ -128,6 +133,11 @@ autowrap_mode = 2
 [node name="SkillLabel" type="Label" parent="HelpPanel/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "技能：1 灵视 / 2 灵摆占卜 / 3 纸笔占卜"
+autowrap_mode = 2
+
+[node name="FoundationLabel" type="Label" parent="HelpPanel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "基础系统：B 货币 / K 工作 / M 市场 / G 灰雾之上"
 autowrap_mode = 2
 
 [node name="HelpLabel" type="Label" parent="HelpPanel/MarginContainer/VBoxContainer"]
@@ -264,3 +274,13 @@ text = "继续"
 [node name="PendulumDivinationPanel" parent="." instance=ExtResource("9")]
 
 [node name="PaperDivinationPanel" parent="." instance=ExtResource("10")]
+
+[node name="CalendarDisplay" parent="." instance=ExtResource("11")]
+
+[node name="EconomyPanel" parent="." instance=ExtResource("12")]
+
+[node name="JobPanel" parent="." instance=ExtResource("13")]
+
+[node name="MarketPanel" parent="." instance=ExtResource("14")]
+
+[node name="TarotClubPanel" parent="." instance=ExtResource("15")]

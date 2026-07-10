@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/MainMenu.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/OriginSelectPanel.tscn" id="2"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -29,3 +30,5 @@ horizontal_alignment = 1
 custom_minimum_size = Vector2(220, 48)
 layout_mode = 2
 text = "开始游戏"
+
+[node name="OriginSelectPanel" parent="." instance=ExtResource("2")]

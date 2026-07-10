@@ -17,6 +17,10 @@ func build_save_data() -> Dictionary:
 		"tarot_club_unlocked": TarotClubManager.is_unlocked,
 		"tarot_trust_level": TarotClubManager.trust_level,
 		"completed_tarot_request_ids": TarotClubManager.completed_request_ids,
+		"market_unlock_flags": MarketManager.unlocked_flags,
+		"purchased_market_item_ids": MarketManager.purchased_item_ids,
+		"known_formula_ids": MarketManager.known_formula_ids,
+		"completed_job_counts": JobManager.completed_job_counts,
 		"materials": InventoryManager.get_all_materials(),
 		"quest_status": QuestManager.quest_status,
 		"quest_progress": QuestManager.quest_progress,
@@ -67,6 +71,12 @@ func load_game() -> void:
 	TarotClubManager.is_unlocked = bool(parsed.get("tarot_club_unlocked", false))
 	TarotClubManager.trust_level = int(parsed.get("tarot_trust_level", 0))
 	TarotClubManager.completed_request_ids.assign(parsed.get("completed_tarot_request_ids", []))
+	MarketManager.unlocked_flags = parsed.get("market_unlock_flags", {})
+	MarketManager.purchased_item_ids.assign(parsed.get("purchased_market_item_ids", []))
+	MarketManager.known_formula_ids.assign(parsed.get("known_formula_ids", []))
+	JobManager.completed_job_counts = parsed.get("completed_job_counts", {})
+	if TarotClubManager.is_unlocked:
+		MarketManager.add_unlock_flag("unlock_tarot_club")
 	InventoryManager.materials = parsed.get("materials", {})
 	QuestManager.quest_status = parsed.get("quest_status", {})
 	QuestManager.quest_progress = parsed.get("quest_progress", {})

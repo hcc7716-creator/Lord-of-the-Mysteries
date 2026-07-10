@@ -53,7 +53,7 @@ func has_required_materials() -> bool:
 
 
 func has_recipe_unlocked() -> bool:
-	return QuestManager.is_objective_done(RECIPE_QUEST_ID, RECIPE_UNLOCK_OBJECTIVE) or PathwayManager.current_sequence_id != ""
+	return QuestManager.is_objective_done(RECIPE_QUEST_ID, RECIPE_UNLOCK_OBJECTIVE) or MarketManager.is_formula_known(target_formula_id) or PathwayManager.current_sequence_id != ""
 
 
 func can_brew_target_potion() -> bool:
