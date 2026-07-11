@@ -1,0 +1,16 @@
+{
+  "map_id": "tingen_prototype_city",
+  "base_layer": "res://assets/maps/tingen-prototype-base.png",
+  "reference_layer": "res://assets/maps/tingen-prototype-dressed-reference.png",
+  "world_bounds": { "left": -1254, "top": -1254, "right": 1254, "bottom": 1254 },
+  "props": [
+    { "id": "protagonist_residence", "texture": "res://assets/props/tingen/residence/clean.png", "position": [-830, -825], "scale": 0.48, "z_index": 1 },
+    { "id": "official_beyonder_bureau", "texture": "res://assets/props/tingen/official_bureau/clean.png", "position": [760, -825], "scale": 0.48, "z_index": 1 },
+    { "id": "divination_club", "texture": "res://assets/props/tingen/divination_club/clean.png", "position": [-820, -145], "scale": 0.43, "z_index": 1 },
+    { "id": "police_station", "texture": "res://assets/props/tingen/police_station/clean.png", "position": [760, -170], "scale": 0.45, "z_index": 1 },
+    { "id": "church", "texture": "res://assets/props/tingen/church/clean.png", "position": [645, 500], "scale": 0.52, "z_index": 1 },
+    { "id": "cemetery", "texture": "res://assets/props/tingen/cemetery/clean.png", "position": [-800, 620], "scale": 0.55, "z_index": 1 },
+    { "id": "underground_black_market", "texture": "res://assets/props/tingen/black_market/clean.png", "position": [820, 950], "scale": 0.44, "z_index": 1 },
+    { "id": "mysterious_crime_scene", "texture": "res://assets/props/tingen/crime_scene/clean.png", "position": [-225, -210], "scale": 0.32, "z_index": 1 }
+  ]
+}

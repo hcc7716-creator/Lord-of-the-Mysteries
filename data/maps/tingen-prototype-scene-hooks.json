@@ -1,0 +1,13 @@
+{
+  "map_id": "tingen_prototype_city",
+  "hooks": [
+    { "id": "home", "location_id": "protagonist_residence", "position": [-830, -635], "interaction": "location" },
+    { "id": "bureau", "location_id": "official_beyonder_bureau", "position": [760, -635], "interaction": "location" },
+    { "id": "club", "location_id": "divination_club", "position": [-820, 35], "interaction": "location" },
+    { "id": "police", "location_id": "police_station", "position": [760, 30], "interaction": "location" },
+    { "id": "church", "location_id": "church", "position": [645, 740], "interaction": "location" },
+    { "id": "cemetery", "location_id": "cemetery", "position": [-800, 835], "interaction": "location" },
+    { "id": "black_market", "location_id": "underground_black_market", "position": [820, 1120], "interaction": "location" },
+    { "id": "crime_scene", "location_id": "mysterious_crime_scene", "position": [-225, -75], "interaction": "investigation" }
+  ]
+}

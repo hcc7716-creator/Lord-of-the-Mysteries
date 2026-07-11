@@ -1,0 +1,87 @@
+{
+  "base": "assets\\maps\\tingen-prototype-base.png",
+  "placements": "data\\maps\\tingen-prototype-preview-placements.json",
+  "output": "assets\\maps\\tingen-prototype-preview.png",
+  "pasted": [
+    {
+      "id": "residence",
+      "image": "data\\maps\\..\\..\\assets\\props\\tingen\\residence\\clean.png",
+      "left": 89,
+      "top": 203,
+      "w": 246,
+      "h": 246,
+      "sortY": 326,
+      "layer": "props"
+    },
+    {
+      "id": "official_bureau",
+      "image": "data\\maps\\..\\..\\assets\\props\\tingen\\official_bureau\\clean.png",
+      "left": 884,
+      "top": 203,
+      "w": 246,
+      "h": 246,
+      "sortY": 326,
+      "layer": "props"
+    },
+    {
+      "id": "crime_scene",
+      "image": "data\\maps\\..\\..\\assets\\props\\tingen\\crime_scene\\clean.png",
+      "left": 433,
+      "top": 440,
+      "w": 164,
+      "h": 164,
+      "sortY": 522,
+      "layer": "props"
+    },
+    {
+      "id": "police_station",
+      "image": "data\\maps\\..\\..\\assets\\props\\tingen\\police_station\\clean.png",
+      "left": 892,
+      "top": 427,
+      "w": 230,
+      "h": 230,
+      "sortY": 542,
+      "layer": "props"
+    },
+    {
+      "id": "divination_club",
+      "image": "data\\maps\\..\\..\\assets\\props\\tingen\\divination_club\\clean.png",
+      "left": 107,
+      "top": 445,
+      "w": 220,
+      "h": 220,
+      "sortY": 555,
+      "layer": "props"
+    },
+    {
+      "id": "church",
+      "image": "data\\maps\\..\\..\\assets\\props\\tingen\\church\\clean.png",
+      "left": 817,
+      "top": 744,
+      "w": 266,
+      "h": 266,
+      "sortY": 877,
+      "layer": "props"
+    },
+    {
+      "id": "cemetery",
+      "image": "data\\maps\\..\\..\\assets\\props\\tingen\\cemetery\\clean.png",
+      "left": 86,
+      "top": 796,
+      "w": 282,
+      "h": 282,
+      "sortY": 937,
+      "layer": "props"
+    },
+    {
+      "id": "black_market",
+      "image": "data\\maps\\..\\..\\assets\\props\\tingen\\black_market\\clean.png",
+      "left": 924,
+      "top": 990,
+      "w": 225,
+      "h": 225,
+      "sortY": 1102,
+      "layer": "props"
+    }
+  ]
+}

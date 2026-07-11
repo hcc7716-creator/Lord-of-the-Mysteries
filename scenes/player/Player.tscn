@@ -43,3 +43,7 @@ shape = SubResource("RectangleShape2D_interaction")
 enabled = true
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
+limit_left = -1254
+limit_top = -1254
+limit_right = 1254
+limit_bottom = 1254

@@ -1,0 +1,12 @@
+{
+  "props": [
+    { "id": "residence", "image": "../../assets/props/tingen/residence/clean.png", "x": 212, "y": 326, "w": 246, "h": 246, "anchor": "center", "sortY": 326 },
+    { "id": "official_bureau", "image": "../../assets/props/tingen/official_bureau/clean.png", "x": 1007, "y": 326, "w": 246, "h": 246, "anchor": "center", "sortY": 326 },
+    { "id": "divination_club", "image": "../../assets/props/tingen/divination_club/clean.png", "x": 217, "y": 555, "w": 220, "h": 220, "anchor": "center", "sortY": 555 },
+    { "id": "police_station", "image": "../../assets/props/tingen/police_station/clean.png", "x": 1007, "y": 542, "w": 230, "h": 230, "anchor": "center", "sortY": 542 },
+    { "id": "church", "image": "../../assets/props/tingen/church/clean.png", "x": 950, "y": 877, "w": 266, "h": 266, "anchor": "center", "sortY": 877 },
+    { "id": "cemetery", "image": "../../assets/props/tingen/cemetery/clean.png", "x": 227, "y": 937, "w": 282, "h": 282, "anchor": "center", "sortY": 937 },
+    { "id": "black_market", "image": "../../assets/props/tingen/black_market/clean.png", "x": 1037, "y": 1102, "w": 225, "h": 225, "anchor": "center", "sortY": 1102 },
+    { "id": "crime_scene", "image": "../../assets/props/tingen/crime_scene/clean.png", "x": 515, "y": 522, "w": 164, "h": 164, "anchor": "center", "sortY": 522 }
+  ]
+}

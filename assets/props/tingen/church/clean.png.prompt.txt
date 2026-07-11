@@ -1,0 +1,1 @@
+Single large top-down/isometric 2D game prop for a Victorian occult RPG: dark Gothic church with tall steeple, rose-window-like geometry without lettering, weathered stone, muted warm entry lanterns. Clean HD hand-painted asset, no characters, no text, no sign, no UI. Solid #FF00FF background for chroma-key transparency; entire prop fully visible with generous margins.

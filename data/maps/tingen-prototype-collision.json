@@ -1,0 +1,15 @@
+{
+  "map_id": "tingen_prototype_city",
+  "collision_source": "hand-authored gameplay rectangles; independent from rendered pixels",
+  "world_bounds": { "left": -1254, "top": -1254, "right": 1254, "bottom": 1254 },
+  "solid_rectangles": [
+    { "id": "residence", "center": [-830, -870], "size": [330, 220] },
+    { "id": "official_bureau", "center": [760, -870], "size": [350, 230] },
+    { "id": "divination_club", "center": [-820, -180], "size": [300, 185] },
+    { "id": "police_station", "center": [760, -205], "size": [320, 195] },
+    { "id": "church", "center": [645, 460], "size": [330, 250] },
+    { "id": "cemetery_gate", "center": [-800, 650], "size": [280, 140] },
+    { "id": "black_market_entry", "center": [820, 980], "size": [250, 120] },
+    { "id": "crime_scene_debris", "center": [-225, -210], "size": [150, 95] }
+  ]
+}
