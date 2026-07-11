@@ -1,0 +1,53 @@
+[
+  {
+    "schedule_id": "schedule_old_neil",
+    "npc_name_cn": "老尼尔",
+    "regular": {
+      "morning": { "position": [760, -635], "state_cn": "整理案件记录" },
+      "day": { "position": [700, -635], "state_cn": "在官方据点值勤" },
+      "evening": { "position": [-625, 35], "state_cn": "低调拜访占卜俱乐部" },
+      "night": { "position": [760, -635], "state_cn": "档案室闭门整理" }
+    },
+    "sunday": {
+      "morning": { "position": [475, 740], "state_cn": "观察教会活动" },
+      "day": { "position": [620, -635], "state_cn": "周日休整" },
+      "evening": { "position": [-625, 35], "state_cn": "等待私下会面" },
+      "night": { "position": [760, -635], "state_cn": "整理周日记录" }
+    },
+    "canon_status": "game_adapted"
+  },
+  {
+    "schedule_id": "schedule_constable_hale",
+    "npc_name_cn": "黑尔警员",
+    "regular": {
+      "morning": { "position": [610, 30], "state_cn": "查看公告栏" },
+      "day": { "position": [760, 30], "state_cn": "警察局值勤" },
+      "evening": { "position": [1000, 390], "state_cn": "在酒馆整理消息" },
+      "night": { "position": [760, 30], "state_cn": "夜班巡逻" }
+    },
+    "sunday": {
+      "morning": { "position": [475, 740], "state_cn": "教会巡查" },
+      "day": { "position": [760, 30], "state_cn": "周日值班" },
+      "evening": { "position": [1000, 390], "state_cn": "等待线人" },
+      "night": { "position": [760, 30], "state_cn": "夜班巡逻" }
+    },
+    "canon_status": "game_adapted"
+  },
+  {
+    "schedule_id": "schedule_miss_elaine",
+    "npc_name_cn": "伊莲小姐",
+    "regular": {
+      "morning": { "position": [-700, 35], "state_cn": "准备俱乐部茶点" },
+      "day": { "position": [-820, 35], "state_cn": "接待占卜俱乐部访客" },
+      "evening": { "position": [-625, 35], "state_cn": "主持晚间茶会" },
+      "night": { "position": [-820, 35], "state_cn": "整理梦境记录" }
+    },
+    "sunday": {
+      "morning": { "position": [-820, 35], "state_cn": "整理周日来信" },
+      "day": { "position": [-625, 35], "state_cn": "周日私下交流" },
+      "evening": { "position": [-625, 35], "state_cn": "等待特殊访客" },
+      "night": { "position": [-820, 35], "state_cn": "关闭俱乐部" }
+    },
+    "canon_status": "game_adapted"
+  }
+]

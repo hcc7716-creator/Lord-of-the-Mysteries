@@ -3,6 +3,7 @@ extends Area2D
 @export var npc_name := "老尼尔"
 @export_multiline var dialogue_text := "这些死亡痕迹不像普通案件。\n你愿意帮我调查雾城最近的神秘死亡事件吗？"
 @export var quest_to_offer := "quest_tingen_become_seer"
+@export var schedule_id := ""
 @export var interaction_prompt := "按 E 与老尼尔交谈"
 
 @onready var name_label: Label = $NameLabel
@@ -10,6 +11,17 @@ extends Area2D
 
 func _ready() -> void:
 	name_label.text = npc_name
+	if schedule_id != "":
+		ScheduleManager.register_npc(self)
+
+
+func _exit_tree() -> void:
+	if schedule_id != "":
+		ScheduleManager.unregister_npc(self)
+
+
+func apply_schedule_state(state: String) -> void:
+	name_label.text = npc_name if state == "" else "%s\n%s" % [npc_name, state]
 
 
 func interact(_actor: Node = null) -> void:

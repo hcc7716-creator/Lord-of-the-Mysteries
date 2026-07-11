@@ -57,6 +57,10 @@ func get_market_entries(market_id: String) -> Array:
 
 
 func is_market_available(market_id: String) -> bool:
+	return is_market_unlocked(market_id)
+
+
+func is_market_unlocked(market_id: String) -> bool:
 	var market := DataManager.get_market(market_id)
 	if market.is_empty():
 		return false
@@ -67,6 +71,28 @@ func is_market_available(market_id: String) -> bool:
 		if not has_unlock_flag(condition_id):
 			return false
 	return true
+
+
+func is_market_open(market_id: String) -> bool:
+	var market := DataManager.get_market(market_id)
+	if market.is_empty():
+		return false
+	for window in market.get("open_days", []):
+		if CalendarManager.matches_open_window(str(window)):
+			return true
+	return false
+
+
+func can_trade(market_id: String) -> bool:
+	return is_market_unlocked(market_id) and is_market_open(market_id)
+
+
+func get_market_time_status(market_id: String) -> String:
+	if not is_market_unlocked(market_id):
+		return "尚未开放"
+	if is_market_open(market_id):
+		return "营业中"
+	return "当前休市"
 
 
 func get_available_formulas(market_id: String) -> Array:

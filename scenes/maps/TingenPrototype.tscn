@@ -114,6 +114,23 @@ npc_name = "老尼尔"
 dialogue_text = "你终于来了。\n这起死亡案不像普通谋杀，现场留下了很轻的灵性波动。\n先调查异常死亡现场，再用灵视找出被遮蔽的污染残留。之后用灵摆确认方向。"
 quest_to_offer = "quest_tingen_become_seer"
 interaction_prompt = "按 E 与老尼尔交谈"
+schedule_id = "schedule_old_neil"
+
+[node name="ConstableHale" parent="NPCs" instance=ExtResource("3_npc")]
+position = Vector2(760, 30)
+npc_name = "黑尔警员"
+dialogue_text = "白天的警察局永远不缺报案人。\n如果你想靠工作和委托积累经验，公告栏是一个不错的开始。"
+quest_to_offer = ""
+interaction_prompt = "按 E 与黑尔警员交谈"
+schedule_id = "schedule_constable_hale"
+
+[node name="MissElaine" parent="NPCs" instance=ExtResource("3_npc")]
+position = Vector2(-820, 35)
+npc_name = "伊莲小姐"
+dialogue_text = "俱乐部不出售答案，只交换观察。\n白天适合谈天气，夜晚适合谈梦境。"
+quest_to_offer = ""
+interaction_prompt = "按 E 与伊莲小姐交谈"
+schedule_id = "schedule_miss_elaine"
 
 [node name="Locations" type="Node2D" parent="."]
 
@@ -123,6 +140,8 @@ location_id = "protagonist_residence"
 location_name = "主角住所"
 location_description = "一间临街的旧公寓。这里是你在雾城暂时落脚的地方；后续可扩展为休息、存档与私人线索板。"
 interaction_prompt = "按 E 查看主角住所"
+allows_rest = true
+rest_hours = 8
 
 [node name="OfficialBureau" parent="Locations" instance=ExtResource("5_location")]
 position = Vector2(620, -635)
@@ -192,6 +211,8 @@ source_type = "bulletin_board"
 source_description = "教会在入口旁张贴了新的仪式和值勤告示，其中也夹着几张需要临时帮工的通知。"
 opportunity_ids = ["opp_newspaper_church_notice", "opp_board_cemetery_reward"]
 interaction_prompt = "按 E 阅读教会公告"
+available_periods = ["morning", "day"]
+available_weekdays = ["sunday"]
 
 [node name="DivinationClubRegular" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
 position = Vector2(-625, 35)
@@ -216,6 +237,7 @@ source_type = "location_discovery"
 source_description = "还没推开酒馆门，你就听到里面有人压低声音谈论红烟囱、镜子和没有招牌的地下入口。"
 opportunity_ids = ["opp_location_tavern_talk", "opp_npc_black_market_hint"]
 interaction_prompt = "按 E 留意酒馆谈话"
+available_periods = ["evening", "night"]
 
 [node name="AbandonedHouseTrace" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
 position = Vector2(0, -860)

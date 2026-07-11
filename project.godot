@@ -14,6 +14,7 @@ config/features=PackedStringArray("4.2")
 GameManager="*res://scripts/autoload/GameManager.gd"
 DataManager="*res://scripts/autoload/DataManager.gd"
 CalendarManager="*res://scripts/autoload/CalendarManager.gd"
+ScheduleManager="*res://scripts/autoload/ScheduleManager.gd"
 EconomyManager="*res://scripts/autoload/EconomyManager.gd"
 OriginManager="*res://scripts/autoload/OriginManager.gd"
 JobManager="*res://scripts/autoload/JobManager.gd"

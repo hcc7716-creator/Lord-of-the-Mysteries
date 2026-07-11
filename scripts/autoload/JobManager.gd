@@ -41,6 +41,7 @@ func perform_job(job_id: String) -> Dictionary:
 		return {"success": false, "reason": "unknown_or_unavailable_job"}
 
 	var reward := int(job.get("reward_pence", 0))
+	var started_at_night := CalendarManager.get_time_period() == "night"
 	EconomyManager.add_money(reward)
 	CalendarManager.advance_hours(int(job.get("time_cost_hours", 0)))
 	completed_job_counts[job_id] = int(completed_job_counts.get(job_id, 0)) + 1
@@ -60,12 +61,19 @@ func perform_job(job_id: String) -> Dictionary:
 	if risk_level == "high":
 		CorruptionManager.add_corruption(2, "高风险工作接触了不稳定的人和物")
 
+	if started_at_night:
+		var night_corruption := 2 if risk_level == "high" else 1
+		CorruptionManager.add_corruption(night_corruption, "夜间工作让城市里的异常更容易靠近你")
+		if randf() <= 0.20:
+			triggered_events.append("event_nighttime_complication")
+
 	job_completed.emit(job_id, reward)
 	return {
 		"success": true,
 		"reward_pence": reward,
 		"triggered_events": triggered_events,
 		"risk_level": risk_level,
+		"night_risk": started_at_night,
 	}
 
 

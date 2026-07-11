@@ -31,14 +31,15 @@ func refresh() -> void:
 
 func _add_market(market: Dictionary) -> void:
 	var market_id := str(market.get("market_id", ""))
-	var available := MarketManager.is_market_available(market_id)
+	var unlocked := MarketManager.is_market_unlocked(market_id)
+	var available := MarketManager.can_trade(market_id)
 	var box := VBoxContainer.new()
 	box.add_theme_constant_override("separation", 4)
 	var title := Label.new()
 	title.text = "%s｜%s｜%s" % [
 		str(market.get("name_cn", market_id)),
 		TYPE_LABELS.get(str(market.get("market_type", "")), "市场"),
-		"可进入" if available else "尚未开放",
+		MarketManager.get_market_time_status(market_id),
 	]
 	box.add_child(title)
 	var description := Label.new()
@@ -47,7 +48,11 @@ func _add_market(market: Dictionary) -> void:
 	box.add_child(description)
 	if not available:
 		var requirements := Label.new()
-		requirements.text = "开放条件：%s" % ", ".join(market.get("unlock_conditions", []))
+		requirements.text = "开放状态：%s\n%s：%s" % [
+			MarketManager.get_market_time_status(market_id),
+			"开放时段" if unlocked else "开放条件",
+			" / ".join(market.get("open_days", [])) if unlocked else ", ".join(market.get("unlock_conditions", [])),
+		]
 		requirements.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		box.add_child(requirements)
 	else:

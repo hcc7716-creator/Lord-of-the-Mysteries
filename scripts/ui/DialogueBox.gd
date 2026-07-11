@@ -58,6 +58,8 @@ func _select_option(option: Dictionary) -> void:
 			QuestManager.complete_quest(str(option.get("quest_id", "")))
 		"add_material":
 			InventoryManager.add_material(str(option.get("material_id", "")), int(option.get("quantity", 1)))
+		"rest":
+			CalendarManager.rest(int(option.get("hours", 8)))
 		_:
 			pass
 	_close()
