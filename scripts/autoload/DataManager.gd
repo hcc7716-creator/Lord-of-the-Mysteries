@@ -15,6 +15,7 @@ const DATASETS := {
 	"markets": {"path": "res://data/markets.json", "id_key": "market_id"},
 	"potion_formulas": {"path": "res://data/potion_formulas.json", "id_key": "formula_id"},
 	"tarot_exchange_requests": {"path": "res://data/tarot_exchange_requests.json", "id_key": "request_id"},
+	"opportunities": {"path": "res://data/opportunities.json", "id_key": "opportunity_id"},
 }
 
 var pathways: Dictionary = {}
@@ -32,6 +33,7 @@ var jobs: Dictionary = {}
 var markets: Dictionary = {}
 var potion_formulas: Dictionary = {}
 var tarot_exchange_requests: Dictionary = {}
+var opportunities: Dictionary = {}
 var is_loaded := false
 
 
@@ -55,8 +57,9 @@ func load_all_data() -> void:
 	_load_dataset(markets, DATASETS["markets"]["path"], DATASETS["markets"]["id_key"])
 	_load_dataset(potion_formulas, DATASETS["potion_formulas"]["path"], DATASETS["potion_formulas"]["id_key"])
 	_load_dataset(tarot_exchange_requests, DATASETS["tarot_exchange_requests"]["path"], DATASETS["tarot_exchange_requests"]["id_key"])
+	_load_dataset(opportunities, DATASETS["opportunities"]["path"], DATASETS["opportunities"]["id_key"])
 	is_loaded = true
-	print("DataManager loaded: %d pathways, %d sequences, %d materials, %d abilities, %d rituals, %d characteristics, %d artifacts, %d regions, %d origins, %d currencies, %d jobs, %d markets, %d formulas, %d tarot requests" % [
+	print("DataManager loaded: %d pathways, %d sequences, %d materials, %d abilities, %d rituals, %d characteristics, %d artifacts, %d regions, %d origins, %d currencies, %d jobs, %d markets, %d formulas, %d tarot requests, %d opportunities" % [
 		pathways.size(),
 		sequences.size(),
 		materials.size(),
@@ -71,6 +74,7 @@ func load_all_data() -> void:
 		markets.size(),
 		potion_formulas.size(),
 		tarot_exchange_requests.size(),
+		opportunities.size(),
 	])
 
 
@@ -244,6 +248,11 @@ func get_tarot_exchange_request(id: String) -> Dictionary:
 
 func get_tarot_request(id: String) -> Dictionary:
 	return get_tarot_exchange_request(id)
+
+
+func get_opportunity(id: String) -> Dictionary:
+	_ensure_loaded()
+	return opportunities.get(id, {})
 
 
 func get_sequences_for_pathway(pathway_id: String) -> Array:

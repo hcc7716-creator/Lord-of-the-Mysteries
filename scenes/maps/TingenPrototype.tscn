@@ -1,10 +1,11 @@
-[gd_scene load_steps=24 format=3]
+[gd_scene load_steps=25 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/maps/tingen-prototype-base.png" id="1_base"]
 [ext_resource type="PackedScene" path="res://scenes/player/Player.tscn" id="2_player"]
 [ext_resource type="PackedScene" path="res://scenes/npc/NPCBase.tscn" id="3_npc"]
 [ext_resource type="PackedScene" path="res://scenes/interactables/InvestigationPoint.tscn" id="4_investigation"]
 [ext_resource type="PackedScene" path="res://scenes/interactables/LocationPoint.tscn" id="5_location"]
+[ext_resource type="PackedScene" path="res://scenes/interactables/OpportunitySource.tscn" id="6_opportunity"]
 [ext_resource type="Texture2D" path="res://assets/props/tingen/residence/clean.png" id="6_residence"]
 [ext_resource type="Texture2D" path="res://assets/props/tingen/official_bureau/clean.png" id="7_bureau"]
 [ext_resource type="Texture2D" path="res://assets/props/tingen/divination_club/clean.png" id="8_club"]
@@ -164,6 +165,65 @@ location_id = "underground_black_market"
 location_name = "地下黑市"
 location_description = "沿着运河边的石阶向下，便能找到没有招牌的入口。这里的钱更好赚，代价也从不写在价签上。"
 interaction_prompt = "按 E 查看地下黑市"
+opportunity_ids = ["opp_location_black_market_entrance"]
+
+[node name="OpportunitySources" type="Node2D" parent="."]
+
+[node name="EveningNewspaper" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+position = Vector2(-120, -410)
+source_name = "廷根晚报"
+source_type = "newspaper"
+source_description = "一叠还带着油墨味的晚报被放在街角。你翻到招聘、失踪和教会公告版面，看到几条值得记下的消息。"
+opportunity_ids = ["opp_newspaper_mysterious_death", "opp_newspaper_copyist_job", "opp_newspaper_missing_clerk", "opp_newspaper_river_auction", "opp_newspaper_church_notice"]
+interaction_prompt = "按 E 阅读廷根晚报"
+
+[node name="PoliceBulletinBoard" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+position = Vector2(540, 30)
+source_name = "警察局公告栏"
+source_type = "bulletin_board"
+source_description = "潮湿的木板上钉着正式委托、临时工作和一张被反复覆盖的悬赏。"
+opportunity_ids = ["opp_board_police_assistant", "opp_board_pharmacy_apprentice", "opp_board_cemetery_reward"]
+interaction_prompt = "按 E 查看公告栏"
+
+[node name="ChurchNoticeBoard" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+position = Vector2(475, 740)
+source_name = "教会公告"
+source_type = "bulletin_board"
+source_description = "教会在入口旁张贴了新的仪式和值勤告示，其中也夹着几张需要临时帮工的通知。"
+opportunity_ids = ["opp_newspaper_church_notice", "opp_board_cemetery_reward"]
+interaction_prompt = "按 E 阅读教会公告"
+
+[node name="DivinationClubRegular" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+position = Vector2(-625, 35)
+source_name = "占卜俱乐部常客"
+source_type = "npc_dialogue"
+source_description = "一位戴着旧礼帽的常客注意到你的目光。他不愿透露姓名，但愿意用一句传闻交换耐心的倾听。"
+opportunity_ids = ["opp_npc_divination_rumor"]
+interaction_prompt = "按 E 与俱乐部常客交谈"
+
+[node name="DockWorker" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+position = Vector2(1080, 200)
+source_name = "码头工人"
+source_type = "npc_dialogue"
+source_description = "码头工人正把湿绳索卷成一团。他抱怨最近的货运不太干净，也许需要一个可靠的跑腿人。"
+opportunity_ids = ["opp_npc_dock_favor"]
+interaction_prompt = "按 E 与码头工人交谈"
+
+[node name="TavernWhispers" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+position = Vector2(1000, 390)
+source_name = "码头酒馆的低语"
+source_type = "location_discovery"
+source_description = "还没推开酒馆门，你就听到里面有人压低声音谈论红烟囱、镜子和没有招牌的地下入口。"
+opportunity_ids = ["opp_location_tavern_talk", "opp_npc_black_market_hint"]
+interaction_prompt = "按 E 留意酒馆谈话"
+
+[node name="AbandonedHouseTrace" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+position = Vector2(0, -860)
+source_name = "废弃房屋"
+source_type = "location_discovery"
+source_description = "这栋房屋没有住户，却有新鲜的泥水从门缝里渗出来。外墙角落散着被雨水冲淡的灰烬。"
+opportunity_ids = ["opp_location_abandoned_house", "opp_location_ritual_ash"]
+interaction_prompt = "按 E 调查废弃房屋"
 
 [node name="Interactables" type="Node2D" parent="."]
 

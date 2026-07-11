@@ -208,6 +208,8 @@ func get_next_objective_text() -> String:
 		if not leads.is_empty():
 			var lead: Dictionary = leads[0]
 			return "下一步：追查线索“%s”，或向老尼尔求证" % str(lead.get("title", "未知线索"))
+		if OpportunityManager.get_discovered_opportunities().size() > 0:
+			return "下一步：%s" % OpportunityManager.get_next_hint()
 		return "下一步：探索雾城、工作，或向居民打听消息"
 	var quest: Dictionary = get_quest(quest_id)
 	for objective in quest.get("objectives", []):

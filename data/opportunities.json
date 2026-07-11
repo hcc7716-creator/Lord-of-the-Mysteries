@@ -1,0 +1,143 @@
+[
+  {
+    "opportunity_id": "opp_newspaper_mysterious_death",
+    "title": "报纸角落的异常死亡",
+    "source_type": "newspaper",
+    "category": "案件",
+    "description": "《廷根晚报》用很小的篇幅报道了一起被迅速定性为意外的死亡。目击者提到尸体旁曾有奇怪的粉末痕迹。",
+    "follow_up_hint": "可向官方据点的老尼尔询问，或自行寻找现场。",
+    "linked_lead_id": "lead_tingen_mysterious_death",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_newspaper_copyist_job",
+    "title": "报社正在招募夜班抄写员",
+    "source_type": "newspaper",
+    "category": "招聘",
+    "description": "报社需要一名愿意整理晚间来稿的抄写员。薪酬不高，但能先接触到城市里还未公开的消息。",
+    "follow_up_hint": "打开工作面板，查看报社抄写员。",
+    "linked_job_id": "job_newspaper_copyist",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_newspaper_missing_clerk",
+    "title": "码头文书失踪",
+    "source_type": "newspaper",
+    "category": "失踪",
+    "description": "一名负责港口账目的文书已经三天没有回家。家属在报纸上留下了寻找目击者的请求。",
+    "follow_up_hint": "警察局和码头酒馆可能有更多消息。",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_newspaper_river_auction",
+    "title": "运河仓储拍卖",
+    "source_type": "newspaper",
+    "category": "拍卖",
+    "description": "一批无人认领的运河货物将在周末处理，其中可能混有草药、旧书和来历不明的金属盒。",
+    "follow_up_hint": "留意市场和黑市的临时货单。",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_newspaper_church_notice",
+    "title": "教会招募临时帮工",
+    "source_type": "newspaper",
+    "category": "教会公告",
+    "description": "教会正在为周日仪式和档案整理招募临时帮工，能接触到一部分公开的慈善与失踪记录。",
+    "follow_up_hint": "打开工作面板，或前往教堂询问。",
+    "linked_job_id": "job_church_helper",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_board_police_assistant",
+    "title": "警察局：侦探助手委托",
+    "source_type": "bulletin_board",
+    "category": "正式委托",
+    "description": "警察局需要临时助手协助分类旧案卷与记录证词。完成得好的人可以获得更多调查机会。",
+    "follow_up_hint": "在工作面板选择侦探助手。",
+    "linked_job_id": "job_detective_assistant",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_board_pharmacy_apprentice",
+    "title": "药房：学徒临时工作",
+    "source_type": "bulletin_board",
+    "category": "临时工作",
+    "description": "药房愿意雇人处理草药与瓶罐。报酬普通，但偶尔能得到被剩下的低阶材料。",
+    "follow_up_hint": "在工作面板选择药房学徒。",
+    "linked_job_id": "job_pharmacy_apprentice",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_board_cemetery_reward",
+    "title": "墓园夜间看守悬赏",
+    "source_type": "bulletin_board",
+    "category": "悬赏",
+    "description": "墓园管理员悬赏寻找在夜里破坏墓碑的人。报酬写得很高，署名却被雨水冲花了。",
+    "follow_up_hint": "夜晚前往墓园，或先向教会打听。",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_npc_divination_rumor",
+    "title": "占卜俱乐部的传闻",
+    "source_type": "npc_dialogue",
+    "category": "传闻",
+    "description": "一位常客压低声音说，俱乐部里有人会为付得起钱的人解读梦境，但他们更在意来访者带来的消息。",
+    "follow_up_hint": "前往占卜俱乐部，留意愿意交谈的人。",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_npc_dock_favor",
+    "title": "码头工人的人情",
+    "source_type": "npc_dialogue",
+    "category": "人情",
+    "description": "一个码头工人愿意介绍更赚钱的跑腿活，但前提是先替他找回遗失在酒馆的铜制怀表。",
+    "follow_up_hint": "码头酒馆与地下黑市附近会有更多选择。",
+    "linked_job_id": "job_dock_worker",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_npc_black_market_hint",
+    "title": "黑市的口令提示",
+    "source_type": "npc_dialogue",
+    "category": "地点提示",
+    "description": "酒馆掌柜提醒你：运河边那扇没有招牌的门不是仓库。进门前先问一句“今晚的雾重吗”。",
+    "follow_up_hint": "前往运河边的地下黑市入口。",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_location_ritual_ash",
+    "title": "墙角的仪式灰烬",
+    "source_type": "location_discovery",
+    "category": "可疑痕迹",
+    "description": "废弃房屋的墙角有一层被雨水冲散的灰烬，仍能看出它曾被刻意排列成仪式图案。",
+    "follow_up_hint": "记录它的位置；懂得神秘学的人或许能辨认图案。",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_location_abandoned_house",
+    "title": "锁着的废弃房屋",
+    "source_type": "location_discovery",
+    "category": "地点发现",
+    "description": "一座空置房屋的窗户从内侧钉死，门缝下却有新的泥水痕迹。这里最近有人出入。",
+    "follow_up_hint": "以后可通过调查、撬锁或获得钥匙继续探索。",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_location_tavern_talk",
+    "title": "酒馆里的低声谈话",
+    "source_type": "location_discovery",
+    "category": "地点发现",
+    "description": "运河边酒馆的角落里，有人反复提起“红烟囱”和“午夜的镜子”。他们在你靠近时立刻停止交谈。",
+    "follow_up_hint": "获得足够关系或情报后再回来。",
+    "canon_status": "game_adapted"
+  },
+  {
+    "opportunity_id": "opp_location_black_market_entrance",
+    "title": "没有招牌的地下入口",
+    "source_type": "location_discovery",
+    "category": "黑市入口",
+    "description": "运河边的石阶通向一扇厚门。门后有人用极轻的声音报价，却没有任何商店标记。",
+    "follow_up_hint": "准备资金、关系或正确口令后再尝试进入。",
+    "canon_status": "game_adapted"
+  }
+]
