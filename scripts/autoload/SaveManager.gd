@@ -25,6 +25,8 @@ func build_save_data() -> Dictionary:
 		"quest_status": QuestManager.quest_status,
 		"quest_progress": QuestManager.quest_progress,
 		"active_quest_id": QuestManager.active_quest_id,
+		"lead_status": QuestManager.lead_status,
+		"lead_sources": QuestManager.lead_sources,
 		"acquired_clues": ClueManager.acquired_clues,
 		"divination_hints": ClueManager.divination_hints,
 		"unlocked_skill_ids": SkillManager.permanent_unlocked_skill_ids,
@@ -81,6 +83,8 @@ func load_game() -> void:
 	QuestManager.quest_status = parsed.get("quest_status", {})
 	QuestManager.quest_progress = parsed.get("quest_progress", {})
 	QuestManager.active_quest_id = str(parsed.get("active_quest_id", ""))
+	QuestManager.lead_status = parsed.get("lead_status", {})
+	QuestManager.lead_sources = parsed.get("lead_sources", {})
 	ClueManager.acquired_clues = parsed.get("acquired_clues", {})
 	ClueManager.divination_hints = parsed.get("divination_hints", [])
 	SkillManager.permanent_unlocked_skill_ids.assign(parsed.get("unlocked_skill_ids", []))

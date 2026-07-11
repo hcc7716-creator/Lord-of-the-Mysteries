@@ -13,6 +13,8 @@ const STATE_DISCOVERED := "discovered"
 @export var spiritual_vision_highlight := false
 @export var requires_objective_done := ""
 @export var clue_id := ""
+@export var lead_id := ""
+@export var lead_source := ""
 @export var reward_items: Dictionary = {}
 @export var quest_id := "quest_tingen_become_seer"
 @export var quest_update := ""
@@ -75,6 +77,11 @@ func interact(_actor: Node = null) -> void:
 		var clue: Dictionary = ClueManager.get_clue(clue_id)
 		lines.append("记录线索：%s" % clue.get("title", clue_id))
 
+	if lead_id != "":
+		QuestManager.discover_lead(lead_id, lead_source if lead_source != "" else title)
+		var lead: Dictionary = QuestManager.get_lead(lead_id)
+		lines.append("发现机会：%s" % lead.get("title", lead_id))
+
 	var rewards := _get_reward_items()
 	for reward_id in rewards.keys():
 		var quantity := int(rewards[reward_id])
@@ -83,10 +90,11 @@ func interact(_actor: Node = null) -> void:
 		var material_name := str(material.get("name_cn", str(reward_id)))
 		lines.append("获得材料：%s x%d" % [material_name, quantity])
 
-	if quest_update != "":
+	if quest_update != "" and QuestManager.get_quest_status(quest_id) == QuestManager.QuestStatus.ACTIVE:
 		QuestManager.mark_objective(quest_id, quest_update)
-	for objective_id in quest_updates:
-		QuestManager.mark_objective(quest_id, str(objective_id))
+	if QuestManager.get_quest_status(quest_id) == QuestManager.QuestStatus.ACTIVE:
+		for objective_id in quest_updates:
+			QuestManager.mark_objective(quest_id, str(objective_id))
 
 	if complete_quest_id != "":
 		QuestManager.complete_quest(complete_quest_id)

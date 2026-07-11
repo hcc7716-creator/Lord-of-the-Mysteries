@@ -58,10 +58,14 @@ func _get_display_quest_id() -> String:
 		return "quest_tingen_become_seer"
 	if not ClueManager.get_divination_hints_for_quest("quest_tingen_become_seer").is_empty():
 		return "quest_tingen_become_seer"
-	return "quest_tingen_become_seer"
+	if QuestManager.get_lead_status("lead_tingen_mysterious_death") != QuestManager.LeadStatus.UNDISCOVERED:
+		return "quest_tingen_become_seer"
+	return ""
 
 
 func _get_case_title(quest_id: String) -> String:
+	if quest_id == "":
+		return "暂无调查笔记"
 	var quest: Dictionary = QuestManager.get_quest(quest_id)
 	if quest.is_empty():
 		return "未接取案件"
@@ -115,6 +119,8 @@ func _format_keywords(keywords) -> String:
 
 
 func _get_next_inferences(quest_id: String) -> Array[String]:
+	if quest_id == "":
+		return ["探索雾城、打工或与居民交谈，寻找值得记录的异常。"]
 	if not ClueManager.has_clue("clue_abnormal_death_scene"):
 		return ["调查异常死亡现场，确认死亡是否与仪式有关"]
 	if not ClueManager.has_clue("clue_hidden_pollution"):

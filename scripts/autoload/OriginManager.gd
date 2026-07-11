@@ -78,7 +78,7 @@ func trigger_early_event(event_id: String) -> bool:
 	if not has_early_event(event_id):
 		return false
 	if event_id == "event_tingen_mystery_case":
-		QuestManager.accept_quest("quest_tingen_become_seer")
+		QuestManager.discover_lead("lead_tingen_mysterious_death", "工作传闻")
 	early_event_triggered.emit(event_id)
 	return true
 

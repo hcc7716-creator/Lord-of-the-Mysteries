@@ -72,7 +72,7 @@ func perform_job(job_id: String) -> Dictionary:
 func _handle_event(event_id: String) -> void:
 	match event_id:
 		"event_tingen_mystery_case":
-			if QuestManager.get_quest_status("quest_tingen_become_seer") == QuestManager.QuestStatus.NOT_STARTED:
+			if QuestManager.get_lead_status("lead_tingen_mysterious_death") == QuestManager.LeadStatus.UNDISCOVERED:
 				OriginManager.trigger_early_event(event_id)
 		"event_black_market_password":
 			MarketManager.add_unlock_flag("know_market_password")

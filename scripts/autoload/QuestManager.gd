@@ -2,11 +2,19 @@ extends Node
 
 signal quest_updated(quest_id: String)
 signal quest_objective_updated(quest_id: String, objective_id: String)
+signal lead_updated(lead_id: String)
 
 enum QuestStatus {
 	NOT_STARTED,
 	ACTIVE,
 	COMPLETED,
+}
+
+enum LeadStatus {
+	UNDISCOVERED,
+	DISCOVERED,
+	PURSUING,
+	RESOLVED,
 }
 
 const QUESTS := {
@@ -42,9 +50,20 @@ const QUESTS := {
 	},
 }
 
+const LEADS := {
+	"lead_tingen_mysterious_death": {
+		"title": "异常死亡案件",
+		"description": "雾城最近出现了一起被悄悄压下的异常死亡。有人说尸体附近留有仪式痕迹，老尼尔或许知道更多。",
+		"lead_type": "rumor",
+		"linked_quest_id": "quest_tingen_become_seer",
+	},
+}
+
 var quest_status: Dictionary = {}
 var quest_progress: Dictionary = {}
 var active_quest_id := ""
+var lead_status: Dictionary = {}
+var lead_sources: Dictionary = {}
 
 
 func accept_quest(quest_id: String) -> void:
@@ -55,11 +74,13 @@ func accept_quest(quest_id: String) -> void:
 		return
 	quest_status[quest_id] = QuestStatus.ACTIVE
 	active_quest_id = quest_id
+	_set_linked_leads_status(quest_id, LeadStatus.PURSUING)
 	if quest_id == "quest_tingen_become_seer" and PathwayManager.has_method("set_suspected_pathway"):
 		PathwayManager.set_suspected_pathway("fool")
 	if not quest_progress.has(quest_id):
 		quest_progress[quest_id] = {}
 	mark_objective(quest_id, "talk_old_neil")
+	_sync_discovered_clues_to_quest(quest_id)
 	quest_updated.emit(quest_id)
 
 
@@ -68,6 +89,7 @@ func complete_quest(quest_id: String) -> void:
 		push_warning("QuestManager: unknown quest %s" % quest_id)
 		return
 	quest_status[quest_id] = QuestStatus.COMPLETED
+	_set_linked_leads_status(quest_id, LeadStatus.RESOLVED)
 	if active_quest_id == quest_id:
 		active_quest_id = ""
 	var rewards: Dictionary = QUESTS[quest_id].get("reward_materials", {})
@@ -105,6 +127,56 @@ func get_quest(quest_id: String) -> Dictionary:
 	return QUESTS.get(quest_id, {})
 
 
+func discover_lead(lead_id: String, source: String = "") -> bool:
+	if not LEADS.has(lead_id):
+		push_warning("QuestManager: unknown lead %s" % lead_id)
+		return false
+	var was_known := get_lead_status(lead_id) != LeadStatus.UNDISCOVERED
+	if not was_known:
+		lead_status[lead_id] = LeadStatus.DISCOVERED
+	if source != "":
+		var sources: Array = lead_sources.get(lead_id, [])
+		if not sources.has(source):
+			sources.append(source)
+			lead_sources[lead_id] = sources
+	if not was_known or source != "":
+		lead_updated.emit(lead_id)
+	return true
+
+
+func get_lead(lead_id: String) -> Dictionary:
+	return LEADS.get(lead_id, {})
+
+
+func get_lead_status(lead_id: String) -> int:
+	return int(lead_status.get(lead_id, LeadStatus.UNDISCOVERED))
+
+
+func get_discovered_leads() -> Array:
+	var result: Array = []
+	for lead_id in LEADS.keys():
+		if get_lead_status(str(lead_id)) == LeadStatus.UNDISCOVERED:
+			continue
+		var lead: Dictionary = get_lead(str(lead_id)).duplicate(true)
+		lead["lead_id"] = str(lead_id)
+		lead["status"] = get_lead_status(str(lead_id))
+		lead["sources"] = lead_sources.get(str(lead_id), [])
+		result.append(lead)
+	return result
+
+
+func get_lead_status_text(lead_id: String) -> String:
+	match get_lead_status(lead_id):
+		LeadStatus.DISCOVERED:
+			return "待追查"
+		LeadStatus.PURSUING:
+			return "调查中"
+		LeadStatus.RESOLVED:
+			return "已解决"
+		_:
+			return "未发现"
+
+
 func get_active_quest() -> Dictionary:
 	if active_quest_id == "":
 		return {}
@@ -132,7 +204,11 @@ func get_hud_quest_title() -> String:
 func get_next_objective_text() -> String:
 	var quest_id := _get_hud_quest_id()
 	if quest_id == "":
-		return "下一步：与老尼尔交谈，接取案件"
+		var leads := get_discovered_leads()
+		if not leads.is_empty():
+			var lead: Dictionary = leads[0]
+			return "下一步：追查线索“%s”，或向老尼尔求证" % str(lead.get("title", "未知线索"))
+		return "下一步：探索雾城、工作，或向居民打听消息"
 	var quest: Dictionary = get_quest(quest_id)
 	for objective in quest.get("objectives", []):
 		if typeof(objective) != TYPE_DICTIONARY:
@@ -165,6 +241,27 @@ func get_objective_lines(quest_id: String) -> Array[String]:
 
 func get_all_quests() -> Dictionary:
 	return QUESTS
+
+
+func _set_linked_leads_status(quest_id: String, status: int) -> void:
+	for lead_id in LEADS.keys():
+		var lead: Dictionary = LEADS[lead_id]
+		if str(lead.get("linked_quest_id", "")) != quest_id:
+			continue
+		lead_status[str(lead_id)] = status
+		lead_updated.emit(str(lead_id))
+
+
+func _sync_discovered_clues_to_quest(quest_id: String) -> void:
+	if quest_id != "quest_tingen_become_seer":
+		return
+	if ClueManager.has_clue("clue_abnormal_death_scene"):
+		mark_objective(quest_id, "investigate_death_scene")
+	if ClueManager.has_clue("clue_hidden_pollution"):
+		mark_objective(quest_id, "find_hidden_pollution")
+	if ClueManager.has_clue("clue_church_direction"):
+		mark_objective(quest_id, "investigate_church_clue")
+		mark_objective(quest_id, "collect_potion_materials")
 
 
 func _get_hud_quest_id() -> String:
