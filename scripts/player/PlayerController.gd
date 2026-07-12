@@ -63,6 +63,8 @@ func _unhandled_input(event: InputEvent) -> void:
 				GameManager.toggle_market_panel()
 			KEY_G:
 				GameManager.toggle_tarot_club_panel()
+			KEY_F:
+				GameManager.toggle_faction_panel()
 			KEY_1:
 				SkillManager.execute_skill("skill_seer_spiritual_vision")
 			KEY_2:

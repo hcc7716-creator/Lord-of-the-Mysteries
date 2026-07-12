@@ -55,6 +55,12 @@ func _add_market(market: Dictionary) -> void:
 		]
 		requirements.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		box.add_child(requirements)
+		var faction_reason := FactionManager.get_market_access_reason(market_id)
+		if faction_reason != "":
+			var faction_requirements := Label.new()
+			faction_requirements.text = faction_reason
+			faction_requirements.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			box.add_child(faction_requirements)
 	else:
 		for entry in MarketManager.get_market_entries(market_id):
 			_add_entry_button(box, market_id, entry)
@@ -68,12 +74,17 @@ func _add_entry_button(parent: VBoxContainer, market_id: String, entry: Dictiona
 	if item_name == "" and entry_type == "item":
 		item_name = str(DataManager.get_material(entry_id).get("name_cn", entry_id))
 	var button := Button.new()
+	var base_price := int(entry.get("base_price_pence", entry.get("price_pence", 0)))
+	var displayed_price := int(entry.get("price_pence", 0))
+	var price_text := EconomyManager.format_pence(displayed_price)
+	if base_price != displayed_price:
+		price_text += "（基础 %s）" % EconomyManager.format_pence(base_price)
 	button.text = "购买%s：%s（%s）" % [
 		"配方" if entry_type == "formula" else "物品",
 		item_name,
-		EconomyManager.format_pence(int(entry.get("price_pence", 0))),
+		price_text,
 	]
-	button.disabled = not EconomyManager.can_afford(int(entry.get("price_pence", 0)))
+	button.disabled = not EconomyManager.can_afford(displayed_price)
 	if entry_type == "formula":
 		button.pressed.connect(_buy_formula.bind(market_id, entry_id))
 	else:

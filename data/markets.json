@@ -1,10 +1,29 @@
 [
   {
+    "market_id": "market_tingen_general_store",
+    "name_cn": "廷根杂货铺",
+    "name_en": "Tingen General Store",
+    "region_id": "loen",
+    "market_type": "normal_market",
+    "description": "面向普通居民的日常商店。价格稳定、风险低，但不会出售配方或高风险材料。",
+    "available_items": [
+      {"item_id": "mat_purified_water", "price_pence": 12, "stock_rule": "common"}
+    ],
+    "available_formulas": [],
+    "risk_events": [],
+    "unlock_conditions": [],
+    "open_days": ["daily_morning", "daily_day", "daily_evening"],
+    "source_note": ["游戏化改编"],
+    "canon_status": "game_adapted"
+  },
+  {
     "market_id": "market_tingen_black_market",
     "name_cn": "廷根地下黑市",
     "name_en": "Tingen Underground Black Market",
     "region_id": "loen",
     "market_type": "black_market",
+    "faction_id": "black_market",
+    "faction_requirements": {"reputation": 0, "trust": 0, "max_hostility": 8},
     "description": "夜间开放的地下交易会，出售低序列材料、可疑情报和未经核验的魔药配方线索。",
     "available_items": [
       {
@@ -56,6 +75,8 @@
     "name_en": "Divination Club Private Exchange",
     "region_id": "loen",
     "market_type": "normal_market",
+    "faction_id": "divination_club",
+    "faction_requirements": {"reputation": 0, "trust": 2, "max_hostility": 6},
     "description": "通过普通人社交圈交换低风险道具、旧塔罗牌、灵摆和传闻。",
     "available_items": [
       {
@@ -91,6 +112,8 @@
     "name_en": "Church Requisition Storehouse",
     "region_id": "loen",
     "market_type": "church_storehouse",
+    "faction_id": "church",
+    "faction_requirements": {"reputation": 3, "trust": 1, "max_hostility": 3},
     "description": "官方组织批准后的安全物资申请渠道，价格低但需要任务进度、信誉或值夜许可。",
     "available_items": [
       {
@@ -103,10 +126,7 @@
       "formula_fool_09_seer"
     ],
     "risk_events": [],
-    "unlock_conditions": [
-      "church_reputation_5",
-      "active_official_case"
-    ],
+    "unlock_conditions": [],
     "open_days": [
       "monday_evening",
       "thursday_evening"

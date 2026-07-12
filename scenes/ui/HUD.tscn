@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3]
+[gd_scene load_steps=17 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/HUD.gd" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/ui/DialogueBox.tscn" id="2"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/JobPanel.tscn" id="13"]
 [ext_resource type="PackedScene" path="res://scenes/ui/MarketPanel.tscn" id="14"]
 [ext_resource type="PackedScene" path="res://scenes/ui/TarotClubPanel.tscn" id="15"]
+[ext_resource type="PackedScene" path="res://scenes/ui/FactionPanel.tscn" id="16"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1")
@@ -284,3 +285,5 @@ text = "继续"
 [node name="MarketPanel" parent="." instance=ExtResource("14")]
 
 [node name="TarotClubPanel" parent="." instance=ExtResource("15")]
+
+[node name="FactionPanel" parent="." instance=ExtResource("16")]

@@ -42,16 +42,20 @@ func get_market_entries(market_id: String) -> Array:
 			continue
 		var entry: Dictionary = item.duplicate(true)
 		entry["entry_type"] = "item"
+		entry["base_price_pence"] = int(entry.get("price_pence", 0))
+		entry["price_pence"] = FactionManager.get_effective_price(market_id, int(entry.get("price_pence", 0)))
 		entries.append(entry)
 	for formula_id in market.get("available_formulas", []):
 		var formula := DataManager.get_formula(str(formula_id))
 		if formula.is_empty():
 			continue
+		var base_price := int(formula.get("base_price_pence", 0))
 		entries.append({
 			"entry_type": "formula",
 			"formula_id": str(formula_id),
 			"name_cn": str(formula.get("name_cn", formula_id)),
-			"price_pence": int(formula.get("base_price_pence", 0)),
+			"base_price_pence": base_price,
+			"price_pence": FactionManager.get_effective_price(market_id, base_price),
 		})
 	return entries
 
@@ -70,7 +74,7 @@ func is_market_unlocked(market_id: String) -> bool:
 			continue
 		if not has_unlock_flag(condition_id):
 			return false
-	return true
+	return FactionManager.can_access_market(market_id)
 
 
 func is_market_open(market_id: String) -> bool:
@@ -114,7 +118,7 @@ func buy_item(market_id: String, item_id: String) -> Dictionary:
 	for item in market.get("available_items", []):
 		if typeof(item) != TYPE_DICTIONARY or str(item.get("item_id", "")) != item_id:
 			continue
-		var price := int(item.get("price_pence", 0))
+		var price := FactionManager.get_effective_price(market_id, int(item.get("price_pence", 0)))
 		if not EconomyManager.spend_money(price):
 			return _fail_purchase(market_id, item_id, "not_enough_money")
 		if not purchased_item_ids.has(item_id):
@@ -134,7 +138,7 @@ func buy_formula(market_id: String, formula_id: String) -> Dictionary:
 	if not market.get("available_formulas", []).has(formula_id):
 		return _fail_purchase(market_id, formula_id, "formula_not_sold")
 	var formula := DataManager.get_formula(formula_id)
-	var price := int(formula.get("base_price_pence", 0))
+	var price := FactionManager.get_effective_price(market_id, int(formula.get("base_price_pence", 0)))
 	if not EconomyManager.spend_money(price):
 		return _fail_purchase(market_id, formula_id, "not_enough_money")
 	if not known_formula_ids.has(formula_id):

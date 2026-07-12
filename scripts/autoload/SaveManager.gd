@@ -29,6 +29,8 @@ func build_save_data() -> Dictionary:
 		"lead_sources": QuestManager.lead_sources,
 		"discovered_opportunities": OpportunityManager.discovered_opportunities,
 		"opportunity_sources": OpportunityManager.opportunity_sources,
+		"faction_relations": FactionManager.relations,
+		"faction_known_information": FactionManager.known_information,
 		"acquired_clues": ClueManager.acquired_clues,
 		"divination_hints": ClueManager.divination_hints,
 		"unlocked_skill_ids": SkillManager.permanent_unlocked_skill_ids,
@@ -89,6 +91,8 @@ func load_game() -> void:
 	QuestManager.lead_sources = parsed.get("lead_sources", {})
 	OpportunityManager.discovered_opportunities = parsed.get("discovered_opportunities", {})
 	OpportunityManager.opportunity_sources = parsed.get("opportunity_sources", {})
+	FactionManager.relations = parsed.get("faction_relations", {})
+	FactionManager.known_information = parsed.get("faction_known_information", {})
 	ClueManager.acquired_clues = parsed.get("acquired_clues", {})
 	ClueManager.divination_hints = parsed.get("divination_hints", [])
 	SkillManager.permanent_unlocked_skill_ids.assign(parsed.get("unlocked_skill_ids", []))

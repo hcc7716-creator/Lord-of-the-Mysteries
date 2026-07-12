@@ -63,6 +63,11 @@ func toggle_tarot_club_panel() -> void:
 		hud.toggle_tarot_club_panel()
 
 
+func toggle_faction_panel() -> void:
+	if hud and hud.has_method("toggle_faction_panel"):
+		hud.toggle_faction_panel()
+
+
 func is_ui_modal_active() -> bool:
 	return hud != null and hud.has_method("is_modal_panel_open") and hud.is_modal_panel_open()
 

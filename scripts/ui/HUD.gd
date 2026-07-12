@@ -23,6 +23,7 @@ extends CanvasLayer
 @onready var job_panel: PanelContainer = $JobPanel
 @onready var market_panel: PanelContainer = $MarketPanel
 @onready var tarot_club_panel: PanelContainer = $TarotClubPanel
+@onready var faction_panel: PanelContainer = $FactionPanel
 @onready var advancement_darken: ColorRect = $AdvancementDarken
 @onready var advancement_vfx: Control = $AdvancementVFX
 @onready var advancement_pulse: ColorRect = $AdvancementVFX/Pulse
@@ -56,6 +57,7 @@ func _ready() -> void:
 	SkillManager.spiritual_vision_changed.connect(_on_spiritual_vision_changed)
 	PotionManager.potion_brewed.connect(func(_sequence_id: String): refresh_all())
 	AdvancementManager.advancement_success.connect(_on_advancement_success)
+	FactionManager.faction_relation_changed.connect(_on_faction_relation_changed)
 	advancement_continue_button.pressed.connect(_hide_advancement_feedback)
 	DialogueManager.dialogue_started.connect(_on_dialogue_started)
 	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
@@ -105,6 +107,8 @@ func refresh_all() -> void:
 		market_panel.refresh()
 	if tarot_club_panel.has_method("refresh"):
 		tarot_club_panel.refresh()
+	if faction_panel.has_method("refresh"):
+		faction_panel.refresh()
 
 
 func show_interaction_hint(text: String) -> void:
@@ -160,6 +164,10 @@ func toggle_tarot_club_panel() -> void:
 	_toggle_panel(tarot_club_panel)
 
 
+func toggle_faction_panel() -> void:
+	_toggle_panel(faction_panel)
+
+
 func toggle_help_panel() -> void:
 	help_panel_pinned = not help_panel_pinned
 	help_panel.visible = help_panel_pinned
@@ -197,10 +205,11 @@ func _close_overlay_panels() -> void:
 	job_panel.visible = false
 	market_panel.visible = false
 	tarot_club_panel.visible = false
+	faction_panel.visible = false
 
 
 func is_modal_panel_open() -> bool:
-	return dialogue_box.visible or inventory_panel.visible or quest_panel.visible or pathway_panel.visible or potion_panel.visible or case_notebook_panel.visible or pendulum_divination_panel.visible or paper_divination_panel.visible or economy_panel.visible or job_panel.visible or market_panel.visible or tarot_club_panel.visible or advancement_popup.visible
+	return dialogue_box.visible or inventory_panel.visible or quest_panel.visible or pathway_panel.visible or potion_panel.visible or case_notebook_panel.visible or pendulum_divination_panel.visible or paper_divination_panel.visible or economy_panel.visible or job_panel.visible or market_panel.visible or tarot_club_panel.visible or faction_panel.visible or advancement_popup.visible
 
 
 func close_active_modal() -> void:
@@ -301,6 +310,13 @@ func _on_pathway_changed() -> void:
 		pathway_panel.refresh()
 	if skill_bar.has_method("refresh"):
 		skill_bar.refresh()
+
+
+func _on_faction_relation_changed(_faction_id: String) -> void:
+	if faction_panel.has_method("refresh"):
+		faction_panel.refresh()
+	if market_panel.has_method("refresh"):
+		market_panel.refresh()
 
 
 func _on_stats_changed() -> void:

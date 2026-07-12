@@ -110,7 +110,11 @@ func matches_open_window(window: String) -> bool:
 	if window == "conditional_safe_window":
 		return false
 	var parts := window.split("_")
-	if parts.is_empty() or parts[0] != get_weekday():
+	if parts.is_empty():
+		return false
+	if parts[0] == "daily" and parts.size() > 1:
+		return parts[1] == get_time_period()
+	if parts[0] != get_weekday():
 		return false
 	if parts.size() == 1:
 		return true
