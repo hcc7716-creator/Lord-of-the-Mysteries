@@ -5,6 +5,9 @@ extends CharacterBody2D
 var nearby_interactables: Array[Node] = []
 
 @onready var interaction_area: Area2D = $InteractionArea
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+
+var facing_animation := "walk_down"
 
 
 func _ready() -> void:
@@ -16,6 +19,7 @@ func _ready() -> void:
 func _physics_process(_delta: float) -> void:
 	if GameManager.is_ui_modal_active():
 		velocity = Vector2.ZERO
+		animated_sprite.stop()
 		return
 	var direction := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 
@@ -29,7 +33,22 @@ func _physics_process(_delta: float) -> void:
 		direction.y += 1.0
 
 	velocity = direction.normalized() * speed
+	_update_walk_animation(direction)
 	move_and_slide()
+
+
+func _update_walk_animation(direction: Vector2) -> void:
+	if direction == Vector2.ZERO:
+		animated_sprite.stop()
+		return
+	if absf(direction.x) > absf(direction.y):
+		facing_animation = "walk_right" if direction.x > 0.0 else "walk_left"
+	else:
+		facing_animation = "walk_down" if direction.y > 0.0 else "walk_up"
+	if animated_sprite.animation != facing_animation:
+		animated_sprite.play(facing_animation)
+	elif not animated_sprite.is_playing():
+		animated_sprite.play()
 
 
 func _unhandled_input(event: InputEvent) -> void:
