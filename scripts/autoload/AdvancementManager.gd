@@ -27,8 +27,9 @@ func advance_to_sequence(sequence_id: String) -> bool:
 	PathwayManager.set_current_sequence(sequence_id)
 	var sequence := DataManager.get_sequence(sequence_id)
 	SkillManager.unlock_skills(sequence.get("abilities", []))
-	QuestManager.mark_objective("quest_tingen_become_seer", "advance_seer")
-	QuestManager.complete_quest("quest_tingen_become_seer")
+	if QuestManager.get_quest_status("quest_tingen_become_seer") == QuestManager.QuestStatus.ACTIVE:
+		QuestManager.mark_objective("quest_tingen_become_seer", "advance_seer")
+		QuestManager.complete_quest("quest_tingen_become_seer")
 	CorruptionManager.apply_sequence_spirituality(sequence_id, true)
 	ClueManager.add_divination_hint("quest_tingen_become_seer", "advancement", "晋升成功", "你饮下魔药，灵性视野稳定展开，愚者途径序列 9 占卜家已解锁。")
 	advancement_success.emit(sequence_id)

@@ -10,6 +10,7 @@
     "requested_items": [
       "formula_fool_09_seer"
     ],
+    "granted_materials": {},
     "requested_info": [],
     "required_trust_level": 0,
     "available_after_week": 1,
@@ -27,6 +28,10 @@
       "clue_tingen_pollution_residue"
     ],
     "requested_items": [],
+    "granted_materials": {
+      "mat_lavos_squid_blood": 1,
+      "mat_star_crystal": 1
+    },
     "requested_info": [
       "hint_lavos_squid_blood_source",
       "hint_star_crystal_source"

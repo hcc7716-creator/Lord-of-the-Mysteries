@@ -12,6 +12,8 @@ var completed_request_ids: Array[String] = []
 func _ready() -> void:
 	QuestManager.quest_updated.connect(_on_quest_updated)
 	CalendarManager.sunday_started.connect(_on_sunday_started)
+	FactionManager.faction_relation_changed.connect(_on_faction_relation_changed)
+	OpportunityManager.opportunity_discovered.connect(_on_opportunity_discovered)
 
 
 func reset() -> void:
@@ -69,7 +71,18 @@ func submit_exchange_request(request_id: String) -> Dictionary:
 		return {"success": false, "reason": "not_sunday"}
 	if not complete_request(request_id):
 		return {"success": false, "reason": "request_unavailable"}
-	return {"success": true, "request": DataManager.get_tarot_request(request_id)}
+	var request := DataManager.get_tarot_request(request_id)
+	for item_id in request.get("requested_items", []):
+		if str(item_id).begins_with("formula_"):
+			FormulaManager.acquire_formula(str(item_id), "塔罗会等价交换")
+	for material_id in request.get("granted_materials", {}).keys():
+		InventoryManager.add_material(str(material_id), int(request["granted_materials"][material_id]))
+	for information in request.get("requested_info", []):
+		ClueManager.add_divination_hint("tarot_club", "exchange", "塔罗会情报", str(information))
+		if str(information) == "market_tingen_black_market_password":
+			MarketManager.add_unlock_flag("know_market_password")
+			MarketManager.add_unlock_flag("underground_market_reputation_1")
+	return {"success": true, "request": request}
 
 
 func _is_request_available(request_id: String) -> bool:
@@ -87,3 +100,21 @@ func _on_quest_updated(quest_id: String) -> void:
 func _on_sunday_started(_week: int) -> void:
 	if is_unlocked:
 		tarot_club_available.emit()
+
+
+func _on_faction_relation_changed(faction_id: String) -> void:
+	if faction_id == "divination_club":
+		_try_unlock_from_divination_contact()
+
+
+func _on_opportunity_discovered(opportunity_id: String) -> void:
+	if opportunity_id == "opp_npc_divination_rumor":
+		_try_unlock_from_divination_contact()
+
+
+func _try_unlock_from_divination_contact() -> void:
+	if is_unlocked:
+		return
+	var relation := FactionManager.get_relation("divination_club")
+	if int(relation.get("trust", 0)) >= 2 and OpportunityManager.is_discovered("opp_npc_divination_rumor"):
+		unlock_tarot_club()

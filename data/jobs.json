@@ -100,6 +100,18 @@
         "type": "material_hint",
         "id": "hint_basic_auxiliary_materials",
         "chance": 0.18
+      },
+      {
+        "type": "material",
+        "id": "mat_purified_water",
+        "quantity": 1,
+        "chance": 1.0
+      },
+      {
+        "type": "material",
+        "id": "mat_night_vanilla_liquids",
+        "quantity": 1,
+        "chance": 1.0
       }
     ],
     "possible_events": [
@@ -239,6 +251,12 @@
         "type": "clue",
         "id": "clue_archived_ritual_case",
         "chance": 0.12
+      },
+      {
+        "type": "material",
+        "id": "mat_purified_water",
+        "quantity": 1,
+        "chance": 1.0
       }
     ],
     "possible_events": [

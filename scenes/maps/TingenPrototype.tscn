@@ -289,6 +289,36 @@ quest_update = "find_hidden_pollution"
 material_id = ""
 interaction_prompt = "按 E 调查隐藏污染点"
 
+[node name="CanalSmugglerCache" parent="Interactables" instance=ExtResource("4_investigation")]
+position = Vector2(1080, 830)
+investigation_id = "canal_smuggler_cache"
+point_name = "运河漂来的材料箱"
+title = "运河漂来的材料箱"
+description = "一只没有标记的小箱子卡在运河石阶边。箱内有被密封好的夜香草液和一小瓶不该出现在城区的章鱼血液。"
+reward_items = {"mat_lavos_squid_blood": 1, "mat_night_vanilla_liquids": 1}
+material_id = ""
+interaction_prompt = "按 E 搜查运河材料箱"
+
+[node name="CemeteryHerbPatch" parent="Interactables" instance=ExtResource("4_investigation")]
+position = Vector2(-1030, 910)
+investigation_id = "cemetery_herb_patch"
+point_name = "墓园药草丛"
+title = "墓园药草丛"
+description = "墓碑背阴处长着一簇被雾气浸透的药草。它们不适合直接入口，却是低阶魔药常见的辅助材料。"
+reward_items = {"mat_gold_mint_leaves": 1, "mat_poison_hemlock": 1, "mat_dragon_blood_grass_powder": 1}
+material_id = ""
+interaction_prompt = "按 E 采集墓园药草"
+
+[node name="AbandonedHouseStarShard" parent="Interactables" instance=ExtResource("4_investigation")]
+position = Vector2(110, -760)
+investigation_id = "abandoned_house_star_shard"
+point_name = "旧屋星水晶碎片"
+title = "旧屋星水晶碎片"
+description = "废弃房屋的窗沿下藏着一枚暗淡的星水晶。它仍残留微弱灵性，足以作为占卜家魔药主材。"
+reward_items = {"mat_star_crystal": 1}
+material_id = ""
+interaction_prompt = "按 E 收取星水晶"
+
 [node name="Boundaries" type="Node2D" parent="."]
 
 [node name="NorthWall" type="StaticBody2D" parent="Boundaries"]

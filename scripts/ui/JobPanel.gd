@@ -60,6 +60,8 @@ func _perform_job(job_id: String) -> void:
 	]
 	if not result.get("triggered_events", []).is_empty():
 		message += "｜触发了新的事件线索"
+	if not result.get("gained_materials", []).is_empty():
+		message += "｜额外获得：%s" % "、".join(result.get("gained_materials", []))
 	GameManager.show_status_message(message)
 	refresh()
 

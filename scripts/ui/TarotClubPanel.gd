@@ -19,7 +19,7 @@ func refresh() -> void:
 	for child in requests_container.get_children():
 		child.queue_free()
 	if not TarotClubManager.is_unlocked:
-		status_label.text = "尚未解锁。完成“成为占卜家”后，才会接触灰雾之上的邀请。"
+		status_label.text = "尚未解锁。完成晋升，或在占卜俱乐部建立足够信任并获得传闻后，才能接触灰雾之上的邀请。"
 		return
 	if not CalendarManager.is_sunday():
 		status_label.text = "塔罗会已解锁，但本周会议尚未开始。当前：%s。会议固定在每周日。" % CalendarManager.get_display_text()
@@ -49,7 +49,7 @@ func _add_request(request: Dictionary) -> void:
 	detail.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	box.add_child(detail)
 	var button := Button.new()
-	button.text = "提交等价交换（占位）"
+	button.text = "提交等价交换"
 	button.pressed.connect(_submit_request.bind(request_id))
 	box.add_child(button)
 	requests_container.add_child(box)
@@ -58,7 +58,7 @@ func _add_request(request: Dictionary) -> void:
 func _submit_request(request_id: String) -> void:
 	var result := TarotClubManager.submit_exchange_request(request_id)
 	if bool(result.get("success", false)):
-		GameManager.show_status_message("交换请求已提交。当前阶段仅记录结果，奖励将在后续内容中兑现。")
+		GameManager.show_status_message("交换完成：配方、材料或情报已记录。")
 	else:
 		GameManager.show_status_message("无法提交交换：%s" % str(result.get("reason", "unknown")))
 	refresh()

@@ -18,6 +18,8 @@ func _ready() -> void:
 	InventoryManager.inventory_changed.connect(refresh)
 	PotionManager.potion_brewed.connect(_on_potion_brewed)
 	PotionManager.potion_brew_failed.connect(_on_potion_brew_failed)
+	FormulaManager.formula_acquired.connect(func(_formula_id: String, _source: String): refresh())
+	FormulaManager.formula_fragment_added.connect(func(_formula_id: String, _fragment_id: String): refresh())
 	refresh()
 
 
@@ -55,6 +57,12 @@ func refresh() -> void:
 		sequence.get("sequence_name_en", "Unknown"),
 	]
 	text += "[color=%s]目标 ID：%s[/color]\n\n" % [COLOR_DIM, PotionManager.target_sequence_id]
+	var formula_id := PotionManager.target_formula_id
+	var formula_sources := FormulaManager.get_formula_sources(formula_id)
+	if not formula_sources.is_empty():
+		text += "[b]配方来源[/b]：%s\n\n" % "、".join(formula_sources)
+	else:
+		text += "[b]残页进度[/b]：%s\n\n" % FormulaManager.get_fragment_progress_text(formula_id)
 
 	text += "[b]主材料[/b]\n"
 	text += _format_material_checklist(PotionManager.get_main_material_ids())

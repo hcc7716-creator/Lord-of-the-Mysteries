@@ -57,6 +57,8 @@ func perform_job(job_id: String) -> Dictionary:
 				_handle_event(event_id)
 				job_event_triggered.emit(job_id, event_id)
 
+	var gained_materials := _grant_possible_rewards(job)
+
 	var risk_level := str(job.get("risk_level", "low"))
 	if risk_level == "high":
 		CorruptionManager.add_corruption(2, "高风险工作接触了不稳定的人和物")
@@ -74,6 +76,7 @@ func perform_job(job_id: String) -> Dictionary:
 		"triggered_events": triggered_events,
 		"risk_level": risk_level,
 		"night_risk": started_at_night,
+		"gained_materials": gained_materials,
 	}
 
 
@@ -85,3 +88,25 @@ func _handle_event(event_id: String) -> void:
 		"event_black_market_password":
 			MarketManager.add_unlock_flag("know_market_password")
 			MarketManager.add_unlock_flag("underground_market_reputation_1")
+
+
+func _grant_possible_rewards(job: Dictionary) -> Array[String]:
+	var gained: Array[String] = []
+	for reward in job.get("possible_rewards", []):
+		if typeof(reward) != TYPE_DICTIONARY or randf() > float(reward.get("chance", 0.0)):
+			continue
+		var reward_type := str(reward.get("type", ""))
+		var reward_id := str(reward.get("id", ""))
+		match reward_type:
+			"material":
+				var quantity := int(reward.get("quantity", 1))
+				InventoryManager.add_material(reward_id, quantity)
+				gained.append("%s x%d" % [str(DataManager.get_material(reward_id).get("name_cn", reward_id)), quantity])
+			"flag":
+				MarketManager.add_unlock_flag(reward_id)
+			"reputation":
+				if reward_id == "police_contact":
+					FactionManager.adjust_relation("police", int(reward.get("amount", 1)), 0, 0)
+			"material_hint":
+				ClueManager.add_divination_hint("work", "material_hint", "工作材料线索", reward_id)
+	return gained

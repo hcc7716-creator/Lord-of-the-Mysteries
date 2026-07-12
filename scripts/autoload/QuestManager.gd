@@ -110,6 +110,8 @@ func mark_objective(quest_id: String, objective_id: String) -> void:
 		return
 	progress[objective_id] = true
 	quest_progress[quest_id] = progress
+	if quest_id == "quest_tingen_become_seer" and objective_id == "return_old_neil":
+		FormulaManager.acquire_formula("formula_fool_09_seer", "老尼尔认可")
 	quest_objective_updated.emit(quest_id, objective_id)
 	quest_updated.emit(quest_id)
 

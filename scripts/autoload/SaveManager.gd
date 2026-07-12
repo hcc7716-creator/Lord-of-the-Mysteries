@@ -19,7 +19,7 @@ func build_save_data() -> Dictionary:
 		"completed_tarot_request_ids": TarotClubManager.completed_request_ids,
 		"market_unlock_flags": MarketManager.unlocked_flags,
 		"purchased_market_item_ids": MarketManager.purchased_item_ids,
-		"known_formula_ids": MarketManager.known_formula_ids,
+		"market_known_formula_ids": MarketManager.known_formula_ids,
 		"completed_job_counts": JobManager.completed_job_counts,
 		"materials": InventoryManager.get_all_materials(),
 		"quest_status": QuestManager.quest_status,
@@ -31,6 +31,9 @@ func build_save_data() -> Dictionary:
 		"opportunity_sources": OpportunityManager.opportunity_sources,
 		"faction_relations": FactionManager.relations,
 		"faction_known_information": FactionManager.known_information,
+		"known_formula_ids": FormulaManager.known_formula_ids,
+		"formula_sources": FormulaManager.formula_sources,
+		"formula_fragments": FormulaManager.formula_fragments,
 		"acquired_clues": ClueManager.acquired_clues,
 		"divination_hints": ClueManager.divination_hints,
 		"unlocked_skill_ids": SkillManager.permanent_unlocked_skill_ids,
@@ -79,7 +82,7 @@ func load_game() -> void:
 	TarotClubManager.completed_request_ids.assign(parsed.get("completed_tarot_request_ids", []))
 	MarketManager.unlocked_flags = parsed.get("market_unlock_flags", {})
 	MarketManager.purchased_item_ids.assign(parsed.get("purchased_market_item_ids", []))
-	MarketManager.known_formula_ids.assign(parsed.get("known_formula_ids", []))
+	MarketManager.known_formula_ids.assign(parsed.get("market_known_formula_ids", parsed.get("known_formula_ids", [])))
 	JobManager.completed_job_counts = parsed.get("completed_job_counts", {})
 	if TarotClubManager.is_unlocked:
 		MarketManager.add_unlock_flag("unlock_tarot_club")
@@ -93,6 +96,9 @@ func load_game() -> void:
 	OpportunityManager.opportunity_sources = parsed.get("opportunity_sources", {})
 	FactionManager.relations = parsed.get("faction_relations", {})
 	FactionManager.known_information = parsed.get("faction_known_information", {})
+	FormulaManager.known_formula_ids.assign(parsed.get("known_formula_ids", []))
+	FormulaManager.formula_sources = parsed.get("formula_sources", {})
+	FormulaManager.formula_fragments = parsed.get("formula_fragments", {})
 	ClueManager.acquired_clues = parsed.get("acquired_clues", {})
 	ClueManager.divination_hints = parsed.get("divination_hints", [])
 	SkillManager.permanent_unlocked_skill_ids.assign(parsed.get("unlocked_skill_ids", []))

@@ -53,7 +53,7 @@ func has_required_materials() -> bool:
 
 
 func has_recipe_unlocked() -> bool:
-	return QuestManager.is_objective_done(RECIPE_QUEST_ID, RECIPE_UNLOCK_OBJECTIVE) or MarketManager.is_formula_known(target_formula_id) or PathwayManager.current_sequence_id != ""
+	return FormulaManager.has_formula(target_formula_id) or PathwayManager.current_sequence_id != ""
 
 
 func can_brew_target_potion() -> bool:
@@ -89,7 +89,8 @@ func brew_target_potion() -> bool:
 		InventoryManager.remove_material(str(material_id), 1)
 
 	potion_brewed.emit(target_sequence_id)
-	QuestManager.mark_objective(RECIPE_QUEST_ID, "brew_potion")
+	if QuestManager.get_quest_status(RECIPE_QUEST_ID) == QuestManager.QuestStatus.ACTIVE:
+		QuestManager.mark_objective(RECIPE_QUEST_ID, "brew_potion")
 	GameManager.show_status_message("占卜家魔药调配完成，开始晋升。")
 	AdvancementManager.advance_to_sequence(target_sequence_id)
 	return true

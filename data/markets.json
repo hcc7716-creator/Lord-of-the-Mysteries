@@ -40,6 +40,33 @@
         "item_id": "mat_lavos_squid_blood",
         "price_pence": 480,
         "stock_rule": "rare"
+      },
+      {
+        "item_id": "fragment_fool_09_seer_ritual_notes",
+        "entry_type": "formula_fragment",
+        "formula_id": "formula_fool_09_seer",
+        "fragment_id": "seer_ritual_notes",
+        "name_cn": "占卜家配方残页：仪式笔记",
+        "price_pence": 180,
+        "stock_rule": "black_market_fragment"
+      },
+      {
+        "item_id": "fragment_fool_09_seer_material_list",
+        "entry_type": "formula_fragment",
+        "formula_id": "formula_fool_09_seer",
+        "fragment_id": "seer_material_list",
+        "name_cn": "占卜家配方残页：材料清单",
+        "price_pence": 180,
+        "stock_rule": "black_market_fragment"
+      },
+      {
+        "item_id": "fragment_fool_09_seer_acting_notes",
+        "entry_type": "formula_fragment",
+        "formula_id": "formula_fool_09_seer",
+        "fragment_id": "seer_acting_notes",
+        "name_cn": "占卜家配方残页：扮演笔记",
+        "price_pence": 180,
+        "stock_rule": "black_market_fragment"
       }
     ],
     "available_formulas": [

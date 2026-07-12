@@ -41,7 +41,7 @@ func get_market_entries(market_id: String) -> Array:
 		if typeof(item) != TYPE_DICTIONARY:
 			continue
 		var entry: Dictionary = item.duplicate(true)
-		entry["entry_type"] = "item"
+		entry["entry_type"] = str(entry.get("entry_type", "item"))
 		entry["base_price_pence"] = int(entry.get("price_pence", 0))
 		entry["price_pence"] = FactionManager.get_effective_price(market_id, int(entry.get("price_pence", 0)))
 		entries.append(entry)
@@ -123,7 +123,9 @@ func buy_item(market_id: String, item_id: String) -> Dictionary:
 			return _fail_purchase(market_id, item_id, "not_enough_money")
 		if not purchased_item_ids.has(item_id):
 			purchased_item_ids.append(item_id)
-		if not DataManager.get_material(item_id).is_empty():
+		if str(item.get("entry_type", "item")) == "formula_fragment":
+			FormulaManager.add_fragment(str(item.get("formula_id", "")), str(item.get("fragment_id", item_id)), "黑市残页")
+		elif not DataManager.get_material(item_id).is_empty():
 			InventoryManager.add_material(item_id, 1)
 		_trigger_market_risk(market_id, market)
 		purchase_completed.emit(market_id, item_id, price)
@@ -143,6 +145,7 @@ func buy_formula(market_id: String, formula_id: String) -> Dictionary:
 		return _fail_purchase(market_id, formula_id, "not_enough_money")
 	if not known_formula_ids.has(formula_id):
 		known_formula_ids.append(formula_id)
+	FormulaManager.acquire_formula(formula_id, str(market.get("name_cn", market_id)))
 	formula_acquired.emit(formula_id)
 	_trigger_market_risk(market_id, market)
 	purchase_completed.emit(market_id, formula_id, price)
@@ -150,7 +153,7 @@ func buy_formula(market_id: String, formula_id: String) -> Dictionary:
 
 
 func is_formula_known(formula_id: String) -> bool:
-	return known_formula_ids.has(formula_id)
+	return FormulaManager.has_formula(formula_id) or known_formula_ids.has(formula_id)
 
 
 func _fail_purchase(market_id: String, entry_id: String, reason: String) -> Dictionary:
