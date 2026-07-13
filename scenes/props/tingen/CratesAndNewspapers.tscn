@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/props/tingen/environment/crates_and_newspapers.png" id="1_texture"]
+
+[sub_resource type="RectangleShape2D" id="CrateShape"]
+size = Vector2(92, 42)
+
+[node name="CratesAndNewspapers" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -64)
+texture = ExtResource("1_texture")
+scale = Vector2(0.32, 0.32)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CrateCollision" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -21)
+shape = SubResource("CrateShape")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3]
+[gd_scene load_steps=26 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/maps/tingen-prototype-base.png" id="1_base"]
 [ext_resource type="PackedScene" path="res://scenes/player/Player.tscn" id="2_player"]
@@ -13,6 +13,14 @@
 [ext_resource type="PackedScene" path="res://scenes/buildings/Cemetery.tscn" id="11_cemetery"]
 [ext_resource type="PackedScene" path="res://scenes/buildings/UndergroundBlackMarket.tscn" id="12_market"]
 [ext_resource type="PackedScene" path="res://scenes/buildings/MysteryCaseSite.tscn" id="13_case_site"]
+[ext_resource type="PackedScene" path="res://scenes/props/tingen/GasLamp.tscn" id="14_gas_lamp"]
+[ext_resource type="PackedScene" path="res://scenes/props/tingen/IronFence.tscn" id="15_iron_fence"]
+[ext_resource type="PackedScene" path="res://scenes/props/tingen/CratesAndNewspapers.tscn" id="16_crates"]
+[ext_resource type="PackedScene" path="res://scenes/props/tingen/StreetSign.tscn" id="17_street_sign"]
+[ext_resource type="Texture2D" path="res://assets/props/tingen/environment/puddle_decals.png" id="18_puddles"]
+[ext_resource type="Texture2D" path="res://assets/props/tingen/environment/ritual_trace.png" id="19_ritual_trace"]
+[ext_resource type="Texture2D" path="res://assets/props/tingen/environment/foreground_canopy.png" id="20_canopy"]
+[ext_resource type="Script" path="res://scripts/maps/HD2DVisualController.gd" id="21_visual_controller"]
 
 [sub_resource type="RectangleShape2D" id="WorldHorizontal"]
 size = Vector2(2572, 40)
@@ -20,10 +28,22 @@ size = Vector2(2572, 40)
 [sub_resource type="RectangleShape2D" id="WorldVertical"]
 size = Vector2(40, 2572)
 
+[sub_resource type="Gradient" id="LampGradient"]
+offsets = PackedFloat32Array(0, 0.42, 1)
+colors = PackedColorArray(1, 0.86, 0.55, 0.95, 1, 0.62, 0.24, 0.32, 1, 0.42, 0.12, 0)
+
+[sub_resource type="GradientTexture2D" id="LampLightTexture"]
+gradient = SubResource("LampGradient")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
 [node name="TingenHD2D" type="Node2D"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.72, 0.8, 0.9, 1)
+color = Color(0.82, 0.79, 0.68, 1)
 
 [node name="Background" type="Node2D" parent="."]
 
@@ -35,12 +55,45 @@ scale = Vector2(2, 2)
 [node name="GroundDecals" type="Node2D" parent="Background"]
 z_index = -9
 
+[node name="ChurchPuddleLeft" type="Sprite2D" parent="Background/GroundDecals"]
+texture_filter = 1
+position = Vector2(535, 805)
+texture = ExtResource("18_puddles")
+scale = Vector2(0.48, 0.48)
+region_enabled = true
+region_rect = Rect2(0, 0, 280, 512)
+
+[node name="ChurchPuddleRight" type="Sprite2D" parent="Background/GroundDecals"]
+texture_filter = 1
+position = Vector2(755, 855)
+texture = ExtResource("18_puddles")
+scale = Vector2(-0.5, 0.5)
+region_enabled = true
+region_rect = Rect2(280, 0, 232, 512)
+
+[node name="CaseRitualTrace" type="Sprite2D" parent="Background/GroundDecals"]
+texture_filter = 1
+position = Vector2(-55, 10)
+texture = ExtResource("19_ritual_trace")
+scale = Vector2(0.38, 0.38)
+
 [node name="DistantFog" type="Node2D" parent="Background"]
 z_index = -8
 
-[node name="FogWash" type="Polygon2D" parent="Background/DistantFog"]
-color = Color(0.38, 0.48, 0.56, 0.08)
-polygon = PackedVector2Array(-1254, -1254, 1254, -1254, 1254, 1254, -1254, 1254)
+[node name="RiverDistantFog" type="Polygon2D" parent="Background/DistantFog"]
+color = Color(0.46, 0.56, 0.62, 0.16)
+polygon = PackedVector2Array(900, -1254, 1254, -1254, 1254, 1254, 930, 1254, 970, 980, 920, 690, 965, 320)
+vertex_colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0)
+
+[node name="NorthStreetDistantFog" type="Polygon2D" parent="Background/DistantFog"]
+color = Color(0.47, 0.54, 0.58, 0.13)
+polygon = PackedVector2Array(-1254, -1254, 1254, -1254, 1254, -930, 720, -875, 180, -920, -360, -860, -920, -910, -1254, -870)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1)
+
+[node name="WestStreetDistantFog" type="Polygon2D" parent="Background/DistantFog"]
+color = Color(0.44, 0.52, 0.57, 0.12)
+polygon = PackedVector2Array(-1254, -920, -930, -890, -900, -360, -950, 170, -905, 710, -940, 1254, -1254, 1254)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1)
 
 [node name="AtmosphereTint" type="Polygon2D" parent="Background"]
 z_index = -7
@@ -52,6 +105,41 @@ y_sort_enabled = true
 
 [node name="StreetProps" type="Node2D" parent="WorldEntities"]
 y_sort_enabled = true
+
+[node name="ChurchGasLampLeft" parent="WorldEntities/StreetProps" instance=ExtResource("14_gas_lamp")]
+position = Vector2(405, 835)
+
+[node name="ChurchGasLampRight" parent="WorldEntities/StreetProps" instance=ExtResource("14_gas_lamp")]
+position = Vector2(885, 835)
+
+[node name="ChurchSupplyCrates" parent="WorldEntities/StreetProps" instance=ExtResource("16_crates")]
+position = Vector2(995, 930)
+
+[node name="PlazaNewspaperCrates" parent="WorldEntities/StreetProps" instance=ExtResource("16_crates")]
+position = Vector2(315, 1015)
+scale = Vector2(0.72, 0.72)
+
+[node name="PoliceEvidenceCrates" parent="WorldEntities/StreetProps" instance=ExtResource("16_crates")]
+position = Vector2(1030, 125)
+scale = Vector2(0.9, 0.9)
+
+[node name="DivinationClubFlyers" parent="WorldEntities/StreetProps" instance=ExtResource("16_crates")]
+position = Vector2(-590, 140)
+scale = Vector2(0.9, 0.9)
+
+[node name="ChurchStreetSign" parent="WorldEntities/StreetProps" instance=ExtResource("17_street_sign")]
+position = Vector2(250, 865)
+
+[node name="ChurchSouthFence" parent="WorldEntities/StreetProps" instance=ExtResource("15_iron_fence")]
+position = Vector2(650, 1100)
+
+[node name="PoliceCordon" parent="WorldEntities/StreetProps" instance=ExtResource("15_iron_fence")]
+position = Vector2(760, 145)
+scale = Vector2(0.72, 0.72)
+
+[node name="CaseCordon" parent="WorldEntities/StreetProps" instance=ExtResource("15_iron_fence")]
+position = Vector2(-225, 90)
+scale = Vector2(0.62, 0.62)
 
 [node name="Buildings" type="Node2D" parent="WorldEntities"]
 y_sort_enabled = true
@@ -75,7 +163,7 @@ position = Vector2(645, 740)
 position = Vector2(-800, 835)
 
 [node name="UndergroundBlackMarket" parent="WorldEntities/Buildings" instance=ExtResource("12_market")]
-position = Vector2(820, 1120)
+position = Vector2(1085, 1180)
 
 [node name="MysteryCaseSite" parent="WorldEntities/Buildings" instance=ExtResource("13_case_site")]
 position = Vector2(-225, -75)
@@ -253,15 +341,81 @@ interaction_prompt = "按 E 收取星水晶"
 [node name="NearFog" type="Node2D" parent="ForegroundEffects"]
 z_index = 30
 
+[node name="RiverEdgeFog" type="Polygon2D" parent="ForegroundEffects/NearFog"]
+color = Color(0.3, 0.38, 0.43, 0.22)
+polygon = PackedVector2Array(1080, -1254, 1254, -1254, 1254, 1254, 1090, 1254, 1130, 1060, 1085, 820, 1130, 560, 1090, 260)
+vertex_colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0)
+
+[node name="LowerEdgeFog" type="Polygon2D" parent="ForegroundEffects/NearFog"]
+color = Color(0.32, 0.38, 0.41, 0.19)
+polygon = PackedVector2Array(-1254, 1110, -760, 1080, -220, 1135, 320, 1090, 760, 1140, 1254, 1090, 1254, 1254, -1254, 1254)
+vertex_colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[node name="UpperCornerFog" type="Polygon2D" parent="ForegroundEffects/NearFog"]
+color = Color(0.28, 0.35, 0.4, 0.18)
+polygon = PackedVector2Array(-1254, -1254, -920, -1254, -900, -1040, -980, -820, -1254, -860)
+vertex_colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1)
+
 [node name="Canopy" type="Node2D" parent="ForegroundEffects"]
 z_index = 20
+
+[node name="ChurchForegroundCanopy" type="Sprite2D" parent="ForegroundEffects/Canopy"]
+texture_filter = 1
+position = Vector2(1110, 1100)
+texture = ExtResource("20_canopy")
+scale = Vector2(0.5, 0.5)
 
 [node name="FenceOverlay" type="Node2D" parent="ForegroundEffects"]
 z_index = 25
 
 [node name="LocalLights" type="Node2D" parent="."]
 
+[node name="ChurchLamp" type="PointLight2D" parent="LocalLights"]
+position = Vector2(645, 770)
+color = Color(1, 0.68, 0.3, 1)
+energy = 1.8
+texture = SubResource("LampLightTexture")
+texture_scale = 1.7
+blend_mode = 0
+shadow_enabled = true
+shadow_color = Color(0.02, 0.03, 0.05, 0.72)
+shadow_filter = 1
+shadow_item_cull_mask = 1
+
+[node name="BureauLamp" type="PointLight2D" parent="LocalLights"]
+position = Vector2(760, -590)
+color = Color(1, 0.9, 0.72, 1)
+energy = 1.45
+texture = SubResource("LampLightTexture")
+texture_scale = 1.35
+blend_mode = 0
+shadow_enabled = true
+shadow_color = Color(0.02, 0.03, 0.05, 0.68)
+shadow_filter = 1
+shadow_item_cull_mask = 1
+
+[node name="StreetLamp" type="PointLight2D" parent="LocalLights"]
+position = Vector2(405, 694)
+color = Color(1, 0.78, 0.4, 1)
+energy = 1.4
+texture = SubResource("LampLightTexture")
+texture_scale = 1.25
+blend_mode = 0
+shadow_enabled = true
+shadow_color = Color(0.02, 0.03, 0.05, 0.65)
+shadow_filter = 1
+shadow_item_cull_mask = 2
+
+[node name="RitualGlow" type="PointLight2D" parent="LocalLights"]
+position = Vector2(-55, 10)
+color = Color(0.57, 0.52, 1, 1)
+energy = 1.15
+texture = SubResource("LampLightTexture")
+texture_scale = 1.45
+blend_mode = 0
+
 [node name="VisualStates" type="Node" parent="."]
+script = ExtResource("21_visual_controller")
 
 [node name="Boundaries" type="Node2D" parent="."]
 
