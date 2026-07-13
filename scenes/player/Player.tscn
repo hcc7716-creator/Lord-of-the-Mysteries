@@ -3,9 +3,8 @@
 [ext_resource type="Script" path="res://scripts/player/PlayerController.gd" id="1_script"]
 [ext_resource type="Texture2D" path="res://assets/sprites/player/klein_pixel_walker/sheet-transparent.png" id="2_sheet"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_player"]
-radius = 15.0
-height = 42.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_player"]
+size = Vector2(18, 12)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_interaction"]
 size = Vector2(96, 96)
@@ -98,7 +97,6 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
-z_index = 20
 script = ExtResource("1_script")
 
 [node name="Body" type="Polygon2D" parent="."]
@@ -121,6 +119,7 @@ autoplay = "walk_down"
 frame = 1
 
 [node name="NameLabel" type="Label" parent="."]
+visible = false
 offset_left = -54.0
 offset_top = -88.0
 offset_right = 54.0
@@ -130,7 +129,8 @@ text = "玩家"
 horizontal_alignment = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_player")
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_player")
 
 [node name="InteractionArea" type="Area2D" parent="."]
 collision_layer = 0

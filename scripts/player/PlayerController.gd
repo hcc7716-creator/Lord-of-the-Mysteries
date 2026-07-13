@@ -112,14 +112,26 @@ func _get_best_interactable() -> Node:
 
 
 func _on_interaction_area_entered(area: Area2D) -> void:
-	if area.has_method("interact"):
-		nearby_interactables.append(area)
+	var target := _resolve_interactable(area)
+	if target != null and not nearby_interactables.has(target):
+		nearby_interactables.append(target)
 		_update_interaction_hint()
 
 
 func _on_interaction_area_exited(area: Area2D) -> void:
-	nearby_interactables.erase(area)
+	var target := _resolve_interactable(area)
+	if target != null:
+		nearby_interactables.erase(target)
 	_update_interaction_hint()
+
+
+func _resolve_interactable(area: Area2D) -> Node:
+	if area.has_method("interact"):
+		return area
+	var parent := area.get_parent()
+	if parent != null and parent.has_method("interact"):
+		return parent
+	return null
 
 
 func _update_interaction_hint() -> void:

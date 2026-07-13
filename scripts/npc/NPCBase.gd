@@ -11,8 +11,14 @@ extends Area2D
 
 func _ready() -> void:
 	name_label.text = npc_name
+	name_label.visible = false
 	if schedule_id != "":
 		ScheduleManager.register_npc(self)
+
+
+func _process(_delta: float) -> void:
+	var player := GameManager.player as Node2D
+	name_label.visible = player != null and global_position.distance_to(player.global_position) <= 120.0
 
 
 func _exit_tree() -> void:

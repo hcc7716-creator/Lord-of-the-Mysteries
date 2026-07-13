@@ -1,19 +1,18 @@
-[gd_scene load_steps=25 format=3]
+[gd_scene load_steps=16 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/maps/tingen-prototype-base.png" id="1_base"]
 [ext_resource type="PackedScene" path="res://scenes/player/Player.tscn" id="2_player"]
 [ext_resource type="PackedScene" path="res://scenes/npc/NPCBase.tscn" id="3_npc"]
 [ext_resource type="PackedScene" path="res://scenes/interactables/InvestigationPoint.tscn" id="4_investigation"]
-[ext_resource type="PackedScene" path="res://scenes/interactables/LocationPoint.tscn" id="5_location"]
-[ext_resource type="PackedScene" path="res://scenes/interactables/OpportunitySource.tscn" id="6_opportunity"]
-[ext_resource type="Texture2D" path="res://assets/props/tingen/residence/clean.png" id="6_residence"]
-[ext_resource type="Texture2D" path="res://assets/props/tingen/official_bureau/clean.png" id="7_bureau"]
-[ext_resource type="Texture2D" path="res://assets/props/tingen/divination_club/clean.png" id="8_club"]
-[ext_resource type="Texture2D" path="res://assets/props/tingen/police_station/clean.png" id="9_police"]
-[ext_resource type="Texture2D" path="res://assets/props/tingen/church/clean.png" id="10_church"]
-[ext_resource type="Texture2D" path="res://assets/props/tingen/cemetery/clean.png" id="11_cemetery"]
-[ext_resource type="Texture2D" path="res://assets/props/tingen/black_market/clean.png" id="12_market"]
-[ext_resource type="Texture2D" path="res://assets/props/tingen/crime_scene/clean.png" id="13_crime"]
+[ext_resource type="PackedScene" path="res://scenes/interactables/OpportunitySource.tscn" id="5_opportunity"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/ProtagonistResidence.tscn" id="6_residence"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/OfficialBureau.tscn" id="7_bureau"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/DivinationClub.tscn" id="8_club"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/PoliceStation.tscn" id="9_police"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/Church.tscn" id="10_church"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/Cemetery.tscn" id="11_cemetery"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/UndergroundBlackMarket.tscn" id="12_market"]
+[ext_resource type="PackedScene" path="res://scenes/buildings/MysteryCaseSite.tscn" id="13_case_site"]
 
 [sub_resource type="RectangleShape2D" id="WorldHorizontal"]
 size = Vector2(2572, 40)
@@ -21,94 +20,60 @@ size = Vector2(2572, 40)
 [sub_resource type="RectangleShape2D" id="WorldVertical"]
 size = Vector2(40, 2572)
 
-[sub_resource type="RectangleShape2D" id="ResidenceCollision"]
-size = Vector2(330, 220)
-
-[sub_resource type="RectangleShape2D" id="BureauCollision"]
-size = Vector2(350, 230)
-
-[sub_resource type="RectangleShape2D" id="ClubCollision"]
-size = Vector2(300, 185)
-
-[sub_resource type="RectangleShape2D" id="PoliceCollision"]
-size = Vector2(320, 195)
-
-[sub_resource type="RectangleShape2D" id="ChurchCollision"]
-size = Vector2(330, 250)
-
-[sub_resource type="RectangleShape2D" id="CemeteryCollision"]
-size = Vector2(280, 140)
-
-[sub_resource type="RectangleShape2D" id="MarketCollision"]
-size = Vector2(250, 120)
-
-[sub_resource type="RectangleShape2D" id="CrimeCollision"]
-size = Vector2(150, 95)
-
 [node name="TingenPrototype" type="Node2D"]
 
-[node name="CityBase" type="Sprite2D" parent="."]
+[node name="Background" type="Node2D" parent="."]
+
+[node name="CityBase" type="Sprite2D" parent="Background"]
 z_index = -10
 texture = ExtResource("1_base")
 scale = Vector2(2, 2)
 
-[node name="AtmosphereTint" type="Polygon2D" parent="."]
+[node name="AtmosphereTint" type="Polygon2D" parent="Background"]
 z_index = -9
 color = Color(0.12, 0.17, 0.18, 0.16)
 polygon = PackedVector2Array(-1254, -1254, 1254, -1254, 1254, 1254, -1254, 1254)
 
-[node name="Landmarks" type="Node2D" parent="."]
+[node name="WorldEntities" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="ResidenceArt" type="Sprite2D" parent="Landmarks"]
-position = Vector2(-830, -825)
-texture = ExtResource("6_residence")
-scale = Vector2(0.48, 0.48)
+[node name="Buildings" type="Node2D" parent="WorldEntities"]
+y_sort_enabled = true
 
-[node name="OfficialBureauArt" type="Sprite2D" parent="Landmarks"]
-position = Vector2(760, -825)
-texture = ExtResource("7_bureau")
-scale = Vector2(0.48, 0.48)
+[node name="ProtagonistResidence" parent="WorldEntities/Buildings" instance=ExtResource("6_residence")]
+position = Vector2(-830, -635)
 
-[node name="DivinationClubArt" type="Sprite2D" parent="Landmarks"]
-position = Vector2(-820, -145)
-texture = ExtResource("8_club")
-scale = Vector2(0.43, 0.43)
+[node name="OfficialBureau" parent="WorldEntities/Buildings" instance=ExtResource("7_bureau")]
+position = Vector2(760, -635)
 
-[node name="PoliceStationArt" type="Sprite2D" parent="Landmarks"]
-position = Vector2(760, -170)
-texture = ExtResource("9_police")
-scale = Vector2(0.45, 0.45)
+[node name="DivinationClub" parent="WorldEntities/Buildings" instance=ExtResource("8_club")]
+position = Vector2(-820, 35)
 
-[node name="ChurchArt" type="Sprite2D" parent="Landmarks"]
-position = Vector2(645, 500)
-texture = ExtResource("10_church")
-scale = Vector2(0.52, 0.52)
+[node name="PoliceStation" parent="WorldEntities/Buildings" instance=ExtResource("9_police")]
+position = Vector2(760, 30)
 
-[node name="CemeteryArt" type="Sprite2D" parent="Landmarks"]
-position = Vector2(-800, 620)
-texture = ExtResource("11_cemetery")
-scale = Vector2(0.55, 0.55)
+[node name="Church" parent="WorldEntities/Buildings" instance=ExtResource("10_church")]
+position = Vector2(645, 740)
 
-[node name="BlackMarketArt" type="Sprite2D" parent="Landmarks"]
-position = Vector2(820, 950)
-texture = ExtResource("12_market")
-scale = Vector2(0.44, 0.44)
+[node name="Cemetery" parent="WorldEntities/Buildings" instance=ExtResource("11_cemetery")]
+position = Vector2(-800, 835)
 
-[node name="CrimeSceneArt" type="Sprite2D" parent="Landmarks"]
-position = Vector2(-225, -210)
-texture = ExtResource("13_crime")
-scale = Vector2(0.32, 0.32)
+[node name="UndergroundBlackMarket" parent="WorldEntities/Buildings" instance=ExtResource("12_market")]
+position = Vector2(820, 1120)
 
-[node name="PlayerSpawn" type="Marker2D" parent="."]
+[node name="MysteryCaseSite" parent="WorldEntities/Buildings" instance=ExtResource("13_case_site")]
+position = Vector2(-225, -75)
+
+[node name="PlayerSpawn" type="Marker2D" parent="WorldEntities"]
 position = Vector2(0, 240)
 
-[node name="Player" parent="." instance=ExtResource("2_player")]
+[node name="Player" parent="WorldEntities" instance=ExtResource("2_player")]
 position = Vector2(0, 240)
 
-[node name="NPCs" type="Node2D" parent="."]
+[node name="NPCs" type="Node2D" parent="WorldEntities"]
+y_sort_enabled = true
 
-[node name="OldNeil" parent="NPCs" instance=ExtResource("3_npc")]
+[node name="OldNeil" parent="WorldEntities/NPCs" instance=ExtResource("3_npc")]
 position = Vector2(760, -635)
 npc_name = "老尼尔"
 dialogue_text = "你终于来了。\n这起死亡案不像普通谋杀，现场留下了很轻的灵性波动。\n先调查异常死亡现场，再用灵视找出被遮蔽的污染残留。之后用灵摆确认方向。"
@@ -116,7 +81,7 @@ quest_to_offer = "quest_tingen_become_seer"
 interaction_prompt = "按 E 与老尼尔交谈"
 schedule_id = "schedule_old_neil"
 
-[node name="ConstableHale" parent="NPCs" instance=ExtResource("3_npc")]
+[node name="ConstableHale" parent="WorldEntities/NPCs" instance=ExtResource("3_npc")]
 position = Vector2(760, 30)
 npc_name = "黑尔警员"
 dialogue_text = "白天的警察局永远不缺报案人。\n如果你想靠工作和委托积累经验，公告栏是一个不错的开始。"
@@ -124,7 +89,7 @@ quest_to_offer = ""
 interaction_prompt = "按 E 与黑尔警员交谈"
 schedule_id = "schedule_constable_hale"
 
-[node name="MissElaine" parent="NPCs" instance=ExtResource("3_npc")]
+[node name="MissElaine" parent="WorldEntities/NPCs" instance=ExtResource("3_npc")]
 position = Vector2(-820, 35)
 npc_name = "伊莲小姐"
 dialogue_text = "俱乐部不出售答案，只交换观察。\n白天适合谈天气，夜晚适合谈梦境。"
@@ -132,63 +97,13 @@ quest_to_offer = ""
 interaction_prompt = "按 E 与伊莲小姐交谈"
 schedule_id = "schedule_miss_elaine"
 
-[node name="Locations" type="Node2D" parent="."]
+[node name="Interactables" type="Node2D" parent="WorldEntities"]
+y_sort_enabled = true
 
-[node name="ProtagonistResidence" parent="Locations" instance=ExtResource("5_location")]
-position = Vector2(-830, -635)
-location_id = "protagonist_residence"
-location_name = "主角住所"
-location_description = "一间临街的旧公寓。这里是你在雾城暂时落脚的地方；后续可扩展为休息、存档与私人线索板。"
-interaction_prompt = "按 E 查看主角住所"
-allows_rest = true
-rest_hours = 8
+[node name="OpportunitySources" type="Node2D" parent="WorldEntities/Interactables"]
+y_sort_enabled = true
 
-[node name="OfficialBureau" parent="Locations" instance=ExtResource("5_location")]
-position = Vector2(620, -635)
-location_id = "official_beyonder_bureau"
-location_name = "官方非凡者据点"
-location_description = "守灯人组织在雾城的办事处。这里管理异常案件、封印物申请与有限的非凡者协作。"
-interaction_prompt = "按 E 查看官方据点"
-
-[node name="DivinationClub" parent="Locations" instance=ExtResource("5_location")]
-position = Vector2(-820, 35)
-location_id = "divination_club"
-location_name = "占卜俱乐部"
-location_description = "一处对外宣称研究梦境与星象的私人会所。它既能提供传闻，也会遮掩真正的神秘学交流。"
-interaction_prompt = "按 E 查看占卜俱乐部"
-
-[node name="PoliceStation" parent="Locations" instance=ExtResource("5_location")]
-position = Vector2(760, 30)
-location_id = "police_station"
-location_name = "警察局"
-location_description = "普通案件和城市失踪报告都会汇集到这里。和警员建立关系，能获得正式委托与街区消息。"
-interaction_prompt = "按 E 查看警察局"
-
-[node name="Church" parent="Locations" instance=ExtResource("5_location")]
-position = Vector2(645, 740)
-location_id = "church"
-location_name = "教堂"
-location_description = "钟声会在固定时刻穿过雾城。教堂表面的宁静下，藏着可供调查的档案、仪式禁忌与组织关系。"
-interaction_prompt = "按 E 查看教堂"
-
-[node name="Cemetery" parent="Locations" instance=ExtResource("5_location")]
-position = Vector2(-800, 835)
-location_id = "cemetery"
-location_name = "墓园"
-location_description = "潮湿的墓园远离主街，埋葬着没有名字的人。这里适合接触死亡传闻，也适合让危险在夜里发生。"
-interaction_prompt = "按 E 查看墓园"
-
-[node name="UndergroundBlackMarket" parent="Locations" instance=ExtResource("5_location")]
-position = Vector2(820, 1120)
-location_id = "underground_black_market"
-location_name = "地下黑市"
-location_description = "沿着运河边的石阶向下，便能找到没有招牌的入口。这里的钱更好赚，代价也从不写在价签上。"
-interaction_prompt = "按 E 查看地下黑市"
-opportunity_ids = ["opp_location_black_market_entrance"]
-
-[node name="OpportunitySources" type="Node2D" parent="."]
-
-[node name="EveningNewspaper" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+[node name="EveningNewspaper" parent="WorldEntities/Interactables/OpportunitySources" instance=ExtResource("5_opportunity")]
 position = Vector2(-120, -410)
 source_name = "廷根晚报"
 source_type = "newspaper"
@@ -196,7 +111,7 @@ source_description = "一叠还带着油墨味的晚报被放在街角。你翻�
 opportunity_ids = ["opp_newspaper_mysterious_death", "opp_newspaper_copyist_job", "opp_newspaper_missing_clerk", "opp_newspaper_river_auction", "opp_newspaper_church_notice"]
 interaction_prompt = "按 E 阅读廷根晚报"
 
-[node name="PoliceBulletinBoard" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+[node name="PoliceBulletinBoard" parent="WorldEntities/Interactables/OpportunitySources" instance=ExtResource("5_opportunity")]
 position = Vector2(540, 30)
 source_name = "警察局公告栏"
 source_type = "bulletin_board"
@@ -204,7 +119,7 @@ source_description = "潮湿的木板上钉着正式委托、临时工作和一�
 opportunity_ids = ["opp_board_police_assistant", "opp_board_pharmacy_apprentice", "opp_board_cemetery_reward"]
 interaction_prompt = "按 E 查看公告栏"
 
-[node name="ChurchNoticeBoard" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+[node name="ChurchNoticeBoard" parent="WorldEntities/Interactables/OpportunitySources" instance=ExtResource("5_opportunity")]
 position = Vector2(475, 740)
 source_name = "教会公告"
 source_type = "bulletin_board"
@@ -214,7 +129,7 @@ interaction_prompt = "按 E 阅读教会公告"
 available_periods = ["morning", "day"]
 available_weekdays = ["sunday"]
 
-[node name="DivinationClubRegular" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+[node name="DivinationClubRegular" parent="WorldEntities/Interactables/OpportunitySources" instance=ExtResource("5_opportunity")]
 position = Vector2(-625, 35)
 source_name = "占卜俱乐部常客"
 source_type = "npc_dialogue"
@@ -222,7 +137,7 @@ source_description = "一位戴着旧礼帽的常客注意到你的目光。他�
 opportunity_ids = ["opp_npc_divination_rumor"]
 interaction_prompt = "按 E 与俱乐部常客交谈"
 
-[node name="DockWorker" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+[node name="DockWorker" parent="WorldEntities/Interactables/OpportunitySources" instance=ExtResource("5_opportunity")]
 position = Vector2(1080, 200)
 source_name = "码头工人"
 source_type = "npc_dialogue"
@@ -230,7 +145,7 @@ source_description = "码头工人正把湿绳索卷成一团。他抱怨最近�
 opportunity_ids = ["opp_npc_dock_favor"]
 interaction_prompt = "按 E 与码头工人交谈"
 
-[node name="TavernWhispers" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+[node name="TavernWhispers" parent="WorldEntities/Interactables/OpportunitySources" instance=ExtResource("5_opportunity")]
 position = Vector2(1000, 390)
 source_name = "码头酒馆的低语"
 source_type = "location_discovery"
@@ -239,7 +154,7 @@ opportunity_ids = ["opp_location_tavern_talk", "opp_npc_black_market_hint"]
 interaction_prompt = "按 E 留意酒馆谈话"
 available_periods = ["evening", "night"]
 
-[node name="AbandonedHouseTrace" parent="OpportunitySources" instance=ExtResource("6_opportunity")]
+[node name="AbandonedHouseTrace" parent="WorldEntities/Interactables/OpportunitySources" instance=ExtResource("5_opportunity")]
 position = Vector2(0, -860)
 source_name = "废弃房屋"
 source_type = "location_discovery"
@@ -247,9 +162,7 @@ source_description = "这栋房屋没有住户，却有新鲜的泥水从门缝�
 opportunity_ids = ["opp_location_abandoned_house", "opp_location_ritual_ash"]
 interaction_prompt = "按 E 调查废弃房屋"
 
-[node name="Interactables" type="Node2D" parent="."]
-
-[node name="DeathSceneClue" parent="Interactables" instance=ExtResource("4_investigation")]
+[node name="DeathSceneClue" parent="WorldEntities/Interactables" instance=ExtResource("4_investigation")]
 position = Vector2(-225, -75)
 investigation_id = "abnormal_death_scene"
 point_name = "异常死亡现场"
@@ -263,7 +176,7 @@ quest_update = "investigate_death_scene"
 material_id = ""
 interaction_prompt = "按 E 调查异常死亡现场"
 
-[node name="ChurchBackstreetClue" parent="Interactables" instance=ExtResource("4_investigation")]
+[node name="ChurchBackstreetClue" parent="WorldEntities/Interactables" instance=ExtResource("4_investigation")]
 position = Vector2(820, 780)
 investigation_id = "church_backstreet_clue"
 point_name = "教堂附近线索"
@@ -276,7 +189,7 @@ quest_updates = ["investigate_church_clue", "collect_potion_materials"]
 material_id = ""
 interaction_prompt = "按 E 调查教堂附近线索"
 
-[node name="HiddenPollutionPoint" parent="Interactables" instance=ExtResource("4_investigation")]
+[node name="HiddenPollutionPoint" parent="WorldEntities/Interactables" instance=ExtResource("4_investigation")]
 position = Vector2(930, 570)
 investigation_id = "hidden_pollution_point"
 point_name = "隐藏的灵性污染点"
@@ -289,7 +202,7 @@ quest_update = "find_hidden_pollution"
 material_id = ""
 interaction_prompt = "按 E 调查隐藏污染点"
 
-[node name="CanalSmugglerCache" parent="Interactables" instance=ExtResource("4_investigation")]
+[node name="CanalSmugglerCache" parent="WorldEntities/Interactables" instance=ExtResource("4_investigation")]
 position = Vector2(1080, 830)
 investigation_id = "canal_smuggler_cache"
 point_name = "运河漂来的材料箱"
@@ -299,7 +212,7 @@ reward_items = {"mat_lavos_squid_blood": 1, "mat_night_vanilla_liquids": 1}
 material_id = ""
 interaction_prompt = "按 E 搜查运河材料箱"
 
-[node name="CemeteryHerbPatch" parent="Interactables" instance=ExtResource("4_investigation")]
+[node name="CemeteryHerbPatch" parent="WorldEntities/Interactables" instance=ExtResource("4_investigation")]
 position = Vector2(-1030, 910)
 investigation_id = "cemetery_herb_patch"
 point_name = "墓园药草丛"
@@ -309,7 +222,7 @@ reward_items = {"mat_gold_mint_leaves": 1, "mat_poison_hemlock": 1, "mat_dragon_
 material_id = ""
 interaction_prompt = "按 E 采集墓园药草"
 
-[node name="AbandonedHouseStarShard" parent="Interactables" instance=ExtResource("4_investigation")]
+[node name="AbandonedHouseStarShard" parent="WorldEntities/Interactables" instance=ExtResource("4_investigation")]
 position = Vector2(110, -760)
 investigation_id = "abandoned_house_star_shard"
 point_name = "旧屋星水晶碎片"
@@ -318,6 +231,8 @@ description = "废弃房屋的窗沿下藏着一枚暗淡的星水晶。它仍�
 reward_items = {"mat_star_crystal": 1}
 material_id = ""
 interaction_prompt = "按 E 收取星水晶"
+
+[node name="ForegroundEffects" type="Node2D" parent="."]
 
 [node name="Boundaries" type="Node2D" parent="."]
 
@@ -344,51 +259,3 @@ position = Vector2(1254, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/EastWall"]
 shape = SubResource("WorldVertical")
-
-[node name="ResidenceBlock" type="StaticBody2D" parent="Boundaries"]
-position = Vector2(-830, -870)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/ResidenceBlock"]
-shape = SubResource("ResidenceCollision")
-
-[node name="BureauBlock" type="StaticBody2D" parent="Boundaries"]
-position = Vector2(760, -870)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/BureauBlock"]
-shape = SubResource("BureauCollision")
-
-[node name="ClubBlock" type="StaticBody2D" parent="Boundaries"]
-position = Vector2(-820, -180)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/ClubBlock"]
-shape = SubResource("ClubCollision")
-
-[node name="PoliceBlock" type="StaticBody2D" parent="Boundaries"]
-position = Vector2(760, -205)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/PoliceBlock"]
-shape = SubResource("PoliceCollision")
-
-[node name="ChurchBlock" type="StaticBody2D" parent="Boundaries"]
-position = Vector2(645, 460)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/ChurchBlock"]
-shape = SubResource("ChurchCollision")
-
-[node name="CemeteryBlock" type="StaticBody2D" parent="Boundaries"]
-position = Vector2(-800, 650)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/CemeteryBlock"]
-shape = SubResource("CemeteryCollision")
-
-[node name="BlackMarketBlock" type="StaticBody2D" parent="Boundaries"]
-position = Vector2(820, 980)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/BlackMarketBlock"]
-shape = SubResource("MarketCollision")
-
-[node name="CrimeSceneBlock" type="StaticBody2D" parent="Boundaries"]
-position = Vector2(-225, -210)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/CrimeSceneBlock"]
-shape = SubResource("CrimeCollision")
